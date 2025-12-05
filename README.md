@@ -1,4 +1,4 @@
-# Transformer-Based Approaches for Tree Extraction: A Systematic Review
+# Transformer-Based Tree Extraction from Remote Sensing Imagery: A Systematic Review
 
 > Supplementary resource repository for our systematic literature review on transformer-based models applied to tree extraction from remote sensing imagery.
 
@@ -6,7 +6,7 @@ This repository serves as the comprehensive resource index for our systematic re
 
 ## 📄 Literature Review Paper
 
-**Title**: Transformer-Based Approaches for Tree Extraction: A Systematic Review  
+**Title**: Transformer-Based Tree Extraction from Remote Sensing Imagery: A Systematic Review  
 **Authors**: Attavit Wilaiwongsakul, Bin Liang, Bryan Zheng, Fang Chen  
 **Journal**: [Under Review]  
 **Links**: 📖 [Paper](link) | 📦 [Supplementary Materials](link)
@@ -19,11 +19,11 @@ This repository serves as the comprehensive resource index for our systematic re
 - [📊 Survey Figures](#-survey-figures)
 - [📝 Literature Overview](#-literature-overview)
 - [📚 Research Papers](#-research-papers)
-  - [Foundation Models](#foundation-models)
-  - [Vision-Language Models](#vision-language-models)
+  - [Pure Vision Transformers](#pure-vision-transformers)
   - [CNN-Transformer Hybrids](#cnn-transformer-hybrids)
   - [Hierarchical Vision Transformers](#hierarchical-vision-transformers)
-  - [Pure Vision Transformers](#pure-vision-transformers)
+  - [Foundation Models](#foundation-models)
+  - [Vision-Language Models](#vision-language-models)
 - [🏛️ Foundational Architectures](#️-foundational-architectures)
 - [📖 Related Surveys](#-related-surveys)
 - [📊 Datasets & Benchmarks](#-datasets--benchmarks)
@@ -96,117 +96,37 @@ This repository serves as the comprehensive resource index for our systematic re
 
 ## 📚 Research Papers
 
-### Foundation Models
+### Pure Vision Transformers
 
-**[2025] FoMo-Net: Multi-Modal, Multi-Scale and Multi-Task Foundation Models for Forest Monitoring**
-- **Authors**: Bountos, N.I., Ouaknine, A., Papoutsis, I., Rolnick, D.
-- **Venue**: AAAI Conference on Artificial Intelligence
-- **Key Contribution**: First unified foundation model for forest monitoring with sensor-agnostic pre-training across 36 spectral bands
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2312.10114) | 💻 📊 [Code & Dataset](https://github.com/RolnickLab/FoMo-Bench)
+**[2025] Integrating Hyperspectral Images and LiDAR Data Using Vision Transformers for Enhanced Vegetation Classification**
+- **Authors**: Shu, X., Ma, L., Chang, F.
+- **Venue**: Forests
+- **Key Contribution**: PlantViT architecture for HSI-LiDAR fusion achieving state-of-the-art performance
+- **Links**: 📖 [Paper](https://www.mdpi.com/1999-4907/16/4/620) | 📊 [Dataset](https://github.com/shuxquan/PlantViT)
 
-**[2025] TiMo: Spatiotemporal Foundation Model for Satellite Image Time Series**
-- **Authors**: Qin, X., Wang, D., Zhang, J., Wang, F., Su, X., Du, B., Zhang, L.
-- **Venue**: arXiv preprint
-- **Key Contribution**: Spatiotemporal foundation model for satellite time series with forest monitoring applications
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2505.08723)
+**[2023] Classification of Individual Tree Species Using UAV LiDAR Based on Transformer**
+- **Authors**: Sun, P., Yuan, X., Li, D.
+- **Venue**: Forests
+- **Key Contribution**: Pure transformer approach for 3D LiDAR tree species classification
+- **Links**: 📖 [Paper](https://www.mdpi.com/1999-4907/14/3/484)
 
-**[2025] SatelliteCalculator: Multi-Task Vision Foundation Model for Quantitative Remote Sensing Inversion**
-- **Authors**: Yu, Z., Idris, M., Wang, P.
-- **Venue**: arXiv preprint
-- **Key Contribution**: Multi-task foundation model for quantitative remote sensing including forest parameters
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2504.13442)
+**[2023] Application of the Vision Transformer and Mask R-CNN Joint Algorithm to Assist Forest Decisions**
+- **Authors**: Liang, Q.
+- **Venue**: GRSM 2023
+- **Key Contribution**: ViT-based decision support system for forest management
+- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/10344890)
 
-**[2025] Monitoring Forest Changes with Foundation Models and Sentinel-2 Time Series**
-- **Authors**: Sadel, J., Tulczyjew, L., Wijata, A.M., Przeliorz, M., Nalepa, J.
-- **Venue**: IEEE Geoscience and Remote Sensing Letters
-- **Key Contribution**: Foundation model application for forest change detection using Sentinel-2
-- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/10938576)
+**[2022] A Vision Transformer Model for Convolution-Free Multilabel Classification of Satellite Imagery in Deforestation Monitoring**
+- **Authors**: Kaselimi, M., Voulodimos, A., Daskalopoulos, I., Doulamis, N., Doulamis, A.
+- **Venue**: IEEE Transactions on Neural Networks and Learning Systems
+- **Key Contribution**: First pure ViT for multi-label deforestation classification without convolutions
+- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/9606577)
 
-**[2025] Bringing SAM to New Heights: Leveraging Elevation Data for Tree Crown Segmentation**
-- **Authors**: Teng, M., Ouaknine, A., Laliberté, E., Bengio, Y., Rolnick, D., Larochelle, H.
-- **Venue**: arXiv preprint
-- **Key Contribution**: SAM adaptation with elevation data fusion for improved tree crown segmentation
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2506.04970)
-
-**[2025] Assessing SAM for Tree Crown Instance Segmentation from Drone Imagery**
-- **Authors**: Teng, M., Ouaknine, A., Laliberté, E., Bengio, Y., Rolnick, D., Larochelle, H.
-- **Venue**: arXiv preprint
-- **Key Contribution**: Comprehensive evaluation of SAM for tree crown instance segmentation
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2503.20199)
-
-**[2025] Zero-Shot Tree Detection and Segmentation from Aerial Forest Imagery**
-- **Authors**: Chen, M., Russell, D., Pallavoor, A., Young, D., Wu, J.
-- **Venue**: arXiv preprint
-- **Key Contribution**: Zero-shot tree detection using foundation models without task-specific training
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2506.03114)
-
-**[2025] Parameter-Efficient Fine-Tuning of Vision Foundation Model for Forest Floor Segmentation**
-- **Authors**: Wasil, M., Drak, A., Penfold, B., Scarton, L., Johenneken, M., Asteroth, A., Houben, S.
-- **Venue**: arXiv preprint
-- **Key Contribution**: PEFT methods for adapting foundation models to forest floor segmentation
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2505.08932)
-
-**[2025] Parameter-Efficient Fine-Tuning for Individual Tree Crown Detection and Species Classification**
-- **Authors**: Zhang, J., Lei, F., Fan, X.
-- **Venue**: Remote Sensing
-- **Key Contribution**: PEFT techniques for efficient tree crown detection and species identification
-- **Links**: 📖 [Paper](https://www.mdpi.com/2072-4292/17/7/1272)
-
-**[2024] Leveraging Prompt-Based Segmentation Models and Large Dataset to Improve Detection of Trees**
-- **Authors**: Grondin, V., Massicotte, P., Gaha, M., Pomerleau, F., Giguère, P.
-- **Venue**: Conference on Robots and Vision
-- **Key Contribution**: SAM-based prompt segmentation for tree detection with large-scale training
-- **Links**: 📖 [Paper](https://www.pubpub.org/pub/crv2024-leveraging-prompt-based)
-
-**[2024] A Distribution Shift Benchmark for Smallholder Agroforestry: Do Foundation Models Improve Geographic Generalization?**
-- **Authors**: Sachdeva, S., Lopez, I., Biradar, C., Lobell, D.
-- **Venue**: ICLR 2024
-- **Key Contribution**: Benchmark for evaluating foundation model generalization across geographic domains
-- **Links**: 📖 [Paper](https://openreview.net/forum?id=GnLRdCdNUp)
-
-**[2024] Estimating Urban Forests Biomass with LiDAR by Using Deep Learning Foundation Models**
-- **Authors**: Liu, H., Mou, C., Yuan, J., Chen, Z., Zhong, L., Cui, X.
-- **Venue**: Remote Sensing
-- **Key Contribution**: Foundation model application for urban forest biomass estimation from LiDAR
-- **Links**: 📖 [Paper](https://www.mdpi.com/2072-4292/16/9/1643)
-
-**[2024] TreeSeg: A Toolbox for Fully Automated Tree Crown Segmentation**
-- **Authors**: Speckenwirth, S., Brandmeier, M., Paczkowski, S.
-- **Venue**: Remote Sensing
-- **Key Contribution**: End-to-end toolbox combining SAM with multispectral UAV data for tree segmentation
-- **Links**: 📖 [Paper](https://www.mdpi.com/2072-4292/16/19/3660)
-
-**[2024] Fine-Tuning of Geospatial Foundation Models for Aboveground Biomass Estimation**
-- **Authors**: Muszynski, M., Klein, L., Da Silva, A.F., et al.
-- **Venue**: arXiv preprint
-- **Key Contribution**: Evaluation of geospatial foundation model fine-tuning for biomass estimation
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2406.19888)
-
-### Vision-Language Models
-
-**[2025] EarthDial: Turning Multi-Sensory Earth Observations to Interactive Dialogues**
-- **Authors**: Soni, S., Dudhane, A., Debary, H., Fiaz, M., Munir, M.A., Danish, M.S., et al.
-- **Venue**: CVPR 2025
-- **Key Contribution**: Multi-sensory VLM for interactive earth observation analysis including forest monitoring
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2411.09191)
-
-**[2025] GeoLangBind: Unifying Earth Observation with Agglomerative Vision-Language Foundation Models**
-- **Authors**: Xiong, Z., Wang, Y., Yu, W., Stewart, A.J., Zhao, J., Lehmann, N., et al.
-- **Venue**: arXiv preprint
-- **Key Contribution**: Unified vision-language foundation model for diverse earth observation tasks
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2503.06312)
-
-**[2024] REO-VLM: Transforming VLM to Meet Regression Challenges in Earth Observation**
-- **Authors**: Xue, X., Wei, G., Chen, H., Zhang, H., Lin, F., Shen, C., Zhu, X.X.
-- **Venue**: arXiv preprint
-- **Key Contribution**: VLM adaptation for regression tasks in remote sensing including forest parameters
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2412.16583)
-
-**[2023] Tree-GPT: Modular Large Language Model Expert System for Forest Remote Sensing Image Understanding**
-- **Authors**: Du, S., Tang, S., Wang, W., Li, X., Guo, R.
-- **Venue**: arXiv preprint
-- **Key Contribution**: First LLM-based expert system specifically designed for forest remote sensing analysis
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2310.04698)
+**[2022] 3D LiDAR Transformer for City-Scale Vegetation Segmentation and Biomass Estimation**
+- **Authors**: Khan, A., Asim, W., Ibrahim, M., Ulhaq, A.
+- **Venue**: DICTA 2022
+- **Key Contribution**: Point cloud transformer for urban vegetation analysis
+- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/9946512)
 
 ### CNN-Transformer Hybrids
 
@@ -458,37 +378,117 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Key Contribution**: Hierarchical ViT for 3D point cloud instance segmentation
 - **Links**: 📖 [Paper](https://www.preprints.org/manuscript/202301.0001)
 
-### Pure Vision Transformers
+### Foundation Models
 
-**[2025] Integrating Hyperspectral Images and LiDAR Data Using Vision Transformers for Enhanced Vegetation Classification**
-- **Authors**: Shu, X., Ma, L., Chang, F.
-- **Venue**: Forests
-- **Key Contribution**: PlantViT architecture for HSI-LiDAR fusion achieving state-of-the-art performance
-- **Links**: 📖 [Paper](https://www.mdpi.com/1999-4907/16/4/620) | 📊 [Dataset](https://github.com/shuxquan/PlantViT)
+**[2025] FoMo-Net: Multi-Modal, Multi-Scale and Multi-Task Foundation Models for Forest Monitoring**
+- **Authors**: Bountos, N.I., Ouaknine, A., Papoutsis, I., Rolnick, D.
+- **Venue**: AAAI Conference on Artificial Intelligence
+- **Key Contribution**: First unified foundation model for forest monitoring with sensor-agnostic pre-training across 36 spectral bands
+- **Links**: 📖 [Paper](https://arxiv.org/abs/2312.10114) | 💻 📊 [Code & Dataset](https://github.com/RolnickLab/FoMo-Bench)
 
-**[2023] Classification of Individual Tree Species Using UAV LiDAR Based on Transformer**
-- **Authors**: Sun, P., Yuan, X., Li, D.
-- **Venue**: Forests
-- **Key Contribution**: Pure transformer approach for 3D LiDAR tree species classification
-- **Links**: 📖 [Paper](https://www.mdpi.com/1999-4907/14/3/484)
+**[2025] TiMo: Spatiotemporal Foundation Model for Satellite Image Time Series**
+- **Authors**: Qin, X., Wang, D., Zhang, J., Wang, F., Su, X., Du, B., Zhang, L.
+- **Venue**: arXiv preprint
+- **Key Contribution**: Spatiotemporal foundation model for satellite time series with forest monitoring applications
+- **Links**: 📖 [Paper](https://arxiv.org/abs/2505.08723)
 
-**[2023] Application of the Vision Transformer and Mask R-CNN Joint Algorithm to Assist Forest Decisions**
-- **Authors**: Liang, Q.
-- **Venue**: GRSM 2023
-- **Key Contribution**: ViT-based decision support system for forest management
-- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/10344890)
+**[2025] SatelliteCalculator: Multi-Task Vision Foundation Model for Quantitative Remote Sensing Inversion**
+- **Authors**: Yu, Z., Idris, M., Wang, P.
+- **Venue**: arXiv preprint
+- **Key Contribution**: Multi-task foundation model for quantitative remote sensing including forest parameters
+- **Links**: 📖 [Paper](https://arxiv.org/abs/2504.13442)
 
-**[2022] A Vision Transformer Model for Convolution-Free Multilabel Classification of Satellite Imagery in Deforestation Monitoring**
-- **Authors**: Kaselimi, M., Voulodimos, A., Daskalopoulos, I., Doulamis, N., Doulamis, A.
-- **Venue**: IEEE Transactions on Neural Networks and Learning Systems
-- **Key Contribution**: First pure ViT for multi-label deforestation classification without convolutions
-- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/9606577)
+**[2025] Monitoring Forest Changes with Foundation Models and Sentinel-2 Time Series**
+- **Authors**: Sadel, J., Tulczyjew, L., Wijata, A.M., Przeliorz, M., Nalepa, J.
+- **Venue**: IEEE Geoscience and Remote Sensing Letters
+- **Key Contribution**: Foundation model application for forest change detection using Sentinel-2
+- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/10938576)
 
-**[2022] 3D LiDAR Transformer for City-Scale Vegetation Segmentation and Biomass Estimation**
-- **Authors**: Khan, A., Asim, W., Ibrahim, M., Ulhaq, A.
-- **Venue**: DICTA 2022
-- **Key Contribution**: Point cloud transformer for urban vegetation analysis
-- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/9946512)
+**[2025] Bringing SAM to New Heights: Leveraging Elevation Data for Tree Crown Segmentation**
+- **Authors**: Teng, M., Ouaknine, A., Laliberté, E., Bengio, Y., Rolnick, D., Larochelle, H.
+- **Venue**: arXiv preprint
+- **Key Contribution**: SAM adaptation with elevation data fusion for improved tree crown segmentation
+- **Links**: 📖 [Paper](https://arxiv.org/abs/2506.04970)
+
+**[2025] Assessing SAM for Tree Crown Instance Segmentation from Drone Imagery**
+- **Authors**: Teng, M., Ouaknine, A., Laliberté, E., Bengio, Y., Rolnick, D., Larochelle, H.
+- **Venue**: arXiv preprint
+- **Key Contribution**: Comprehensive evaluation of SAM for tree crown instance segmentation
+- **Links**: 📖 [Paper](https://arxiv.org/abs/2503.20199)
+
+**[2025] Zero-Shot Tree Detection and Segmentation from Aerial Forest Imagery**
+- **Authors**: Chen, M., Russell, D., Pallavoor, A., Young, D., Wu, J.
+- **Venue**: arXiv preprint
+- **Key Contribution**: Zero-shot tree detection using foundation models without task-specific training
+- **Links**: 📖 [Paper](https://arxiv.org/abs/2506.03114)
+
+**[2025] Parameter-Efficient Fine-Tuning of Vision Foundation Model for Forest Floor Segmentation**
+- **Authors**: Wasil, M., Drak, A., Penfold, B., Scarton, L., Johenneken, M., Asteroth, A., Houben, S.
+- **Venue**: arXiv preprint
+- **Key Contribution**: PEFT methods for adapting foundation models to forest floor segmentation
+- **Links**: 📖 [Paper](https://arxiv.org/abs/2505.08932)
+
+**[2025] Parameter-Efficient Fine-Tuning for Individual Tree Crown Detection and Species Classification**
+- **Authors**: Zhang, J., Lei, F., Fan, X.
+- **Venue**: Remote Sensing
+- **Key Contribution**: PEFT techniques for efficient tree crown detection and species identification
+- **Links**: 📖 [Paper](https://www.mdpi.com/2072-4292/17/7/1272)
+
+**[2024] Leveraging Prompt-Based Segmentation Models and Large Dataset to Improve Detection of Trees**
+- **Authors**: Grondin, V., Massicotte, P., Gaha, M., Pomerleau, F., Giguère, P.
+- **Venue**: Conference on Robots and Vision
+- **Key Contribution**: SAM-based prompt segmentation for tree detection with large-scale training
+- **Links**: 📖 [Paper](https://www.pubpub.org/pub/crv2024-leveraging-prompt-based)
+
+**[2024] A Distribution Shift Benchmark for Smallholder Agroforestry: Do Foundation Models Improve Geographic Generalization?**
+- **Authors**: Sachdeva, S., Lopez, I., Biradar, C., Lobell, D.
+- **Venue**: ICLR 2024
+- **Key Contribution**: Benchmark for evaluating foundation model generalization across geographic domains
+- **Links**: 📖 [Paper](https://openreview.net/forum?id=GnLRdCdNUp)
+
+**[2024] Estimating Urban Forests Biomass with LiDAR by Using Deep Learning Foundation Models**
+- **Authors**: Liu, H., Mou, C., Yuan, J., Chen, Z., Zhong, L., Cui, X.
+- **Venue**: Remote Sensing
+- **Key Contribution**: Foundation model application for urban forest biomass estimation from LiDAR
+- **Links**: 📖 [Paper](https://www.mdpi.com/2072-4292/16/9/1643)
+
+**[2024] TreeSeg: A Toolbox for Fully Automated Tree Crown Segmentation**
+- **Authors**: Speckenwirth, S., Brandmeier, M., Paczkowski, S.
+- **Venue**: Remote Sensing
+- **Key Contribution**: End-to-end toolbox combining SAM with multispectral UAV data for tree segmentation
+- **Links**: 📖 [Paper](https://www.mdpi.com/2072-4292/16/19/3660)
+
+**[2024] Fine-Tuning of Geospatial Foundation Models for Aboveground Biomass Estimation**
+- **Authors**: Muszynski, M., Klein, L., Da Silva, A.F., et al.
+- **Venue**: arXiv preprint
+- **Key Contribution**: Evaluation of geospatial foundation model fine-tuning for biomass estimation
+- **Links**: 📖 [Paper](https://arxiv.org/abs/2406.19888)
+
+### Vision-Language Models
+
+**[2025] EarthDial: Turning Multi-Sensory Earth Observations to Interactive Dialogues**
+- **Authors**: Soni, S., Dudhane, A., Debary, H., Fiaz, M., Munir, M.A., Danish, M.S., et al.
+- **Venue**: CVPR 2025
+- **Key Contribution**: Multi-sensory VLM for interactive earth observation analysis including forest monitoring
+- **Links**: 📖 [Paper](https://arxiv.org/abs/2411.09191)
+
+**[2025] GeoLangBind: Unifying Earth Observation with Agglomerative Vision-Language Foundation Models**
+- **Authors**: Xiong, Z., Wang, Y., Yu, W., Stewart, A.J., Zhao, J., Lehmann, N., et al.
+- **Venue**: arXiv preprint
+- **Key Contribution**: Unified vision-language foundation model for diverse earth observation tasks
+- **Links**: 📖 [Paper](https://arxiv.org/abs/2503.06312)
+
+**[2024] REO-VLM: Transforming VLM to Meet Regression Challenges in Earth Observation**
+- **Authors**: Xue, X., Wei, G., Chen, H., Zhang, H., Lin, F., Shen, C., Zhu, X.X.
+- **Venue**: arXiv preprint
+- **Key Contribution**: VLM adaptation for regression tasks in remote sensing including forest parameters
+- **Links**: 📖 [Paper](https://arxiv.org/abs/2412.16583)
+
+**[2023] Tree-GPT: Modular Large Language Model Expert System for Forest Remote Sensing Image Understanding**
+- **Authors**: Du, S., Tang, S., Wang, W., Li, X., Guo, R.
+- **Venue**: arXiv preprint
+- **Key Contribution**: First LLM-based expert system specifically designed for forest remote sensing analysis
+- **Links**: 📖 [Paper](https://arxiv.org/abs/2310.04698)
 
 ## 🏛️ Foundational Architectures
 
@@ -771,11 +771,11 @@ If you use this repository or find it helpful for your research, please cite our
 
 ```bibtex
 @article{wilaiwongsakul2025transformer,
-  title={Transformer-Based Approaches for Tree Extraction: A Systematic Review},
+  title={Transformer-Based Tree Extraction from Remote Sensing Imagery: A Systematic Review},
   author={Wilaiwongsakul, Attavit and Liang, Bin and Zheng, Bryan and Chen, Fang},
   journal={[Journal Name]},
   year={2025},
-  note={Supplementary repository: \url{https://github.com/username/transformer-tree-extraction}}
+  note={Supplementary repository: \url{https://github.com/attavit14203638/transformer-tree-survey}}
 }
 ```
 
