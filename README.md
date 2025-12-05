@@ -81,7 +81,7 @@ This repository serves as the comprehensive resource index for our systematic re
 
 ## 📝 Literature Overview
 
-- **Research Papers**: 62 studies
+- **Research Papers**: 64 studies
 - **Foundational Architectures**: 14 papers
 - **Related Surveys**: 15 reviews
 - **Dataset Papers**: 9 benchmarks
@@ -148,7 +148,7 @@ This repository serves as the comprehensive resource index for our systematic re
 
 </details>
 
-<h3><em>🔶 CNN-Transformer Hybrids (34 papers)</em></h3>
+<h3><em>🔶 CNN-Transformer Hybrids (36 papers)</em></h3>
 
 <details>
 <summary><b>[2025] MTCDNet: Multimodal Feature Fusion-Based Tree Crown Detection Network</b></summary>
