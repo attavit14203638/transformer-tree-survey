@@ -321,7 +321,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Zhu, L., Lin, Y., Lin, C.W.
 - **Venue**: ISCIPT 2024
 - **Key Contribution**: Multi-scale query mechanism for tree instance segmentation
-- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/10634582)
+- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/10673075)
 </details>
 
 <details>
@@ -664,7 +664,7 @@ This repository serves as the comprehensive resource index for our systematic re
 </details>
 
 <details>
-<summary><b>[2025] GeoLangBind: Unifying Earth Observation with Agglomerative Vision-Language Foundation Models</b></summary>
+<summary><b>[2025] GeoLangBind: Unifying Earth Observation with Agglomerative Vision-Language Foundation Models (formerly DOFA-CLIP)</b></summary>
 
 - **Authors**: Xiong, Z., Wang, Y., Yu, W., Stewart, A.J., Zhao, J., Lehmann, N., et al.
 - **Venue**: arXiv preprint
