@@ -10,7 +10,7 @@
 Create a GitHub repository to serve as **supplementary material** for a systematic literature review paper on transformer-based approaches for tree extraction. This is NOT an "awesome list" for community contribution, but rather a professional academic resource index.
 
 ### **Main Literature Review Project**
-- **Paper Title**: Transformer-Based Approaches for Tree Extraction: A Systematic Review
+- **Paper Title**: Transformer-Based Tree Extraction from Remote Sensing Imagery: A Systematic Review
 - **Authors**: Attavit Wilaiwongsakul, Bin Liang, Bryan Zheng, Fang Chen
 - **Coverage**: 2020-2025
 - **Total Papers**: 62 studies analyzed
