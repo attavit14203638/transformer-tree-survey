@@ -56,11 +56,13 @@ GitHub_Release/
 
 ### **Sections Included**
 1. **📄 Literature Review Paper** - Link to published paper
-2. **📊 Literature Overview** - Brief statistics (8 papers, 2017-2025)
-3. **📚 Research Papers** - Chronological by architecture type
-4. **📊 Datasets & Benchmarks** - Access-focused resource list
-5. **🔧 Available Code & Tools** - Implementation links
-6. **📑 Citation & Usage** - How to cite and use repository
+2. **📊 Survey Figures** - Key summary diagrams
+3. **📝 Literature Overview** - Brief statistics (8 papers, 2017-2025)
+4. **📈 Star History** - Repository star growth chart
+5. **📚 Research Papers** - Chronological by architecture type
+6. **📊 Datasets & Benchmarks** - Access-focused resource list
+7. **🔧 Available Code & Tools** - Implementation links
+8. **📑 Citation & Usage** - How to cite and use repository
 
 ### **Sections REMOVED** (from awesome-list inspiration)
 - ❌ Awesome badge

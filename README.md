@@ -18,6 +18,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - [📄 Literature Review Paper](#-literature-review-paper)
 - [📊 Survey Figures](#-survey-figures)
 - [📝 Literature Overview](#-literature-overview)
+- [📈 Star History](#-star-history)
 - [📚 Research Papers](#-research-papers)
   - [Pure Vision Transformers](#pure-vision-transformers)
   - [CNN-Transformer Hybrids](#cnn-transformer-hybrids)
@@ -93,6 +94,14 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Last Updated**: December 2025
 
 *For detailed categorization and systematic analysis, refer to our published literature review paper.*
+
+## 📈 Star History
+
+<p align="center">
+  <a href="https://star-history.com/#attavit14203638/transformer-tree-survey&Date">
+    <img src="https://api.star-history.com/svg?repos=attavit14203638/transformer-tree-survey&type=Date" alt="Star History Chart">
+  </a>
+</p>
 
 ## 📚 Research Papers
 
