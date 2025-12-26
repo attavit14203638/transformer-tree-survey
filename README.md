@@ -75,7 +75,7 @@ This repository serves as the comprehensive resource index for our systematic re
 
 ## 📝 Literature Overview
 
-- **Research Papers**: 64 studies
+- **Research Papers**: 63 studies
 - **Foundational Architectures**: 14 papers
 - **Related Surveys**: 15 reviews
 - **Dataset Papers**: 9 benchmarks
@@ -150,7 +150,7 @@ This repository serves as the comprehensive resource index for our systematic re
 
 </details>
 
-<h3><em>🔶 CNN-Transformer Hybrids (37 papers)</em></h3>
+<h3><em>🔶 CNN-Transformer Hybrids (36 papers)</em></h3>
 
 <details>
 <summary><b>[2025] BARE: Boundary-Aware with Resolution Enhancement for Tree Crown Delineation</b></summary>
@@ -478,15 +478,6 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Venue**: IEEE Access
 - **Key Contribution**: Transformer-enhanced detection for urban tree inventories
 - **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/9765408)
-</details>
-
-<details>
-<summary><b>[2020] Urban Trees Mapping Using Multi-Scale RGB Image and Deep Learning Vision Transformer-Based</b></summary>
-
-- **Authors**: Georges Gomes, F.D., Furuya, M.T.G., Marcato Junior, J., et al.
-- **Venue**: SSRN
-- **Key Contribution**: Early application of ViT for urban tree mapping at multiple scales
-- **Links**: 📖 [Paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4167085)
 </details>
 
 <h3><em>🔷 Hierarchical Vision Transformers (4 papers)</em></h3>
@@ -1207,7 +1198,7 @@ This repository serves as:
 ### Updates
 
 - **Last Updated**: December 2025
-- **Papers Covered**: 64 studies (2020-2025)
+- **Papers Covered**: 63 studies (2017-2025)
 - **Coverage**: Foundation Models, Vision-Language Models, CNN-Transformer Hybrids, Hierarchical ViTs, Pure ViTs
 
 ### Contact
