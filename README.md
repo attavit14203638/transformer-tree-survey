@@ -126,7 +126,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Liang, Q.
 - **Venue**: GRSM 2023
 - **Key Contribution**: ViT-based decision support system for forest management
-- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/10344890)
+- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/10425544)
 
 </details>
 
@@ -136,7 +136,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Kaselimi, M., Voulodimos, A., Daskalopoulos, I., Doulamis, N., Doulamis, A.
 - **Venue**: IEEE Transactions on Neural Networks and Learning Systems
 - **Key Contribution**: First pure ViT for multi-label deforestation classification without convolutions
-- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/9606577)
+- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/9701667)
 
 </details>
 
@@ -146,7 +146,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Khan, A., Asim, W., Ibrahim, M., Ulhaq, A.
 - **Venue**: DICTA 2022
 - **Key Contribution**: Point cloud transformer for urban vegetation analysis
-- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/9946512)
+- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/10034637)
 
 </details>
 
@@ -234,7 +234,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Begum, S.R., Mishra, V., Saha, D.
 - **Venue**: AMATHE 2025
 - **Key Contribution**: Swin-based forest health assessment system
-- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/10938576)
+- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/11080823)
 </details>
 
 <details>
@@ -288,7 +288,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Ton-That, M.N., Le, T.V., Truong, N.H., Le, A.D., Pham, A.D., Vo, H.B.
 - **Venue**: ICCE 2024
 - **Key Contribution**: Novel ground truth generation approach for tree counting
-- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/10634582)
+- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/10634677)
 </details>
 
 <details>
@@ -315,7 +315,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Lu, Y., Huang, Y., Sun, S., Zhang, T., Zhang, X., Fei, S., Chen, V.
 - **Venue**: IEEE VR 2024 Workshops
 - **Key Contribution**: Multi-modal network trained on synthetic forest data
-- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/10536310)
+- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/10536563)
 </details>
 
 <details>
@@ -342,7 +342,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Amirkolaee, H.A., Shi, M., Mulligan, M.
 - **Venue**: IEEE Transactions on Geoscience and Remote Sensing
 - **Key Contribution**: Semi-supervised transformer for tree counting from single high-resolution images
-- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/10183842) | 💻 [Code](https://github.com/HAAClassic/TreeFormer)
+- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/10184482) | 💻 [Code](https://github.com/HAAClassic/TreeFormer)
 </details>
 
 <details>
@@ -414,7 +414,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Mullissa, A., Reiche, J., Saatchi, S.
 - **Venue**: IGARSS 2023
 - **Key Contribution**: Multi-temporal transformer for seasonal disturbance detection
-- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/10282817)
+- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/10281936)
 </details>
 
 <details>
@@ -477,7 +477,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Zhang, L., Lin, H., Wang, F.
 - **Venue**: IEEE Access
 - **Key Contribution**: Transformer-enhanced detection for urban tree inventories
-- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/9765408)
+- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/9765982)
 </details>
 
 <h3><em>🔷 Hierarchical Vision Transformers (4 papers)</em></h3>
