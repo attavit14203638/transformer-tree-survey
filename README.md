@@ -64,19 +64,12 @@ This repository serves as the comprehensive resource index for our systematic re
 
 **Figure 4**: Geographic distribution of study sites across 6 continents.
 
-### Sensor Modalities
+### Annotation, Task & Sensor Summary
 <p align="center">
-  <img src="figures/sensor_summary.jpg" width="700" alt="Sensor Summary">
+  <img src="figures/annotation_task_sensor_summary.jpg" width="700" alt="Annotation, Task and Sensor Summary">
 </p>
 
-**Figure 5**: Overview of sensor modalities used in transformer-based tree extraction.
-
-### Task Summary
-<p align="center">
-  <img src="figures/task_summary.jpg" width="700" alt="Task Summary">
-</p>
-
-**Figure 6**: Distribution of computer vision tasks addressed in the reviewed literature.
+**Figure 5**: Overview of annotation types, computer vision tasks, and sensor modalities in the reviewed literature.
 
 </details>
 
@@ -157,7 +150,17 @@ This repository serves as the comprehensive resource index for our systematic re
 
 </details>
 
-<h3><em>🔶 CNN-Transformer Hybrids (36 papers)</em></h3>
+<h3><em>🔶 CNN-Transformer Hybrids (37 papers)</em></h3>
+
+<details>
+<summary><b>[2025] BARE: Boundary-Aware with Resolution Enhancement for Tree Crown Delineation</b></summary>
+
+- **Authors**: Wilaiwongsakul, A., Liang, B., Jia, W., Zheng, B., Chen, F.
+- **Venue**: AusDM 2025
+- **Key Contribution**: Architecture-preserving training strategy combining full-resolution supervision with class weighting for improved boundary precision; introduces B-IoU metric to tree crown delineation
+- **Links**: 📖 [Paper](https://github.com/attavit14203638/bare) | 💻 [Code](https://github.com/attavit14203638/bare)
+
+</details>
 
 <details>
 <summary><b>[2025] MTCDNet: Multimodal Feature Fusion-Based Tree Crown Detection Network</b></summary>
@@ -486,7 +489,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Links**: 📖 [Paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4167085)
 </details>
 
-<h3><em>🔷 Hierarchical Vision Transformers (5 papers)</em></h3>
+<h3><em>🔷 Hierarchical Vision Transformers (4 papers)</em></h3>
 
 <details>
 <summary><b>[2025] A Comparative Analysis of Deep Learning Methods for Ghaf Tree Detection and Segmentation</b></summary>
@@ -522,15 +525,6 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Venue**: Information
 - **Key Contribution**: Twins-SVT architecture for invasive species detection
 - **Links**: 📖 [Paper](https://www.mdpi.com/2078-2489/16/9/741)
-</details>
-
-<details>
-<summary><b>[2023] Instance Segmentation of LiDAR Data with Vision Transformer Model</b></summary>
-
-- **Authors**: Yang, J., El Mendili, L., Khayer, Y., McArdle, S., Hashemi Beni, L.
-- **Venue**: Preprints
-- **Key Contribution**: Hierarchical ViT for 3D point cloud instance segmentation
-- **Links**: 📖 [Paper](https://www.preprints.org/manuscript/202301.0001)
 </details>
 
 <h3><em>🟢 Foundation Models (14 papers)</em></h3>
