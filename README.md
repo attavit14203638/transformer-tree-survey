@@ -9,9 +9,9 @@ This repository serves as the comprehensive resource index for our systematic re
 **Title**: Transformer-Based Tree Extraction from Remote Sensing Imagery: A Systematic Review  
 **Authors**: Attavit Wilaiwongsakul, Bin Liang, Bryan Zheng, Fang Chen  
 **Journal**: [Under Review]  
-**Links**: 📖 [Paper](link) | 📦 [Supplementary Materials](link)
+**Links**: 📖 [Paper](paper.pdf) | 📦 [Supplementary Materials](https://github.com/attavit14203638/transformer-tree-survey)
 
-> **Abstract**: Scalable forest monitoring requires methods that are simultaneously accurate, generalizable across ecosystems, and trainable with limited labeled data. This survey systematically examines whether transformer-based architectures meet these demands for tree extraction tasks. We synthesize research spanning multiple continents, sensor modalities, and architectural paradigms, from Vision Transformers through CNN-transformer hybrids to Foundation Models.
+> **Abstract**: Global sustainability commitments under the Paris Agreement and United Nations Sustainable Development Goal 15 require scalable tree-level monitoring to quantify forest carbon stocks and ecosystem services. While CNNs established strong baselines, their limited long-range dependency modeling constrains performance on complex canopy structures. Transformer architectures promise to address these limitations through self-attention mechanisms, yet their effectiveness remains unclear. This survey evaluates whether transformers meet three critical requirements: superior accuracy, cross-environment generalization, and data-efficient training. We synthesize 63 papers (2017-2025) documenting 550% growth, analyzing five architectural paradigms spanning pure Vision Transformers, CNN-transformer hybrids, hierarchical variants, Foundation Models, and Vision-Language Models across multiple continents and sensor modalities. Transformers achieve +2.0% to +5.5% median gains over CNN baselines depending on architecture, while Foundation Models with parameter-efficient fine-tuning match full fine-tuning using <1,000 samples. However, critical gaps persist: 28% average performance degradation in cross-environment transfer and 72% of studies lacking full reproducibility. We provide actionable deployment recommendations, identify research priorities including multi-biome benchmarking and domain adaptation, and release comprehensive supplementary materials.
 
 ## Table of Contents
 
@@ -188,7 +188,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Xiang, B., Wielgosz, M., Puliti, S., Král, K., Krůček, M., Missarov, A., Astrup, R.
 - **Venue**: arXiv preprint
 - **Key Contribution**: End-to-end 3D transformer for forest point cloud segmentation
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2506.16991)
+- **Links**: 📖 [Paper](https://arxiv.org/abs/2506.16991) | 💻 [Code](https://github.com/SmartForest-no/ForestFormer3D)
 
 </details>
 
@@ -342,7 +342,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Amirkolaee, H.A., Shi, M., Mulligan, M.
 - **Venue**: IEEE Transactions on Geoscience and Remote Sensing
 - **Key Contribution**: Semi-supervised transformer for tree counting from single high-resolution images
-- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/10183842)
+- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/10183842) | 💻 [Code](https://github.com/HAAClassic/TreeFormer)
 </details>
 
 <details>
@@ -535,7 +535,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Qin, X., Wang, D., Zhang, J., Wang, F., Su, X., Du, B., Zhang, L.
 - **Venue**: arXiv preprint
 - **Key Contribution**: Spatiotemporal foundation model for satellite time series with forest monitoring applications
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2505.08723)
+- **Links**: 📖 [Paper](https://arxiv.org/abs/2505.08723) | 💻 [Code](https://github.com/MiliLab/TiMo)
 </details>
 
 <details>
@@ -553,7 +553,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Sadel, J., Tulczyjew, L., Wijata, A.M., Przeliorz, M., Nalepa, J.
 - **Venue**: IEEE Geoscience and Remote Sensing Letters
 - **Key Contribution**: Foundation model application for forest change detection using Sentinel-2
-- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/10938576)
+- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/10946165)
 </details>
 
 <details>
@@ -654,7 +654,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Soni, S., Dudhane, A., Debary, H., Fiaz, M., Munir, M.A., Danish, M.S., et al.
 - **Venue**: CVPR 2025
 - **Key Contribution**: Multi-sensory VLM for interactive earth observation analysis including forest monitoring
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2411.09191)
+- **Links**: 📖 [Paper](https://arxiv.org/abs/2412.15190) | 💻 [Code](https://github.com/hiyamdebary/EarthDial)
 </details>
 
 <details>
@@ -663,7 +663,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Xiong, Z., Wang, Y., Yu, W., Stewart, A.J., Zhao, J., Lehmann, N., et al.
 - **Venue**: arXiv preprint
 - **Key Contribution**: Unified vision-language foundation model for diverse earth observation tasks
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2503.06312)
+- **Links**: 📖 [Paper](https://arxiv.org/abs/2503.06312) | 💻 [Code](https://github.com/xiong-zhitong/DOFA-CLIP)
 </details>
 
 <details>
@@ -1167,7 +1167,7 @@ These policy documents and frameworks drive the demand for scalable tree monitor
 ### Model Implementations
 - **TransU-Net++**: Enhanced TransUNet for deforestation | 💻 [Code](https://github.com/aj1365/TransUNetplus2)
 - **WetMapFormer**: Hybrid CNN-Transformer with Local Window Attention | 💻 [Code](https://github.com/aj1365/WetMapFormer)
-- **TreeSeg Toolbox**: End-to-end tree crown segmentation | 💻 [Code](https://github.com/simonspeckenwirth/TreeSegToolbox)
+- **TreeSeg Toolbox**: End-to-end tree crown segmentation | 💻 [Code](https://github.com/soenke-sp/TreeSeg)
 
 ### Evaluation Frameworks
 - **FoMo-Bench**: Unified evaluation framework for forest monitoring tasks | 💻 [Code](https://github.com/RolnickLab/FoMo-Bench)
