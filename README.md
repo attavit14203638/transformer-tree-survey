@@ -351,7 +351,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Jamali, A., Roy, S.K., Li, J., Ghamisi, P.
 - **Venue**: International Journal of Applied Earth Observation and Geoinformation
 - **Key Contribution**: Attention-gated TransUNet variant for improved deforestation mapping
-- **Links**: 📖 [Paper](https://www.sciencedirect.com/science/article/pii/S156984322300135X) | 💻 [Code](https://github.com/aj1365/TransUNetplus2)
+- **Links**: 📖 [Paper](https://www.sciencedirect.com/science/article/pii/S1569843223001541) | 💻 [Code](https://github.com/aj1365/TransUNetplus2)
 </details>
 
 <details>
