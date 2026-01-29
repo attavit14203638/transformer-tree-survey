@@ -1,7 +1,7 @@
 # Project Context: Literature Review GitHub Repository
 
 **Date Created**: January 2025  
-**Last Updated**: December 2025  
+**Last Updated**: January 2026  
 **Purpose**: Context documentation for future development sessions
 
 ## 📋 Project Overview
@@ -12,8 +12,8 @@ Create a GitHub repository to serve as **supplementary material** for a systemat
 ### **Main Literature Review Project**
 - **Paper Title**: Transformer-Based Tree Extraction from Remote Sensing Imagery: A Systematic Review
 - **Authors**: Attavit Wilaiwongsakul, Bin Liang, Bryan Zheng, Fang Chen
-- **Coverage**: 2020-2025
-- **Total Papers**: 62 studies analyzed
+- **Coverage**: 2017-2025
+- **Total Papers**: 63 studies analyzed
 - **Main Files**: 
   - `68f823600ac5436c4d362b39/main.tex` - LaTeX manuscript
   - `68f823600ac5436c4d362b39/bib/` - Bibliography files
@@ -56,8 +56,8 @@ GitHub_Release/
 
 ### **Sections Included**
 1. **📄 Literature Review Paper** - Link to published paper
-2. **📊 Survey Figures** - Key summary diagrams
-3. **📝 Literature Overview** - Brief statistics (8 papers, 2017-2025)
+2. **📊 Survey Figures** - Key summary diagrams (10 figures)
+3. **📝 Literature Overview** - Brief statistics (63 papers, 2017-2025)
 4. **📈 Star History** - Repository star growth chart
 5. **📚 Research Papers** - Chronological by architecture type
 6. **📊 Datasets & Benchmarks** - Access-focused resource list
@@ -99,17 +99,17 @@ GitHub_Release/
 
 ## 🎨 Architecture Categories Defined
 
-### **Paper Organization** (62 total)
-1. **Foundation Models** (14 papers) - SAM, SAM2, Prithvi, DOFA, FoMo-Net, etc.
-2. **Vision-Language Models** (4 papers) - Tree-GPT, EarthDial, GeoLangBind, REO-VLM
-3. **CNN-Transformer Hybrids** (34 papers) - TransUNet variants, Swin-based, DETR-based
-4. **Hierarchical Vision Transformers** (5 papers) - Swin, Twins-SVT based
-5. **Pure Vision Transformers** (5 papers) - ViT-only approaches
+### **Paper Organization** (63 total)
+1. **Pure Vision Transformers** (6 papers) - ViT-only approaches
+2. **Hierarchical Vision Transformers** (8 papers) - Swin, Twins-SVT, SegFormer based
+3. **CNN-Transformer Hybrids** (31 papers) - TransUNet variants, Swin-based, DETR-based
+4. **Foundation Models** (12 papers) - SAM, SAM2, Prithvi, DOFA, FoMo-Net, etc.
+5. **Vision-Language Models** (4 papers) - Tree-GPT, EarthDial, GeoLangBind, REO-VLM
 
 ## 🔄 Completion Status
 
 ### **Completed Tasks**
-- [x] All 62 papers documented with metadata and links
+- [x] All 63 papers documented with metadata and links
 - [x] Papers organized by architecture category
 - [x] Paper links verified (DOI/arXiv where available)
 - [x] Code repository links added where available
@@ -155,15 +155,15 @@ The repository is finalized for:
 - **Resource Sharing**: 62 papers organized with direct access links
 - **Professional Presentation**: Suitable for academic supplementary material
 
-**Status**: ✅ Complete (December 2025)
+**Status**: ✅ Complete (January 2026)
 
 ### **Statistics**
-- **Research Papers**: 62
+- **Research Papers**: 63
 - **Foundational Architectures**: 14
 - **Related Surveys**: 15
-- **Dataset Papers**: 9
+- **Dataset Papers**: 10
 - **Policy Papers**: 5
-- **Total References**: ~105
+- **Total References**: ~107
 - **Time Period**: 2017-2025
-- **Geographic Coverage**: 6 continents
-- **Figures Included**: 6 summary diagrams
+- **Geographic Coverage**: 27 countries across 6 continents
+- **Figures Included**: 10 survey figures

@@ -2,16 +2,16 @@
 
 > Supplementary resource repository for our systematic literature review on transformer-based models applied to tree extraction from remote sensing imagery.
 
-This repository serves as the comprehensive resource index for our systematic review covering transformer-based approaches for tree extraction from 2020-2025, providing direct access to papers, datasets, and available code implementations.
+This repository serves as the comprehensive resource index for our systematic review covering transformer-based approaches for tree extraction from 2017-2025, providing direct access to papers, datasets, and available code implementations.
 
 ## 📄 Literature Review Paper
 
 **Title**: Transformer-Based Tree Extraction from Remote Sensing Imagery: A Systematic Review  
 **Authors**: Attavit Wilaiwongsakul, Bin Liang, Bryan Zheng, Fang Chen  
-**Journal**: [Under Review]  
+**Journal**: ISPRS Journal of Photogrammetry and Remote Sensing (Under Review)  
 **Links**: 📖 [Paper](paper.pdf) | 📦 [Supplementary Materials](https://github.com/attavit14203638/transformer-tree-survey)
 
-> **Abstract**: Global sustainability commitments under the Paris Agreement and United Nations Sustainable Development Goal 15 require scalable tree-level monitoring to quantify forest carbon stocks and ecosystem services. While CNNs established strong baselines, their limited long-range dependency modeling constrains performance on complex canopy structures. Transformer architectures promise to address these limitations through self-attention mechanisms, yet their effectiveness remains unclear. This survey evaluates whether transformers meet three critical requirements: superior accuracy, cross-environment generalization, and data-efficient training. We synthesize 63 papers (2017-2025) documenting 550% growth, analyzing five architectural paradigms spanning pure Vision Transformers, CNN-transformer hybrids, hierarchical variants, Foundation Models, and Vision-Language Models across multiple continents and sensor modalities. Transformers achieve +2.0% to +5.5% median gains over CNN baselines depending on architecture, while Foundation Models with parameter-efficient fine-tuning match full fine-tuning using <1,000 samples. However, critical gaps persist: 28% average performance degradation in cross-environment transfer and 72% of studies lacking full reproducibility. We provide actionable deployment recommendations, identify research priorities including multi-biome benchmarking and domain adaptation, and release comprehensive supplementary materials.
+> **Abstract**: Global sustainability commitments under the Paris Agreement and United Nations Sustainable Development Goal 15 require scalable tree-level monitoring to quantify forest carbon stocks and ecosystem services. While CNNs established strong baselines, their limited long-range dependency modeling constrains performance on complex canopy structures. Transformer architectures promise to address these limitations through self-attention mechanisms, yet their effectiveness remains unclear. This survey evaluates whether transformers meet three critical requirements: superior accuracy, cross-environment generalization, and data-efficient training. We synthesize 63 papers (2017-2025) documenting 550% growth, analyzing five architectural paradigms spanning pure Vision Transformers, CNN-transformer hybrids, hierarchical variants, Foundation Models, and Vision-Language Models across multiple continents and sensor modalities. Transformers achieve +2.6% to +5.5% median gains over CNN baselines depending on architecture, while Foundation Models with parameter-efficient fine-tuning match full fine-tuning using <1,000 samples. However, critical gaps persist: 28% average performance degradation in cross-environment transfer and 72% of studies lacking full reproducibility. We provide actionable deployment recommendations, identify research priorities including multi-biome benchmarking and domain adaptation, and release comprehensive supplementary materials.
 
 ## Table of Contents
 
@@ -55,7 +55,7 @@ This repository serves as the comprehensive resource index for our systematic re
   <img src="figures/timeline.jpg" width="700" alt="Publication Timeline">
 </p>
 
-**Figure 3**: Timeline of transformer-based tree extraction publications (2020-2025), showing 525% growth.
+**Figure 3**: Timeline of transformer-based tree extraction publications (2022-2025), showing 550% growth.
 
 ### Geographic Distribution
 <p align="center">
@@ -71,20 +71,55 @@ This repository serves as the comprehensive resource index for our systematic re
 
 **Figure 5**: Overview of annotation types, computer vision tasks, and sensor modalities in the reviewed literature.
 
+### Data Acquisition Landscape
+<p align="center">
+  <img src="figures/acquisition.jpg" width="700" alt="Data Acquisition">
+</p>
+
+**Figure 6**: Sensor modality distribution and platform-sensor configurations across 63 studies.
+
+### Architecture Pipelines
+<p align="center">
+  <img src="figures/architecture_summary.jpg" width="700" alt="Architecture Summary">
+</p>
+
+**Figure 7**: Conceptual processing pipelines for five transformer architecture categories.
+
+### Performance Analysis (RQ1)
+<p align="center">
+  <img src="figures/rq1_performance.jpg" width="700" alt="Performance Analysis">
+</p>
+
+**Figure 8**: Performance gain distribution and efficiency trade-offs across transformer architectures.
+
+### Generalization Analysis (RQ2)
+<p align="center">
+  <img src="figures/rq2_generalization.jpg" width="700" alt="Generalization Analysis">
+</p>
+
+**Figure 9**: Cross-environment transfer performance and factors affecting generalization.
+
+### Training Strategy Analysis (RQ3)
+<p align="center">
+  <img src="figures/rq3_training.jpg" width="700" alt="Training Strategy">
+</p>
+
+**Figure 10**: Learning strategy distribution and label efficiency by model type.
+
 </details>
 
 ## 📝 Literature Overview
 
-- **Research Papers**: 63 studies
+- **Research Papers**: 63 studies (2017-2025)
 - **Foundational Architectures**: 14 papers
 - **Related Surveys**: 15 reviews
-- **Dataset Papers**: 9 benchmarks
-- **Time Period**: 2017-2025
-- **Geographic Coverage**: Global (6 continents represented)
-- **Architecture Types**: Foundation Models, Vision-Language Models, CNN-Transformer Hybrids, Hierarchical ViTs, Pure ViTs
-- **Data Modalities**: RGB, Multispectral, Hyperspectral, LiDAR, SAR, Multi-modal fusion
+- **Dataset Papers**: 10 benchmarks
+- **Policy Papers**: 5 documents
+- **Geographic Coverage**: 27 countries across 6 continents
+- **Architecture Types**: Pure ViTs (6), Hierarchical ViTs (8), CNN-Transformer Hybrids (31), Foundation Models (12), Vision-Language Models (4)
+- **Data Modalities**: RGB (42.7%), Multispectral (28.2%), LiDAR (16.4%), SAR (8.2%), Hyperspectral (3.6%), Thermal (0.9%)
 - **Tasks**: Detection, Semantic Segmentation, Instance Segmentation, Classification, Height/Biomass Estimation
-- **Last Updated**: December 2025
+- **Last Updated**: January 2026
 
 *For detailed categorization and systematic analysis, refer to our published literature review paper.*
 
@@ -98,7 +133,7 @@ This repository serves as the comprehensive resource index for our systematic re
 
 ## 📚 Research Papers
 
-<h3><em>🔷 Pure Vision Transformers (5 papers)</em></h3>
+<h3><em>🔷 Pure Vision Transformers (6 papers)</em></h3>
 
 <details>
 <summary><b>[2025] Integrating Hyperspectral Images and LiDAR Data Using Vision Transformers for Enhanced Vegetation Classification</b></summary>
@@ -150,7 +185,7 @@ This repository serves as the comprehensive resource index for our systematic re
 
 </details>
 
-<h3><em>🔶 CNN-Transformer Hybrids (36 papers)</em></h3>
+<h3><em>🔶 CNN-Transformer Hybrids (31 papers)</em></h3>
 
 <details>
 <summary><b>[2025] BARE: Boundary-Aware with Resolution Enhancement for Tree Crown Delineation</b></summary>
@@ -480,7 +515,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/9765982)
 </details>
 
-<h3><em>🔷 Hierarchical Vision Transformers (4 papers)</em></h3>
+<h3><em>🔷 Hierarchical Vision Transformers (8 papers)</em></h3>
 
 <details>
 <summary><b>[2025] A Comparative Analysis of Deep Learning Methods for Ghaf Tree Detection and Segmentation</b></summary>
@@ -518,7 +553,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Links**: 📖 [Paper](https://www.mdpi.com/2078-2489/16/9/741)
 </details>
 
-<h3><em>🟢 Foundation Models (14 papers)</em></h3>
+<h3><em>🟢 Foundation Models (12 papers)</em></h3>
 
 <details>
 <summary><b>[2025] FoMo-Net: Multi-Modal, Multi-Scale and Multi-Task Foundation Models for Forest Monitoring</b></summary>
@@ -1179,12 +1214,12 @@ These policy documents and frameworks drive the demand for scalable tree monitor
 If you use this repository or find it helpful for your research, please cite our systematic review:
 
 ```bibtex
-@article{wilaiwongsakul2025transformer,
+@article{wilaiwongsakul2026transformer,
   title={Transformer-Based Tree Extraction from Remote Sensing Imagery: A Systematic Review},
   author={Wilaiwongsakul, Attavit and Liang, Bin and Zheng, Bryan and Chen, Fang},
-  journal={[Journal Name]},
-  year={2025},
-  note={Supplementary repository: \url{https://github.com/attavit14203638/transformer-tree-survey}}
+  journal={ISPRS Journal of Photogrammetry and Remote Sensing},
+  year={2026},
+  note={Under Review. Supplementary repository: \url{https://github.com/attavit14203638/transformer-tree-survey}}
 }
 ```
 
@@ -1197,9 +1232,9 @@ This repository serves as:
 
 ### Updates
 
-- **Last Updated**: December 2025
+- **Last Updated**: January 2026
 - **Papers Covered**: 63 studies (2017-2025)
-- **Coverage**: Foundation Models, Vision-Language Models, CNN-Transformer Hybrids, Hierarchical ViTs, Pure ViTs
+- **Architecture Coverage**: Pure ViTs (6), Hierarchical ViTs (8), CNN-Transformer Hybrids (31), Foundation Models (12), Vision-Language Models (4)
 
 ### Contact
 
