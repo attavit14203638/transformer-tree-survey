@@ -729,7 +729,7 @@ These seminal papers introduced the core transformer architectures adapted for t
 - **Authors**: Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.N., Kaiser, Ł., Polosukhin, I.
 - **Venue**: NeurIPS 2017
 - **Key Contribution**: Introduced the transformer architecture with self-attention mechanism
-- **Links**: 📖 [Paper](https://arxiv.org/abs/1706.03762)
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.1706.03762)
 </details>
 
 <h3><em>🔵 Vision Transformers</em></h3>
@@ -740,7 +740,7 @@ These seminal papers introduced the core transformer architectures adapted for t
 - **Authors**: Ding, M., Xiao, B., Codella, N., Luo, P., Wang, J., Yuan, L.
 - **Venue**: ECCV 2022
 - **Key Contribution**: Combines spatial and channel attention for improved representation
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2204.03645) | 💻 [Code](https://github.com/dingmyu/davit)
+- **Links**: 📖 [Paper](https://doi.org/10.1007/978-3-031-20053-3_5) | 💻 [Code](https://github.com/dingmyu/davit)
 </details>
 
 <details>
@@ -749,16 +749,16 @@ These seminal papers introduced the core transformer architectures adapted for t
 - **Authors**: Liu, Z., Lin, Y., Cao, Y., Hu, H., Wei, Y., Zhang, Z., Lin, S., Guo, B.
 - **Venue**: ICCV 2021
 - **Key Contribution**: Hierarchical transformer with shifted window attention for efficient multi-scale processing
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2103.14030) | 💻 [Code](https://github.com/microsoft/Swin-Transformer)
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2103.14030) | 💻 [Code](https://github.com/microsoft/Swin-Transformer)
 </details>
 
 <details>
-<summary><b>[2021] Pyramid Vision Transformer: A Versatile Backbone for Dense Prediction</b></summary>
+<summary><b>[2021] Pyramid Vision Transformer: A Versatile Backbone for Dense Prediction without Convolutions</b></summary>
 
 - **Authors**: Wang, W., Xie, E., Li, X., Fan, D.P., Song, K., Liang, D., Lu, T., Luo, P., Shao, L.
 - **Venue**: ICCV 2021
 - **Key Contribution**: Multi-scale pyramid structure for dense prediction tasks
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2102.12122) | 💻 [Code](https://github.com/whai362/PVT)
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2102.12122) | 💻 [Code](https://github.com/whai362/PVT)
 </details>
 
 <details>
@@ -767,7 +767,7 @@ These seminal papers introduced the core transformer architectures adapted for t
 - **Authors**: Chu, X., Tian, Z., Wang, Y., Zhang, B., Ren, H., Wei, X., Xia, H., Shen, C.
 - **Venue**: NeurIPS 2021
 - **Key Contribution**: Spatially separable self-attention for efficient vision transformers
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2104.13840) | 💻 [Code](https://github.com/Meituan-AutoML/Twins)
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2104.13840) | 💻 [Code](https://github.com/Meituan-AutoML/Twins)
 </details>
 
 <details>
@@ -776,18 +776,18 @@ These seminal papers introduced the core transformer architectures adapted for t
 - **Authors**: Dosovitskiy, A., Beyer, L., Kolesnikov, A., Weissenborn, D., Zhai, X., et al.
 - **Venue**: ICLR 2021
 - **Key Contribution**: First pure transformer architecture for image classification
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2010.11929) | 💻 [Code](https://github.com/google-research/vision_transformer)
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2010.11929) | 💻 [Code](https://github.com/google-research/vision_transformer)
 </details>
 
 <h3><em>🔵 Segmentation Architectures</em></h3>
 
 <details>
-<summary><b>[2022] Mask2Former: Masked-Attention Mask Transformer for Universal Image Segmentation</b></summary>
+<summary><b>[2022] Mask2Former: Masked-attention Mask Transformer for Universal Image Segmentation</b></summary>
 
 - **Authors**: Cheng, B., Misra, I., Schwing, A.G., Kirillov, A., Girdhar, R.
 - **Venue**: CVPR 2022
 - **Key Contribution**: Universal architecture for semantic, instance, and panoptic segmentation
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2112.01527) | 💻 [Code](https://github.com/facebookresearch/Mask2Former)
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2112.01527) | 💻 [Code](https://github.com/facebookresearch/Mask2Former)
 </details>
 
 <details>
@@ -796,7 +796,7 @@ These seminal papers introduced the core transformer architectures adapted for t
 - **Authors**: Li, K., Wang, Y., Zhang, J., Gao, P., Song, G., Liu, Y., Li, H., Qiao, Y.
 - **Venue**: IEEE TPAMI
 - **Key Contribution**: Unified convolution and self-attention in single transformer block
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2201.09450) | 💻 [Code](https://github.com/Sense-X/UniFormer)
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2201.09450) | 💻 [Code](https://github.com/Sense-X/UniFormer)
 </details>
 
 <details>
@@ -805,7 +805,7 @@ These seminal papers introduced the core transformer architectures adapted for t
 - **Authors**: Xie, E., Wang, W., Yu, Z., Anandkumar, A., Alvarez, J.M., Luo, P.
 - **Venue**: NeurIPS 2021
 - **Key Contribution**: Lightweight transformer encoder with MLP decoder for efficient segmentation
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2105.15203) | 💻 [Code](https://github.com/NVlabs/SegFormer)
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2105.15203) | 💻 [Code](https://github.com/NVlabs/SegFormer)
 </details>
 
 <details>
@@ -814,7 +814,7 @@ These seminal papers introduced the core transformer architectures adapted for t
 - **Authors**: Zheng, S., Lu, J., Zhao, H., Zhu, X., Luo, Z., Wang, Y., Fu, Y., Feng, J., Xiang, T., Torr, P.H.
 - **Venue**: CVPR 2021
 - **Key Contribution**: Pure transformer encoder for semantic segmentation
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2012.15840) | 💻 [Code](https://github.com/fudan-zvg/SETR)
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2012.15840) | 💻 [Code](https://github.com/fudan-zvg/SETR)
 </details>
 
 <details>
@@ -823,7 +823,7 @@ These seminal papers introduced the core transformer architectures adapted for t
 - **Authors**: Chen, J., Lu, Y., Yu, Q., Luo, X., Adeli, E., Wang, Y., Lu, L., Yuille, A.L., Zhou, Y.
 - **Venue**: arXiv preprint
 - **Key Contribution**: Hybrid CNN-Transformer for U-Net style segmentation
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2102.04306) | 💻 [Code](https://github.com/Beckschen/TransUNet)
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2102.04306) | 💻 [Code](https://github.com/Beckschen/TransUNet)
 </details>
 
 <h3><em>🔵 Detection & Foundation Models</em></h3>
@@ -834,7 +834,7 @@ These seminal papers introduced the core transformer architectures adapted for t
 - **Authors**: Liu, S., Zeng, Z., Ren, T., Li, F., Zhang, H., Yang, J., et al.
 - **Venue**: ECCV 2024
 - **Key Contribution**: Open-set detection with language grounding
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2303.05499) | 💻 [Code](https://github.com/IDEA-Research/GroundingDINO)
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2303.05499) | 💻 [Code](https://github.com/IDEA-Research/GroundingDINO)
 </details>
 
 <details>
@@ -843,7 +843,7 @@ These seminal papers introduced the core transformer architectures adapted for t
 - **Authors**: Kirillov, A., Mintun, E., Ravi, N., Mao, H., Rolland, C., Gustafson, L., et al.
 - **Venue**: ICCV 2023
 - **Key Contribution**: Promptable foundation model for image segmentation
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2304.02643) | 💻 [Code](https://github.com/facebookresearch/segment-anything)
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2304.02643) | 💻 [Code](https://github.com/facebookresearch/segment-anything)
 </details>
 
 <details>
@@ -852,7 +852,7 @@ These seminal papers introduced the core transformer architectures adapted for t
 - **Authors**: Radford, A., Kim, J.W., Hallacy, C., Ramesh, A., Goh, G., et al.
 - **Venue**: ICML 2021
 - **Key Contribution**: Vision-language pre-training enabling zero-shot transfer
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2103.00020) | 💻 [Code](https://github.com/openai/CLIP)
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2103.00020) | 💻 [Code](https://github.com/openai/CLIP)
 </details>
 
 <details>
@@ -869,11 +869,11 @@ These seminal papers introduced the core transformer architectures adapted for t
 <h3><em>🌲 Tree Detection & Forest Monitoring Reviews</em></h3>
 
 <details>
-<summary><b>[2025] A Review of Individual Tree Crown Detection and Delineation From Optical Remote Sensing Images</b></summary>
+<summary><b>[2025] A Review of Individual Tree Crown Detection and Delineation From Optical Remote Sensing Images: Current Progress and Future</b></summary>
 
 - **Authors**: Zheng, J., Yuan, S., Li, W., Fu, H., Yu, L., Huang, J.
 - **Venue**: IEEE Geoscience and Remote Sensing Magazine
-- **Links**: 📖 [Paper](https://doi.org/10.1109/MGRS.2024.3476589)
+- **Links**: 📖 [Paper](https://doi.org/10.1109/MGRS.2024.3479871)
 </details>
 
 <details>
@@ -938,12 +938,12 @@ These seminal papers introduced the core transformer architectures adapted for t
 <summary><b>[2025] Vision Foundation Models in Remote Sensing: A Survey</b></summary>
 
 - **Authors**: Lu, S., Guo, J., Zimmer-Dauphinee, J.R., Nieusma, J.M., Wang, X., Wernke, S.A., Huo, Y.
-- **Venue**: IEEE Geoscience and Remote Sensing Magazine
-- **Links**: 📖 [Paper](https://doi.org/10.1109/MGRS.2024.3505605)
+- **Venue**: IEEE Geoscience and Remote Sensing Magazine, vol. 13, no. 3, pp. 190-215
+- **Links**: 📖 [Paper](https://doi.org/10.1109/MGRS.2025.3541952)
 </details>
 
 <details>
-<summary><b>[2025] Advancements in Vision-Language Models for Remote Sensing: Datasets, Capabilities, and Enhancement Techniques</b></summary>
+<summary><b>[2025] Advancements in Vision–Language Models for Remote Sensing: Datasets, Capabilities, and Enhancement Techniques</b></summary>
 
 - **Authors**: Tao, L., Zhang, H., Jing, H., Liu, Y., Yan, D., Wei, G., Xue, X.
 - **Venue**: Remote Sensing
@@ -962,8 +962,8 @@ These seminal papers introduced the core transformer architectures adapted for t
 <summary><b>[2024] Transformer-Based Visual Segmentation: A Survey</b></summary>
 
 - **Authors**: Li, X., Ding, H., Yuan, H., Zhang, W., Pang, J., Cheng, G., Chen, K., Liu, Z., Loy, C.C.
-- **Venue**: IEEE TPAMI
-- **Links**: 📖 [Paper](https://doi.org/10.1109/TPAMI.2024.3376094)
+- **Venue**: IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 46, no. 12, pp. 10138-10163
+- **Links**: 📖 [Paper](https://doi.org/10.1109/TPAMI.2024.3434373)
 </details>
 
 <details>
@@ -978,8 +978,8 @@ These seminal papers introduced the core transformer architectures adapted for t
 <summary><b>[2023] A Survey of Visual Transformers</b></summary>
 
 - **Authors**: Liu, Y., Zhang, Y., Wang, Y., Hou, F., Yuan, J., Tian, J., Zhang, Y., Shi, Z., Fan, J., He, Z.
-- **Venue**: IEEE TNNLS
-- **Links**: 📖 [Paper](https://doi.org/10.1109/TNNLS.2022.3152246)
+- **Venue**: IEEE Transactions on Neural Networks and Learning Systems, vol. 35, no. 6, pp. 7478-7498
+- **Links**: 📖 [Paper](https://doi.org/10.1109/TNNLS.2022.3227717)
 </details>
 
 <details>
