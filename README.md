@@ -476,39 +476,39 @@ This repository serves as the comprehensive resource index for our systematic re
 <h3><em>🔷 Hierarchical Vision Transformers (8 papers)</em></h3>
 
 <details>
-<summary><b>[2025] A Comparative Analysis of Deep Learning Methods for Ghaf Tree Detection and Segmentation</b></summary>
+<summary><b>[2025] A Comparative Analysis of Deep Learning Methods for Ghaf Tree Detection and Segmentation from UAV-based Images</b></summary>
 
-- **Authors**: Shanableh, H., Gibril, M.B.A., Mansour, A., Dixit, A., Al-Ruzouq, R., et al.
-- **Venue**: ISPRS Annals
+- **Authors**: Shanableh, H., Gibril, M.B.A., Mansour, A., Dixit, A., Al-Ruzouq, R., Hammouri, N., Lamghari, F., Ahmed, S.M., Jena, R., Mohamed, T., Almarzouqi, M.A., Alafayfeh, N.S., Ghebremeskel, S.Z.
+- **Venue**: ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences
 - **Key Contribution**: Comprehensive comparison including Swin variants for Ghaf tree mapping
-- **Links**: 📖 [Paper](https://isprs-annals.copernicus.org/articles/X-1-2025/805/2025/)
+- **Links**: 📖 [Paper](https://doi.org/10.5194/isprs-annals-X-G-2025-805-2025)
 </details>
 
 <details>
-<summary><b>[2025] Efficient Large-Scale Mapping of Acacia Tortilis Trees Using Transformer-Based Semantic Segmentation</b></summary>
+<summary><b>[2025] Efficient Large-Scale Mapping of Acacia Tortilis Trees Using UAV-based Images and Transformer-based Semantic Segmentation Architectures</b></summary>
 
-- **Authors**: Gibril, M.B.A., Shanableh, A., Al-Ruzouq, R., Hammouri, N., et al.
-- **Venue**: ISPRS Annals
+- **Authors**: Gibril, M.B.A., Shanableh, A., Al-Ruzouq, R., Hammouri, N., Lamghari, F., Ahmed, S.M., Mansour, A., Jena, R., Shanableh, H., Almarzouqi, M.A., Alafayfeh, N.S., Ghebremeskel, S.Z.
+- **Venue**: ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences
 - **Key Contribution**: Efficient hierarchical transformer for arid region tree mapping
-- **Links**: 📖 [Paper](https://isprs-annals.copernicus.org/articles/X-1-2025/285/2025/)
+- **Links**: 📖 [Paper](https://doi.org/10.5194/isprs-annals-X-G-2025-285-2025)
 </details>
 
 <details>
-<summary><b>[2025] Vision Transformer-Based Unhealthy Tree Crown Detection and Evaluation of Annotation Uncertainty</b></summary>
+<summary><b>[2025] Vision Transformer-Based Unhealthy Tree Crown Detection in Mixed Northeastern US Forests and Evaluation of Annotation Uncertainty</b></summary>
 
 - **Authors**: Joshi, D., Witharana, C.
 - **Venue**: Remote Sensing
 - **Key Contribution**: First comprehensive ViT vs CNN comparison for forest health with uncertainty quantification
-- **Links**: 📖 [Paper](https://www.mdpi.com/2072-4292/17/6/1066)
+- **Links**: 📖 [Paper](https://doi.org/10.3390/rs17061066)
 </details>
 
 <details>
-<summary><b>[2025] Transformer-Based Semantic Segmentation of Japanese Knotweed Using Twins-SVT</b></summary>
+<summary><b>[2025] Transformer-Based Semantic Segmentation of Japanese Knotweed in High-Resolution UAV Imagery Using Twins-SVT</b></summary>
 
-- **Authors**: Valicharla, S.K., Karimzadeh, R., Li, X., Park, Y.L.
+- **Authors**: Valicharla, S.K., Karimzadeh, R., Li, X., Park, Y.-L.
 - **Venue**: Information
 - **Key Contribution**: Twins-SVT architecture for invasive species detection
-- **Links**: 📖 [Paper](https://www.mdpi.com/2078-2489/16/9/741)
+- **Links**: 📖 [Paper](https://doi.org/10.3390/info16090741)
 </details>
 
 <details>
@@ -516,46 +516,46 @@ This repository serves as the comprehensive resource index for our systematic re
 
 - **Authors**: Qin, X., Wang, D., Zhang, J., Wang, F., Su, X., Du, B., Zhang, L.
 - **Venue**: arXiv preprint
-- **Key Contribution**: Hierarchical spatiotemporal transformer for satellite time series with forest monitoring applications
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2505.08723) | 💻 [Code](https://github.com/MiliLab/TiMo)
+- **Key Contribution**: Hierarchical vision transformer foundation model with spatiotemporal gyroscope attention mechanism for SITS analysis
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2505.08723) | 💻 [Code](https://github.com/MiliLab/TiMo)
 </details>
 
 <details>
 <summary><b>[2025] Sustainable Forestry: AI-Driven Forest Health Diagnostics using Swin Transformer</b></summary>
 
 - **Authors**: Begum, S.R., Mishra, V., Saha, D.
-- **Venue**: AMATHE 2025
-- **Key Contribution**: Swin-based forest health assessment system
-- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/11080823)
+- **Venue**: 2025 International Conference on Advances in Modern Age Technologies for Health and Engineering Science (AMATHE)
+- **Key Contribution**: Swin Transformer for multi-class tree health classification from UAV imagery
+- **Links**: 📖 [Paper](https://doi.org/10.1109/AMATHE65477.2025.11080823)
 </details>
 
 <details>
-<summary><b>[2024] Spectral-Spatial Transformer-Based Semantic Segmentation for Large-Scale Mapping of Individual Date Palm Trees</b></summary>
+<summary><b>[2024] Spectral-Spatial Transformer-Based Semantic Segmentation for Large-Scale Mapping of Individual Date Palm Trees Using Very High-Resolution Satellite Data</b></summary>
 
-- **Authors**: Al-Ruzouq, R., Gibril, M.B.A., Shanableh, A., Bolcek, J., et al.
+- **Authors**: Al-Ruzouq, R., Gibril, M.B.A., Shanableh, A., Bolcek, J., Lamghari, F., Hammour, N.A., El-Keblawy, A., Jena, R.
 - **Venue**: Ecological Indicators
-- **Key Contribution**: Spectral-spatial transformer for individual tree mapping from WorldView-3
-- **Links**: 📖 [Paper](https://www.sciencedirect.com/science/article/pii/S1470160X24005673)
+- **Key Contribution**: Comprehensive evaluation of vision transformer architectures for date palm mapping from WorldView-3 multispectral data
+- **Links**: 📖 [Paper](https://doi.org/10.1016/j.ecolind.2024.112110)
 </details>
 
 <details>
-<summary><b>[2023] Large-Scale Date Palm Tree Segmentation from Multiscale UAV-Based and Aerial Images</b></summary>
+<summary><b>[2023] Large-Scale Date Palm Tree Segmentation from Multiscale UAV-Based and Aerial Images Using Deep Vision Transformers</b></summary>
 
 - **Authors**: Gibril, M.B.A., Shafri, H.Z.M., Al-Ruzouq, R., Shanableh, A., Nahas, F., Al Mansoori, S.
 - **Venue**: Drones
 - **Key Contribution**: Deep vision transformers for multi-scale date palm segmentation
-- **Links**: 📖 [Paper](https://www.mdpi.com/2504-446X/7/2/93)
+- **Links**: 📖 [Paper](https://doi.org/10.3390/drones7020093)
 </details>
 
 <h3><em>🟢 Foundation Models (12 papers)</em></h3>
 
 <details>
-<summary><b>[2025] FoMo-Net: Multi-Modal, Multi-Scale and Multi-Task Foundation Models for Forest Monitoring</b></summary>
+<summary><b>[2025] FoMo: Multi-Modal, Multi-Scale and Multi-Task Remote Sensing Foundation Models for Forest Monitoring</b></summary>
 
 - **Authors**: Bountos, N.I., Ouaknine, A., Papoutsis, I., Rolnick, D.
-- **Venue**: AAAI Conference on Artificial Intelligence
+- **Venue**: Proceedings of the AAAI Conference on Artificial Intelligence
 - **Key Contribution**: First unified foundation model for forest monitoring with sensor-agnostic pre-training across 36 spectral bands
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2312.10114) | 💻 📊 [Code & Dataset](https://github.com/RolnickLab/FoMo-Bench)
+- **Links**: 📖 [Paper](https://doi.org/10.1609/aaai.v39i27.35002) | 💻 📊 [Code & Dataset](https://github.com/RolnickLab/FoMo-Bench)
 </details>
 
 <details>
@@ -563,17 +563,17 @@ This repository serves as the comprehensive resource index for our systematic re
 
 - **Authors**: Sadel, J., Tulczyjew, L., Wijata, A.M., Przeliorz, M., Nalepa, J.
 - **Venue**: IEEE Geoscience and Remote Sensing Letters
-- **Key Contribution**: Foundation model application for forest change detection using Sentinel-2
-- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/10946165)
+- **Key Contribution**: End-to-end deep learning pipeline for forest change detection from Sentinel-2 multispectral time series using fine-tuned foundation models
+- **Links**: 📖 [Paper](https://doi.org/10.1109/LGRS.2025.3556601)
 </details>
 
 <details>
-<summary><b>[2025] Bringing SAM to New Heights: Leveraging Elevation Data for Tree Crown Segmentation</b></summary>
+<summary><b>[2025] Bringing SAM to New Heights: Leveraging Elevation Data for Tree Crown Segmentation from Drone Imagery</b></summary>
 
 - **Authors**: Teng, M., Ouaknine, A., Laliberté, E., Bengio, Y., Rolnick, D., Larochelle, H.
 - **Venue**: arXiv preprint
 - **Key Contribution**: SAM adaptation with elevation data fusion for improved tree crown segmentation
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2506.04970)
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2506.04970)
 </details>
 
 <details>
@@ -582,7 +582,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Teng, M., Ouaknine, A., Laliberté, E., Bengio, Y., Rolnick, D., Larochelle, H.
 - **Venue**: arXiv preprint
 - **Key Contribution**: Comprehensive evaluation of SAM for tree crown instance segmentation
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2503.20199)
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2503.20199)
 </details>
 
 <details>
@@ -591,34 +591,34 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Chen, M., Russell, D., Pallavoor, A., Young, D., Wu, J.
 - **Venue**: arXiv preprint
 - **Key Contribution**: Zero-shot tree detection using foundation models without task-specific training
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2506.03114)
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2506.03114)
 </details>
 
 <details>
-<summary><b>[2025] Parameter-Efficient Fine-Tuning of Vision Foundation Model for Forest Floor Segmentation</b></summary>
+<summary><b>[2025] Parameter-Efficient Fine-Tuning of Vision Foundation Model for Forest Floor Segmentation from UAV Imagery</b></summary>
 
 - **Authors**: Wasil, M., Drak, A., Penfold, B., Scarton, L., Johenneken, M., Asteroth, A., Houben, S.
 - **Venue**: arXiv preprint
 - **Key Contribution**: PEFT methods for adapting foundation models to forest floor segmentation
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2505.08932)
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2505.08932)
 </details>
 
 <details>
-<summary><b>[2025] Parameter-Efficient Fine-Tuning for Individual Tree Crown Detection and Species Classification</b></summary>
+<summary><b>[2025] Parameter-Efficient Fine-Tuning for Individual Tree Crown Detection and Species Classification Using UAV-Acquired Imagery</b></summary>
 
 - **Authors**: Zhang, J., Lei, F., Fan, X.
 - **Venue**: Remote Sensing
 - **Key Contribution**: PEFT techniques for efficient tree crown detection and species identification
-- **Links**: 📖 [Paper](https://www.mdpi.com/2072-4292/17/7/1272)
+- **Links**: 📖 [Paper](https://doi.org/10.3390/rs17071272)
 </details>
 
 <details>
 <summary><b>[2024] Leveraging Prompt-Based Segmentation Models and Large Dataset to Improve Detection of Trees</b></summary>
 
 - **Authors**: Grondin, V., Massicotte, P., Gaha, M., Pomerleau, F., Giguère, P.
-- **Venue**: Conference on Robots and Vision
+- **Venue**: Conference on Robots and Vision (CRV 2024)
 - **Key Contribution**: SAM-based prompt segmentation for tree detection with large-scale training
-- **Links**: 📖 [Paper](https://www.pubpub.org/pub/crv2024-leveraging-prompt-based)
+- **Links**: 📖 [Paper](https://assets.pubpub.org/ghvn8jdt/it4-01715796875987.pdf) | 💻 📊 [Code & Dataset](https://github.com/norlab-ulaval/PercepTreeV1)
 </details>
 
 <details>
@@ -627,7 +627,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Sachdeva, S., Lopez, I., Biradar, C., Lobell, D.
 - **Venue**: ICLR 2024
 - **Key Contribution**: Benchmark for evaluating foundation model generalization across geographic domains
-- **Links**: 📖 [Paper](https://openreview.net/forum?id=GnLRdCdNUp)
+- **Links**: 📖 [Paper](https://ml-for-rs.github.io/iclr2024/camera_ready/papers/69.pdf)
 </details>
 
 <details>
@@ -636,25 +636,25 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Liu, H., Mou, C., Yuan, J., Chen, Z., Zhong, L., Cui, X.
 - **Venue**: Remote Sensing
 - **Key Contribution**: Foundation model application for urban forest biomass estimation from LiDAR
-- **Links**: 📖 [Paper](https://www.mdpi.com/2072-4292/16/9/1643)
+- **Links**: 📖 [Paper](https://doi.org/10.3390/rs16091643)
 </details>
 
 <details>
-<summary><b>[2024] TreeSeg: A Toolbox for Fully Automated Tree Crown Segmentation</b></summary>
+<summary><b>[2024] TreeSeg—A Toolbox for Fully Automated Tree Crown Segmentation Based on High-Resolution Multispectral UAV Data</b></summary>
 
 - **Authors**: Speckenwirth, S., Brandmeier, M., Paczkowski, S.
 - **Venue**: Remote Sensing
 - **Key Contribution**: End-to-end toolbox combining SAM with multispectral UAV data for tree segmentation
-- **Links**: 📖 [Paper](https://www.mdpi.com/2072-4292/16/19/3660)
+- **Links**: 📖 [Paper](https://doi.org/10.3390/rs16193660)
 </details>
 
 <details>
-<summary><b>[2024] Fine-Tuning of Geospatial Foundation Models for Aboveground Biomass Estimation</b></summary>
+<summary><b>[2024] Fine-tuning of Geospatial Foundation Models for Aboveground Biomass Estimation</b></summary>
 
-- **Authors**: Muszynski, M., Klein, L., Da Silva, A.F., et al.
+- **Authors**: Muszynski, M., Klein, L., da Silva, A.F., Atluri, A.P., Gomes, C., Szwarcman, D., Singh, G., Gu, K., Zortea, M., Simumba, N., Fraccaro, P., Singh, S., Meliksetian, S., Watson, C., Kimura, D., Srinivasan, H.
 - **Venue**: arXiv preprint
 - **Key Contribution**: Evaluation of geospatial foundation model fine-tuning for biomass estimation
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2406.19888)
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2406.19888)
 </details>
 
 <h3><em>🟣 Vision-Language Models (4 papers)</em></h3>
@@ -663,18 +663,18 @@ This repository serves as the comprehensive resource index for our systematic re
 <summary><b>[2025] EarthDial: Turning Multi-Sensory Earth Observations to Interactive Dialogues</b></summary>
 
 - **Authors**: Soni, S., Dudhane, A., Debary, H., Fiaz, M., Munir, M.A., Danish, M.S., et al.
-- **Venue**: CVPR 2025
+- **Venue**: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025
 - **Key Contribution**: Multi-sensory VLM for interactive earth observation analysis including forest monitoring
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2412.15190) | 💻 [Code](https://github.com/hiyamdebary/EarthDial)
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2412.15190) | 💻 [Code](https://github.com/hiyamdebary/EarthDial)
 </details>
 
 <details>
-<summary><b>[2025] GeoLangBind: Unifying Earth Observation with Agglomerative Vision-Language Foundation Models (formerly DOFA-CLIP)</b></summary>
+<summary><b>[2025] DOFA-CLIP: Multimodal Vision-Language Foundation Models for Earth Observation</b></summary>
 
-- **Authors**: Xiong, Z., Wang, Y., Yu, W., Stewart, A.J., Zhao, J., Lehmann, N., et al.
+- **Authors**: Xiong, Z., Wang, Y., Yu, W., Stewart, A.J., Zhao, J., Lehmann, N., Dujardin, T., Yuan, Z., Ghamisi, P., Zhu, X.X.
 - **Venue**: arXiv preprint
 - **Key Contribution**: Unified vision-language foundation model for diverse earth observation tasks
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2503.06312) | 💻 [Code](https://github.com/xiong-zhitong/DOFA-CLIP)
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2503.06312) | 💻 [Code](https://github.com/xiong-zhitong/DOFA-CLIP)
 </details>
 
 <details>
@@ -683,16 +683,16 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Xue, X., Wei, G., Chen, H., Zhang, H., Lin, F., Shen, C., Zhu, X.X.
 - **Venue**: arXiv preprint
 - **Key Contribution**: VLM adaptation for regression tasks in remote sensing including forest parameters
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2412.16583)
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2412.16583)
 </details>
 
 <details>
-<summary><b>[2023] Tree-GPT: Modular Large Language Model Expert System for Forest Remote Sensing Image Understanding</b></summary>
+<summary><b>[2023] Tree-GPT: Modular Large Language Model Expert System for Forest Remote Sensing Image Understanding and Interactive Analysis</b></summary>
 
 - **Authors**: Du, S., Tang, S., Wang, W., Li, X., Guo, R.
 - **Venue**: arXiv preprint
 - **Key Contribution**: First LLM-based expert system specifically designed for forest remote sensing analysis
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2310.04698)
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2310.04698)
 </details>
 
 <h3><em>⚪ Comparative Studies (2 papers)</em></h3>
@@ -704,17 +704,17 @@ This repository serves as the comprehensive resource index for our systematic re
 
 - **Authors**: Jia, J., Kang, J., Chen, L., Gao, X., Zhang, B., Yang, G.
 - **Venue**: Remote Sensing
-- **Key Contribution**: Comprehensive benchmark comparing transformer-based (DepthAnything, Metric3D) vs CNN-based depth estimation for forests; demonstrates 54-94% improvement with transformer architectures
-- **Links**: 📖 [Paper](https://www.mdpi.com/2072-4292/17/4/717)
+- **Key Contribution**: Comprehensive benchmark comparing transformer-based vs CNN-based depth estimation for forests
+- **Links**: 📖 [Paper](https://doi.org/10.3390/rs17040717)
 </details>
 
 <details>
-<summary><b>[2023] More Appropriate DenseNetBL Classifier for Small Sample Tree Species Classification</b></summary>
+<summary><b>[2023] More Appropriate DenseNetBL Classifier for Small Sample Tree Species Classification Using UAV-Based RGB Imagery</b></summary>
 
 - **Authors**: Wang, N., Pu, T., Zhang, Y., Liu, Y., Zhang, Z.
 - **Venue**: Heliyon
-- **Key Contribution**: Counter-example demonstrating CNN advantage over transformers (ViT, Swin) on small samples (<1000 images); DenseNetBL achieves 0.901 OA vs ViT 0.767
-- **Links**: 📖 [Paper](https://www.sciencedirect.com/science/article/pii/S2405844023078294)
+- **Key Contribution**: Counter-example demonstrating CNN advantage over transformers (ViT, Swin) on small samples (<1000 images); DenseNetBL with bottleneck layer achieves 0.901 OA vs ViT 0.767
+- **Links**: 📖 [Paper](https://doi.org/10.1016/j.heliyon.2023.e20467)
 </details>
 
 ## 🏛️ Foundational Architectures
