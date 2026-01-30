@@ -30,7 +30,6 @@ This repository serves as the comprehensive resource index for our systematic re
 - [📖 Related Surveys](#-related-surveys)
 - [📊 Datasets & Benchmarks](#-datasets--benchmarks)
 - [🌍 Policy Context](#-policy-context)
-- [🔧 Available Code & Tools](#-available-code--tools)
 - [📑 Citation & Usage](#-citation--usage)
 
 ## 📊 Survey Figures
@@ -146,6 +145,15 @@ This repository serves as the comprehensive resource index for our systematic re
 </details>
 
 <details>
+<summary><b>[2023] A Vision Transformer Model for Convolution-Free Multilabel Classification of Satellite Imagery in Deforestation Monitoring</b></summary>
+
+- **Authors**: Kaselimi, M., Voulodimos, A., Daskalopoulos, I., Doulamis, N., Doulamis, A.
+- **Venue**: IEEE Transactions on Neural Networks and Learning Systems
+- **Key Contribution**: First pure ViT for multi-label deforestation classification without convolutions
+- **Links**: 📖 [Paper](https://doi.org/10.1109/TNNLS.2022.3144791)
+</details>
+
+<details>
 <summary><b>[2023] Classification of Individual Tree Species Using UAV LiDAR Based on Transformer</b></summary>
 
 - **Authors**: Sun, P., Yuan, X., Li, D.
@@ -173,15 +181,6 @@ This repository serves as the comprehensive resource index for our systematic re
 </details>
 
 <details>
-<summary><b>[2023] A Vision Transformer Model for Convolution-Free Multilabel Classification of Satellite Imagery in Deforestation Monitoring</b></summary>
-
-- **Authors**: Kaselimi, M., Voulodimos, A., Daskalopoulos, I., Doulamis, N., Doulamis, A.
-- **Venue**: IEEE Transactions on Neural Networks and Learning Systems
-- **Key Contribution**: First pure ViT for multi-label deforestation classification without convolutions
-- **Links**: 📖 [Paper](https://doi.org/10.1109/TNNLS.2022.3144791)
-</details>
-
-<details>
 <summary><b>[2022] 3D LiDAR Transformer for City-Scale Vegetation Segmentation and Biomass Estimation</b></summary>
 
 - **Authors**: Khan, A., Asim, W., Ibrahim, M., Ulhaq, A.
@@ -192,15 +191,6 @@ This repository serves as the comprehensive resource index for our systematic re
 
 <h3><em>🔶 CNN-Transformer Hybrids (31 papers)</em></h3>
 
-<details>
-<summary><b>[2025] Integrating Hyperspectral Images and LiDAR Data Using Vision Transformers for Enhanced Vegetation Classification</b></summary>
-
-- **Authors**: Shu, X., Ma, L., Chang, F.
-- **Venue**: Forests
-- **Key Contribution**: PlantViT architecture for HSI-LiDAR fusion achieving state-of-the-art performance
-- **Links**: 📖 [Paper](https://doi.org/10.3390/f16040620) | 💻 [Code](https://github.com/shuxquan/PlantViT)
-</details>
-
 <!-- My paper needs to put preprint link -->
 <details>
 <summary><b>[2025] BARE: Boundary-Aware with Resolution Enhancement for Tree Crown Delineation</b></summary>
@@ -209,70 +199,6 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Venue**: AusDM 2025
 - **Key Contribution**: Architecture-preserving training strategy combining full-resolution supervision with class weighting for improved boundary precision; introduces B-IoU metric to tree crown delineation
 - **Links**: 📖 [Paper](https://github.com/attavit14203638/bare) | 💻 [Code](https://github.com/attavit14203638/bare)
-</details> 
-
-<details>
-<summary><b>[2025] MTCDNet: Multimodal Feature Fusion-Based Tree Crown Detection Network Using UAV-Acquired Optical Imagery and LiDAR Data</b></summary>
-
-- **Authors**: Zhang, H., Yang, C., Fan, X.
-- **Venue**: Remote Sensing
-- **Key Contribution**: Multimodal CNN-Transformer fusion for tree crown detection from optical and LiDAR data
-- **Links**: 📖 [Paper](https://doi.org/10.3390/rs17121996)
-</details>
-
-<details>
-<summary><b>[2025] Semantic-Aware Cross-Modal Transfer for UAV-LiDAR Individual Tree Segmentation</b></summary>
-
-- **Authors**: Zhou, F., He, H., Chen, T., Zhang, T., Yang, M., Yuan, Y., Liu, J.
-- **Venue**: Remote Sensing
-- **Key Contribution**: Cross-modal transfer learning between RGB and LiDAR for tree segmentation
-- **Links**: 📖 [Paper](https://doi.org/10.3390/rs17162805)
-</details>
-
-<details>
-<summary><b>[2025] ForestFormer3D: A Unified Framework for End-to-End Segmentation of Forest LiDAR 3D Point Clouds</b></summary>
-
-- **Authors**: Xiang, B., Wielgosz, M., Puliti, S., Král, K., Krůček, M., Missarov, A., Astrup, R.
-- **Venue**: arXiv preprint
-- **Key Contribution**: End-to-end 3D transformer for forest point cloud segmentation
-- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2506.16991) | 💻 [Code](https://bxiang233.github.io/FF3D/)
-
-</details>
-
-<details>
-<summary><b>[2025] SatelliteCalculator: A Multi-Task Vision Foundation Model for Quantitative Remote Sensing Inversion</b></summary>
-
-- **Authors**: Yu, Z., Idris, M., Wang, P.
-- **Venue**: arXiv preprint
-- **Key Contribution**: Multi-task CNN-transformer model for quantitative remote sensing including forest parameters
-- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2504.13442) | 💻 [Code](https://github.com/YuZhenyuLindy/SatelliteCalculator)
-</details>
-
-<details>
-<summary><b>[2025] VibrantVS: A High-Resolution Vision Transformer for Forest Canopy Height Estimation</b></summary>
-
-- **Authors**: Chang, T., Ndegwa, K., Gros, A., Landau, V.A., Zachmann, L.J., State, B., Gritts, M.A., Miller, C.W., Rutenbeck, N.E., Conway, S., Bayes, G.
-- **Venue**: Remote Sensing
-- **Key Contribution**: High-resolution hybrid architecture for continental-scale canopy height mapping
-- **Links**: 📖 [Paper](https://doi.org/10.3390/rs17061017)
-</details>
-
-<details>
-<summary><b>[2025] Multimodal Uncertainty Robust Tree Cover Segmentation for High-Resolution Remote Sensing Images</b></summary>
-
-- **Authors**: Gui, Y., Li, W., Wang, Y., Xia, X.G., Marty, M., Ginzler, C., Wang, Z.
-- **Venue**: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
-- **Key Contribution**: Uncertainty-aware multimodal fusion framework for robust tree cover semantic segmentation
-- **Links**: 📖 [Paper](https://doi.org/10.1109/JSTARS.2025.3631272)
-</details>
-
-<details>
-<summary><b>[2025] Fine-Grained Individual Tree Crown Segmentation Based on High-Resolution Images</b></summary>
-
-- **Authors**: Wang, Y., Dou, X., Liang, X.
-- **Venue**: ISPRS Archives
-- **Key Contribution**: Fine-grained segmentation approach for individual tree crowns
-- **Links**: 📖 [Paper](https://doi.org/10.5194/isprs-archives-XLVIII-G-2025-1529-2025)
 </details>
 
 <details>
@@ -285,12 +211,84 @@ This repository serves as the comprehensive resource index for our systematic re
 </details>
 
 <details>
-<summary><b>[2024] Large-Scale Assessment of Date Palm Plantations Based on UAV Remote Sensing and Multiscale Vision Transformer</b></summary>
+<summary><b>[2025] Fine-Grained Individual Tree Crown Segmentation Based on High-Resolution Images</b></summary>
 
-- **Authors**: Gibril, M.B.A., Shafri, H.Z.M., Shanableh, A., Al-Ruzouq, R., et al.
-- **Venue**: Remote Sensing Applications: Society and Environment
-- **Key Contribution**: Multiscale ViT for large-scale date palm assessment
-- **Links**: 📖 [Paper](https://doi.org/10.1016/j.rsase.2024.101195)
+- **Authors**: Wang, Y., Dou, X., Liang, X.
+- **Venue**: ISPRS Archives
+- **Key Contribution**: Fine-grained segmentation approach for individual tree crowns
+- **Links**: 📖 [Paper](https://doi.org/10.5194/isprs-archives-XLVIII-G-2025-1529-2025)
+</details>
+
+<details>
+<summary><b>[2025] ForestFormer3D: A Unified Framework for End-to-End Segmentation of Forest LiDAR 3D Point Clouds</b></summary>
+
+- **Authors**: Xiang, B., Wielgosz, M., Puliti, S., Král, K., Krůček, M., Missarov, A., Astrup, R.
+- **Venue**: arXiv preprint
+- **Key Contribution**: End-to-end 3D transformer for forest point cloud segmentation
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2506.16991) | 💻 [Code](https://bxiang233.github.io/FF3D/)
+</details>
+
+<details>
+<summary><b>[2025] Integrating Hyperspectral Images and LiDAR Data Using Vision Transformers for Enhanced Vegetation Classification</b></summary>
+
+- **Authors**: Shu, X., Ma, L., Chang, F.
+- **Venue**: Forests
+- **Key Contribution**: PlantViT architecture for HSI-LiDAR fusion achieving state-of-the-art performance
+- **Links**: 📖 [Paper](https://doi.org/10.3390/f16040620) | 💻 [Code](https://github.com/shuxquan/PlantViT)
+</details>
+
+<details>
+<summary><b>[2025] MTCDNet: Multimodal Feature Fusion-Based Tree Crown Detection Network Using UAV-Acquired Optical Imagery and LiDAR Data</b></summary>
+
+- **Authors**: Zhang, H., Yang, C., Fan, X.
+- **Venue**: Remote Sensing
+- **Key Contribution**: Multimodal CNN-Transformer fusion for tree crown detection from optical and LiDAR data
+- **Links**: 📖 [Paper](https://doi.org/10.3390/rs17121996)
+</details>
+
+<details>
+<summary><b>[2025] Multimodal Uncertainty Robust Tree Cover Segmentation for High-Resolution Remote Sensing Images</b></summary>
+
+- **Authors**: Gui, Y., Li, W., Wang, Y., Xia, X.G., Marty, M., Ginzler, C., Wang, Z.
+- **Venue**: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+- **Key Contribution**: Uncertainty-aware multimodal fusion framework for robust tree cover semantic segmentation
+- **Links**: 📖 [Paper](https://doi.org/10.1109/JSTARS.2025.3631272)
+</details>
+
+<details>
+<summary><b>[2025] SatelliteCalculator: A Multi-Task Vision Foundation Model for Quantitative Remote Sensing Inversion</b></summary>
+
+- **Authors**: Yu, Z., Idris, M., Wang, P.
+- **Venue**: arXiv preprint
+- **Key Contribution**: Multi-task CNN-transformer model for quantitative remote sensing including forest parameters
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2504.13442) | 💻 [Code](https://github.com/YuZhenyuLindy/SatelliteCalculator)
+</details>
+
+<details>
+<summary><b>[2025] Semantic-Aware Cross-Modal Transfer for UAV-LiDAR Individual Tree Segmentation</b></summary>
+
+- **Authors**: Zhou, F., He, H., Chen, T., Zhang, T., Yang, M., Yuan, Y., Liu, J.
+- **Venue**: Remote Sensing
+- **Key Contribution**: Cross-modal transfer learning between RGB and LiDAR for tree segmentation
+- **Links**: 📖 [Paper](https://doi.org/10.3390/rs17162805)
+</details>
+
+<details>
+<summary><b>[2025] VibrantVS: A High-Resolution Vision Transformer for Forest Canopy Height Estimation</b></summary>
+
+- **Authors**: Chang, T., Ndegwa, K., Gros, A., Landau, V.A., Zachmann, L.J., State, B., Gritts, M.A., Miller, C.W., Rutenbeck, N.E., Conway, S., Bayes, G.
+- **Venue**: Remote Sensing
+- **Key Contribution**: High-resolution hybrid architecture for continental-scale canopy height mapping
+- **Links**: 📖 [Paper](https://doi.org/10.3390/rs17061017)
+</details>
+
+<details>
+<summary><b>[2024] Assessing the Generalization Capacity of Convolutional Neural Networks and Vision Transformers for Deforestation Detection in Tropical Biomes</b></summary>
+
+- **Authors**: Vega, P.J.S., Torres, D.L., Andrade-Miranda, G.X., Feitosa, R.Q.
+- **Venue**: ISPRS Archives
+- **Key Contribution**: Generalization analysis of CNNs vs ViTs for deforestation detection
+- **Links**: 📖 [Paper](https://doi.org/10.5194/isprs-archives-XLVIII-3-2024-519-2024)
 </details>
 
 <details>
@@ -303,6 +301,15 @@ This repository serves as the comprehensive resource index for our systematic re
 </details>
 
 <details>
+<summary><b>[2024] Evaluating Deep Learning Methods Applied to Landsat Time Series Subsequences to Detect and Classify Boreal Forest Disturbances Events: The Challenge of Partial and Progressive Disturbances</b></summary>
+
+- **Authors**: Perbet, P., Guindon, L., Côté, J.F., Béland, M.
+- **Venue**: Remote Sensing of Environment
+- **Key Contribution**: Evaluation of transformer architectures for time series disturbance detection
+- **Links**: 📖 [Paper](https://doi.org/10.1016/j.rse.2024.114107)
+</details>
+
+<details>
 <summary><b>[2024] Expanding Vision in Tree Counting: Novel Ground Truth Generation and Deep Learning Model</b></summary>
 
 - **Authors**: Ton-That, M.N., Le, T.V., Truong, N.H., Le, A.D., Pham, A.D., Vo, H.B.
@@ -312,21 +319,12 @@ This repository serves as the comprehensive resource index for our systematic re
 </details>
 
 <details>
-<summary><b>[2024] SSMM-DS: A Semantic Segmentation Model for Mangroves Based on DeepLabv3+ with Swin Transformer</b></summary>
+<summary><b>[2024] Large-Scale Assessment of Date Palm Plantations Based on UAV Remote Sensing and Multiscale Vision Transformer</b></summary>
 
-- **Authors**: Wang, Z., Yang, J., Dong, C., Zhang, X., Yi, C., Sun, J.
-- **Venue**: Electronic Research Archive
-- **Key Contribution**: Swin-enhanced DeepLabv3+ for mangrove mapping
-- **Links**: 📖 [Paper](https://doi.org/10.3934/era.2024260)
-</details>
-
-<details>
-<summary><b>[2024] Evaluating Deep Learning Methods Applied to Landsat Time Series Subsequences to Detect and Classify Boreal Forest Disturbances Events: The Challenge of Partial and Progressive Disturbances</b></summary>
-
-- **Authors**: Perbet, P., Guindon, L., Côté, J.F., Béland, M.
-- **Venue**: Remote Sensing of Environment
-- **Key Contribution**: Evaluation of transformer architectures for time series disturbance detection
-- **Links**: 📖 [Paper](https://doi.org/10.1016/j.rse.2024.114107)
+- **Authors**: Gibril, M.B.A., Shafri, H.Z.M., Shanableh, A., Al-Ruzouq, R., et al.
+- **Venue**: Remote Sensing Applications: Society and Environment
+- **Key Contribution**: Multiscale ViT for large-scale date palm assessment
+- **Links**: 📖 [Paper](https://doi.org/10.1016/j.rsase.2024.101195)
 </details>
 
 <details>
@@ -339,12 +337,12 @@ This repository serves as the comprehensive resource index for our systematic re
 </details>
 
 <details>
-<summary><b>[2024] Assessing the Generalization Capacity of Convolutional Neural Networks and Vision Transformers for Deforestation Detection in Tropical Biomes</b></summary>
+<summary><b>[2024] SSMM-DS: A Semantic Segmentation Model for Mangroves Based on DeepLabv3+ with Swin Transformer</b></summary>
 
-- **Authors**: Vega, P.J.S., Torres, D.L., Andrade-Miranda, G.X., Feitosa, R.Q.
-- **Venue**: ISPRS Archives
-- **Key Contribution**: Generalization analysis of CNNs vs ViTs for deforestation detection
-- **Links**: 📖 [Paper](https://doi.org/10.5194/isprs-archives-XLVIII-3-2024-519-2024)
+- **Authors**: Wang, Z., Yang, J., Dong, C., Zhang, X., Yi, C., Sun, J.
+- **Venue**: Electronic Research Archive
+- **Key Contribution**: Swin-enhanced DeepLabv3+ for mangrove mapping
+- **Links**: 📖 [Paper](https://doi.org/10.3934/era.2024260)
 </details>
 
 <details>
@@ -366,66 +364,12 @@ This repository serves as the comprehensive resource index for our systematic re
 </details>
 
 <details>
-<summary><b>[2023] TreeFormer: A Semi-Supervised Transformer-Based Framework for Tree Counting From a Single High-Resolution Image</b></summary>
+<summary><b>[2023] Benchmarking Individual Tree Mapping with Sub-Meter Imagery</b></summary>
 
-- **Authors**: Amirkolaee, H.A., Shi, M., Mulligan, M.
-- **Venue**: IEEE Transactions on Geoscience and Remote Sensing
-- **Key Contribution**: Semi-supervised transformer for tree counting from single high-resolution images
-- **Links**: 📖 [Paper](https://doi.org/10.1109/TGRS.2023.3295802) | 💻 [Code](https://github.com/HAAClassic/TreeFormer)
-</details>
-
-<details>
-<summary><b>[2023] TransU-Net++: Rethinking Attention Gated TransU-Net for Deforestation Mapping</b></summary>
-
-- **Authors**: Jamali, A., Roy, S.K., Li, J., Ghamisi, P.
-- **Venue**: International Journal of Applied Earth Observation and Geoinformation
-- **Key Contribution**: Attention-gated TransUNet variant for improved deforestation mapping
-- **Links**: 📖 [Paper](https://doi.org/10.1016/j.jag.2023.103332) | 💻 [Code](https://github.com/aj1365/TransUNetplus2)
-</details>
-
-<details>
-<summary><b>[2023] WetMapFormer: A Unified Deep CNN and Vision Transformer for Complex Wetland Mapping</b></summary>
-
-- **Authors**: Jamali, A., Roy, S.K., Ghamisi, P.
-- **Venue**: International Journal of Applied Earth Observation and Geoinformation
-- **Key Contribution**: Hybrid CNN-Transformer with Local Window Attention for wetland mapping
-- **Links**: 📖 [Paper](https://doi.org/10.1016/j.jag.2023.103333) | 💻 [Code](https://github.com/aj1365/WetMapFormer)
-</details>
-
-<details>
-<summary><b>[2023] Vision Transformers, A New Approach for High-Resolution and Large-Scale Mapping of Canopy Heights</b></summary>
-
-- **Authors**: Fayad, I., Ciais, P., Schwartz, M., Wigneron, J.P., Baghdadi, N., et al.
-- **Venue**: Remote Sensing of Environment
-- **Key Contribution**: Hy-TeC hybrid architecture for large-scale canopy height estimation using Sentinel-2 and GEDI
-- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2304.11487)
-</details>
-
-<details>
-<summary><b>[2023] Towards Complete Tree Crown Delineation by Instance Segmentation with Mask R–CNN and DETR using UAV-based Multispectral Imagery and LiDAR Data</b></summary>
-
-- **Authors**: Dersch, S., Schoettl, A., Krzystek, P., Heurich, M.
-- **Venue**: ISPRS Open Journal of Photogrammetry and Remote Sensing
-- **Key Contribution**: Comparison of Mask R-CNN and DETR for tree crown delineation
-- **Links**: 📖 [Paper](https://doi.org/10.1016/j.ophoto.2023.100037)
-</details>
-
-<details>
-<summary><b>[2023] Tree Species Classification in UAV Remote Sensing Images Based on Super-Resolution Reconstruction and Deep Learning</b></summary>
-
-- **Authors**: Huang, Y., Wen, X., Gao, Y., Zhang, Y., Lin, G.
-- **Venue**: Remote Sensing
-- **Key Contribution**: Super-resolution enhancement combined with transformer classification
-- **Links**: 📖 [Paper](https://doi.org/10.3390/rs15112942)
-</details>
-
-<details>
-<summary><b>[2023] Instance Segmentation of LiDAR Data with Vision Transformer Model in Support Inundation Mapping Under Forest Canopy Environment</b></summary>
-
-- **Authors**: Yang, J., El Mendili, L., Khayer, Y., McArdle, S., Hashemi Beni, L.
-- **Venue**: ISPRS Archives
-- **Key Contribution**: ViT-based instance segmentation for LiDAR under forest canopy
-- **Links**: 📖 [Paper](https://doi.org/10.5194/isprs-archives-XLVIII-1-W2-2023-203-2023)
+- **Authors**: Gominski, D., Kariryaa, A., Brandt, M., Igel, C., Li, S., et al.
+- **Venue**: ISPRS Journal of Photogrammetry and Remote Sensing
+- **Key Contribution**: Large-scale benchmark for individual tree mapping methods
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2311.07981)
 </details>
 
 <details>
@@ -438,21 +382,66 @@ This repository serves as the comprehensive resource index for our systematic re
 </details>
 
 <details>
-<summary><b>[2023] Benchmarking Individual Tree Mapping with Sub-Meter Imagery</b></summary>
+<summary><b>[2023] Instance Segmentation of LiDAR Data with Vision Transformer Model in Support Inundation Mapping Under Forest Canopy Environment</b></summary>
 
-- **Authors**: Gominski, D., Kariryaa, A., Brandt, M., Igel, C., Li, S., et al.
-- **Venue**: ISPRS Journal of Photogrammetry and Remote Sensing
-- **Key Contribution**: Large-scale benchmark for individual tree mapping methods
-- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2311.07981)
+- **Authors**: Yang, J., El Mendili, L., Khayer, Y., McArdle, S., Hashemi Beni, L.
+- **Venue**: ISPRS Archives
+- **Key Contribution**: ViT-based instance segmentation for LiDAR under forest canopy
+- **Links**: 📖 [Paper](https://doi.org/10.5194/isprs-archives-XLVIII-1-W2-2023-203-2023)
 </details>
 
 <details>
-<summary><b>[2022] Novel Single Tree Detection by Transformers Using UAV-Based Multispectral Imagery</b></summary>
+<summary><b>[2023] Towards Complete Tree Crown Delineation by Instance Segmentation with Mask R–CNN and DETR using UAV-based Multispectral Imagery and LiDAR Data</b></summary>
 
-- **Authors**: Dersch, S., Schöttl, A., Krzystek, P., Heurich, M.
-- **Venue**: Int. Arch. Photogramm. Remote Sens. Spatial Inf. Sci.
-- **Key Contribution**: First application of DETR for single tree detection from UAV imagery
-- **Links**: 📖 [Paper](https://doi.org/10.5194/isprs-archives-XLIII-B2-2022-981-2022)
+- **Authors**: Dersch, S., Schoettl, A., Krzystek, P., Heurich, M.
+- **Venue**: ISPRS Open Journal of Photogrammetry and Remote Sensing
+- **Key Contribution**: Comparison of Mask R-CNN and DETR for tree crown delineation
+- **Links**: 📖 [Paper](https://doi.org/10.1016/j.ophoto.2023.100037)
+</details>
+
+<details>
+<summary><b>[2023] TransU-Net++: Rethinking Attention Gated TransU-Net for Deforestation Mapping</b></summary>
+
+- **Authors**: Jamali, A., Roy, S.K., Li, J., Ghamisi, P.
+- **Venue**: International Journal of Applied Earth Observation and Geoinformation
+- **Key Contribution**: Attention-gated TransUNet variant for improved deforestation mapping
+- **Links**: 📖 [Paper](https://doi.org/10.1016/j.jag.2023.103332) | 💻 [Code](https://github.com/aj1365/TransUNetplus2)
+</details>
+
+<details>
+<summary><b>[2023] Tree Species Classification in UAV Remote Sensing Images Based on Super-Resolution Reconstruction and Deep Learning</b></summary>
+
+- **Authors**: Huang, Y., Wen, X., Gao, Y., Zhang, Y., Lin, G.
+- **Venue**: Remote Sensing
+- **Key Contribution**: Super-resolution enhancement combined with transformer classification
+- **Links**: 📖 [Paper](https://doi.org/10.3390/rs15112942)
+</details>
+
+<details>
+<summary><b>[2023] TreeFormer: A Semi-Supervised Transformer-Based Framework for Tree Counting From a Single High-Resolution Image</b></summary>
+
+- **Authors**: Amirkolaee, H.A., Shi, M., Mulligan, M.
+- **Venue**: IEEE Transactions on Geoscience and Remote Sensing
+- **Key Contribution**: Semi-supervised transformer for tree counting from single high-resolution images
+- **Links**: 📖 [Paper](https://doi.org/10.1109/TGRS.2023.3295802) | 💻 [Code](https://github.com/HAAClassic/TreeFormer)
+</details>
+
+<details>
+<summary><b>[2023] Vision Transformers, A New Approach for High-Resolution and Large-Scale Mapping of Canopy Heights</b></summary>
+
+- **Authors**: Fayad, I., Ciais, P., Schwartz, M., Wigneron, J.P., Baghdadi, N., et al.
+- **Venue**: Remote Sensing of Environment
+- **Key Contribution**: Hy-TeC hybrid architecture for large-scale canopy height estimation using Sentinel-2 and GEDI
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2304.11487)
+</details>
+
+<details>
+<summary><b>[2023] WetMapFormer: A Unified Deep CNN and Vision Transformer for Complex Wetland Mapping</b></summary>
+
+- **Authors**: Jamali, A., Roy, S.K., Ghamisi, P.
+- **Venue**: International Journal of Applied Earth Observation and Geoinformation
+- **Key Contribution**: Hybrid CNN-Transformer with Local Window Attention for wetland mapping
+- **Links**: 📖 [Paper](https://doi.org/10.1016/j.jag.2023.103333) | 💻 [Code](https://github.com/aj1365/WetMapFormer)
 </details>
 
 <details>
@@ -471,6 +460,15 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Venue**: IEEE Access
 - **Key Contribution**: Swin Transformer with Faster R-CNN for individual tree detection in urban forestry
 - **Links**: 📖 [Paper](https://doi.org/10.1109/ACCESS.2022.3171585)
+</details>
+
+<details>
+<summary><b>[2022] Novel Single Tree Detection by Transformers Using UAV-Based Multispectral Imagery</b></summary>
+
+- **Authors**: Dersch, S., Schöttl, A., Krzystek, P., Heurich, M.
+- **Venue**: Int. Arch. Photogramm. Remote Sens. Spatial Inf. Sci.
+- **Key Contribution**: First application of DETR for single tree detection from UAV imagery
+- **Links**: 📖 [Paper](https://doi.org/10.5194/isprs-archives-XLIII-B2-2022-981-2022)
 </details>
 
 <h3><em>🔷 Hierarchical Vision Transformers (8 papers)</em></h3>
@@ -494,21 +492,12 @@ This repository serves as the comprehensive resource index for our systematic re
 </details>
 
 <details>
-<summary><b>[2025] Vision Transformer-Based Unhealthy Tree Crown Detection in Mixed Northeastern US Forests and Evaluation of Annotation Uncertainty</b></summary>
+<summary><b>[2025] Sustainable Forestry: AI-Driven Forest Health Diagnostics using Swin Transformer</b></summary>
 
-- **Authors**: Joshi, D., Witharana, C.
-- **Venue**: Remote Sensing
-- **Key Contribution**: First comprehensive ViT vs CNN comparison for forest health with uncertainty quantification
-- **Links**: 📖 [Paper](https://doi.org/10.3390/rs17061066)
-</details>
-
-<details>
-<summary><b>[2025] Transformer-Based Semantic Segmentation of Japanese Knotweed in High-Resolution UAV Imagery Using Twins-SVT</b></summary>
-
-- **Authors**: Valicharla, S.K., Karimzadeh, R., Li, X., Park, Y.-L.
-- **Venue**: Information
-- **Key Contribution**: Twins-SVT architecture for invasive species detection
-- **Links**: 📖 [Paper](https://doi.org/10.3390/info16090741)
+- **Authors**: Begum, S.R., Mishra, V., Saha, D.
+- **Venue**: 2025 International Conference on Advances in Modern Age Technologies for Health and Engineering Science (AMATHE)
+- **Key Contribution**: Swin Transformer for multi-class tree health classification from UAV imagery
+- **Links**: 📖 [Paper](https://doi.org/10.1109/AMATHE65477.2025.11080823)
 </details>
 
 <details>
@@ -521,12 +510,21 @@ This repository serves as the comprehensive resource index for our systematic re
 </details>
 
 <details>
-<summary><b>[2025] Sustainable Forestry: AI-Driven Forest Health Diagnostics using Swin Transformer</b></summary>
+<summary><b>[2025] Transformer-Based Semantic Segmentation of Japanese Knotweed in High-Resolution UAV Imagery Using Twins-SVT</b></summary>
 
-- **Authors**: Begum, S.R., Mishra, V., Saha, D.
-- **Venue**: 2025 International Conference on Advances in Modern Age Technologies for Health and Engineering Science (AMATHE)
-- **Key Contribution**: Swin Transformer for multi-class tree health classification from UAV imagery
-- **Links**: 📖 [Paper](https://doi.org/10.1109/AMATHE65477.2025.11080823)
+- **Authors**: Valicharla, S.K., Karimzadeh, R., Li, X., Park, Y.-L.
+- **Venue**: Information
+- **Key Contribution**: Twins-SVT architecture for invasive species detection
+- **Links**: 📖 [Paper](https://doi.org/10.3390/info16090741)
+</details>
+
+<details>
+<summary><b>[2025] Vision Transformer-Based Unhealthy Tree Crown Detection in Mixed Northeastern US Forests and Evaluation of Annotation Uncertainty</b></summary>
+
+- **Authors**: Joshi, D., Witharana, C.
+- **Venue**: Remote Sensing
+- **Key Contribution**: First comprehensive ViT vs CNN comparison for forest health with uncertainty quantification
+- **Links**: 📖 [Paper](https://doi.org/10.3390/rs17061066)
 </details>
 
 <details>
@@ -550,6 +548,24 @@ This repository serves as the comprehensive resource index for our systematic re
 <h3><em>🟢 Foundation Models (12 papers)</em></h3>
 
 <details>
+<summary><b>[2025] Assessing SAM for Tree Crown Instance Segmentation from Drone Imagery</b></summary>
+
+- **Authors**: Teng, M., Ouaknine, A., Laliberté, E., Bengio, Y., Rolnick, D., Larochelle, H.
+- **Venue**: arXiv preprint
+- **Key Contribution**: Comprehensive evaluation of SAM for tree crown instance segmentation
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2503.20199)
+</details>
+
+<details>
+<summary><b>[2025] Bringing SAM to New Heights: Leveraging Elevation Data for Tree Crown Segmentation from Drone Imagery</b></summary>
+
+- **Authors**: Teng, M., Ouaknine, A., Laliberté, E., Bengio, Y., Rolnick, D., Larochelle, H.
+- **Venue**: arXiv preprint
+- **Key Contribution**: SAM adaptation with elevation data fusion for improved tree crown segmentation
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2506.04970)
+</details>
+
+<details>
 <summary><b>[2025] FoMo: Multi-Modal, Multi-Scale and Multi-Task Remote Sensing Foundation Models for Forest Monitoring</b></summary>
 
 - **Authors**: Bountos, N.I., Ouaknine, A., Papoutsis, I., Rolnick, D.
@@ -568,30 +584,12 @@ This repository serves as the comprehensive resource index for our systematic re
 </details>
 
 <details>
-<summary><b>[2025] Bringing SAM to New Heights: Leveraging Elevation Data for Tree Crown Segmentation from Drone Imagery</b></summary>
+<summary><b>[2025] Parameter-Efficient Fine-Tuning for Individual Tree Crown Detection and Species Classification Using UAV-Acquired Imagery</b></summary>
 
-- **Authors**: Teng, M., Ouaknine, A., Laliberté, E., Bengio, Y., Rolnick, D., Larochelle, H.
-- **Venue**: arXiv preprint
-- **Key Contribution**: SAM adaptation with elevation data fusion for improved tree crown segmentation
-- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2506.04970)
-</details>
-
-<details>
-<summary><b>[2025] Assessing SAM for Tree Crown Instance Segmentation from Drone Imagery</b></summary>
-
-- **Authors**: Teng, M., Ouaknine, A., Laliberté, E., Bengio, Y., Rolnick, D., Larochelle, H.
-- **Venue**: arXiv preprint
-- **Key Contribution**: Comprehensive evaluation of SAM for tree crown instance segmentation
-- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2503.20199)
-</details>
-
-<details>
-<summary><b>[2025] Zero-Shot Tree Detection and Segmentation from Aerial Forest Imagery</b></summary>
-
-- **Authors**: Chen, M., Russell, D., Pallavoor, A., Young, D., Wu, J.
-- **Venue**: arXiv preprint
-- **Key Contribution**: Zero-shot tree detection using foundation models without task-specific training
-- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2506.03114)
+- **Authors**: Zhang, J., Lei, F., Fan, X.
+- **Venue**: Remote Sensing
+- **Key Contribution**: PEFT techniques for efficient tree crown detection and species identification
+- **Links**: 📖 [Paper](https://doi.org/10.3390/rs17071272)
 </details>
 
 <details>
@@ -604,21 +602,12 @@ This repository serves as the comprehensive resource index for our systematic re
 </details>
 
 <details>
-<summary><b>[2025] Parameter-Efficient Fine-Tuning for Individual Tree Crown Detection and Species Classification Using UAV-Acquired Imagery</b></summary>
+<summary><b>[2025] Zero-Shot Tree Detection and Segmentation from Aerial Forest Imagery</b></summary>
 
-- **Authors**: Zhang, J., Lei, F., Fan, X.
-- **Venue**: Remote Sensing
-- **Key Contribution**: PEFT techniques for efficient tree crown detection and species identification
-- **Links**: 📖 [Paper](https://doi.org/10.3390/rs17071272)
-</details>
-
-<details>
-<summary><b>[2024] Leveraging Prompt-Based Segmentation Models and Large Dataset to Improve Detection of Trees</b></summary>
-
-- **Authors**: Grondin, V., Massicotte, P., Gaha, M., Pomerleau, F., Giguère, P.
-- **Venue**: Conference on Robots and Vision (CRV 2024)
-- **Key Contribution**: SAM-based prompt segmentation for tree detection with large-scale training
-- **Links**: 📖 [Paper](https://assets.pubpub.org/ghvn8jdt/it4-01715796875987.pdf) | 💻 📊 [Code & Dataset](https://github.com/norlab-ulaval/PercepTreeV1)
+- **Authors**: Chen, M., Russell, D., Pallavoor, A., Young, D., Wu, J.
+- **Venue**: arXiv preprint
+- **Key Contribution**: Zero-shot tree detection using foundation models without task-specific training
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2506.03114)
 </details>
 
 <details>
@@ -640,15 +629,6 @@ This repository serves as the comprehensive resource index for our systematic re
 </details>
 
 <details>
-<summary><b>[2024] TreeSeg—A Toolbox for Fully Automated Tree Crown Segmentation Based on High-Resolution Multispectral UAV Data</b></summary>
-
-- **Authors**: Speckenwirth, S., Brandmeier, M., Paczkowski, S.
-- **Venue**: Remote Sensing
-- **Key Contribution**: End-to-end toolbox combining SAM with multispectral UAV data for tree segmentation
-- **Links**: 📖 [Paper](https://doi.org/10.3390/rs16193660)
-</details>
-
-<details>
 <summary><b>[2024] Fine-tuning of Geospatial Foundation Models for Aboveground Biomass Estimation</b></summary>
 
 - **Authors**: Muszynski, M., Klein, L., da Silva, A.F., Atluri, A.P., Gomes, C., Szwarcman, D., Singh, G., Gu, K., Zortea, M., Simumba, N., Fraccaro, P., Singh, S., Meliksetian, S., Watson, C., Kimura, D., Srinivasan, H.
@@ -657,16 +637,25 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2406.19888)
 </details>
 
-<h3><em>🟣 Vision-Language Models (4 papers)</em></h3>
+<details>
+<summary><b>[2024] Leveraging Prompt-Based Segmentation Models and Large Dataset to Improve Detection of Trees</b></summary>
+
+- **Authors**: Grondin, V., Massicotte, P., Gaha, M., Pomerleau, F., Giguère, P.
+- **Venue**: Conference on Robots and Vision (CRV 2024)
+- **Key Contribution**: SAM-based prompt segmentation for tree detection with large-scale training
+- **Links**: 📖 [Paper](https://assets.pubpub.org/ghvn8jdt/it4-01715796875987.pdf) | 💻 📊 [Code & Dataset](https://github.com/norlab-ulaval/PercepTreeV1)
+</details>
 
 <details>
-<summary><b>[2025] EarthDial: Turning Multi-Sensory Earth Observations to Interactive Dialogues</b></summary>
+<summary><b>[2024] TreeSeg—A Toolbox for Fully Automated Tree Crown Segmentation Based on High-Resolution Multispectral UAV Data</b></summary>
 
-- **Authors**: Soni, S., Dudhane, A., Debary, H., Fiaz, M., Munir, M.A., Danish, M.S., et al.
-- **Venue**: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025
-- **Key Contribution**: Multi-sensory VLM for interactive earth observation analysis including forest monitoring
-- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2412.15190) | 💻 [Code](https://github.com/hiyamdebary/EarthDial)
+- **Authors**: Speckenwirth, S., Brandmeier, M., Paczkowski, S.
+- **Venue**: Remote Sensing
+- **Key Contribution**: End-to-end toolbox combining SAM with multispectral UAV data for tree segmentation
+- **Links**: 📖 [Paper](https://doi.org/10.3390/rs16193660)
 </details>
+
+<h3><em>🟣 Vision-Language Models (4 papers)</em></h3>
 
 <details>
 <summary><b>[2025] DOFA-CLIP: Multimodal Vision-Language Foundation Models for Earth Observation</b></summary>
@@ -675,6 +664,15 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Venue**: arXiv preprint
 - **Key Contribution**: Unified vision-language foundation model for diverse earth observation tasks
 - **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2503.06312) | 💻 [Code](https://github.com/xiong-zhitong/DOFA-CLIP)
+</details>
+
+<details>
+<summary><b>[2025] EarthDial: Turning Multi-Sensory Earth Observations to Interactive Dialogues</b></summary>
+
+- **Authors**: Soni, S., Dudhane, A., Debary, H., Fiaz, M., Munir, M.A., Danish, M.S., et al.
+- **Venue**: Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025
+- **Key Contribution**: Multi-sensory VLM for interactive earth observation analysis including forest monitoring
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2412.15190) | 💻 [Code](https://github.com/hiyamdebary/EarthDial)
 </details>
 
 <details>
@@ -869,19 +867,19 @@ These seminal papers introduced the core transformer architectures adapted for t
 <h3><em>🌲 Tree Detection & Forest Monitoring Reviews</em></h3>
 
 <details>
-<summary><b>[2025] A Review of Individual Tree Crown Detection and Delineation From Optical Remote Sensing Images: Current Progress and Future</b></summary>
-
-- **Authors**: Zheng, J., Yuan, S., Li, W., Fu, H., Yu, L., Huang, J.
-- **Venue**: IEEE Geoscience and Remote Sensing Magazine
-- **Links**: 📖 [Paper](https://doi.org/10.1109/MGRS.2024.3479871)
-</details>
-
-<details>
 <summary><b>[2025] Advances in the Automated Identification of Individual Tree Species: A Systematic Review of Drone- and AI-Based Methods</b></summary>
 
 - **Authors**: Abreu-Dias, R., Santos-Gago, J.M., Martín-Rodríguez, F., Álvarez-Sabucedo, L.M.
 - **Venue**: Technologies
 - **Links**: 📖 [Paper](https://doi.org/10.3390/technologies13050187)
+</details>
+
+<details>
+<summary><b>[2025] A Review of Individual Tree Crown Detection and Delineation From Optical Remote Sensing Images: Current Progress and Future</b></summary>
+
+- **Authors**: Zheng, J., Yuan, S., Li, W., Fu, H., Yu, L., Huang, J.
+- **Venue**: IEEE Geoscience and Remote Sensing Magazine
+- **Links**: 📖 [Paper](https://doi.org/10.1109/MGRS.2024.3479871)
 </details>
 
 <details>
@@ -935,14 +933,6 @@ These seminal papers introduced the core transformer architectures adapted for t
 <h3><em>🤖 Transformers in Remote Sensing & Vision</em></h3>
 
 <details>
-<summary><b>[2025] Vision Foundation Models in Remote Sensing: A Survey</b></summary>
-
-- **Authors**: Lu, S., Guo, J., Zimmer-Dauphinee, J.R., Nieusma, J.M., Wang, X., Wernke, S.A., Huo, Y.
-- **Venue**: IEEE Geoscience and Remote Sensing Magazine, vol. 13, no. 3, pp. 190-215
-- **Links**: 📖 [Paper](https://doi.org/10.1109/MGRS.2025.3541952)
-</details>
-
-<details>
 <summary><b>[2025] Advancements in Vision–Language Models for Remote Sensing: Datasets, Capabilities, and Enhancement Techniques</b></summary>
 
 - **Authors**: Tao, L., Zhang, H., Jing, H., Liu, Y., Yan, D., Wei, G., Xue, X.
@@ -951,11 +941,11 @@ These seminal papers introduced the core transformer architectures adapted for t
 </details>
 
 <details>
-<summary><b>[2024] Transformers for Remote Sensing: A Systematic Review and Analysis</b></summary>
+<summary><b>[2025] Vision Foundation Models in Remote Sensing: A Survey</b></summary>
 
-- **Authors**: Wang, R., Ma, L., He, G., Johnson, B.A., Yan, Z., Chang, M., Liang, Y.
-- **Venue**: Sensors
-- **Links**: 📖 [Paper](https://doi.org/10.3390/s24113495)
+- **Authors**: Lu, S., Guo, J., Zimmer-Dauphinee, J.R., Nieusma, J.M., Wang, X., Wernke, S.A., Huo, Y.
+- **Venue**: IEEE Geoscience and Remote Sensing Magazine, vol. 13, no. 3, pp. 190-215
+- **Links**: 📖 [Paper](https://doi.org/10.1109/MGRS.2025.3541952)
 </details>
 
 <details>
@@ -967,11 +957,11 @@ These seminal papers introduced the core transformer architectures adapted for t
 </details>
 
 <details>
-<summary><b>[2023] Transformers in Remote Sensing: A Survey</b></summary>
+<summary><b>[2024] Transformers for Remote Sensing: A Systematic Review and Analysis</b></summary>
 
-- **Authors**: Aleissaee, A.A., Kumar, A., Anwer, R.M., Khan, S., Cholakkal, H., Xia, G.S., Khan, F.S.
-- **Venue**: Remote Sensing
-- **Links**: 📖 [Paper](https://doi.org/10.3390/rs15071860)
+- **Authors**: Wang, R., Ma, L., He, G., Johnson, B.A., Yan, Z., Chang, M., Liang, Y.
+- **Venue**: Sensors
+- **Links**: 📖 [Paper](https://doi.org/10.3390/s24113495)
 </details>
 
 <details>
@@ -980,6 +970,14 @@ These seminal papers introduced the core transformer architectures adapted for t
 - **Authors**: Liu, Y., Zhang, Y., Wang, Y., Hou, F., Yuan, J., Tian, J., Zhang, Y., Shi, Z., Fan, J., He, Z.
 - **Venue**: IEEE Transactions on Neural Networks and Learning Systems, vol. 35, no. 6, pp. 7478-7498
 - **Links**: 📖 [Paper](https://doi.org/10.1109/TNNLS.2022.3227717)
+</details>
+
+<details>
+<summary><b>[2023] Transformers in Remote Sensing: A Survey</b></summary>
+
+- **Authors**: Aleissaee, A.A., Kumar, A., Anwer, R.M., Khan, S., Cholakkal, H., Xia, G.S., Khan, F.S.
+- **Venue**: Remote Sensing
+- **Links**: 📖 [Paper](https://doi.org/10.3390/rs15071860)
 </details>
 
 <details>
@@ -992,6 +990,8 @@ These seminal papers introduced the core transformer architectures adapted for t
 
 ## 📊 Datasets & Benchmarks
 
+> Curated collection of datasets and benchmarks for tree extraction and forest monitoring research. Datasets with associated publications include paper references.
+
 <h3><em>🌍 Global Scale Datasets</em></h3>
 
 <details>
@@ -999,15 +999,8 @@ These seminal papers introduced the core transformer architectures adapted for t
 
 - **Coverage**: Global, multi-biome
 - **Tasks**: Detection, segmentation, classification, change detection
-- **Links**: 📊 [Dataset](https://github.com/RolnickLab/FoMo-Bench)
-</details>
-
-<details>
-<summary><b>TalloS</b> — Global tree species classification dataset with >1,000 species</summary>
-
-- **Coverage**: Global species diversity
-- **Tasks**: Species classification
-- **Links**: 📊 [Dataset](https://github.com/RolnickLab/FoMo-Bench)
+- **Paper**: Bountos et al., *AAAI 2025*
+- **Links**: 📖 [Paper](https://doi.org/10.1609/aaai.v39i27.35002) | 📊 [Dataset](https://github.com/RolnickLab/FoMo-Bench)
 </details>
 
 <details>
@@ -1015,82 +1008,52 @@ These seminal papers introduced the core transformer architectures adapted for t
 
 - **Coverage**: France, temperate forests
 - **Resolution**: 20cm aerial imagery
-- **Links**: 📊 [Dataset](https://github.com/fajwel/Open-Canopy)
+- **Paper**: Fogel et al., *CVPR 2025*
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2407.09392) | 📊 [Dataset](https://github.com/fajwel/Open-Canopy)
 </details>
-
-<h3><em>🗺️ Regional Scale Datasets</em></h3>
 
 <details>
-<summary><b>NEON Tree Crowns</b> — Co-registered RGB, LiDAR, hyperspectral for US forests</summary>
+<summary><b>TalloS</b> — Global tree species classification dataset with >1,000 species</summary>
 
-- **Coverage**: USA National Ecological Observatory Network sites
-- **Modalities**: RGB, LiDAR, Hyperspectral
-- **Links**: 📊 [Dataset](https://zenodo.org/record/5914554)
+- **Coverage**: Global species diversity
+- **Tasks**: Species classification
+- **Note**: Part of FoMo-Bench ecosystem
+- **Links**: 📊 [Dataset](https://github.com/RolnickLab/FoMo-Bench)
 </details>
+
+---
+
+<h3><em>🗺️ Regional Scale Datasets</em></h3>
 
 <details>
 <summary><b>FOR-instance</b> — UAV laser scanning benchmark for individual tree segmentation</summary>
 
 - **Coverage**: Europe (multiple countries)
 - **Task**: Instance segmentation from ALS point clouds
-- **Links**: 📊 [Dataset](https://zenodo.org/record/8287792)
+- **Paper**: Puliti et al., *arXiv 2023*
+- **Links**: 📖 [Paper](https://arxiv.org/abs/2309.01279) | 📊 [Dataset](https://zenodo.org/record/8287792)
+</details>
+
+<details>
+<summary><b>NEON Tree Crowns</b> — Co-registered RGB, LiDAR, hyperspectral for US forests</summary>
+
+- **Coverage**: USA National Ecological Observatory Network sites
+- **Modalities**: RGB, LiDAR, Hyperspectral
+- **Paper**: Weinstein et al., *PLoS Computational Biology, 2021*
+- **Links**: 📖 [Paper](https://doi.org/10.1371/journal.pcbi.1009180) | 📊 [Dataset](https://zenodo.org/record/5914554)
 </details>
 
 <details>
 <summary><b>ReforesTree</b> — Tropical forest restoration monitoring</summary>
 
 - **Coverage**: Ecuador
-- **Task**: Reforestation monitoring
+- **Task**: Reforestation monitoring, biomass estimation
 - **Links**: 📊 [Dataset](https://github.com/gyrrei/ReforesTree)
 </details>
 
-<details>
-<summary><b>UAE Date Palm</b> — WorldView-3 individual tree mapping dataset</summary>
-
-- **Coverage**: United Arab Emirates
-- **Task**: Individual date palm detection and mapping
-</details>
-
-<details>
-<summary><b>Connecticut Forest Health</b> — NAIP imagery with uncertainty annotations</summary>
-
-- **Coverage**: Connecticut, USA
-- **Task**: Forest health assessment with annotation uncertainty
-</details>
+---
 
 <h3><em>📐 Standard Benchmarks</em></h3>
-
-<details>
-<summary><b>Trento</b> — HSI-LiDAR vegetation classification benchmark (6 classes)</summary>
-
-- **Modalities**: Hyperspectral + LiDAR
-- **Classes**: 6 land cover types
-- **Links**: 📊 [Dataset](https://rslab.ut.ac.ir/data)
-</details>
-
-<details>
-<summary><b>Houston 2013</b> — HSI-LiDAR urban vegetation benchmark (15 classes)</summary>
-
-- **Modalities**: Hyperspectral + LiDAR
-- **Classes**: 15 urban land cover types
-- **Links**: 📊 [Dataset](https://hyperspectral.ee.uh.edu/?page_id=459)
-</details>
-
-<details>
-<summary><b>LandCover.AI</b> — Aerial imagery for woodland mapping</summary>
-
-- **Coverage**: Poland
-- **Resolution**: 25-50cm
-- **Links**: 📊 [Dataset](https://landcover.ai/)
-</details>
-
-<details>
-<summary><b>Semantic3D</b> — Large-scale point cloud classification</summary>
-
-- **Scale**: 4 billion points
-- **Task**: Outdoor point cloud semantic segmentation
-- **Links**: 📊 [Dataset](http://www.semantic3d.net/)
-</details>
 
 <details>
 <summary><b>DynamicEarthNet</b> — Daily multi-spectral satellite dataset for change segmentation</summary>
@@ -1100,46 +1063,36 @@ These seminal papers introduced the core transformer architectures adapted for t
 - **Links**: 📊 [Dataset](https://mediatum.ub.tum.de/1650201)
 </details>
 
-<h3><em>📄 Dataset Papers</em></h3>
-
 <details>
-<summary><b>[2025] Open-Canopy: Towards Very High Resolution Forest Monitoring</b></summary>
+<summary><b>Houston 2013</b> — HSI-LiDAR urban vegetation benchmark (15 classes)</summary>
 
-- **Authors**: Fogel, F., Perron, Y., Besic, N., Saint-André, L., et al.
-- **Venue**: CVPR 2025
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2501.02314) | 📊 [Dataset](https://github.com/fajwel/Open-Canopy)
+- **Modalities**: Hyperspectral + LiDAR
+- **Classes**: 15 urban land cover types
+- **Links**: 📊 [Dataset](https://machinelearning.ee.uh.edu/2013-ieee-grss-data-fusion-contest/)
 </details>
 
 <details>
-<summary><b>[2024] Influence of Temperate Forest Autumn Leaf Phenology on Segmentation of Tree Species from UAV Imagery</b></summary>
+<summary><b>LandCover.AI</b> — Aerial imagery for woodland mapping</summary>
 
-- **Authors**: Cloutier, M., Germain, M., Laliberté, E.
-- **Venue**: Remote Sensing of Environment
-- **Links**: 📖 [Paper](https://doi.org/10.1016/j.rse.2024.114254)
+- **Coverage**: Poland
+- **Resolution**: 25-50cm
+- **Links**: 📊 [Dataset](https://www.kaggle.com/datasets/adrianboguszewski/landcoverai)
 </details>
 
 <details>
-<summary><b>[2023] FOR-instance: A UAV Laser Scanning Benchmark Dataset for Semantic and Instance Segmentation</b></summary>
+<summary><b>Semantic3D</b> — Large-scale point cloud classification</summary>
 
-- **Authors**: Puliti, S., Pearse, G., Surový, P., Wallace, L., Hollaus, M., Wielgosz, M., Astrup, R.
-- **Venue**: arXiv preprint
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2309.01279) | 📊 [Dataset](https://zenodo.org/record/8287792)
+- **Scale**: 4 billion points
+- **Task**: Outdoor point cloud semantic segmentation
+- **Links**: 📊 [Dataset](https://semantic3d.ethz.ch/)
 </details>
 
 <details>
-<summary><b>[2023] Accurate Delineation of Individual Tree Crowns in Tropical Forests from Aerial RGB Imagery</b></summary>
+<summary><b>Trento</b> — HSI-LiDAR vegetation classification benchmark (6 classes)</summary>
 
-- **Authors**: Ball, J.G., Hickman, S.H., Jackson, T.D., et al.
-- **Venue**: Remote Sensing in Ecology and Conservation
-- **Links**: 📖 [Paper](https://doi.org/10.1002/rse2.323)
-</details>
-
-<details>
-<summary><b>[2021] A Benchmark Dataset for Canopy Crown Detection and Delineation (NEON)</b></summary>
-
-- **Authors**: Weinstein, B.G., Graves, S.J., Marconi, S., Singh, A., et al.
-- **Venue**: PLoS Computational Biology
-- **Links**: 📖 [Paper](https://doi.org/10.1371/journal.pcbi.1009180) | 📊 [Dataset](https://zenodo.org/record/5914554)
+- **Modalities**: Hyperspectral + LiDAR
+- **Classes**: 6 land cover types
+- **Links**: 📊 [Dataset](https://github.com/A-Piece-Of-Maple/TrentoDateset)
 </details>
 
 ## 🌍 Policy Context
@@ -1152,7 +1105,7 @@ These policy documents and frameworks drive the demand for scalable tree monitor
 - **Authors**: Penca, J., Tănăsescu, M.
 - **Venue**: Sustainability Science
 - **Key Context**: EU binding obligations for ecosystem restoration requiring individual tree monitoring
-- **Links**: 📖 [Paper](https://doi.org/10.1007/s11625-024-01594-5)
+- **Links**: 📖 [Paper](https://doi.org/10.1007/s11625-024-01610-6)
 </details>
 
 <details>
@@ -1161,7 +1114,7 @@ These policy documents and frameworks drive the demand for scalable tree monitor
 - **Authors**: Nowak, D.J.
 - **Venue**: USDA Forest Service General Technical Report
 - **Key Context**: Standard tools for urban forest ecosystem services quantification
-- **Links**: 📖 [Paper](https://www.fs.usda.gov/research/treesearch/67182)
+- **Links**: 📖 [Paper](https://doi.org/10.2737/nrs-gtr-200-2023)
 </details>
 
 <details>
@@ -1190,20 +1143,6 @@ These policy documents and frameworks drive the demand for scalable tree monitor
 - **Key Context**: UN 2030 Agenda framework including SDG 13 (Climate Action) and SDG 15 (Life on Land)
 - **Links**: 📖 [Paper](https://doi.org/10.1057/s41271-016-0002-7)
 </details>
-
-## 🔧 Available Code & Tools
-
-### Foundation Models & Pre-trained Weights
-- **FoMo-Net**: Sensor-agnostic foundation model for forest monitoring | 💻 [Code](https://github.com/RolnickLab/FoMo-Bench)
-- **PlantViT**: HSI-LiDAR specialized transformer | 💻 [Code](https://github.com/shuxquan/PlantViT)
-
-### Model Implementations
-- **TransU-Net++**: Enhanced TransUNet for deforestation | 💻 [Code](https://github.com/aj1365/TransUNetplus2)
-- **WetMapFormer**: Hybrid CNN-Transformer with Local Window Attention | 💻 [Code](https://github.com/aj1365/WetMapFormer)
-- **TreeSeg Toolbox**: End-to-end tree crown segmentation | 💻 [Code](https://github.com/soenke-sp/TreeSeg)
-
-### Evaluation Frameworks
-- **FoMo-Bench**: Unified evaluation framework for forest monitoring tasks | 💻 [Code](https://github.com/RolnickLab/FoMo-Bench)
 
 ## 📑 Citation & Usage
 
