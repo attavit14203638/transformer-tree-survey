@@ -137,60 +137,57 @@ This repository serves as the comprehensive resource index for our systematic re
 <h3><em>🔷 Pure Vision Transformers (6 papers)</em></h3>
 
 <details>
-<summary><b>[2023] Classification of Individual Tree Species Using UAV LiDAR Based on Transformer</b></summary>
-
-- **Authors**: Sun, P., Yuan, X., Li, D.
-- **Venue**: Forests
-- **Key Contribution**: Pure transformer approach for 3D LiDAR tree species classification
-- **Links**: 📖 [Paper](https://www.mdpi.com/1999-4907/14/3/484)
-
-</details>
-
-<details>
 <summary><b>[2024] Tree Species Classification from UAV Canopy Images with Deep Learning Models</b></summary>
 
 - **Authors**: Huang, Y., Ou, B., Meng, K., Yang, B., Carpenter, J., Jung, J., Fei, S.
 - **Venue**: Remote Sensing
 - **Key Contribution**: Pure ViT comparison for tree species classification from UAV imagery
-- **Links**: 📖 [Paper](https://www.mdpi.com/2072-4292/16/20/3836)
+- **Links**: 📖 [Paper](https://doi.org/10.3390/rs16203836)
 </details>
 
 <details>
-<summary><b>[2023] Seasonal Forest Disturbance Detection Using Sentinel-1 SAR & Sentinel-2 Optical Data and Transformers</b></summary>
+<summary><b>[2023] Classification of Individual Tree Species Using UAV LiDAR Based on Transformer</b></summary>
+
+- **Authors**: Sun, P., Yuan, X., Li, D.
+- **Venue**: Forests
+- **Key Contribution**: Pure transformer approach for 3D LiDAR tree species classification
+- **Links**: 📖 [Paper](https://doi.org/10.3390/f14030484)
+</details>
+
+<details>
+<summary><b>[2023] Seasonal Forest Disturbance Detection Using Sentinel-1 SAR & Sentinel-2 Optical Timeseries Data and Transformers</b></summary>
 
 - **Authors**: Mullissa, A., Reiche, J., Saatchi, S.
-- **Venue**: IGARSS 2023
-- **Key Contribution**: Multi-temporal transformer for seasonal disturbance detection
-- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/10281936)
+- **Venue**: IGARSS 2023 - 2023 IEEE International Geoscience and Remote Sensing Symposium
+- **Key Contribution**: Multi-temporal transformer for seasonal disturbance detection using Sentinel-1 SAR and Sentinel-2 optical time series
+- **Links**: 📖 [Paper](https://doi.org/10.1109/IGARSS52108.2023.10281936)
 </details>
 
 <details>
 <summary><b>[2023] UAV4TREE: Deep Learning-Based System for Automatic Classification of Tree Species Using RGB Optical Images Obtained By An Unmanned Aerial Vehicle</b></summary>
 
 - **Authors**: Pierdicca, R., Nepi, L., Mancini, A., Malinverni, E.S., Balestra, M.
-- **Venue**: ISPRS Annals
+- **Venue**: ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences
 - **Key Contribution**: End-to-end deep learning system for tree species classification
-- **Links**: 📖 [Paper](https://isprs-annals.copernicus.org/articles/X-1-W1-2023/1089/2023/)
+- **Links**: 📖 [Paper](https://doi.org/10.5194/isprs-annals-X-1-W1-2023-1089-2023)
 </details>
 
 <details>
-<summary><b>[2022] A Vision Transformer Model for Convolution-Free Multilabel Classification of Satellite Imagery in Deforestation Monitoring</b></summary>
+<summary><b>[2023] A Vision Transformer Model for Convolution-Free Multilabel Classification of Satellite Imagery in Deforestation Monitoring</b></summary>
 
 - **Authors**: Kaselimi, M., Voulodimos, A., Daskalopoulos, I., Doulamis, N., Doulamis, A.
 - **Venue**: IEEE Transactions on Neural Networks and Learning Systems
 - **Key Contribution**: First pure ViT for multi-label deforestation classification without convolutions
-- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/9701667)
-
+- **Links**: 📖 [Paper](https://doi.org/10.1109/TNNLS.2022.3144791)
 </details>
 
 <details>
 <summary><b>[2022] 3D LiDAR Transformer for City-Scale Vegetation Segmentation and Biomass Estimation</b></summary>
 
 - **Authors**: Khan, A., Asim, W., Ibrahim, M., Ulhaq, A.
-- **Venue**: DICTA 2022
-- **Key Contribution**: Point cloud transformer for urban vegetation analysis
-- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/10034637)
-
+- **Venue**: 2022 International Conference on Digital Image Computing: Techniques and Applications (DICTA)
+- **Key Contribution**: 3D semantic segmentation using transformer with slot attention for urban vegetation mapping and biomass estimation from LiDAR point clouds
+- **Links**: 📖 [Paper](https://doi.org/10.1109/DICTA56598.2022.10034637)
 </details>
 
 <h3><em>🔶 CNN-Transformer Hybrids (31 papers)</em></h3>
@@ -201,18 +198,10 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Shu, X., Ma, L., Chang, F.
 - **Venue**: Forests
 - **Key Contribution**: PlantViT architecture for HSI-LiDAR fusion achieving state-of-the-art performance
-- **Links**: 📖 [Paper](https://www.mdpi.com/1999-4907/16/4/620) | 📊 [Dataset](https://github.com/shuxquan/PlantViT)
+- **Links**: 📖 [Paper](https://doi.org/10.3390/f16040620) | 💻 [Code](https://github.com/shuxquan/PlantViT)
 </details>
 
-<details>
-<summary><b>[2023] Application of the Vision Transformer and Mask R-CNN Joint Algorithm to Assist Forest Decisions</b></summary>
-
-- **Authors**: Liang, Q.
-- **Venue**: GRSM 2023
-- **Key Contribution**: ViT-Mask R-CNN hybrid for forest management decision support
-- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/10425544)
-</details>
-
+<!-- My paper needs to put preprint link -->
 <details>
 <summary><b>[2025] BARE: Boundary-Aware with Resolution Enhancement for Tree Crown Delineation</b></summary>
 
@@ -220,17 +209,15 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Venue**: AusDM 2025
 - **Key Contribution**: Architecture-preserving training strategy combining full-resolution supervision with class weighting for improved boundary precision; introduces B-IoU metric to tree crown delineation
 - **Links**: 📖 [Paper](https://github.com/attavit14203638/bare) | 💻 [Code](https://github.com/attavit14203638/bare)
-
-</details>
+</details> 
 
 <details>
-<summary><b>[2025] MTCDNet: Multimodal Feature Fusion-Based Tree Crown Detection Network</b></summary>
+<summary><b>[2025] MTCDNet: Multimodal Feature Fusion-Based Tree Crown Detection Network Using UAV-Acquired Optical Imagery and LiDAR Data</b></summary>
 
 - **Authors**: Zhang, H., Yang, C., Fan, X.
 - **Venue**: Remote Sensing
 - **Key Contribution**: Multimodal CNN-Transformer fusion for tree crown detection from optical and LiDAR data
-- **Links**: 📖 [Paper](https://www.mdpi.com/2072-4292/17/12/1996)
-
+- **Links**: 📖 [Paper](https://doi.org/10.3390/rs17121996)
 </details>
 
 <details>
@@ -239,8 +226,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Zhou, F., He, H., Chen, T., Zhang, T., Yang, M., Yuan, Y., Liu, J.
 - **Venue**: Remote Sensing
 - **Key Contribution**: Cross-modal transfer learning between RGB and LiDAR for tree segmentation
-- **Links**: 📖 [Paper](https://www.mdpi.com/2072-4292/17/16/2805)
-
+- **Links**: 📖 [Paper](https://doi.org/10.3390/rs17162805)
 </details>
 
 <details>
@@ -249,35 +235,35 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Xiang, B., Wielgosz, M., Puliti, S., Král, K., Krůček, M., Missarov, A., Astrup, R.
 - **Venue**: arXiv preprint
 - **Key Contribution**: End-to-end 3D transformer for forest point cloud segmentation
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2506.16991) | 💻 [Code](https://github.com/SmartForest-no/ForestFormer3D)
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2506.16991) | 💻 [Code](https://bxiang233.github.io/FF3D/)
 
 </details>
 
 <details>
-<summary><b>[2025] SatelliteCalculator: Multi-Task Vision Foundation Model for Quantitative Remote Sensing Inversion</b></summary>
+<summary><b>[2025] SatelliteCalculator: A Multi-Task Vision Foundation Model for Quantitative Remote Sensing Inversion</b></summary>
 
 - **Authors**: Yu, Z., Idris, M., Wang, P.
 - **Venue**: arXiv preprint
 - **Key Contribution**: Multi-task CNN-transformer model for quantitative remote sensing including forest parameters
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2504.13442)
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2504.13442) | 💻 [Code](https://github.com/YuZhenyuLindy/SatelliteCalculator)
 </details>
 
 <details>
 <summary><b>[2025] VibrantVS: A High-Resolution Vision Transformer for Forest Canopy Height Estimation</b></summary>
 
-- **Authors**: Chang, T., Ndegwa, K., Gros, A., Landau, V.A., Zachmann, L.J., et al.
+- **Authors**: Chang, T., Ndegwa, K., Gros, A., Landau, V.A., Zachmann, L.J., State, B., Gritts, M.A., Miller, C.W., Rutenbeck, N.E., Conway, S., Bayes, G.
 - **Venue**: Remote Sensing
 - **Key Contribution**: High-resolution hybrid architecture for continental-scale canopy height mapping
-- **Links**: 📖 [Paper](https://www.mdpi.com/2072-4292/17/6/1017)
+- **Links**: 📖 [Paper](https://doi.org/10.3390/rs17061017)
 </details>
 
 <details>
-<summary><b>[2025] Multi-Modal Uncertainty Robust Tree Cover Segmentation</b></summary>
+<summary><b>[2025] Multimodal Uncertainty Robust Tree Cover Segmentation for High-Resolution Remote Sensing Images</b></summary>
 
 - **Authors**: Gui, Y., Li, W., Wang, Y., Xia, X.G., Marty, M., Ginzler, C., Wang, Z.
-- **Venue**: arXiv preprint
-- **Key Contribution**: Uncertainty-aware multi-modal fusion for robust tree cover segmentation
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2509.04870)
+- **Venue**: IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing
+- **Key Contribution**: Uncertainty-aware multimodal fusion framework for robust tree cover semantic segmentation
+- **Links**: 📖 [Paper](https://doi.org/10.1109/JSTARS.2025.3631272)
 </details>
 
 <details>
@@ -286,7 +272,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Wang, Y., Dou, X., Liang, X.
 - **Venue**: ISPRS Archives
 - **Key Contribution**: Fine-grained segmentation approach for individual tree crowns
-- **Links**: 📖 [Paper](https://isprs-archives.copernicus.org/articles/XLVIII-1-W4-2025/1529/2025/)
+- **Links**: 📖 [Paper](https://doi.org/10.5194/isprs-archives-XLVIII-G-2025-1529-2025)
 </details>
 
 <details>
@@ -295,7 +281,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Voulgaris, G.
 - **Venue**: CVPR 2025
 - **Key Contribution**: Hybrid architecture combining classical CV with modern transformers
-- **Links**: 📖 [Paper](https://openaccess.thecvf.com/content/CVPR2025/html/Voulgaris_Bridging_Classical_and_Modern_Computer_Vision_PerceptiveNet_for_Tree_Crown_CVPR_2025_paper.html)
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2505.23597)
 </details>
 
 <details>
@@ -304,7 +290,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Gibril, M.B.A., Shafri, H.Z.M., Shanableh, A., Al-Ruzouq, R., et al.
 - **Venue**: Remote Sensing Applications: Society and Environment
 - **Key Contribution**: Multiscale ViT for large-scale date palm assessment
-- **Links**: 📖 [Paper](https://www.sciencedirect.com/science/article/pii/S2352938524000119)
+- **Links**: 📖 [Paper](https://doi.org/10.1016/j.rsase.2024.101195)
 </details>
 
 <details>
@@ -313,7 +299,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Jamali, A., Roy, S.K., Pradhan, B.
 - **Venue**: Remote Sensing Applications: Society and Environment
 - **Key Contribution**: Enhanced TransUNet with spatial transformation modules for deforestation mapping
-- **Links**: 📖 [Paper](https://www.sciencedirect.com/science/article/pii/S2352938524000855)
+- **Links**: 📖 [Paper](https://doi.org/10.1016/j.rsase.2024.101221)
 </details>
 
 <details>
@@ -322,7 +308,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Ton-That, M.N., Le, T.V., Truong, N.H., Le, A.D., Pham, A.D., Vo, H.B.
 - **Venue**: ICCE 2024
 - **Key Contribution**: Novel ground truth generation approach for tree counting
-- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/10634677)
+- **Links**: 📖 [Paper](https://doi.org/10.1109/ICCE62051.2024.10634677)
 </details>
 
 <details>
@@ -331,16 +317,16 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Wang, Z., Yang, J., Dong, C., Zhang, X., Yi, C., Sun, J.
 - **Venue**: Electronic Research Archive
 - **Key Contribution**: Swin-enhanced DeepLabv3+ for mangrove mapping
-- **Links**: 📖 [Paper](https://www.aimspress.com/article/doi/10.3934/era.2024251)
+- **Links**: 📖 [Paper](https://doi.org/10.3934/era.2024260)
 </details>
 
 <details>
-<summary><b>[2024] Evaluating Deep Learning Methods Applied to Landsat Time Series for Boreal Forest Disturbance Detection</b></summary>
+<summary><b>[2024] Evaluating Deep Learning Methods Applied to Landsat Time Series Subsequences to Detect and Classify Boreal Forest Disturbances Events: The Challenge of Partial and Progressive Disturbances</b></summary>
 
 - **Authors**: Perbet, P., Guindon, L., Côté, J.F., Béland, M.
 - **Venue**: Remote Sensing of Environment
 - **Key Contribution**: Evaluation of transformer architectures for time series disturbance detection
-- **Links**: 📖 [Paper](https://www.sciencedirect.com/science/article/pii/S0034425724000658)
+- **Links**: 📖 [Paper](https://doi.org/10.1016/j.rse.2024.114107)
 </details>
 
 <details>
@@ -349,34 +335,43 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Lu, Y., Huang, Y., Sun, S., Zhang, T., Zhang, X., Fei, S., Chen, V.
 - **Venue**: IEEE VR 2024 Workshops
 - **Key Contribution**: Multi-modal network trained on synthetic forest data
-- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/10536563)
+- **Links**: 📖 [Paper](https://doi.org/10.1109/VRW62533.2024.00104)
 </details>
 
 <details>
-<summary><b>[2024] Assessing the Generalization Capacity of CNNs and Vision Transformers for Deforestation Detection</b></summary>
+<summary><b>[2024] Assessing the Generalization Capacity of Convolutional Neural Networks and Vision Transformers for Deforestation Detection in Tropical Biomes</b></summary>
 
 - **Authors**: Vega, P.J.S., Torres, D.L., Andrade-Miranda, G.X., Feitosa, R.Q.
 - **Venue**: ISPRS Archives
 - **Key Contribution**: Generalization analysis of CNNs vs ViTs for deforestation detection
-- **Links**: 📖 [Paper](https://isprs-archives.copernicus.org/articles/XLVIII-1-2024/519/2024/)
+- **Links**: 📖 [Paper](https://doi.org/10.5194/isprs-archives-XLVIII-3-2024-519-2024)
 </details>
 
 <details>
-<summary><b>[2024] Transformer-Based Instance Segmentation with Multi-Scale Spectrum-Averaging Blend Queries</b></summary>
+<summary><b>[2024] Transformer-based Instance Segmentation with Multi-Scale Spectrum-Averaging Blend Queries</b></summary>
 
 - **Authors**: Zhu, L., Lin, Y., Lin, C.W.
 - **Venue**: ISCIPT 2024
 - **Key Contribution**: Multi-scale query mechanism for tree instance segmentation
-- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/10673075)
+- **Links**: 📖 [Paper](https://doi.org/10.1109/ISCIPT61983.2024.10673075)
 </details>
 
 <details>
-<summary><b>[2023] TreeFormer: A Semi-Supervised Transformer-Based Framework for Tree Counting</b></summary>
+<summary><b>[2023] Application of the Vision Transformer and Mask R-CNN Joint Algorithm to Assist Forest Decisions</b></summary>
+
+- **Authors**: Liang, Q.
+- **Venue**: GRSM 2023
+- **Key Contribution**: ViT-Mask R-CNN hybrid for forest management decision support
+- **Links**: 📖 [Paper](https://doi.org/10.1109/GRSM60169.2023.10425544)
+</details>
+
+<details>
+<summary><b>[2023] TreeFormer: A Semi-Supervised Transformer-Based Framework for Tree Counting From a Single High-Resolution Image</b></summary>
 
 - **Authors**: Amirkolaee, H.A., Shi, M., Mulligan, M.
 - **Venue**: IEEE Transactions on Geoscience and Remote Sensing
 - **Key Contribution**: Semi-supervised transformer for tree counting from single high-resolution images
-- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/10184482) | 💻 [Code](https://github.com/HAAClassic/TreeFormer)
+- **Links**: 📖 [Paper](https://doi.org/10.1109/TGRS.2023.3295802) | 💻 [Code](https://github.com/HAAClassic/TreeFormer)
 </details>
 
 <details>
@@ -385,7 +380,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Jamali, A., Roy, S.K., Li, J., Ghamisi, P.
 - **Venue**: International Journal of Applied Earth Observation and Geoinformation
 - **Key Contribution**: Attention-gated TransUNet variant for improved deforestation mapping
-- **Links**: 📖 [Paper](https://www.sciencedirect.com/science/article/pii/S1569843223001541) | 💻 [Code](https://github.com/aj1365/TransUNetplus2)
+- **Links**: 📖 [Paper](https://doi.org/10.1016/j.jag.2023.103332) | 💻 [Code](https://github.com/aj1365/TransUNetplus2)
 </details>
 
 <details>
@@ -394,7 +389,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Jamali, A., Roy, S.K., Ghamisi, P.
 - **Venue**: International Journal of Applied Earth Observation and Geoinformation
 - **Key Contribution**: Hybrid CNN-Transformer with Local Window Attention for wetland mapping
-- **Links**: 📖 [Paper](https://www.sciencedirect.com/science/article/pii/S1569843223001553) | 💻 [Code](https://github.com/aj1365/WetMapFormer)
+- **Links**: 📖 [Paper](https://doi.org/10.1016/j.jag.2023.103333) | 💻 [Code](https://github.com/aj1365/WetMapFormer)
 </details>
 
 <details>
@@ -403,79 +398,79 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Fayad, I., Ciais, P., Schwartz, M., Wigneron, J.P., Baghdadi, N., et al.
 - **Venue**: Remote Sensing of Environment
 - **Key Contribution**: Hy-TeC hybrid architecture for large-scale canopy height estimation using Sentinel-2 and GEDI
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2304.11487)
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2304.11487)
 </details>
 
 <details>
-<summary><b>[2023] Towards Complete Tree Crown Delineation by Instance Segmentation with Mask R-CNN and DETR</b></summary>
+<summary><b>[2023] Towards Complete Tree Crown Delineation by Instance Segmentation with Mask R–CNN and DETR using UAV-based Multispectral Imagery and LiDAR Data</b></summary>
 
 - **Authors**: Dersch, S., Schoettl, A., Krzystek, P., Heurich, M.
 - **Venue**: ISPRS Open Journal of Photogrammetry and Remote Sensing
 - **Key Contribution**: Comparison of Mask R-CNN and DETR for tree crown delineation
-- **Links**: 📖 [Paper](https://www.sciencedirect.com/science/article/pii/S2667393223000042)
+- **Links**: 📖 [Paper](https://doi.org/10.1016/j.ophoto.2023.100037)
 </details>
 
 <details>
-<summary><b>[2023] Tree Species Classification in UAV Remote Sensing Images Based on Super-Resolution and Deep Learning</b></summary>
+<summary><b>[2023] Tree Species Classification in UAV Remote Sensing Images Based on Super-Resolution Reconstruction and Deep Learning</b></summary>
 
 - **Authors**: Huang, Y., Wen, X., Gao, Y., Zhang, Y., Lin, G.
 - **Venue**: Remote Sensing
 - **Key Contribution**: Super-resolution enhancement combined with transformer classification
-- **Links**: 📖 [Paper](https://www.mdpi.com/2072-4292/15/11/2942)
+- **Links**: 📖 [Paper](https://doi.org/10.3390/rs15112942)
 </details>
 
 <details>
-<summary><b>[2023] Instance Segmentation of LiDAR Data with Vision Transformer Model for Inundation Mapping</b></summary>
+<summary><b>[2023] Instance Segmentation of LiDAR Data with Vision Transformer Model in Support Inundation Mapping Under Forest Canopy Environment</b></summary>
 
 - **Authors**: Yang, J., El Mendili, L., Khayer, Y., McArdle, S., Hashemi Beni, L.
-- **Venue**: MDPI Preprints
+- **Venue**: ISPRS Archives
 - **Key Contribution**: ViT-based instance segmentation for LiDAR under forest canopy
-- **Links**: 📖 [Paper](https://www.preprints.org/manuscript/202301.0001/v1)
+- **Links**: 📖 [Paper](https://doi.org/10.5194/isprs-archives-XLVIII-1-W2-2023-203-2023)
 </details>
 
 <details>
-<summary><b>[2023] Fusing Sentinel-1 and Sentinel-2 Images with Transformer-Based Network for Deforestation Detection</b></summary>
+<summary><b>[2023] Fusing Sentinel-1 and Sentinel-2 Images with Transformer-Based Network for Deforestation Detection in the Brazilian Amazon under Diverse Cloud Conditions</b></summary>
 
 - **Authors**: Ferrari, F., Ferreira, M.P., Feitosa, R.Q.
-- **Venue**: ISPRS Annals
+- **Venue**: ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences
 - **Key Contribution**: Transformer-based SAR-optical fusion for cloud-robust deforestation detection
-- **Links**: 📖 [Paper](https://isprs-annals.copernicus.org/articles/X-1-W1-2023/999/2023/)
+- **Links**: 📖 [Paper](https://doi.org/10.5194/isprs-annals-X-1-W1-2023-999-2023)
 </details>
 
 <details>
 <summary><b>[2023] Benchmarking Individual Tree Mapping with Sub-Meter Imagery</b></summary>
 
 - **Authors**: Gominski, D., Kariryaa, A., Brandt, M., Igel, C., Li, S., et al.
-- **Venue**: arXiv preprint
+- **Venue**: ISPRS Journal of Photogrammetry and Remote Sensing
 - **Key Contribution**: Large-scale benchmark for individual tree mapping methods
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2311.07981)
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2311.07981)
 </details>
 
 <details>
 <summary><b>[2022] Novel Single Tree Detection by Transformers Using UAV-Based Multispectral Imagery</b></summary>
 
 - **Authors**: Dersch, S., Schöttl, A., Krzystek, P., Heurich, M.
-- **Venue**: ISPRS Archives
+- **Venue**: Int. Arch. Photogramm. Remote Sens. Spatial Inf. Sci.
 - **Key Contribution**: First application of DETR for single tree detection from UAV imagery
-- **Links**: 📖 [Paper](https://isprs-archives.copernicus.org/articles/XLIII-B2-2022/981/2022/)
+- **Links**: 📖 [Paper](https://doi.org/10.5194/isprs-archives-XLIII-B2-2022-981-2022)
 </details>
 
 <details>
-<summary><b>[2022] Deep Convolutional Neural Networks and Swin Transformer-Based Frameworks for Individual Date Palm Tree Detection</b></summary>
+<summary><b>[2022] Deep Convolutional Neural Networks and Swin Transformer-Based Frameworks for Individual Date Palm Tree Detection and Mapping from Large-Scale UAV Images</b></summary>
 
-- **Authors**: Gibril, M.B.A., Shafri, H.Z.M., Shanableh, A., Al-Ruzouq, R., et al.
+- **Authors**: Gibril, M.B.A., Shafri, H.Z.M., Shanableh, A., Al-Ruzouq, R., Wayayok, A., Hashim, S.J.B., Sachit, M.S.
 - **Venue**: Geocarto International
 - **Key Contribution**: Systematic comparison of CNN and Swin Transformer for tree detection
-- **Links**: 📖 [Paper](https://www.tandfonline.com/doi/full/10.1080/10106049.2022.2142965)
+- **Links**: 📖 [Paper](https://doi.org/10.1080/10106049.2022.2142966)
 </details>
 
 <details>
-<summary><b>[2022] Individual Tree Detection Based on High-Resolution RGB Images for Urban Forestry</b></summary>
+<summary><b>[2022] Individual Tree Detection Based on High-Resolution RGB Images for Urban Forestry Applications</b></summary>
 
 - **Authors**: Zhang, L., Lin, H., Wang, F.
 - **Venue**: IEEE Access
-- **Key Contribution**: Transformer-enhanced detection for urban tree inventories
-- **Links**: 📖 [Paper](https://ieeexplore.ieee.org/document/9765982)
+- **Key Contribution**: Swin Transformer with Faster R-CNN for individual tree detection in urban forestry
+- **Links**: 📖 [Paper](https://doi.org/10.1109/ACCESS.2022.3171585)
 </details>
 
 <h3><em>🔷 Hierarchical Vision Transformers (8 papers)</em></h3>
@@ -740,12 +735,12 @@ These seminal papers introduced the core transformer architectures adapted for t
 <h3><em>🔵 Vision Transformers</em></h3>
 
 <details>
-<summary><b>[2020] An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (ViT)</b></summary>
+<summary><b>[2022] DaViT: Dual Attention Vision Transformers</b></summary>
 
-- **Authors**: Dosovitskiy, A., Beyer, L., Kolesnikov, A., Weissenborn, D., Zhai, X., et al.
-- **Venue**: ICLR 2021
-- **Key Contribution**: First pure transformer architecture for image classification
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2010.11929) | 💻 [Code](https://github.com/google-research/vision_transformer)
+- **Authors**: Ding, M., Xiao, B., Codella, N., Luo, P., Wang, J., Yuan, L.
+- **Venue**: ECCV 2022
+- **Key Contribution**: Combines spatial and channel attention for improved representation
+- **Links**: 📖 [Paper](https://arxiv.org/abs/2204.03645) | 💻 [Code](https://github.com/dingmyu/davit)
 </details>
 
 <details>
@@ -776,15 +771,33 @@ These seminal papers introduced the core transformer architectures adapted for t
 </details>
 
 <details>
-<summary><b>[2022] DaViT: Dual Attention Vision Transformers</b></summary>
+<summary><b>[2020] An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (ViT)</b></summary>
 
-- **Authors**: Ding, M., Xiao, B., Codella, N., Luo, P., Wang, J., Yuan, L.
-- **Venue**: ECCV 2022
-- **Key Contribution**: Combines spatial and channel attention for improved representation
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2204.03645) | 💻 [Code](https://github.com/dingmyu/davit)
+- **Authors**: Dosovitskiy, A., Beyer, L., Kolesnikov, A., Weissenborn, D., Zhai, X., et al.
+- **Venue**: ICLR 2021
+- **Key Contribution**: First pure transformer architecture for image classification
+- **Links**: 📖 [Paper](https://arxiv.org/abs/2010.11929) | 💻 [Code](https://github.com/google-research/vision_transformer)
 </details>
 
 <h3><em>🔵 Segmentation Architectures</em></h3>
+
+<details>
+<summary><b>[2022] Mask2Former: Masked-Attention Mask Transformer for Universal Image Segmentation</b></summary>
+
+- **Authors**: Cheng, B., Misra, I., Schwing, A.G., Kirillov, A., Girdhar, R.
+- **Venue**: CVPR 2022
+- **Key Contribution**: Universal architecture for semantic, instance, and panoptic segmentation
+- **Links**: 📖 [Paper](https://arxiv.org/abs/2112.01527) | 💻 [Code](https://github.com/facebookresearch/Mask2Former)
+</details>
+
+<details>
+<summary><b>[2022] UniFormer: Unifying Convolution and Self-attention for Visual Recognition</b></summary>
+
+- **Authors**: Li, K., Wang, Y., Zhang, J., Gao, P., Song, G., Liu, Y., Li, H., Qiao, Y.
+- **Venue**: IEEE TPAMI
+- **Key Contribution**: Unified convolution and self-attention in single transformer block
+- **Links**: 📖 [Paper](https://arxiv.org/abs/2201.09450) | 💻 [Code](https://github.com/Sense-X/UniFormer)
+</details>
 
 <details>
 <summary><b>[2021] SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers</b></summary>
@@ -813,42 +826,15 @@ These seminal papers introduced the core transformer architectures adapted for t
 - **Links**: 📖 [Paper](https://arxiv.org/abs/2102.04306) | 💻 [Code](https://github.com/Beckschen/TransUNet)
 </details>
 
-<details>
-<summary><b>[2022] Mask2Former: Masked-Attention Mask Transformer for Universal Image Segmentation</b></summary>
-
-- **Authors**: Cheng, B., Misra, I., Schwing, A.G., Kirillov, A., Girdhar, R.
-- **Venue**: CVPR 2022
-- **Key Contribution**: Universal architecture for semantic, instance, and panoptic segmentation
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2112.01527) | 💻 [Code](https://github.com/facebookresearch/Mask2Former)
-</details>
-
-<details>
-<summary><b>[2022] UniFormer: Unifying Convolution and Self-attention for Visual Recognition</b></summary>
-
-- **Authors**: Li, K., Wang, Y., Zhang, J., Gao, P., Song, G., Liu, Y., Li, H., Qiao, Y.
-- **Venue**: IEEE TPAMI
-- **Key Contribution**: Unified convolution and self-attention in single transformer block
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2201.09450) | 💻 [Code](https://github.com/Sense-X/UniFormer)
-</details>
-
 <h3><em>🔵 Detection & Foundation Models</em></h3>
 
 <details>
-<summary><b>[2020] DETR: End-to-End Object Detection with Transformers</b></summary>
+<summary><b>[2024] Grounding DINO: Marrying DINO with Grounded Pre-Training for Open-Set Object Detection</b></summary>
 
-- **Authors**: Carion, N., Massa, F., Synnaeve, G., Usunier, N., Kirillov, A., Zagoruyko, S.
-- **Venue**: ECCV 2020
-- **Key Contribution**: First transformer-based end-to-end object detector
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2005.12872) | 💻 [Code](https://github.com/facebookresearch/detr)
-</details>
-
-<details>
-<summary><b>[2021] CLIP: Learning Transferable Visual Models From Natural Language Supervision</b></summary>
-
-- **Authors**: Radford, A., Kim, J.W., Hallacy, C., Ramesh, A., Goh, G., et al.
-- **Venue**: ICML 2021
-- **Key Contribution**: Vision-language pre-training enabling zero-shot transfer
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2103.00020) | 💻 [Code](https://github.com/openai/CLIP)
+- **Authors**: Liu, S., Zeng, Z., Ren, T., Li, F., Zhang, H., Yang, J., et al.
+- **Venue**: ECCV 2024
+- **Key Contribution**: Open-set detection with language grounding
+- **Links**: 📖 [Paper](https://arxiv.org/abs/2303.05499) | 💻 [Code](https://github.com/IDEA-Research/GroundingDINO)
 </details>
 
 <details>
@@ -861,12 +847,21 @@ These seminal papers introduced the core transformer architectures adapted for t
 </details>
 
 <details>
-<summary><b>[2024] Grounding DINO: Marrying DINO with Grounded Pre-Training for Open-Set Object Detection</b></summary>
+<summary><b>[2021] CLIP: Learning Transferable Visual Models From Natural Language Supervision</b></summary>
 
-- **Authors**: Liu, S., Zeng, Z., Ren, T., Li, F., Zhang, H., Yang, J., et al.
-- **Venue**: ECCV 2024
-- **Key Contribution**: Open-set detection with language grounding
-- **Links**: 📖 [Paper](https://arxiv.org/abs/2303.05499) | 💻 [Code](https://github.com/IDEA-Research/GroundingDINO)
+- **Authors**: Radford, A., Kim, J.W., Hallacy, C., Ramesh, A., Goh, G., et al.
+- **Venue**: ICML 2021
+- **Key Contribution**: Vision-language pre-training enabling zero-shot transfer
+- **Links**: 📖 [Paper](https://arxiv.org/abs/2103.00020) | 💻 [Code](https://github.com/openai/CLIP)
+</details>
+
+<details>
+<summary><b>[2020] DETR: End-to-End Object Detection with Transformers</b></summary>
+
+- **Authors**: Carion, N., Massa, F., Synnaeve, G., Usunier, N., Kirillov, A., Zagoruyko, S.
+- **Venue**: ECCV 2020
+- **Key Contribution**: First transformer-based end-to-end object detector
+- **Links**: 📖 [Paper](https://arxiv.org/abs/2005.12872) | 💻 [Code](https://github.com/facebookresearch/detr)
 </details>
 
 ## 📖 Related Surveys
