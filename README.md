@@ -1011,7 +1011,7 @@ These seminal papers introduced the core transformer architectures adapted for t
 - **Resolution**: 0.1m RGB imagery
 - **Task**: Tree cover mapping
 - **Paper**: Veitch-Michaelis et al., *NeurIPS 2024*
-- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2407.11743) | 📊 [Dataset](https://restor.eco/blog/oam-tcd/)
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2407.11743) | 📊 [Dataset](https://huggingface.co/datasets/restor/tcd)
 </details>
 
 <details>
@@ -1044,18 +1044,18 @@ These seminal papers introduced the core transformer architectures adapted for t
 - **Resolution**: 0.1m RGB imagery
 - **Task**: Instance segmentation
 - **Paper**: Ball et al., *Remote Sensing in Ecology and Conservation, 2023*
-- **Links**: 📖 [Paper](https://doi.org/10.1002/rse2.351) | 💻 📊 [Code & Dataset](https://github.com/PatBall1/detectree2)
+- **Links**: 📖 [Paper](https://doi.org/10.1002/rse2.332) | 💻 📊 [Code & Dataset](https://huggingface.co/datasets/CanopyRS/Detectree2)
 </details>
 
 <details>
-<summary><b>Quebec Plantations</b> — Ultra-high resolution tree species segmentation</summary>
+<summary><b>Quebec Trees</b> — Ultra-high resolution tree species segmentation</summary>
 
 - **Coverage**: Canada (0.44 km²)
 - **Size**: 23k tree annotations
 - **Resolution**: 18mm UAV RGB imagery
 - **Task**: Tree species segmentation
 - **Paper**: Cloutier et al., *Remote Sensing of Environment, 2024*
-- **Links**: 📖 [Paper](https://doi.org/10.1016/j.rse.2024.114283) | 📊 [Dataset](https://zenodo.org/records/10144043)
+- **Links**: 📖 [Paper](https://doi.org/10.1016/j.rse.2024.114283) | 📊 [Dataset](https://doi.org/10.5281/zenodo.8148479)
 </details>
 
 <details>
