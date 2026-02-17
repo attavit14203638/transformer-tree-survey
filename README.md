@@ -1,4 +1,4 @@
-# Transformer-Based Tree Extraction from Remote Sensing Imagery: A Systematic Review
+# Transformer-Based Tree Extraction from Remote Sensing Imagery: A Comprehensive Review
 
 > Supplementary resource repository for our systematic literature review on transformer-based models applied to tree extraction from remote sensing imagery.
 
@@ -6,7 +6,7 @@ This repository serves as the comprehensive resource index for our systematic re
 
 ## 📄 Literature Review Paper
 
-**Title**: Transformer-Based Tree Extraction from Remote Sensing Imagery: A Systematic Review  
+**Title**: Transformer-Based Tree Extraction from Remote Sensing Imagery: A Comprehensive Review  
 **Authors**: Attavit Wilaiwongsakul, Bin Liang, Bryan Zheng, Fang Chen  
 **Journal**: ISPRS Journal of Photogrammetry and Remote Sensing (Under Review)  
 **Links**: 📖 [Paper](paper.pdf) | 📦 [Supplementary Materials](https://github.com/attavit14203638/transformer-tree-survey)
@@ -119,7 +119,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Architecture Types**: Pure ViTs (6), Hierarchical ViTs (8), CNN-Transformer Hybrids (31), Foundation Models (12), Vision-Language Models (4), Comparative Studies (2)
 - **Data Modalities**: RGB (42.7%), Multispectral (28.2%), LiDAR (16.4%), SAR (8.2%), Hyperspectral (3.6%), Thermal (0.9%)
 - **Tasks**: Detection, Semantic Segmentation, Instance Segmentation, Classification, Height/Biomass Estimation
-- **Last Updated**: January 2026
+- **Last Updated**: February 2026
 
 *For detailed categorization and systematic analysis, refer to our published literature review paper.*
 
@@ -1004,6 +1004,17 @@ These seminal papers introduced the core transformer architectures adapted for t
 </details>
 
 <details>
+<summary><b>OAM-TCD</b> — Globally diverse dataset of high-resolution tree cover maps</summary>
+
+- **Coverage**: Global (>200 km²)
+- **Size**: 280k tree annotations
+- **Resolution**: 0.1m RGB imagery
+- **Task**: Tree cover mapping
+- **Paper**: Veitch-Michaelis et al., *NeurIPS 2024*
+- **Links**: 📖 [Paper](https://doi.org/10.48550/arXiv.2407.11743) | 📊 [Dataset](https://restor.eco/blog/oam-tcd/)
+</details>
+
+<details>
 <summary><b>Open-Canopy</b> — Very high resolution forest monitoring dataset</summary>
 
 - **Coverage**: France, temperate forests
@@ -1024,6 +1035,28 @@ These seminal papers introduced the core transformer architectures adapted for t
 ---
 
 <h3><em>🗺️ Regional Scale Datasets</em></h3>
+
+<details>
+<summary><b>Detectree2</b> — Tropical forest crown delineation from aerial RGB imagery</summary>
+
+- **Coverage**: Malaysia, French Guiana
+- **Size**: 3.8k tree annotations
+- **Resolution**: 0.1m RGB imagery
+- **Task**: Instance segmentation
+- **Paper**: Ball et al., *Remote Sensing in Ecology and Conservation, 2023*
+- **Links**: 📖 [Paper](https://doi.org/10.1002/rse2.351) | 💻 📊 [Code & Dataset](https://github.com/PatBall1/detectree2)
+</details>
+
+<details>
+<summary><b>Quebec Plantations</b> — Ultra-high resolution tree species segmentation</summary>
+
+- **Coverage**: Canada (0.44 km²)
+- **Size**: 23k tree annotations
+- **Resolution**: 18mm UAV RGB imagery
+- **Task**: Tree species segmentation
+- **Paper**: Cloutier et al., *Remote Sensing of Environment, 2024*
+- **Links**: 📖 [Paper](https://doi.org/10.1016/j.rse.2024.114283) | 📊 [Dataset](https://zenodo.org/records/10144043)
+</details>
 
 <details>
 <summary><b>FOR-instance</b> — UAV laser scanning benchmark for individual tree segmentation</summary>
@@ -1152,7 +1185,7 @@ If you use this repository or find it helpful for your research, please cite our
 
 ```bibtex
 @article{wilaiwongsakul2026transformer,
-  title={Transformer-Based Tree Extraction from Remote Sensing Imagery: A Systematic Review},
+  title={Transformer-Based Tree Extraction from Remote Sensing Imagery: A Comprehensive Review},
   author={Wilaiwongsakul, Attavit and Liang, Bin and Zheng, Bryan and Chen, Fang},
   journal={ISPRS Journal of Photogrammetry and Remote Sensing},
   year={2026},
@@ -1169,7 +1202,7 @@ This repository serves as:
 
 ### Updates
 
-- **Last Updated**: January 2026
+- **Last Updated**: February 2026
 - **Papers Covered**: 63 studies (2017-2025)
 - **Architecture Coverage**: Pure ViTs (6), Hierarchical ViTs (8), CNN-Transformer Hybrids (31), Foundation Models (12), Vision-Language Models (4), Comparative Studies (2)
 
