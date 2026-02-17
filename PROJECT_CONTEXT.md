@@ -56,7 +56,7 @@ GitHub_Release/
 
 ### **Sections Included**
 1. **📄 Literature Review Paper** - Link to published paper
-2. **📊 Survey Figures** - Key summary diagrams (10 figures)
+2. **📊 Survey Figures** - Key summary diagrams (8 figures)
 3. **📝 Literature Overview** - Brief statistics (63 papers, 2017-2025)
 4. **📈 Star History** - Repository star growth chart
 5. **📚 Research Papers** - Chronological by architecture type
@@ -165,5 +165,4 @@ The repository is finalized for:
 - **Policy Papers**: 5
 - **Total References**: ~107
 - **Time Period**: 2017-2025
-- **Geographic Coverage**: 27 countries across 6 continents
-- **Figures Included**: 10 survey figures
+- **Figures Included**: 8 survey figures

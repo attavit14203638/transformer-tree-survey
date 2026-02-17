@@ -57,54 +57,40 @@ This repository serves as the comprehensive resource index for our systematic re
 
 **Figure 3**: Timeline of transformer-based tree extraction publications (2022-2025), showing 550% growth.
 
-### Geographic Distribution
-<p align="center">
-  <img src="figures/distribution.jpg" width="700" alt="Geographic Distribution">
-</p>
-
-**Figure 4**: Geographic distribution of study sites across 6 continents.
-
 ### Annotation, Task & Sensor Summary
 <p align="center">
   <img src="figures/annotation_task_sensor_summary.jpg" width="700" alt="Annotation, Task and Sensor Summary">
 </p>
 
-**Figure 5**: Overview of annotation types, computer vision tasks, and sensor modalities in the reviewed literature.
-
-### Data Acquisition Landscape
-<p align="center">
-  <img src="figures/acquisition.jpg" width="700" alt="Data Acquisition">
-</p>
-
-**Figure 6**: Sensor modality distribution and platform-sensor configurations across 63 studies.
+**Figure 4**: Overview of annotation types, computer vision tasks, and sensor modalities in the reviewed literature.
 
 ### Architecture Pipelines
 <p align="center">
   <img src="figures/architecture_summary.jpg" width="700" alt="Architecture Summary">
 </p>
 
-**Figure 7**: Conceptual processing pipelines for five transformer architecture categories.
+**Figure 5**: Conceptual processing pipelines for five transformer architecture categories.
 
 ### Performance Analysis (RQ1)
 <p align="center">
   <img src="figures/rq1_performance.jpg" width="700" alt="Performance Analysis">
 </p>
 
-**Figure 8**: Performance gain distribution and efficiency trade-offs across transformer architectures.
+**Figure 6**: Performance gain distribution and efficiency trade-offs across transformer architectures.
 
 ### Generalization Analysis (RQ2)
 <p align="center">
   <img src="figures/rq2_generalization.jpg" width="700" alt="Generalization Analysis">
 </p>
 
-**Figure 9**: Cross-environment transfer performance and factors affecting generalization.
+**Figure 7**: Cross-environment transfer performance and factors affecting generalization.
 
 ### Training Strategy Analysis (RQ3)
 <p align="center">
   <img src="figures/rq3_training.jpg" width="700" alt="Training Strategy">
 </p>
 
-**Figure 10**: Learning strategy distribution and label efficiency by model type.
+**Figure 8**: Learning strategy distribution and label efficiency by model type.
 
 </details>
 
@@ -115,7 +101,6 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Related Surveys**: 15 reviews
 - **Dataset Papers**: 10 benchmarks
 - **Policy Papers**: 5 documents
-- **Geographic Coverage**: 27 countries across 6 continents
 - **Architecture Types**: Pure ViTs (6), Hierarchical ViTs (8), CNN-Transformer Hybrids (31), Foundation Models (12), Vision-Language Models (4), Comparative Studies (2)
 - **Data Modalities**: RGB (42.7%), Multispectral (28.2%), LiDAR (16.4%), SAR (8.2%), Hyperspectral (3.6%), Thermal (0.9%)
 - **Tasks**: Detection, Semantic Segmentation, Instance Segmentation, Classification, Height/Biomass Estimation
