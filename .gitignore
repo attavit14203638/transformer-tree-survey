@@ -63,6 +63,9 @@ site/
 *.tiff
 *.geotiff
 
+# Runtime cache (matplotlib/fontconfig)
+.cache/
+
 # Temporary files
 *.tmp
 *.temp
