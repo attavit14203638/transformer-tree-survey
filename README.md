@@ -183,7 +183,7 @@ This repository serves as the comprehensive resource index for our systematic re
 - **Authors**: Wilaiwongsakul, A., Liang, B., Jia, W., Zheng, B., Chen, F.
 - **Venue**: AusDM 2025
 - **Key Contribution**: Architecture-preserving training strategy combining full-resolution supervision with class weighting for improved boundary precision; introduces B-IoU metric to tree crown delineation
-- **Links**: 📖 [Paper](https://github.com/attavit14203638/bare) | 💻 [Code](https://github.com/attavit14203638/bare)
+- **Links**: 📖 [Paper](https://link.springer.com/chapter/10.1007/978-981-95-6786-7_20) | 💻 [Code](https://github.com/attavit14203638/frts)
 </details>
 
 <details>
