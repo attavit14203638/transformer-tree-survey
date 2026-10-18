@@ -1,0 +1,636 @@
+macro,value,text,definition,source
+NRecords,2522,"2{,}522",records identified from the databases,Literature_Extraction/Search/screening/prisma_counts.json
+NScopus,1221,"1{,}221",records from Scopus,Literature_Extraction/Search/screening/prisma_counts.json
+NWebOfScience,1174,"1{,}174",records from Web of Science,Literature_Extraction/Search/screening/prisma_counts.json
+NArXiv,127,127,records from arXiv,Literature_Extraction/Search/screening/prisma_counts.json
+NDuplicates,976,976,duplicate records removed before screening,Literature_Extraction/Search/screening/prisma_counts.json
+NScreened,1546,"1{,}546",records screened on title and abstract,Literature_Extraction/Search/screening/prisma_counts.json
+NExcludedScreening,1372,"1{,}372",records excluded on title and abstract,Literature_Extraction/Search/screening/prisma_counts.json
+NSought,174,174,database reports sought for retrieval,Literature_Extraction/Search/screening/prisma_counts.json
+NNotRetrieved,4,4,database reports not retrieved,Literature_Extraction/Search/screening/prisma_counts.json
+NNotRetrievedWord,4,four,database reports not retrieved (in words),Literature_Extraction/Search/screening/prisma_counts.json
+NAssessed,170,170,database reports assessed in full text,Literature_Extraction/Search/screening/prisma_counts.json
+NExcludedFullText,43,43,database reports excluded in full text,Literature_Extraction/Search/screening/prisma_counts.json
+NOtherRecords,10,10,records identified by other methods,Literature_Extraction/Search/screening/prisma_counts.json
+NOtherRecordsWord,10,ten,records identified by other methods (in words),Literature_Extraction/Search/screening/prisma_counts.json
+NOtherAssessed,10,10,other-method reports assessed in full text,Literature_Extraction/Search/screening/prisma_counts.json
+NOtherAssessedWord,10,ten,other-method reports assessed in full text (in words),Literature_Extraction/Search/screening/prisma_counts.json
+NOtherExcluded,4,4,other-method reports excluded in full text,Literature_Extraction/Search/screening/prisma_counts.json
+NOtherExcludedWord,4,four,other-method reports excluded in full text (in words),Literature_Extraction/Search/screening/prisma_counts.json
+NExclAreaLevel,21,21,"full-text exclusions, both routes: Area-level mapping, not individual trees",Literature_Extraction/Search/screening/prisma_counts.json
+NExclNoTreeOutput,2,2,"full-text exclusions, both routes: No individual-tree output evaluated",Literature_Extraction/Search/screening/prisma_counts.json
+NExclNoTreeOutputWord,2,two,"full-text exclusions, both routes: No individual-tree output evaluated (in words)",Literature_Extraction/Search/screening/prisma_counts.json
+NExclNoEvaluation,1,1,"full-text exclusions, both routes: No quantitative evaluation",Literature_Extraction/Search/screening/prisma_counts.json
+NExclNoEvaluationWord,1,one,"full-text exclusions, both routes: No quantitative evaluation (in words)",Literature_Extraction/Search/screening/prisma_counts.json
+NExclNoTransformer,8,8,"full-text exclusions, both routes: No transformer-based model trained or evaluated",Literature_Extraction/Search/screening/prisma_counts.json
+NExclNoTransformerWord,8,eight,"full-text exclusions, both routes: No transformer-based model trained or evaluated (in words)",Literature_Extraction/Search/screening/prisma_counts.json
+NExclNotTree,7,7,"full-text exclusions, both routes: Not a tree task",Literature_Extraction/Search/screening/prisma_counts.json
+NExclNotTreeWord,7,seven,"full-text exclusions, both routes: Not a tree task (in words)",Literature_Extraction/Search/screening/prisma_counts.json
+NExclNotImagery,2,2,"full-text exclusions, both routes: Not remote sensing or close-range tree imagery",Literature_Extraction/Search/screening/prisma_counts.json
+NExclNotImageryWord,2,two,"full-text exclusions, both routes: Not remote sensing or close-range tree imagery (in words)",Literature_Extraction/Search/screening/prisma_counts.json
+NExclDateRange,6,6,"full-text exclusions, both routes: Outside date range",Literature_Extraction/Search/screening/prisma_counts.json
+NExclDateRangeWord,6,six,"full-text exclusions, both routes: Outside date range (in words)",Literature_Extraction/Search/screening/prisma_counts.json
+NReports,133,133,included reports,Literature_Extraction/Search/screening/prisma_counts.json
+NStudies,132,132,included studies (reports of one study count once),Literature_Extraction/Search/screening/prisma_counts.json
+NReportsDatabases,127,127,included reports found through the databases,Literature_Extraction/Search/screening/prisma_counts.json
+NReportsOther,6,6,included reports found through other methods,Literature_Extraction/Search/screening/prisma_counts.json
+NReportsOtherWord,6,six,included reports found through other methods (in words),Literature_Extraction/Search/screening/prisma_counts.json
+NDoubleScreened,309,309,records screened independently by the author (blind sample),Literature_Extraction/Search/screening/screening_agreement.json
+PctAgreement,93.2,93.2,agreement between the two screenings (percent),Literature_Extraction/Search/screening/screening_agreement.json
+KappaScreening,0.666,0.67,Cohen's kappa of the two screenings,Literature_Extraction/Search/screening/screening_agreement.json
+NScreeningDisagreements,21,21,records of the blind sample on which the two screenings disagreed,Literature_Extraction/Search/screening/screening_agreement.json
+NCrossChecked,200,200,extracted values checked by the author against the papers (random sample),Literature_Extraction/Extraction/crosscheck/crosscheck_result.json
+NCrossCheckedCorrect,200,200,sampled values found correct,Literature_Extraction/Extraction/crosscheck/crosscheck_result.json
+NCrossCheckedFinal,189,189,sampled values that belong to the final corpus,Literature_Extraction/Extraction/crosscheck/crosscheck_result.json
+PctErrorBound,1.6,1.6,"one-sided 95% upper bound of the error rate, final corpus, 1 - 0.05^(1/n), in percent",Literature_Extraction/Extraction/crosscheck/crosscheck_result.json
+NResults,2921,"2{,}921","extracted results (values with model, dataset, metric and page)",Literature_Extraction/Extraction/compiled/results.csv
+NPrimaryResults,1316,"1{,}316",results on the main test setting of each paper,Literature_Extraction/Extraction/compiled/results.csv
+NModels,853,853,extracted models,Literature_Extraction/Extraction/compiled/models.csv
+NTransformerModels,411,411,extracted transformer models,Literature_Extraction/Extraction/compiled/models.csv
+NValueChoices,55,55,recorded choices between two values a paper prints for one result,Literature_Extraction/Extraction/compiled/conflicts.csv
+NComparisonsAll,131,131,"transformer versus non-transformer comparisons recorded, all metrics",Literature_Extraction/Extraction/compiled/comparisons.csv
+NTransferPairsAll,184,184,"transfer pairs recorded, complete or not, all metrics",Literature_Extraction/Extraction/compiled/transfer.csv
+NTransformerModelsSized,126,126,transformer models with a reported parameter count (total or trainable),Literature_Extraction/Extraction/compiled/models.csv
+PctTransformerModelsSized,30.7,30.7,share of transformer models with a reported parameter count (126 of 411),Literature_Extraction/Extraction/compiled/models.csv
+NStudiesMMXXII,10,10,studies published in 2022,figure_data/studies.csv (common.studies)
+NStudiesMMXXIIWord,10,ten,studies published in 2022 (in words),figure_data/studies.csv (common.studies)
+NStudiesMMXXIII,15,15,studies published in 2023,figure_data/studies.csv (common.studies)
+NStudiesMMXXIV,33,33,studies published in 2024,figure_data/studies.csv (common.studies)
+NStudiesMMXXV,74,74,studies published in 2025,figure_data/studies.csv (common.studies)
+PctGrowthMMXXIII,50.0,50,"increase in studies from 2022 to 2023, percent (5 of 10)",figure_data/studies.csv (common.studies)
+PctGrowthMMXXIV,120.0,120,"increase in studies from 2023 to 2024, percent (18 of 15)",figure_data/studies.csv (common.studies)
+PctGrowthMMXXV,124.0,124,"increase in studies from 2024 to 2025, percent (41 of 33)",figure_data/studies.csv (common.studies)
+PctGrowthTotal,640.0,640,"increase in studies from 2022 to 2025, percent (64 of 10)",figure_data/studies.csv (common.studies)
+PctStudiesMMXXV,56.1,56.1,share of studies published in 2025 (74 of 132),figure_data/studies.csv (common.studies)
+NFamPureViT,19,19,studies whose architecture family is Pure ViT,figure_data/studies.csv (common.studies)
+PctFamPureViT,14.4,14.4,share of studies in Pure ViT (19 of 132),figure_data/studies.csv (common.studies)
+NFamPureViTInMMXXII,2,2,studies of family Pure ViT published in 2022,figure_data/studies.csv (common.studies)
+NFamPureViTInMMXXIIWord,2,two,studies of family Pure ViT published in 2022 (in words),figure_data/studies.csv (common.studies)
+NFamPureViTInMMXXIII,3,3,studies of family Pure ViT published in 2023,figure_data/studies.csv (common.studies)
+NFamPureViTInMMXXIIIWord,3,three,studies of family Pure ViT published in 2023 (in words),figure_data/studies.csv (common.studies)
+NFamPureViTInMMXXIV,6,6,studies of family Pure ViT published in 2024,figure_data/studies.csv (common.studies)
+NFamPureViTInMMXXIVWord,6,six,studies of family Pure ViT published in 2024 (in words),figure_data/studies.csv (common.studies)
+NFamPureViTInMMXXV,8,8,studies of family Pure ViT published in 2025,figure_data/studies.csv (common.studies)
+NFamPureViTInMMXXVWord,8,eight,studies of family Pure ViT published in 2025 (in words),figure_data/studies.csv (common.studies)
+NFamHierViT,38,38,studies whose architecture family is Hierarchical ViT,figure_data/studies.csv (common.studies)
+PctFamHierViT,28.8,28.8,share of studies in Hierarchical ViT (38 of 132),figure_data/studies.csv (common.studies)
+NFamHierViTInMMXXII,4,4,studies of family Hierarchical ViT published in 2022,figure_data/studies.csv (common.studies)
+NFamHierViTInMMXXIIWord,4,four,studies of family Hierarchical ViT published in 2022 (in words),figure_data/studies.csv (common.studies)
+NFamHierViTInMMXXIII,8,8,studies of family Hierarchical ViT published in 2023,figure_data/studies.csv (common.studies)
+NFamHierViTInMMXXIIIWord,8,eight,studies of family Hierarchical ViT published in 2023 (in words),figure_data/studies.csv (common.studies)
+NFamHierViTInMMXXIV,7,7,studies of family Hierarchical ViT published in 2024,figure_data/studies.csv (common.studies)
+NFamHierViTInMMXXIVWord,7,seven,studies of family Hierarchical ViT published in 2024 (in words),figure_data/studies.csv (common.studies)
+NFamHierViTInMMXXV,19,19,studies of family Hierarchical ViT published in 2025,figure_data/studies.csv (common.studies)
+NFamHybrid,52,52,studies whose architecture family is CNN-transformer hybrid,figure_data/studies.csv (common.studies)
+PctFamHybrid,39.4,39.4,share of studies in CNN-transformer hybrid (52 of 132),figure_data/studies.csv (common.studies)
+NFamHybridInMMXXII,4,4,studies of family CNN-transformer hybrid published in 2022,figure_data/studies.csv (common.studies)
+NFamHybridInMMXXIIWord,4,four,studies of family CNN-transformer hybrid published in 2022 (in words),figure_data/studies.csv (common.studies)
+NFamHybridInMMXXIII,4,4,studies of family CNN-transformer hybrid published in 2023,figure_data/studies.csv (common.studies)
+NFamHybridInMMXXIIIWord,4,four,studies of family CNN-transformer hybrid published in 2023 (in words),figure_data/studies.csv (common.studies)
+NFamHybridInMMXXIV,13,13,studies of family CNN-transformer hybrid published in 2024,figure_data/studies.csv (common.studies)
+NFamHybridInMMXXV,31,31,studies of family CNN-transformer hybrid published in 2025,figure_data/studies.csv (common.studies)
+NFamFoundation,19,19,studies whose architecture family is Foundation model,figure_data/studies.csv (common.studies)
+PctFamFoundation,14.4,14.4,share of studies in Foundation model (19 of 132),figure_data/studies.csv (common.studies)
+NFamFoundationInMMXXII,0,0,studies of family Foundation model published in 2022,figure_data/studies.csv (common.studies)
+NFamFoundationInMMXXIIWord,0,zero,studies of family Foundation model published in 2022 (in words),figure_data/studies.csv (common.studies)
+NFamFoundationInMMXXIII,0,0,studies of family Foundation model published in 2023,figure_data/studies.csv (common.studies)
+NFamFoundationInMMXXIIIWord,0,zero,studies of family Foundation model published in 2023 (in words),figure_data/studies.csv (common.studies)
+NFamFoundationInMMXXIV,5,5,studies of family Foundation model published in 2024,figure_data/studies.csv (common.studies)
+NFamFoundationInMMXXIVWord,5,five,studies of family Foundation model published in 2024 (in words),figure_data/studies.csv (common.studies)
+NFamFoundationInMMXXV,14,14,studies of family Foundation model published in 2025,figure_data/studies.csv (common.studies)
+NFamVLM,4,4,studies whose architecture family is Vision-language model,figure_data/studies.csv (common.studies)
+NFamVLMWord,4,four,studies whose architecture family is Vision-language model (in words),figure_data/studies.csv (common.studies)
+PctFamVLM,3.0,3.0,share of studies in Vision-language model (4 of 132),figure_data/studies.csv (common.studies)
+NFamVLMInMMXXII,0,0,studies of family Vision-language model published in 2022,figure_data/studies.csv (common.studies)
+NFamVLMInMMXXIIWord,0,zero,studies of family Vision-language model published in 2022 (in words),figure_data/studies.csv (common.studies)
+NFamVLMInMMXXIII,0,0,studies of family Vision-language model published in 2023,figure_data/studies.csv (common.studies)
+NFamVLMInMMXXIIIWord,0,zero,studies of family Vision-language model published in 2023 (in words),figure_data/studies.csv (common.studies)
+NFamVLMInMMXXIV,2,2,studies of family Vision-language model published in 2024,figure_data/studies.csv (common.studies)
+NFamVLMInMMXXIVWord,2,two,studies of family Vision-language model published in 2024 (in words),figure_data/studies.csv (common.studies)
+NFamVLMInMMXXV,2,2,studies of family Vision-language model published in 2025,figure_data/studies.csv (common.studies)
+NFamVLMInMMXXVWord,2,two,studies of family Vision-language model published in 2025 (in words),figure_data/studies.csv (common.studies)
+NBasisProposed,93,93,studies whose family comes from: proposed transformer,figure_data/studies.csv (common.studies)
+PctBasisProposed,70.5,70.5,share of studies whose family comes from: proposed transformer (93 of 132),figure_data/studies.csv (common.studies)
+NBasisBaseline,29,29,studies whose family comes from: best-scoring transformer (baseline only),figure_data/studies.csv (common.studies)
+PctBasisBaseline,22.0,22.0,share of studies whose family comes from: best-scoring transformer (baseline only) (29 of 132),figure_data/studies.csv (common.studies)
+NBasisUsed,10,10,"studies whose family comes from: transformer used, no comparable score",figure_data/studies.csv (common.studies)
+NBasisUsedWord,10,ten,"studies whose family comes from: transformer used, no comparable score (in words)",figure_data/studies.csv (common.studies)
+PctBasisUsed,7.6,7.6,"share of studies whose family comes from: transformer used, no comparable score (10 of 132)",figure_data/studies.csv (common.studies)
+NStudySpecific,17,17,studies in the residual group 'Study-specific designs',figure_data/taxonomy.csv (taxonomy.assign)
+PctStudySpecific,12.9,12.9,share of studies in 'Study-specific designs' (17 of 132),figure_data/taxonomy.csv (taxonomy.assign)
+NStudySpecificPureViT,2,2,studies in 'Study-specific designs' whose family is Pure ViT,figure_data/taxonomy.csv (taxonomy.assign)
+NStudySpecificPureViTWord,2,two,studies in 'Study-specific designs' whose family is Pure ViT (in words),figure_data/taxonomy.csv (taxonomy.assign)
+NStudySpecificHybrid,15,15,studies in 'Study-specific designs' whose family is CNN-transformer hybrid,figure_data/taxonomy.csv (taxonomy.assign)
+NOtherNamed,11,11,studies in the residual group 'Other named models',figure_data/taxonomy.csv (taxonomy.assign)
+PctOtherNamed,8.3,8.3,share of studies in 'Other named models' (11 of 132),figure_data/taxonomy.csv (taxonomy.assign)
+NOtherNamedHierViT,7,7,studies in 'Other named models' whose family is Hierarchical ViT,figure_data/taxonomy.csv (taxonomy.assign)
+NOtherNamedHierViTWord,7,seven,studies in 'Other named models' whose family is Hierarchical ViT (in words),figure_data/taxonomy.csv (taxonomy.assign)
+NOtherNamedHybrid,3,3,studies in 'Other named models' whose family is CNN-transformer hybrid,figure_data/taxonomy.csv (taxonomy.assign)
+NOtherNamedHybridWord,3,three,studies in 'Other named models' whose family is CNN-transformer hybrid (in words),figure_data/taxonomy.csv (taxonomy.assign)
+NOtherNamedFoundation,1,1,studies in 'Other named models' whose family is Foundation model,figure_data/taxonomy.csv (taxonomy.assign)
+NOtherNamedFoundationWord,1,one,studies in 'Other named models' whose family is Foundation model (in words),figure_data/taxonomy.csv (taxonomy.assign)
+NResidual,28,28,studies in the two residual groups together,figure_data/taxonomy.csv (taxonomy.assign)
+PctResidual,21.2,21.2,share of studies in the two residual groups (28 of 132),figure_data/taxonomy.csv (taxonomy.assign)
+NGroupSAM,18,18,"studies whose principal transformer is in: SAM, SAM 2",figure_data/taxonomy.csv (taxonomy.assign)
+NGroupSwin,15,15,studies whose principal transformer is in: Swin,figure_data/taxonomy.csv (taxonomy.assign)
+NGroupSegFormer,14,14,studies whose principal transformer is in: SegFormer,figure_data/taxonomy.csv (taxonomy.assign)
+NGroupPointTransformer,18,18,studies whose principal transformer is in: Point transformer,figure_data/taxonomy.csv (taxonomy.assign)
+NGroupDETR,15,15,"studies whose principal transformer is in: DETR family, RT-DETR, Deformable DETR",figure_data/taxonomy.csv (taxonomy.assign)
+NGroupYOLO,8,8,studies whose principal transformer is in: YOLO-based,figure_data/taxonomy.csv (taxonomy.assign)
+NGroupYOLOWord,8,eight,studies whose principal transformer is in: YOLO-based (in words),figure_data/taxonomy.csv (taxonomy.assign)
+NGroupMaskFormer,9,9,studies whose principal transformer is in: Mask2Former family,figure_data/taxonomy.csv (taxonomy.assign)
+NGroupMaskFormerWord,9,nine,studies whose principal transformer is in: Mask2Former family (in words),figure_data/taxonomy.csv (taxonomy.assign)
+NGroupViT,8,8,studies whose principal transformer is in: ViT,figure_data/taxonomy.csv (taxonomy.assign)
+NGroupViTWord,8,eight,studies whose principal transformer is in: ViT (in words),figure_data/taxonomy.csv (taxonomy.assign)
+NGroupPointTransformerPureViT,12,12,pure-ViT studies whose principal transformer is a point transformer,figure_data/taxonomy.csv (taxonomy.assign)
+NTaskDetectionAndCounting,43,43,studies with task = Detection and counting,figure_data/overview.csv
+PctTaskDetectionAndCounting,32.6,32.6,share of studies with task = Detection and counting (43 of 132),figure_data/overview.csv
+NTaskCrownSegmentation,37,37,studies with task = Crown segmentation,figure_data/overview.csv
+PctTaskCrownSegmentation,28.0,28.0,share of studies with task = Crown segmentation (37 of 132),figure_data/overview.csv
+NTaskThreeDStructureAndAttributes,34,34,studies with task = 3D structure and attributes,figure_data/overview.csv
+PctTaskThreeDStructureAndAttributes,25.8,25.8,share of studies with task = 3D structure and attributes (34 of 132),figure_data/overview.csv
+NTaskHealthAndMortality,32,32,studies with task = Health and mortality,figure_data/overview.csv
+PctTaskHealthAndMortality,24.2,24.2,share of studies with task = Health and mortality (32 of 132),figure_data/overview.csv
+NTaskSpeciesClassification,26,26,studies with task = Species classification,figure_data/overview.csv
+PctTaskSpeciesClassification,19.7,19.7,share of studies with task = Species classification (26 of 132),figure_data/overview.csv
+NOutputTreeInstanceBox,52,52,studies with output_unit = Tree instance (box),figure_data/overview.csv
+PctOutputTreeInstanceBox,39.4,39.4,share of studies with output_unit = Tree instance (box) (52 of 132),figure_data/overview.csv
+NOutputCrownMask,47,47,studies with output_unit = Crown mask,figure_data/overview.csv
+PctOutputCrownMask,35.6,35.6,share of studies with output_unit = Crown mask (47 of 132),figure_data/overview.csv
+NOutputTreeClassLabel,31,31,studies with output_unit = Tree class label,figure_data/overview.csv
+PctOutputTreeClassLabel,23.5,23.5,share of studies with output_unit = Tree class label (31 of 132),figure_data/overview.csv
+NOutputTreeAttribute,17,17,studies with output_unit = Tree attribute,figure_data/overview.csv
+PctOutputTreeAttribute,12.9,12.9,share of studies with output_unit = Tree attribute (17 of 132),figure_data/overview.csv
+NOutputTreeComponent,15,15,studies with output_unit = Tree component,figure_data/overview.csv
+PctOutputTreeComponent,11.4,11.4,share of studies with output_unit = Tree component (15 of 132),figure_data/overview.csv
+NOutputTreePointSet,13,13,studies with output_unit = Tree point set,figure_data/overview.csv
+PctOutputTreePointSet,9.8,9.8,share of studies with output_unit = Tree point set (13 of 132),figure_data/overview.csv
+NOutputTreeCount,8,8,studies with output_unit = Tree count,figure_data/overview.csv
+NOutputTreeCountWord,8,eight,studies with output_unit = Tree count (in words),figure_data/overview.csv
+PctOutputTreeCount,6.1,6.1,share of studies with output_unit = Tree count (8 of 132),figure_data/overview.csv
+NAnnotPolygonOrMask,48,48,studies with annotation_type = Polygon or mask,figure_data/overview.csv
+PctAnnotPolygonOrMask,36.4,36.4,share of studies with annotation_type = Polygon or mask (48 of 132),figure_data/overview.csv
+NAnnotBoundingBox,38,38,studies with annotation_type = Bounding box,figure_data/overview.csv
+PctAnnotBoundingBox,28.8,28.8,share of studies with annotation_type = Bounding box (38 of 132),figure_data/overview.csv
+NAnnotPointCloudLabels,18,18,studies with annotation_type = Point-cloud labels,figure_data/overview.csv
+PctAnnotPointCloudLabels,13.6,13.6,share of studies with annotation_type = Point-cloud labels (18 of 132),figure_data/overview.csv
+NAnnotImageLevelLabel,18,18,studies with annotation_type = Image-level label,figure_data/overview.csv
+PctAnnotImageLevelLabel,13.6,13.6,share of studies with annotation_type = Image-level label (18 of 132),figure_data/overview.csv
+NAnnotMeasuredAttribute,12,12,studies with annotation_type = Measured attribute,figure_data/overview.csv
+PctAnnotMeasuredAttribute,9.1,9.1,share of studies with annotation_type = Measured attribute (12 of 132),figure_data/overview.csv
+NAnnotTreePointDot,9,9,studies with annotation_type = Tree point (dot),figure_data/overview.csv
+NAnnotTreePointDotWord,9,nine,studies with annotation_type = Tree point (dot) (in words),figure_data/overview.csv
+PctAnnotTreePointDot,6.8,6.8,share of studies with annotation_type = Tree point (dot) (9 of 132),figure_data/overview.csv
+NAnnotNotReported,2,2,studies with annotation_type = Not reported,figure_data/overview.csv
+NAnnotNotReportedWord,2,two,studies with annotation_type = Not reported (in words),figure_data/overview.csv
+PctAnnotNotReported,1.5,1.5,share of studies with annotation_type = Not reported (2 of 132),figure_data/overview.csv
+NPlatformUAV,63,63,studies with platform = UAV,figure_data/overview.csv
+PctPlatformUAV,47.7,47.7,share of studies with platform = UAV (63 of 132),figure_data/overview.csv
+NPlatformMultiple,21,21,studies with platform = Multiple,figure_data/overview.csv
+PctPlatformMultiple,15.9,15.9,share of studies with platform = Multiple (21 of 132),figure_data/overview.csv
+NPlatformAirborne,19,19,studies with platform = Airborne,figure_data/overview.csv
+PctPlatformAirborne,14.4,14.4,share of studies with platform = Airborne (19 of 132),figure_data/overview.csv
+NPlatformGroundCamera,9,9,studies with platform = Ground camera,figure_data/overview.csv
+NPlatformGroundCameraWord,9,nine,studies with platform = Ground camera (in words),figure_data/overview.csv
+PctPlatformGroundCamera,6.8,6.8,share of studies with platform = Ground camera (9 of 132),figure_data/overview.csv
+NPlatformSatellite,8,8,studies with platform = Satellite,figure_data/overview.csv
+NPlatformSatelliteWord,8,eight,studies with platform = Satellite (in words),figure_data/overview.csv
+PctPlatformSatellite,6.1,6.1,share of studies with platform = Satellite (8 of 132),figure_data/overview.csv
+NPlatformMobileLiDAR,5,5,studies with platform = Mobile LiDAR,figure_data/overview.csv
+NPlatformMobileLiDARWord,5,five,studies with platform = Mobile LiDAR (in words),figure_data/overview.csv
+PctPlatformMobileLiDAR,3.8,3.8,share of studies with platform = Mobile LiDAR (5 of 132),figure_data/overview.csv
+NPlatformTerrestrialLiDAR,5,5,studies with platform = Terrestrial LiDAR,figure_data/overview.csv
+NPlatformTerrestrialLiDARWord,5,five,studies with platform = Terrestrial LiDAR (in words),figure_data/overview.csv
+PctPlatformTerrestrialLiDAR,3.8,3.8,share of studies with platform = Terrestrial LiDAR (5 of 132),figure_data/overview.csv
+NPlatformSynthetic,2,2,studies with platform = Synthetic,figure_data/overview.csv
+NPlatformSyntheticWord,2,two,studies with platform = Synthetic (in words),figure_data/overview.csv
+PctPlatformSynthetic,1.5,1.5,share of studies with platform = Synthetic (2 of 132),figure_data/overview.csv
+NSensorRGB,91,91,studies with sensors = RGB,figure_data/overview.csv
+PctSensorRGB,68.9,68.9,share of studies with sensors = RGB (91 of 132),figure_data/overview.csv
+NSensorLiDAR,40,40,studies with sensors = LiDAR,figure_data/overview.csv
+PctSensorLiDAR,30.3,30.3,share of studies with sensors = LiDAR (40 of 132),figure_data/overview.csv
+NSensorMultispectral,28,28,studies with sensors = Multispectral,figure_data/overview.csv
+PctSensorMultispectral,21.2,21.2,share of studies with sensors = Multispectral (28 of 132),figure_data/overview.csv
+NSensorHyperspectral,4,4,studies with sensors = Hyperspectral,figure_data/overview.csv
+NSensorHyperspectralWord,4,four,studies with sensors = Hyperspectral (in words),figure_data/overview.csv
+PctSensorHyperspectral,3.0,3.0,share of studies with sensors = Hyperspectral (4 of 132),figure_data/overview.csv
+NSensorDSMSurfaceModel,3,3,studies with sensors = DSM (surface model),figure_data/overview.csv
+NSensorDSMSurfaceModelWord,3,three,studies with sensors = DSM (surface model) (in words),figure_data/overview.csv
+PctSensorDSMSurfaceModel,2.3,2.3,share of studies with sensors = DSM (surface model) (3 of 132),figure_data/overview.csv
+NSensorNotReported,1,1,studies with sensors = Not reported,figure_data/overview.csv
+NSensorNotReportedWord,1,one,studies with sensors = Not reported (in words),figure_data/overview.csv
+PctSensorNotReported,0.8,0.8,share of studies with sensors = Not reported (1 of 132),figure_data/overview.csv
+NSettingNaturalForest,48,48,studies with tree_setting = Natural forest,figure_data/overview.csv
+PctSettingNaturalForest,36.4,36.4,share of studies with tree_setting = Natural forest (48 of 132),figure_data/overview.csv
+NSettingMixed,28,28,studies with tree_setting = Mixed,figure_data/overview.csv
+PctSettingMixed,21.2,21.2,share of studies with tree_setting = Mixed (28 of 132),figure_data/overview.csv
+NSettingPlantation,22,22,studies with tree_setting = Plantation,figure_data/overview.csv
+PctSettingPlantation,16.7,16.7,share of studies with tree_setting = Plantation (22 of 132),figure_data/overview.csv
+NSettingUrban,16,16,studies with tree_setting = Urban,figure_data/overview.csv
+PctSettingUrban,12.1,12.1,share of studies with tree_setting = Urban (16 of 132),figure_data/overview.csv
+NSettingOrchard,12,12,studies with tree_setting = Orchard,figure_data/overview.csv
+PctSettingOrchard,9.1,9.1,share of studies with tree_setting = Orchard (12 of 132),figure_data/overview.csv
+NSettingSynthetic,2,2,studies with tree_setting = Synthetic,figure_data/overview.csv
+NSettingSyntheticWord,2,two,studies with tree_setting = Synthetic (in words),figure_data/overview.csv
+PctSettingSynthetic,1.5,1.5,share of studies with tree_setting = Synthetic (2 of 132),figure_data/overview.csv
+NSettingAgroforestry,1,1,studies with tree_setting = Agroforestry,figure_data/overview.csv
+NSettingAgroforestryWord,1,one,studies with tree_setting = Agroforestry (in words),figure_data/overview.csv
+PctSettingAgroforestry,0.8,0.8,share of studies with tree_setting = Agroforestry (1 of 132),figure_data/overview.csv
+NSettingMangrove,1,1,studies with tree_setting = Mangrove,figure_data/overview.csv
+NSettingMangroveWord,1,one,studies with tree_setting = Mangrove (in words),figure_data/overview.csv
+PctSettingMangrove,0.8,0.8,share of studies with tree_setting = Mangrove (1 of 132),figure_data/overview.csv
+NSettingNotReported,3,3,studies with tree_setting = Not reported,figure_data/overview.csv
+NSettingNotReportedWord,3,three,studies with tree_setting = Not reported (in words),figure_data/overview.csv
+PctSettingNotReported,2.3,2.3,share of studies with tree_setting = Not reported (3 of 132),figure_data/overview.csv
+NAcqUAVRGB,54,54,studies with platform UAV and sensor RGB,figure_data/overview_evidence_map.csv (overview.evidence)
+PctAcqUAVRGB,40.9,40.9,share of studies with platform UAV and sensor RGB (54 of 132),figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqUAVSpectral,14,14,studies with platform UAV and sensor Spectral,figure_data/overview_evidence_map.csv (overview.evidence)
+PctAcqUAVSpectral,10.6,10.6,share of studies with platform UAV and sensor Spectral (14 of 132),figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqUAVLiDAR,9,9,studies with platform UAV and sensor LiDAR,figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqUAVLiDARWord,9,nine,studies with platform UAV and sensor LiDAR (in words),figure_data/overview_evidence_map.csv (overview.evidence)
+PctAcqUAVLiDAR,6.8,6.8,share of studies with platform UAV and sensor LiDAR (9 of 132),figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqUAVDSM,3,3,studies with platform UAV and sensor DSM,figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqUAVDSMWord,3,three,studies with platform UAV and sensor DSM (in words),figure_data/overview_evidence_map.csv (overview.evidence)
+PctAcqUAVDSM,2.3,2.3,share of studies with platform UAV and sensor DSM (3 of 132),figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqAirborneRGB,8,8,studies with platform Airborne and sensor RGB,figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqAirborneRGBWord,8,eight,studies with platform Airborne and sensor RGB (in words),figure_data/overview_evidence_map.csv (overview.evidence)
+PctAcqAirborneRGB,6.1,6.1,share of studies with platform Airborne and sensor RGB (8 of 132),figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqAirborneSpectral,9,9,studies with platform Airborne and sensor Spectral,figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqAirborneSpectralWord,9,nine,studies with platform Airborne and sensor Spectral (in words),figure_data/overview_evidence_map.csv (overview.evidence)
+PctAcqAirborneSpectral,6.8,6.8,share of studies with platform Airborne and sensor Spectral (9 of 132),figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqAirborneLiDAR,10,10,studies with platform Airborne and sensor LiDAR,figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqAirborneLiDARWord,10,ten,studies with platform Airborne and sensor LiDAR (in words),figure_data/overview_evidence_map.csv (overview.evidence)
+PctAcqAirborneLiDAR,7.6,7.6,share of studies with platform Airborne and sensor LiDAR (10 of 132),figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqSatelliteRGB,6,6,studies with platform Satellite and sensor RGB,figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqSatelliteRGBWord,6,six,studies with platform Satellite and sensor RGB (in words),figure_data/overview_evidence_map.csv (overview.evidence)
+PctAcqSatelliteRGB,4.5,4.5,share of studies with platform Satellite and sensor RGB (6 of 132),figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqSatelliteSpectral,5,5,studies with platform Satellite and sensor Spectral,figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqSatelliteSpectralWord,5,five,studies with platform Satellite and sensor Spectral (in words),figure_data/overview_evidence_map.csv (overview.evidence)
+PctAcqSatelliteSpectral,3.8,3.8,share of studies with platform Satellite and sensor Spectral (5 of 132),figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqGroundCameraRGB,8,8,studies with platform Ground camera and sensor RGB,figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqGroundCameraRGBWord,8,eight,studies with platform Ground camera and sensor RGB (in words),figure_data/overview_evidence_map.csv (overview.evidence)
+PctAcqGroundCameraRGB,6.1,6.1,share of studies with platform Ground camera and sensor RGB (8 of 132),figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqGroundCameraSpectral,1,1,studies with platform Ground camera and sensor Spectral,figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqGroundCameraSpectralWord,1,one,studies with platform Ground camera and sensor Spectral (in words),figure_data/overview_evidence_map.csv (overview.evidence)
+PctAcqGroundCameraSpectral,0.8,0.8,share of studies with platform Ground camera and sensor Spectral (1 of 132),figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqGroundCameraLiDAR,1,1,studies with platform Ground camera and sensor LiDAR,figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqGroundCameraLiDARWord,1,one,studies with platform Ground camera and sensor LiDAR (in words),figure_data/overview_evidence_map.csv (overview.evidence)
+PctAcqGroundCameraLiDAR,0.8,0.8,share of studies with platform Ground camera and sensor LiDAR (1 of 132),figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqTLSOrMLSRGB,1,1,studies with platform TLS or MLS and sensor RGB,figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqTLSOrMLSRGBWord,1,one,studies with platform TLS or MLS and sensor RGB (in words),figure_data/overview_evidence_map.csv (overview.evidence)
+PctAcqTLSOrMLSRGB,0.8,0.8,share of studies with platform TLS or MLS and sensor RGB (1 of 132),figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqTLSOrMLSLiDAR,10,10,studies with platform TLS or MLS and sensor LiDAR,figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqTLSOrMLSLiDARWord,10,ten,studies with platform TLS or MLS and sensor LiDAR (in words),figure_data/overview_evidence_map.csv (overview.evidence)
+PctAcqTLSOrMLSLiDAR,7.6,7.6,share of studies with platform TLS or MLS and sensor LiDAR (10 of 132),figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqSeveralPlatformsRGB,13,13,studies with platform Several platforms and sensor RGB,figure_data/overview_evidence_map.csv (overview.evidence)
+PctAcqSeveralPlatformsRGB,9.8,9.8,share of studies with platform Several platforms and sensor RGB (13 of 132),figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqSeveralPlatformsSpectral,3,3,studies with platform Several platforms and sensor Spectral,figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqSeveralPlatformsSpectralWord,3,three,studies with platform Several platforms and sensor Spectral (in words),figure_data/overview_evidence_map.csv (overview.evidence)
+PctAcqSeveralPlatformsSpectral,2.3,2.3,share of studies with platform Several platforms and sensor Spectral (3 of 132),figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqSeveralPlatformsLiDAR,9,9,studies with platform Several platforms and sensor LiDAR,figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqSeveralPlatformsLiDARWord,9,nine,studies with platform Several platforms and sensor LiDAR (in words),figure_data/overview_evidence_map.csv (overview.evidence)
+PctAcqSeveralPlatformsLiDAR,6.8,6.8,share of studies with platform Several platforms and sensor LiDAR (9 of 132),figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqSyntheticRGB,1,1,studies with platform Synthetic and sensor RGB,figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqSyntheticRGBWord,1,one,studies with platform Synthetic and sensor RGB (in words),figure_data/overview_evidence_map.csv (overview.evidence)
+PctAcqSyntheticRGB,0.8,0.8,share of studies with platform Synthetic and sensor RGB (1 of 132),figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqSyntheticLiDAR,1,1,studies with platform Synthetic and sensor LiDAR,figure_data/overview_evidence_map.csv (overview.evidence)
+NAcqSyntheticLiDARWord,1,one,studies with platform Synthetic and sensor LiDAR (in words),figure_data/overview_evidence_map.csv (overview.evidence)
+PctAcqSyntheticLiDAR,0.8,0.8,share of studies with platform Synthetic and sensor LiDAR (1 of 132),figure_data/overview_evidence_map.csv (overview.evidence)
+NHealthNaturalForest,24,24,health and mortality studies set in natural forests,figure_data/overview_evidence_map.csv (overview.evidence)
+NStudiesWithCountry,124,124,studies that name their study area by country,figure_data/geography.csv (geography.table)
+PctStudiesWithCountry,93.9,93.9,share of studies that name a country (124 of 132),figure_data/geography.csv (geography.table)
+NStudiesNoCountry,8,8,"studies with a global, synthetic or unstated study area",figure_data/geography.csv (geography.table)
+NStudiesNoCountryWord,8,eight,"studies with a global, synthetic or unstated study area (in words)",figure_data/geography.csv (geography.table)
+NCountries,30,30,countries named by at least one study,figure_data/geography.csv (geography.table)
+NNorthern,113,113,studies wholly in the Northern Hemisphere (by country),figure_data/geography.csv (geography.table)
+PctNorthern,91.1,91.1,share of country-located studies wholly in the Northern Hemisphere (113 of 124),figure_data/geography.csv (geography.table)
+NCountryChina,58,58,studies with a study area in China,figure_data/geography.csv (geography.table)
+PctCountryChina,43.9,43.9,share of studies with a study area in China (58 of 132),figure_data/geography.csv (geography.table)
+NCountryUnitedStatesOfAmerica,21,21,studies with a study area in United States of America,figure_data/geography.csv (geography.table)
+PctCountryUnitedStatesOfAmerica,15.9,15.9,share of studies with a study area in United States of America (21 of 132),figure_data/geography.csv (geography.table)
+NCountryCanada,13,13,studies with a study area in Canada,figure_data/geography.csv (geography.table)
+PctCountryCanada,9.8,9.8,share of studies with a study area in Canada (13 of 132),figure_data/geography.csv (geography.table)
+NCountryGermany,9,9,studies with a study area in Germany,figure_data/geography.csv (geography.table)
+NCountryGermanyWord,9,nine,studies with a study area in Germany (in words),figure_data/geography.csv (geography.table)
+PctCountryGermany,6.8,6.8,share of studies with a study area in Germany (9 of 132),figure_data/geography.csv (geography.table)
+NCountryUnitedArabEmirates,8,8,studies with a study area in United Arab Emirates,figure_data/geography.csv (geography.table)
+NCountryUnitedArabEmiratesWord,8,eight,studies with a study area in United Arab Emirates (in words),figure_data/geography.csv (geography.table)
+PctCountryUnitedArabEmirates,6.1,6.1,share of studies with a study area in United Arab Emirates (8 of 132),figure_data/geography.csv (geography.table)
+NBiomeTemperate,41,41,studies with biome = temperate,figure_data/geography.csv (geography.table)
+PctBiomeTemperate,31.1,31.1,share of studies with biome = temperate (41 of 132),figure_data/geography.csv (geography.table)
+NBiomeSubtropical,28,28,studies with biome = subtropical,figure_data/geography.csv (geography.table)
+PctBiomeSubtropical,21.2,21.2,share of studies with biome = subtropical (28 of 132),figure_data/geography.csv (geography.table)
+NBiomeMultiple,27,27,studies with biome = multiple,figure_data/geography.csv (geography.table)
+PctBiomeMultiple,20.5,20.5,share of studies with biome = multiple (27 of 132),figure_data/geography.csv (geography.table)
+NBiomeTropical,12,12,studies with biome = tropical,figure_data/geography.csv (geography.table)
+PctBiomeTropical,9.1,9.1,share of studies with biome = tropical (12 of 132),figure_data/geography.csv (geography.table)
+NBiomeArid,10,10,studies with biome = arid,figure_data/geography.csv (geography.table)
+NBiomeAridWord,10,ten,studies with biome = arid (in words),figure_data/geography.csv (geography.table)
+PctBiomeArid,7.6,7.6,share of studies with biome = arid (10 of 132),figure_data/geography.csv (geography.table)
+NBiomeNotReported,8,8,studies with biome = not_reported,figure_data/geography.csv (geography.table)
+NBiomeNotReportedWord,8,eight,studies with biome = not_reported (in words),figure_data/geography.csv (geography.table)
+PctBiomeNotReported,6.1,6.1,share of studies with biome = not_reported (8 of 132),figure_data/geography.csv (geography.table)
+NBiomeBoreal,4,4,studies with biome = boreal,figure_data/geography.csv (geography.table)
+NBiomeBorealWord,4,four,studies with biome = boreal (in words),figure_data/geography.csv (geography.table)
+PctBiomeBoreal,3.0,3.0,share of studies with biome = boreal (4 of 132),figure_data/geography.csv (geography.table)
+NBiomeMediterranean,3,3,studies with biome = mediterranean,figure_data/geography.csv (geography.table)
+NBiomeMediterraneanWord,3,three,studies with biome = mediterranean (in words),figure_data/geography.csv (geography.table)
+PctBiomeMediterranean,2.3,2.3,share of studies with biome = mediterranean (3 of 132),figure_data/geography.csv (geography.table)
+NCodeAvailable,31,31,studies with code_available = yes,compiled/studies.csv (a study counts when any of its reports states it)
+PctCodeAvailable,23.5,23.5,share of studies with code_available = yes (31 of 132),compiled/studies.csv (a study counts when any of its reports states it)
+NWeightsAvailable,5,5,studies with weights_available = yes,compiled/studies.csv (a study counts when any of its reports states it)
+NWeightsAvailableWord,5,five,studies with weights_available = yes (in words),compiled/studies.csv (a study counts when any of its reports states it)
+PctWeightsAvailable,3.8,3.8,share of studies with weights_available = yes (5 of 132),compiled/studies.csv (a study counts when any of its reports states it)
+NDataAvailable,31,31,studies with data_available = yes,compiled/studies.csv (a study counts when any of its reports states it)
+PctDataAvailable,23.5,23.5,share of studies with data_available = yes (31 of 132),compiled/studies.csv (a study counts when any of its reports states it)
+NDataOnRequestAvailable,29,29,studies with data_available = on_request,compiled/studies.csv (a study counts when any of its reports states it)
+PctDataOnRequestAvailable,22.0,22.0,share of studies with data_available = on_request (29 of 132),compiled/studies.csv (a study counts when any of its reports states it)
+NDataPartialAvailable,10,10,studies with data_available = partial,compiled/studies.csv (a study counts when any of its reports states it)
+NDataPartialAvailableWord,10,ten,studies with data_available = partial (in words),compiled/studies.csv (a study counts when any of its reports states it)
+PctDataPartialAvailable,7.6,7.6,share of studies with data_available = partial (10 of 132),compiled/studies.csv (a study counts when any of its reports states it)
+NSharedPublicDatasets,13,13,public datasets used by two or more studies,figure_data/shared_public_datasets.csv
+NStudiesOwnDataOnly,86,86,studies that use only data they collected or labelled themselves,compiled/datasets.csv with the kind of each dataset key in Extraction/datasets.csv
+PctStudiesOwnDataOnly,65.2,65.2,share of studies that use only data they collected or labelled themselves (86 of 132),compiled/datasets.csv with the kind of each dataset key in Extraction/datasets.csv
+NStudiesPublicData,44,44,studies that use at least one public dataset,compiled/datasets.csv with the kind of each dataset key in Extraction/datasets.csv
+PctStudiesPublicData,33.3,33.3,share of studies that use at least one public dataset (44 of 132),compiled/datasets.csv with the kind of each dataset key in Extraction/datasets.csv
+NStudiesUnidentifiedData,2,2,studies whose data source is not identified,compiled/datasets.csv with the kind of each dataset key in Extraction/datasets.csv
+NStudiesUnidentifiedDataWord,2,two,studies whose data source is not identified (in words),compiled/datasets.csv with the kind of each dataset key in Extraction/datasets.csv
+PctStudiesUnidentifiedData,1.5,1.5,share of studies whose data source is not identified (2 of 132),compiled/datasets.csv with the kind of each dataset key in Extraction/datasets.csv
+NStudiesSharedBenchmark,26,26,studies that use a public dataset also used by another study,figure_data/shared_public_datasets.csv
+PctStudiesSharedBenchmark,19.7,19.7,share of studies that use a public dataset also used by another study (26 of 132),figure_data/shared_public_datasets.csv
+NComparisons,77,77,"transformer versus non-transformer comparisons (preferred metric, percent)",figure_data/rq1_comparisons.csv (rq1_comparisons.data)
+NComparisonStudies,67,67,studies with at least one comparison,figure_data/rq1_comparisons.csv (rq1_comparisons.data)
+PctComparisonStudies,50.8,50.8,share of studies with a comparison (67 of 132),figure_data/rq1_comparisons.csv (rq1_comparisons.data)
+MedianDiffAll,1.1,$+1.1$,"median of the per-study differences, all studies (pp)",figure_data/rq1_comparisons.csv (rq1_comparisons.data)
+QOneDiffAll,-0.7,$-0.7$,first quartile of the per-study differences (pp),figure_data/rq1_comparisons.csv (rq1_comparisons.data)
+QThreeDiffAll,3.5,$+3.5$,third quartile of the per-study differences (pp),figure_data/rq1_comparisons.csv (rq1_comparisons.data)
+NUpAll,34,34,studies whose per-study difference is 'up' (tie: within 1 pp),figure_data/rq1_comparisons.csv (rq1_comparisons.data)
+PctUpAll,50.7,50.7,share of the comparison studies whose per-study difference is 'up' (34 of 67),figure_data/rq1_comparisons.csv (rq1_comparisons.data)
+NTieAll,18,18,studies whose per-study difference is 'tie' (tie: within 1 pp),figure_data/rq1_comparisons.csv (rq1_comparisons.data)
+PctTieAll,26.9,26.9,share of the comparison studies whose per-study difference is 'tie' (18 of 67),figure_data/rq1_comparisons.csv (rq1_comparisons.data)
+NDownAll,15,15,studies whose per-study difference is 'down' (tie: within 1 pp),figure_data/rq1_comparisons.csv (rq1_comparisons.data)
+PctDownAll,22.4,22.4,share of the comparison studies whose per-study difference is 'down' (15 of 67),figure_data/rq1_comparisons.csv (rq1_comparisons.data)
+NCmpStudiesFamHybrid,29,29,studies in RQ1 group cnn_transformer_hybrid,figure_data/rq1_summary.csv
+MedianDiffFamHybrid,1.1,$+1.1$,median per-study difference in group cnn_transformer_hybrid (pp),figure_data/rq1_summary.csv
+QOneDiffFamHybrid,-0.4,$-0.4$,first quartile in group cnn_transformer_hybrid (pp),figure_data/rq1_summary.csv
+QThreeDiffFamHybrid,4.0,$+4.0$,third quartile in group cnn_transformer_hybrid (pp),figure_data/rq1_summary.csv
+NUpFamHybrid,15,15,studies in group cnn_transformer_hybrid whose difference is 'up',figure_data/rq1_summary.csv
+NTieFamHybrid,7,7,studies in group cnn_transformer_hybrid whose difference is 'tie',figure_data/rq1_summary.csv
+NTieFamHybridWord,7,seven,studies in group cnn_transformer_hybrid whose difference is 'tie' (in words),figure_data/rq1_summary.csv
+NDownFamHybrid,7,7,studies in group cnn_transformer_hybrid whose difference is 'down',figure_data/rq1_summary.csv
+NDownFamHybridWord,7,seven,studies in group cnn_transformer_hybrid whose difference is 'down' (in words),figure_data/rq1_summary.csv
+NCmpStudiesFamFoundation,7,7,studies in RQ1 group foundation_model,figure_data/rq1_summary.csv
+NCmpStudiesFamFoundationWord,7,seven,studies in RQ1 group foundation_model (in words),figure_data/rq1_summary.csv
+MedianDiffFamFoundation,0.6,$+0.6$,median per-study difference in group foundation_model (pp),figure_data/rq1_summary.csv
+QOneDiffFamFoundation,-16.1,$-16.1$,first quartile in group foundation_model (pp),figure_data/rq1_summary.csv
+QThreeDiffFamFoundation,2.7,$+2.7$,third quartile in group foundation_model (pp),figure_data/rq1_summary.csv
+NUpFamFoundation,3,3,studies in group foundation_model whose difference is 'up',figure_data/rq1_summary.csv
+NUpFamFoundationWord,3,three,studies in group foundation_model whose difference is 'up' (in words),figure_data/rq1_summary.csv
+NTieFamFoundation,1,1,studies in group foundation_model whose difference is 'tie',figure_data/rq1_summary.csv
+NTieFamFoundationWord,1,one,studies in group foundation_model whose difference is 'tie' (in words),figure_data/rq1_summary.csv
+NDownFamFoundation,3,3,studies in group foundation_model whose difference is 'down',figure_data/rq1_summary.csv
+NDownFamFoundationWord,3,three,studies in group foundation_model whose difference is 'down' (in words),figure_data/rq1_summary.csv
+NCmpStudiesFamHierViT,19,19,studies in RQ1 group hierarchical_vit,figure_data/rq1_summary.csv
+MedianDiffFamHierViT,0.3,$+0.3$,median per-study difference in group hierarchical_vit (pp),figure_data/rq1_summary.csv
+QOneDiffFamHierViT,-0.7,$-0.7$,first quartile in group hierarchical_vit (pp),figure_data/rq1_summary.csv
+QThreeDiffFamHierViT,2.3,$+2.3$,third quartile in group hierarchical_vit (pp),figure_data/rq1_summary.csv
+NUpFamHierViT,9,9,studies in group hierarchical_vit whose difference is 'up',figure_data/rq1_summary.csv
+NUpFamHierViTWord,9,nine,studies in group hierarchical_vit whose difference is 'up' (in words),figure_data/rq1_summary.csv
+NTieFamHierViT,7,7,studies in group hierarchical_vit whose difference is 'tie',figure_data/rq1_summary.csv
+NTieFamHierViTWord,7,seven,studies in group hierarchical_vit whose difference is 'tie' (in words),figure_data/rq1_summary.csv
+NDownFamHierViT,3,3,studies in group hierarchical_vit whose difference is 'down',figure_data/rq1_summary.csv
+NDownFamHierViTWord,3,three,studies in group hierarchical_vit whose difference is 'down' (in words),figure_data/rq1_summary.csv
+NCmpStudiesFamPureViT,12,12,studies in RQ1 group pure_vit,figure_data/rq1_summary.csv
+MedianDiffFamPureViT,1.2,$+1.2$,median per-study difference in group pure_vit (pp),figure_data/rq1_summary.csv
+QOneDiffFamPureViT,0.0,$+0.0$,first quartile in group pure_vit (pp),figure_data/rq1_summary.csv
+QThreeDiffFamPureViT,2.4,$+2.4$,third quartile in group pure_vit (pp),figure_data/rq1_summary.csv
+NUpFamPureViT,6,6,studies in group pure_vit whose difference is 'up',figure_data/rq1_summary.csv
+NUpFamPureViTWord,6,six,studies in group pure_vit whose difference is 'up' (in words),figure_data/rq1_summary.csv
+NTieFamPureViT,4,4,studies in group pure_vit whose difference is 'tie',figure_data/rq1_summary.csv
+NTieFamPureViTWord,4,four,studies in group pure_vit whose difference is 'tie' (in words),figure_data/rq1_summary.csv
+NDownFamPureViT,2,2,studies in group pure_vit whose difference is 'down',figure_data/rq1_summary.csv
+NDownFamPureViTWord,2,two,studies in group pure_vit whose difference is 'down' (in words),figure_data/rq1_summary.csv
+NCmpStudiesFamVLM,2,2,studies in RQ1 group vision_language_model,figure_data/rq1_summary.csv
+NCmpStudiesFamVLMWord,2,two,studies in RQ1 group vision_language_model (in words),figure_data/rq1_summary.csv
+MedianDiffFamVLM,21.2,$+21.2$,median per-study difference in group vision_language_model (pp),figure_data/rq1_summary.csv
+QOneDiffFamVLM,12.8,$+12.8$,first quartile in group vision_language_model (pp),figure_data/rq1_summary.csv
+QThreeDiffFamVLM,29.6,$+29.6$,third quartile in group vision_language_model (pp),figure_data/rq1_summary.csv
+NUpFamVLM,2,2,studies in group vision_language_model whose difference is 'up',figure_data/rq1_summary.csv
+NUpFamVLMWord,2,two,studies in group vision_language_model whose difference is 'up' (in words),figure_data/rq1_summary.csv
+NTieFamVLM,0,0,studies in group vision_language_model whose difference is 'tie',figure_data/rq1_summary.csv
+NTieFamVLMWord,0,zero,studies in group vision_language_model whose difference is 'tie' (in words),figure_data/rq1_summary.csv
+NDownFamVLM,0,0,studies in group vision_language_model whose difference is 'down',figure_data/rq1_summary.csv
+NDownFamVLMWord,0,zero,studies in group vision_language_model whose difference is 'down' (in words),figure_data/rq1_summary.csv
+NCmpStudiesTaskThreeDStructureAndAttributes,10,10,studies in RQ1 group 3D structure and attributes,figure_data/rq1_summary.csv
+NCmpStudiesTaskThreeDStructureAndAttributesWord,10,ten,studies in RQ1 group 3D structure and attributes (in words),figure_data/rq1_summary.csv
+MedianDiffTaskThreeDStructureAndAttributes,3.3,$+3.3$,median per-study difference in group 3D structure and attributes (pp),figure_data/rq1_summary.csv
+QOneDiffTaskThreeDStructureAndAttributes,1.2,$+1.2$,first quartile in group 3D structure and attributes (pp),figure_data/rq1_summary.csv
+QThreeDiffTaskThreeDStructureAndAttributes,5.2,$+5.2$,third quartile in group 3D structure and attributes (pp),figure_data/rq1_summary.csv
+NUpTaskThreeDStructureAndAttributes,8,8,studies in group 3D structure and attributes whose difference is 'up',figure_data/rq1_summary.csv
+NUpTaskThreeDStructureAndAttributesWord,8,eight,studies in group 3D structure and attributes whose difference is 'up' (in words),figure_data/rq1_summary.csv
+NTieTaskThreeDStructureAndAttributes,1,1,studies in group 3D structure and attributes whose difference is 'tie',figure_data/rq1_summary.csv
+NTieTaskThreeDStructureAndAttributesWord,1,one,studies in group 3D structure and attributes whose difference is 'tie' (in words),figure_data/rq1_summary.csv
+NDownTaskThreeDStructureAndAttributes,1,1,studies in group 3D structure and attributes whose difference is 'down',figure_data/rq1_summary.csv
+NDownTaskThreeDStructureAndAttributesWord,1,one,studies in group 3D structure and attributes whose difference is 'down' (in words),figure_data/rq1_summary.csv
+NCmpStudiesTaskCrownSegmentation,10,10,studies in RQ1 group Crown segmentation,figure_data/rq1_summary.csv
+NCmpStudiesTaskCrownSegmentationWord,10,ten,studies in RQ1 group Crown segmentation (in words),figure_data/rq1_summary.csv
+MedianDiffTaskCrownSegmentation,0.7,$+0.7$,median per-study difference in group Crown segmentation (pp),figure_data/rq1_summary.csv
+QOneDiffTaskCrownSegmentation,-0.9,$-0.9$,first quartile in group Crown segmentation (pp),figure_data/rq1_summary.csv
+QThreeDiffTaskCrownSegmentation,1.9,$+1.9$,third quartile in group Crown segmentation (pp),figure_data/rq1_summary.csv
+NUpTaskCrownSegmentation,4,4,studies in group Crown segmentation whose difference is 'up',figure_data/rq1_summary.csv
+NUpTaskCrownSegmentationWord,4,four,studies in group Crown segmentation whose difference is 'up' (in words),figure_data/rq1_summary.csv
+NTieTaskCrownSegmentation,4,4,studies in group Crown segmentation whose difference is 'tie',figure_data/rq1_summary.csv
+NTieTaskCrownSegmentationWord,4,four,studies in group Crown segmentation whose difference is 'tie' (in words),figure_data/rq1_summary.csv
+NDownTaskCrownSegmentation,2,2,studies in group Crown segmentation whose difference is 'down',figure_data/rq1_summary.csv
+NDownTaskCrownSegmentationWord,2,two,studies in group Crown segmentation whose difference is 'down' (in words),figure_data/rq1_summary.csv
+NCmpStudiesTaskDetectionAndCounting,18,18,studies in RQ1 group Detection and counting,figure_data/rq1_summary.csv
+MedianDiffTaskDetectionAndCounting,1.1,$+1.1$,median per-study difference in group Detection and counting (pp),figure_data/rq1_summary.csv
+QOneDiffTaskDetectionAndCounting,-0.7,$-0.7$,first quartile in group Detection and counting (pp),figure_data/rq1_summary.csv
+QThreeDiffTaskDetectionAndCounting,3.7,$+3.7$,third quartile in group Detection and counting (pp),figure_data/rq1_summary.csv
+NUpTaskDetectionAndCounting,9,9,studies in group Detection and counting whose difference is 'up',figure_data/rq1_summary.csv
+NUpTaskDetectionAndCountingWord,9,nine,studies in group Detection and counting whose difference is 'up' (in words),figure_data/rq1_summary.csv
+NTieTaskDetectionAndCounting,5,5,studies in group Detection and counting whose difference is 'tie',figure_data/rq1_summary.csv
+NTieTaskDetectionAndCountingWord,5,five,studies in group Detection and counting whose difference is 'tie' (in words),figure_data/rq1_summary.csv
+NDownTaskDetectionAndCounting,4,4,studies in group Detection and counting whose difference is 'down',figure_data/rq1_summary.csv
+NDownTaskDetectionAndCountingWord,4,four,studies in group Detection and counting whose difference is 'down' (in words),figure_data/rq1_summary.csv
+NCmpStudiesTaskHealthAndMortality,20,20,studies in RQ1 group Health and mortality,figure_data/rq1_summary.csv
+MedianDiffTaskHealthAndMortality,1.3,$+1.3$,median per-study difference in group Health and mortality (pp),figure_data/rq1_summary.csv
+QOneDiffTaskHealthAndMortality,-0.7,$-0.7$,first quartile in group Health and mortality (pp),figure_data/rq1_summary.csv
+QThreeDiffTaskHealthAndMortality,2.8,$+2.8$,third quartile in group Health and mortality (pp),figure_data/rq1_summary.csv
+NUpTaskHealthAndMortality,11,11,studies in group Health and mortality whose difference is 'up',figure_data/rq1_summary.csv
+NTieTaskHealthAndMortality,4,4,studies in group Health and mortality whose difference is 'tie',figure_data/rq1_summary.csv
+NTieTaskHealthAndMortalityWord,4,four,studies in group Health and mortality whose difference is 'tie' (in words),figure_data/rq1_summary.csv
+NDownTaskHealthAndMortality,5,5,studies in group Health and mortality whose difference is 'down',figure_data/rq1_summary.csv
+NDownTaskHealthAndMortalityWord,5,five,studies in group Health and mortality whose difference is 'down' (in words),figure_data/rq1_summary.csv
+NCmpStudiesTaskSpeciesClassification,15,15,studies in RQ1 group Species classification,figure_data/rq1_summary.csv
+MedianDiffTaskSpeciesClassification,0.3,$+0.3$,median per-study difference in group Species classification (pp),figure_data/rq1_summary.csv
+QOneDiffTaskSpeciesClassification,-1.2,$-1.2$,first quartile in group Species classification (pp),figure_data/rq1_summary.csv
+QThreeDiffTaskSpeciesClassification,2.3,$+2.3$,third quartile in group Species classification (pp),figure_data/rq1_summary.csv
+NUpTaskSpeciesClassification,6,6,studies in group Species classification whose difference is 'up',figure_data/rq1_summary.csv
+NUpTaskSpeciesClassificationWord,6,six,studies in group Species classification whose difference is 'up' (in words),figure_data/rq1_summary.csv
+NTieTaskSpeciesClassification,5,5,studies in group Species classification whose difference is 'tie',figure_data/rq1_summary.csv
+NTieTaskSpeciesClassificationWord,5,five,studies in group Species classification whose difference is 'tie' (in words),figure_data/rq1_summary.csv
+NDownTaskSpeciesClassification,4,4,studies in group Species classification whose difference is 'down',figure_data/rq1_summary.csv
+NDownTaskSpeciesClassificationWord,4,four,studies in group Species classification whose difference is 'down' (in words),figure_data/rq1_summary.csv
+NCmpStudiesRoleBaselineOnly,28,28,studies in RQ1 group Baseline only,figure_data/rq1_summary.csv
+MedianDiffRoleBaselineOnly,-1.2,$-1.2$,median per-study difference in group Baseline only (pp),figure_data/rq1_summary.csv
+QOneDiffRoleBaselineOnly,-5.8,$-5.8$,first quartile in group Baseline only (pp),figure_data/rq1_summary.csv
+QThreeDiffRoleBaselineOnly,1.0,$+1.0$,third quartile in group Baseline only (pp),figure_data/rq1_summary.csv
+NUpRoleBaselineOnly,7,7,studies in group Baseline only whose difference is 'up',figure_data/rq1_summary.csv
+NUpRoleBaselineOnlyWord,7,seven,studies in group Baseline only whose difference is 'up' (in words),figure_data/rq1_summary.csv
+NTieRoleBaselineOnly,7,7,studies in group Baseline only whose difference is 'tie',figure_data/rq1_summary.csv
+NTieRoleBaselineOnlyWord,7,seven,studies in group Baseline only whose difference is 'tie' (in words),figure_data/rq1_summary.csv
+NDownRoleBaselineOnly,14,14,studies in group Baseline only whose difference is 'down',figure_data/rq1_summary.csv
+NCmpStudiesRoleProposed,40,40,studies in RQ1 group Proposed by the study,figure_data/rq1_summary.csv
+MedianDiffRoleProposed,1.9,$+1.9$,median per-study difference in group Proposed by the study (pp),figure_data/rq1_summary.csv
+QOneDiffRoleProposed,0.7,$+0.7$,first quartile in group Proposed by the study (pp),figure_data/rq1_summary.csv
+QThreeDiffRoleProposed,4.4,$+4.4$,third quartile in group Proposed by the study (pp),figure_data/rq1_summary.csv
+NUpRoleProposed,27,27,studies in group Proposed by the study whose difference is 'up',figure_data/rq1_summary.csv
+NTieRoleProposed,12,12,studies in group Proposed by the study whose difference is 'tie',figure_data/rq1_summary.csv
+NDownRoleProposed,1,1,studies in group Proposed by the study whose difference is 'down',figure_data/rq1_summary.csv
+NDownRoleProposedWord,1,one,studies in group Proposed by the study whose difference is 'down' (in words),figure_data/rq1_summary.csv
+NOutliersRQOne,9,9,RQ1 comparisons outside Tukey's fences,figure_data/rq1_outliers.csv
+NOutliersRQOneWord,9,nine,RQ1 comparisons outside Tukey's fences (in words),figure_data/rq1_outliers.csv
+FenceLowRQOne,-8.0,$-8.0$,lower Tukey fence of the RQ1 differences (pp),figure_data/rq1_comparisons.csv (rq1_comparisons.data)
+FenceHighRQOne,11.2,$+11.2$,upper Tukey fence of the RQ1 differences (pp),figure_data/rq1_comparisons.csv (rq1_comparisons.data)
+NTransferPairs,112,112,complete in-domain and out-of-domain pairs (percent metrics),figure_data/rq2_transfer.csv (rq2_transfer.data)
+NTransferStudies,22,22,studies with a complete transfer pair,figure_data/rq2_transfer.csv (rq2_transfer.data)
+PctTransferStudies,16.7,16.7,share of studies with a complete transfer pair (22 of 132),figure_data/rq2_transfer.csv (rq2_transfer.data)
+MedianChangeAll,-5.1,$-5.1$,median of the per-study changes under domain shift (pp),figure_data/rq2_transfer.csv (rq2_transfer.data)
+QOneChangeAll,-20.6,$-20.6$,first quartile of the per-study changes (pp),figure_data/rq2_transfer.csv (rq2_transfer.data)
+QThreeChangeAll,0.7,$+0.7$,third quartile of the per-study changes (pp),figure_data/rq2_transfer.csv (rq2_transfer.data)
+NUpTransfer,5,5,studies whose per-study change is 'up',figure_data/rq2_transfer.csv (rq2_transfer.data)
+NUpTransferWord,5,five,studies whose per-study change is 'up' (in words),figure_data/rq2_transfer.csv (rq2_transfer.data)
+NTieTransfer,2,2,studies whose per-study change is 'tie',figure_data/rq2_transfer.csv (rq2_transfer.data)
+NTieTransferWord,2,two,studies whose per-study change is 'tie' (in words),figure_data/rq2_transfer.csv (rq2_transfer.data)
+NDownTransfer,15,15,studies whose per-study change is 'down',figure_data/rq2_transfer.csv (rq2_transfer.data)
+NTrStudiesBiome,1,1,studies in RQ2 group Biome,figure_data/rq2_summary.csv
+NTrStudiesBiomeWord,1,one,studies in RQ2 group Biome (in words),figure_data/rq2_summary.csv
+NTrPairsBiome,2,2,pairs in RQ2 group Biome,figure_data/rq2_summary.csv
+NTrPairsBiomeWord,2,two,pairs in RQ2 group Biome (in words),figure_data/rq2_summary.csv
+MedianChangeBiome,-19.0,$-19.0$,median per-study change in group Biome (pp),figure_data/rq2_summary.csv
+NTrStudiesRegion,7,7,studies in RQ2 group Region,figure_data/rq2_summary.csv
+NTrStudiesRegionWord,7,seven,studies in RQ2 group Region (in words),figure_data/rq2_summary.csv
+NTrPairsRegion,22,22,pairs in RQ2 group Region,figure_data/rq2_summary.csv
+MedianChangeRegion,-7.2,$-7.2$,median per-study change in group Region (pp),figure_data/rq2_summary.csv
+NTrStudiesRegionAcq,4,4,studies in RQ2 group Region + sensor or platform,figure_data/rq2_summary.csv
+NTrStudiesRegionAcqWord,4,four,studies in RQ2 group Region + sensor or platform (in words),figure_data/rq2_summary.csv
+NTrPairsRegionAcq,21,21,pairs in RQ2 group Region + sensor or platform,figure_data/rq2_summary.csv
+MedianChangeRegionAcq,0.2,$+0.2$,median per-study change in group Region + sensor or platform (pp),figure_data/rq2_summary.csv
+NTrStudiesAcqOnly,4,4,"studies in RQ2 group Sensor, platform or resolution only",figure_data/rq2_summary.csv
+NTrStudiesAcqOnlyWord,4,four,"studies in RQ2 group Sensor, platform or resolution only (in words)",figure_data/rq2_summary.csv
+NTrPairsAcqOnly,8,8,"pairs in RQ2 group Sensor, platform or resolution only",figure_data/rq2_summary.csv
+NTrPairsAcqOnlyWord,8,eight,"pairs in RQ2 group Sensor, platform or resolution only (in words)",figure_data/rq2_summary.csv
+MedianChangeAcqOnly,-4.6,$-4.6$,"median per-study change in group Sensor, platform or resolution only (pp)",figure_data/rq2_summary.csv
+NTrStudiesSite,6,6,studies in RQ2 group Site,figure_data/rq2_summary.csv
+NTrStudiesSiteWord,6,six,studies in RQ2 group Site (in words),figure_data/rq2_summary.csv
+NTrPairsSite,27,27,pairs in RQ2 group Site,figure_data/rq2_summary.csv
+MedianChangeSite,-3.8,$-3.8$,median per-study change in group Site (pp),figure_data/rq2_summary.csv
+NTrStudiesSiteAcq,3,3,studies in RQ2 group Site + sensor or platform,figure_data/rq2_summary.csv
+NTrStudiesSiteAcqWord,3,three,studies in RQ2 group Site + sensor or platform (in words),figure_data/rq2_summary.csv
+NTrPairsSiteAcq,32,32,pairs in RQ2 group Site + sensor or platform,figure_data/rq2_summary.csv
+MedianChangeSiteAcq,-0.1,$-0.1$,median per-study change in group Site + sensor or platform (pp),figure_data/rq2_summary.csv
+NTrStudiesHybrid,10,10,studies in RQ2 group CNN-transformer hybrid,figure_data/rq2_summary.csv
+NTrStudiesHybridWord,10,ten,studies in RQ2 group CNN-transformer hybrid (in words),figure_data/rq2_summary.csv
+NTrPairsHybrid,33,33,pairs in RQ2 group CNN-transformer hybrid,figure_data/rq2_summary.csv
+MedianChangeHybrid,-3.8,$-3.8$,median per-study change in group CNN-transformer hybrid (pp),figure_data/rq2_summary.csv
+NTrStudiesFoundation,1,1,studies in RQ2 group Foundation model,figure_data/rq2_summary.csv
+NTrStudiesFoundationWord,1,one,studies in RQ2 group Foundation model (in words),figure_data/rq2_summary.csv
+NTrPairsFoundation,3,3,pairs in RQ2 group Foundation model,figure_data/rq2_summary.csv
+NTrPairsFoundationWord,3,three,pairs in RQ2 group Foundation model (in words),figure_data/rq2_summary.csv
+MedianChangeFoundation,-29.4,$-29.4$,median per-study change in group Foundation model (pp),figure_data/rq2_summary.csv
+NTrStudiesHierViT,6,6,studies in RQ2 group Hierarchical ViT,figure_data/rq2_summary.csv
+NTrStudiesHierViTWord,6,six,studies in RQ2 group Hierarchical ViT (in words),figure_data/rq2_summary.csv
+NTrPairsHierViT,25,25,pairs in RQ2 group Hierarchical ViT,figure_data/rq2_summary.csv
+MedianChangeHierViT,-2.6,$-2.6$,median per-study change in group Hierarchical ViT (pp),figure_data/rq2_summary.csv
+NTrStudiesNonTransformer,10,10,studies in RQ2 group Non-transformer,figure_data/rq2_summary.csv
+NTrStudiesNonTransformerWord,10,ten,studies in RQ2 group Non-transformer (in words),figure_data/rq2_summary.csv
+NTrPairsNonTransformer,36,36,pairs in RQ2 group Non-transformer,figure_data/rq2_summary.csv
+MedianChangeNonTransformer,-20.1,$-20.1$,median per-study change in group Non-transformer (pp),figure_data/rq2_summary.csv
+NTrStudiesPureViT,3,3,studies in RQ2 group Pure ViT,figure_data/rq2_summary.csv
+NTrStudiesPureViTWord,3,three,studies in RQ2 group Pure ViT (in words),figure_data/rq2_summary.csv
+NTrPairsPureViT,12,12,pairs in RQ2 group Pure ViT,figure_data/rq2_summary.csv
+MedianChangePureViT,-5.2,$-5.2$,median per-study change in group Pure ViT (pp),figure_data/rq2_summary.csv
+NTrStudiesVLM,1,1,studies in RQ2 group Vision-language model,figure_data/rq2_summary.csv
+NTrStudiesVLMWord,1,one,studies in RQ2 group Vision-language model (in words),figure_data/rq2_summary.csv
+NTrPairsVLM,3,3,pairs in RQ2 group Vision-language model,figure_data/rq2_summary.csv
+NTrPairsVLMWord,3,three,pairs in RQ2 group Vision-language model (in words),figure_data/rq2_summary.csv
+MedianChangeVLM,-31.9,$-31.9$,median per-study change in group Vision-language model (pp),figure_data/rq2_summary.csv
+NTransferStudiesWithCountry,21,21,studies with a complete transfer pair that name a country,figure_data/geography.csv and rq2_transfer.csv
+NTransferNorthern,19,19,"of those, studies wholly in the Northern Hemisphere (by country)",figure_data/geography.csv and rq2_transfer.csv
+NOutliersRQTwo,7,7,RQ2 pairs outside Tukey's fences,figure_data/rq2_outliers.csv
+NOutliersRQTwoWord,7,seven,RQ2 pairs outside Tukey's fences (in words),figure_data/rq2_outliers.csv
+NOutlierStudiesRQTwo,5,5,studies with an RQ2 outlier,figure_data/rq2_outliers.csv
+NOutlierStudiesRQTwoWord,5,five,studies with an RQ2 outlier (in words),figure_data/rq2_outliers.csv
+FenceLowRQTwo,-49.5,$-49.5$,lower Tukey fence of the RQ2 changes (pp),figure_data/rq2_transfer.csv (rq2_transfer.data)
+FenceHighRQTwo,38.8,$+38.8$,upper Tukey fence of the RQ2 changes (pp),figure_data/rq2_transfer.csv (rq2_transfer.data)
+NMatchedStudies,6,6,studies that test transformer and non-transformer models under the same shift,figure_data/rq2_transfer.csv (rq2_transfer.data)
+NMatchedStudiesWord,6,six,studies that test transformer and non-transformer models under the same shift (in words),figure_data/rq2_transfer.csv (rq2_transfer.data)
+NMatchedTransformerLess,3,3,"of those, studies where the transformer changes less or gains more (median)",figure_data/rq2_transfer.csv (rq2_transfer.data)
+NMatchedTransformerLessWord,3,three,"of those, studies where the transformer changes less or gains more (median) (in words)",figure_data/rq2_transfer.csv (rq2_transfer.data)
+NTrainingStated,57,57,studies that state how their principal transformer is trained,figure_data/rq3_strategies.csv (rq3_training.tables)
+PctTrainingStated,43.2,43.2,share of studies that state the training of the principal transformer (57 of 132),figure_data/rq3_strategies.csv (rq3_training.tables)
+NTrainingNotReported,75,75,studies that do not state it,figure_data/rq3_strategies.csv (rq3_training.tables)
+PctTrainingNotReported,56.8,56.8,share of studies that do not state it (75 of 132),figure_data/rq3_strategies.csv (rq3_training.tables)
+NStratNotReported,75,75,studies whose principal transformer is: Not reported,figure_data/rq3_strategies.csv (rq3_training.tables)
+NStratFullFineTuning,34,34,studies whose principal transformer is: Full fine-tuning,figure_data/rq3_strategies.csv (rq3_training.tables)
+NStratZeroShotOrFewShot,14,14,studies whose principal transformer is: Zero-shot or few-shot,figure_data/rq3_strategies.csv (rq3_training.tables)
+NStratTrainedFromScratch,4,4,studies whose principal transformer is: Trained from scratch,figure_data/rq3_strategies.csv (rq3_training.tables)
+NStratTrainedFromScratchWord,4,four,studies whose principal transformer is: Trained from scratch (in words),figure_data/rq3_strategies.csv (rq3_training.tables)
+NStratHeadOnlyFrozenBackbone,3,3,studies whose principal transformer is: Head only (frozen backbone),figure_data/rq3_strategies.csv (rq3_training.tables)
+NStratHeadOnlyFrozenBackboneWord,3,three,studies whose principal transformer is: Head only (frozen backbone) (in words),figure_data/rq3_strategies.csv (rq3_training.tables)
+NStratParameterEfficientTuning,2,2,studies whose principal transformer is: Parameter-efficient tuning,figure_data/rq3_strategies.csv (rq3_training.tables)
+NStratParameterEfficientTuningWord,2,two,studies whose principal transformer is: Parameter-efficient tuning (in words),figure_data/rq3_strategies.csv (rq3_training.tables)
+NTrainingStatedPureViT,5,5,Pure ViT studies that state how their principal transformer is trained,figure_data/rq3_strategies.csv (rq3_training.tables)
+NTrainingStatedPureViTWord,5,five,Pure ViT studies that state how their principal transformer is trained (in words),figure_data/rq3_strategies.csv (rq3_training.tables)
+PctTrainingStatedPureViT,26.3,26.3,share of Pure ViT studies that state it (5 of 19),figure_data/rq3_strategies.csv (rq3_training.tables)
+NTrainingStatedHierViT,23,23,Hierarchical ViT studies that state how their principal transformer is trained,figure_data/rq3_strategies.csv (rq3_training.tables)
+PctTrainingStatedHierViT,60.5,60.5,share of Hierarchical ViT studies that state it (23 of 38),figure_data/rq3_strategies.csv (rq3_training.tables)
+NTrainingStatedHybrid,10,10,CNN-transformer hybrid studies that state how their principal transformer is trained,figure_data/rq3_strategies.csv (rq3_training.tables)
+NTrainingStatedHybridWord,10,ten,CNN-transformer hybrid studies that state how their principal transformer is trained (in words),figure_data/rq3_strategies.csv (rq3_training.tables)
+PctTrainingStatedHybrid,19.2,19.2,share of CNN-transformer hybrid studies that state it (10 of 52),figure_data/rq3_strategies.csv (rq3_training.tables)
+NTrainingStatedFoundation,17,17,Foundation model studies that state how their principal transformer is trained,figure_data/rq3_strategies.csv (rq3_training.tables)
+PctTrainingStatedFoundation,89.5,89.5,share of Foundation model studies that state it (17 of 19),figure_data/rq3_strategies.csv (rq3_training.tables)
+NTrainingStatedVLM,2,2,Vision-language model studies that state how their principal transformer is trained,figure_data/rq3_strategies.csv (rq3_training.tables)
+NTrainingStatedVLMWord,2,two,Vision-language model studies that state how their principal transformer is trained (in words),figure_data/rq3_strategies.csv (rq3_training.tables)
+PctTrainingStatedVLM,50.0,50.0,share of Vision-language model studies that state it (2 of 4),figure_data/rq3_strategies.csv (rq3_training.tables)
+NFMStudies,26,26,studies that use a foundation or vision-language model,figure_data/rq3_foundation_models.csv (rq3_training.tables)
+PctFMStudies,19.7,19.7,share of studies that use a foundation or vision-language model (26 of 132),figure_data/rq3_foundation_models.csv (rq3_training.tables)
+NFMTrainedFromScratch,0,0,"of those, studies that use one in the mode: Trained from scratch",figure_data/rq3_foundation_models.csv (rq3_training.tables)
+NFMTrainedFromScratchWord,0,zero,"of those, studies that use one in the mode: Trained from scratch (in words)",figure_data/rq3_foundation_models.csv (rq3_training.tables)
+PctFMTrainedFromScratch,0.0,0.0,share of foundation or vision-language studies using the mode: Trained from scratch (0 of 26),figure_data/rq3_foundation_models.csv (rq3_training.tables)
+NFMFullFineTuning,5,5,"of those, studies that use one in the mode: Full fine-tuning",figure_data/rq3_foundation_models.csv (rq3_training.tables)
+NFMFullFineTuningWord,5,five,"of those, studies that use one in the mode: Full fine-tuning (in words)",figure_data/rq3_foundation_models.csv (rq3_training.tables)
+PctFMFullFineTuning,19.2,19.2,share of foundation or vision-language studies using the mode: Full fine-tuning (5 of 26),figure_data/rq3_foundation_models.csv (rq3_training.tables)
+NFMParameterEfficientTuning,2,2,"of those, studies that use one in the mode: Parameter-efficient tuning",figure_data/rq3_foundation_models.csv (rq3_training.tables)
+NFMParameterEfficientTuningWord,2,two,"of those, studies that use one in the mode: Parameter-efficient tuning (in words)",figure_data/rq3_foundation_models.csv (rq3_training.tables)
+PctFMParameterEfficientTuning,7.7,7.7,share of foundation or vision-language studies using the mode: Parameter-efficient tuning (2 of 26),figure_data/rq3_foundation_models.csv (rq3_training.tables)
+NFMHeadOnlyFrozenBackbone,4,4,"of those, studies that use one in the mode: Head only (frozen backbone)",figure_data/rq3_foundation_models.csv (rq3_training.tables)
+NFMHeadOnlyFrozenBackboneWord,4,four,"of those, studies that use one in the mode: Head only (frozen backbone) (in words)",figure_data/rq3_foundation_models.csv (rq3_training.tables)
+PctFMHeadOnlyFrozenBackbone,15.4,15.4,share of foundation or vision-language studies using the mode: Head only (frozen backbone) (4 of 26),figure_data/rq3_foundation_models.csv (rq3_training.tables)
+NFMZeroShotOrFewShot,17,17,"of those, studies that use one in the mode: Zero-shot or few-shot",figure_data/rq3_foundation_models.csv (rq3_training.tables)
+PctFMZeroShotOrFewShot,65.4,65.4,share of foundation or vision-language studies using the mode: Zero-shot or few-shot (17 of 26),figure_data/rq3_foundation_models.csv (rq3_training.tables)
+NFMNotReported,5,5,"of those, studies that use one in the mode: Not reported",figure_data/rq3_foundation_models.csv (rq3_training.tables)
+NFMNotReportedWord,5,five,"of those, studies that use one in the mode: Not reported (in words)",figure_data/rq3_foundation_models.csv (rq3_training.tables)
+PctFMNotReported,19.2,19.2,share of foundation or vision-language studies using the mode: Not reported (5 of 26),figure_data/rq3_foundation_models.csv (rq3_training.tables)
+NLabelEfficiencyStudies,6,6,studies that report results for several amounts of training labels,compiled/data_efficiency.csv
+NLabelEfficiencyStudiesWord,6,six,studies that report results for several amounts of training labels (in words),compiled/data_efficiency.csv
+NPEFTStudies,2,2,studies with a parameter-efficiently tuned model,compiled/models.csv
+NPEFTStudiesWord,2,two,studies with a parameter-efficiently tuned model (in words),compiled/models.csv
+NPEFTSameSetting,1,1,"studies that report a parameter-efficiently tuned model and the same base model fully fine-tuned, on the same dataset and metric",figure_data/peft_same_setting.csv
+NPEFTSameSettingWord,1,one,"studies that report a parameter-efficiently tuned model and the same base model fully fine-tuned, on the same dataset and metric (in words)",figure_data/peft_same_setting.csv
+PEFTFullAPFifty,60.7,60.7,AP50 of full fine-tuning in the same-setting study,"figure_data/peft_table.csv (Table 1, p.12)"
+PEFTBestAPFifty,60.6,60.6,best AP50 of a parameter-efficient method (ASCS (proposed PEFT)),"figure_data/peft_table.csv (Table 1, p.12)"
+PEFTBestName,ASCS (proposed PEFT),ASCS,name of that method as printed,"figure_data/peft_table.csv (Table 1, p.12)"
+PEFTBestTrainable,0.28,0.28,its share of trainable parameters (percent),"figure_data/peft_table.csv (Table 1, p.12)"
+PctPEFTBestOfFull,99.8,99.8,its AP50 as a share of the full fine-tuning AP50 (60.6 of 60.7),"figure_data/peft_table.csv (Table 1, p.12)"
+PEFTFullAPStrict,33.5,33.5,AP50:95 of full fine-tuning in the same-setting study,"figure_data/peft_table.csv (Table 1, p.12)"
+PEFTBestAPStrict,32.4,32.4,AP50:95 of the method with the best AP50 (ASCS (proposed PEFT)),"figure_data/peft_table.csv (Table 1, p.12)"
+NPEFTVariants,8,8,parameter-efficient methods compared in that study,"figure_data/peft_table.csv (Table 1, p.12)"
+NPEFTVariantsWord,8,eight,parameter-efficient methods compared in that study (in words),"figure_data/peft_table.csv (Table 1, p.12)"
+PEFTLowAPFifty,57.7,57.7,lowest AP50 among them,"figure_data/peft_table.csv (Table 1, p.12)"
+PEFTMinTrainable,0.01,0.01,smallest share of trainable parameters among them (percent),"figure_data/peft_table.csv (Table 1, p.12)"
+PEFTMaxTrainable,19.83,19.83,largest share of trainable parameters among them (percent),"figure_data/peft_table.csv (Table 1, p.12)"
+PEFTHeadOnlyAPFifty,60.0,60.0,AP50 with the backbone frozen (FIXED),"figure_data/peft_table.csv (Table 1, p.12)"
+PctHeadOnlyOfFull,98.8,98.8,frozen-backbone AP50 as a share of the full fine-tuning AP50 (60.0 of 60.7),"figure_data/peft_table.csv (Table 1, p.12)"
+NPEFTImages,300,300,"images in the dataset of the same-setting study (80 percent for training, 20 percent for testing)",compiled/datasets.csv

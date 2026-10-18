@@ -1,0 +1,92 @@
+task,column,studies,n_pure_vit,n_hierarchical_vit,n_cnn_transformer_hybrid,n_foundation_model,n_vision_language_model,panel
+Detection and counting,UAV / RGB,24,1,6,13,3,1,a
+Detection and counting,UAV / Spectral,5,0,2,2,1,0,a
+Detection and counting,UAV / LiDAR,2,0,1,1,0,0,a
+Detection and counting,UAV / DSM,1,0,0,0,1,0,a
+Detection and counting,Airborne / RGB,4,1,1,1,1,0,a
+Detection and counting,Airborne / Spectral,1,0,1,0,0,0,a
+Detection and counting,Satellite / RGB,2,0,0,1,0,1,a
+Detection and counting,Satellite / Spectral,1,0,1,0,0,0,a
+Detection and counting,Ground camera / RGB,1,1,0,0,0,0,a
+Detection and counting,TLS or MLS / LiDAR,1,0,0,1,0,0,a
+Detection and counting,Several platforms / RGB,7,0,4,1,2,0,a
+Detection and counting,Several platforms / Spectral,2,0,1,1,0,0,a
+Detection and counting,Several platforms / LiDAR,1,0,0,1,0,0,a
+Detection and counting,Synthetic / RGB,1,0,1,0,0,0,a
+Crown segmentation,UAV / RGB,19,0,6,5,8,0,a
+Crown segmentation,UAV / Spectral,7,0,0,3,4,0,a
+Crown segmentation,UAV / LiDAR,2,0,1,1,0,0,a
+Crown segmentation,UAV / DSM,3,0,0,1,2,0,a
+Crown segmentation,Airborne / RGB,3,0,0,1,2,0,a
+Crown segmentation,Airborne / Spectral,3,0,0,1,2,0,a
+Crown segmentation,Airborne / LiDAR,2,0,1,0,1,0,a
+Crown segmentation,Satellite / RGB,4,0,2,1,1,0,a
+Crown segmentation,Satellite / Spectral,3,0,2,1,0,0,a
+Crown segmentation,Ground camera / RGB,2,0,1,0,1,0,a
+Crown segmentation,Several platforms / RGB,5,0,3,1,1,0,a
+Crown segmentation,Several platforms / Spectral,1,0,1,0,0,0,a
+3D structure and attributes,UAV / RGB,4,0,2,0,2,0,a
+3D structure and attributes,UAV / Spectral,2,0,1,0,1,0,a
+3D structure and attributes,UAV / LiDAR,3,0,2,1,0,0,a
+3D structure and attributes,UAV / DSM,1,0,0,0,1,0,a
+3D structure and attributes,Airborne / RGB,1,0,1,0,0,0,a
+3D structure and attributes,Airborne / Spectral,3,1,2,0,0,0,a
+3D structure and attributes,Airborne / LiDAR,4,3,1,0,0,0,a
+3D structure and attributes,Ground camera / RGB,6,2,2,1,0,1,a
+3D structure and attributes,Ground camera / Spectral,1,1,0,0,0,0,a
+3D structure and attributes,Ground camera / LiDAR,1,1,0,0,0,0,a
+3D structure and attributes,TLS or MLS / RGB,1,1,0,0,0,0,a
+3D structure and attributes,TLS or MLS / LiDAR,8,3,1,4,0,0,a
+3D structure and attributes,Several platforms / RGB,1,0,0,0,1,0,a
+3D structure and attributes,Several platforms / LiDAR,7,1,1,4,1,0,a
+3D structure and attributes,Synthetic / RGB,1,0,1,0,0,0,a
+3D structure and attributes,Synthetic / LiDAR,1,0,0,1,0,0,a
+Species classification,UAV / RGB,9,1,3,1,3,1,a
+Species classification,UAV / Spectral,3,0,1,2,0,0,a
+Species classification,UAV / LiDAR,5,2,1,2,0,0,a
+Species classification,UAV / DSM,1,0,0,0,1,0,a
+Species classification,Airborne / Spectral,1,0,0,0,1,0,a
+Species classification,Airborne / LiDAR,5,1,0,2,1,1,a
+Species classification,Ground camera / RGB,1,0,0,0,1,0,a
+Species classification,TLS or MLS / RGB,1,1,0,0,0,0,a
+Species classification,TLS or MLS / LiDAR,3,2,0,1,0,0,a
+Species classification,Several platforms / RGB,2,1,0,1,0,0,a
+Species classification,Several platforms / Spectral,1,1,0,0,0,0,a
+Species classification,Several platforms / LiDAR,2,1,0,1,0,0,a
+Health and mortality,UAV / RGB,22,0,6,15,1,0,a
+Health and mortality,UAV / Spectral,5,0,1,4,0,0,a
+Health and mortality,Airborne / RGB,3,0,2,1,0,0,a
+Health and mortality,Airborne / Spectral,4,0,3,1,0,0,a
+Health and mortality,Satellite / Spectral,1,0,1,0,0,0,a
+Health and mortality,Several platforms / RGB,2,0,1,1,0,0,a
+Health and mortality,Several platforms / Spectral,1,0,0,1,0,0,a
+Detection and counting,Natural forest,11,1,0,7,2,1,b
+Detection and counting,Mixed,12,1,8,2,1,0,b
+Detection and counting,Plantation,7,1,0,5,1,0,b
+Detection and counting,Urban,2,0,1,1,0,0,b
+Detection and counting,Orchard,7,0,3,3,1,0,b
+Detection and counting,Other,3,0,2,0,0,1,b
+Detection and counting,Not reported,1,0,0,0,1,0,b
+Crown segmentation,Natural forest,11,0,2,4,5,0,b
+Crown segmentation,Mixed,9,0,7,0,2,0,b
+Crown segmentation,Plantation,6,0,1,1,4,0,b
+Crown segmentation,Urban,6,0,2,2,2,0,b
+Crown segmentation,Orchard,5,0,1,2,2,0,b
+Crown segmentation,Not reported,1,0,0,1,0,0,b
+3D structure and attributes,Natural forest,10,3,3,3,1,0,b
+3D structure and attributes,Mixed,6,1,3,2,0,0,b
+3D structure and attributes,Plantation,8,1,1,4,2,0,b
+3D structure and attributes,Urban,4,2,1,0,0,1,b
+3D structure and attributes,Orchard,3,3,0,0,0,0,b
+3D structure and attributes,Other,2,0,1,1,0,0,b
+3D structure and attributes,Not reported,1,0,0,1,0,0,b
+Species classification,Natural forest,6,2,1,0,2,1,b
+Species classification,Mixed,9,2,1,4,2,0,b
+Species classification,Plantation,4,2,1,0,1,0,b
+Species classification,Urban,7,2,0,3,1,1,b
+Species classification,Not reported,1,0,0,1,0,0,b
+Health and mortality,Natural forest,24,0,9,14,1,0,b
+Health and mortality,Mixed,1,0,1,0,0,0,b
+Health and mortality,Plantation,4,0,0,4,0,0,b
+Health and mortality,Urban,1,0,0,1,0,0,b
+Health and mortality,Orchard,2,0,2,0,0,0,b

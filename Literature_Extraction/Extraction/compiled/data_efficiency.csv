@@ -1,0 +1,59 @@
+paper_id,item,model,label_amount,label_unit,metric,value_std,unit_std,status,page,location,note,setting,amount_note
+P002,de1,model8,1.0,images,ap50,51.1,%,approximate,4,Fig. 3,read off Figure 3; about +/- 0.5,read off Figure 3; about +/- 0.5,"k images per OOD zone, added to all ID-zone training data"
+P002,de2,model8,10.0,images,ap50,51.2,%,approximate,4,Fig. 3,read off Figure 3; about +/- 0.5,read off Figure 3; about +/- 0.5,"k images per OOD zone, added to all ID-zone training data"
+P002,de3,model8,100.0,images,ap50,60.0,%,approximate,4,Fig. 3,read off Figure 3; about +/- 0.5,read off Figure 3; about +/- 0.5,"k images per OOD zone, added to all ID-zone training data"
+P002,de4,model1,1.0,images,ap50,44.6,%,approximate,4,Fig. 3,read off Figure 3; about +/- 0.5,read off Figure 3; about +/- 0.5,"k images per OOD zone, added to all ID-zone training data"
+P002,de5,model1,10.0,images,ap50,49.5,%,approximate,4,Fig. 3,read off Figure 3; about +/- 0.5,read off Figure 3; about +/- 0.5,"k images per OOD zone, added to all ID-zone training data"
+P002,de6,model1,100.0,images,ap50,57.8,%,approximate,4,Fig. 3,read off Figure 3; about +/- 0.5,read off Figure 3; about +/- 0.5,"k images per OOD zone, added to all ID-zone training data"
+P005,de1,model1,1.0,images,mae,180.2,trees,reported,14,Table 8,scenario S_L → S_J,scenario S_L → S_J; E_MAE,1 labelled image(s) of the target domain; scenario S_L → S_J
+P005,de10,model1,5.0,images,f1,71.5,%,reported,14,Table 8,scenario S_J → S_L,scenario S_J → S_L; E_F1 of the tree locations,5 labelled image(s) of the target domain; scenario S_J → S_L
+P005,de11,model1,5.0,images,mae,23.1,trees,reported,14,Table 8,scenario S_Y → S_L,scenario S_Y → S_L; E_MAE,5 labelled image(s) of the target domain; scenario S_Y → S_L
+P005,de12,model1,5.0,images,f1,70.8,%,reported,14,Table 8,scenario S_Y → S_L,scenario S_Y → S_L; E_F1 of the tree locations,5 labelled image(s) of the target domain; scenario S_Y → S_L
+P005,de13,model1,10.0,images,mae,88.7,trees,reported,14,Table 8,scenario S_L → S_J,scenario S_L → S_J; E_MAE,10 labelled image(s) of the target domain; scenario S_L → S_J
+P005,de14,model1,10.0,images,f1,60.2,%,reported,14,Table 8,scenario S_L → S_J,scenario S_L → S_J; E_F1 of the tree locations,10 labelled image(s) of the target domain; scenario S_L → S_J
+P005,de15,model1,10.0,images,mae,20.1,trees,reported,14,Table 8,scenario S_J → S_L,scenario S_J → S_L; E_MAE,10 labelled image(s) of the target domain; scenario S_J → S_L
+P005,de16,model1,10.0,images,f1,72.4,%,reported,14,Table 8,scenario S_J → S_L,scenario S_J → S_L; E_F1 of the tree locations,10 labelled image(s) of the target domain; scenario S_J → S_L
+P005,de17,model1,10.0,images,mae,22.1,trees,reported,14,Table 8,scenario S_Y → S_L,scenario S_Y → S_L; E_MAE,10 labelled image(s) of the target domain; scenario S_Y → S_L
+P005,de18,model1,10.0,images,f1,71.6,%,reported,14,Table 8,scenario S_Y → S_L,scenario S_Y → S_L; E_F1 of the tree locations,10 labelled image(s) of the target domain; scenario S_Y → S_L
+P005,de2,model1,1.0,images,f1,19.3,%,reported,14,Table 8,scenario S_L → S_J,scenario S_L → S_J; E_F1 of the tree locations,1 labelled image(s) of the target domain; scenario S_L → S_J
+P005,de3,model1,1.0,images,mae,56.2,trees,reported,14,Table 8,scenario S_J → S_L,scenario S_J → S_L; E_MAE,1 labelled image(s) of the target domain; scenario S_J → S_L
+P005,de4,model1,1.0,images,f1,53.1,%,reported,14,Table 8,scenario S_J → S_L,scenario S_J → S_L; E_F1 of the tree locations,1 labelled image(s) of the target domain; scenario S_J → S_L
+P005,de5,model1,1.0,images,mae,61.9,trees,reported,14,Table 8,scenario S_Y → S_L,scenario S_Y → S_L; E_MAE,1 labelled image(s) of the target domain; scenario S_Y → S_L
+P005,de6,model1,1.0,images,f1,48.3,%,reported,14,Table 8,scenario S_Y → S_L,scenario S_Y → S_L; E_F1 of the tree locations,1 labelled image(s) of the target domain; scenario S_Y → S_L
+P005,de7,model1,5.0,images,mae,122.5,trees,reported,14,Table 8,scenario S_L → S_J,scenario S_L → S_J; E_MAE,5 labelled image(s) of the target domain; scenario S_L → S_J
+P005,de8,model1,5.0,images,f1,53.8,%,reported,14,Table 8,scenario S_L → S_J,scenario S_L → S_J; E_F1 of the tree locations,5 labelled image(s) of the target domain; scenario S_L → S_J
+P005,de9,model1,5.0,images,mae,21.4,trees,reported,14,Table 8,scenario S_J → S_L,scenario S_J → S_L; E_MAE,5 labelled image(s) of the target domain; scenario S_J → S_L
+P019,de1,model2,100.0,percent_of_training_set,ap50_95,54.6,%,reported,6,Table IV,,box; evaluated on FT-Test,"percent of FlickrTree110K used with pseudo-labels (automatic labels, not human)"
+P019,de2,model3,100.0,percent_of_training_set,ap50_95,57.9,%,reported,6,Table IV,,box; evaluated on FT-Test,"percent of FlickrTree110K used with pseudo-labels (automatic labels, not human)"
+P019,de3,model2,10.0,percent_of_training_set,ap50_95,54.2,%,reported,6,Table IV,,box; evaluated on FT-Test,"percent of FlickrTree110K used with pseudo-labels (automatic labels, not human)"
+P019,de4,model3,10.0,percent_of_training_set,ap50_95,57.5,%,reported,6,Table IV,,box; evaluated on FT-Test,"percent of FlickrTree110K used with pseudo-labels (automatic labels, not human)"
+P019,de5,model2,5.0,percent_of_training_set,ap50_95,54.6,%,reported,6,Table IV,,box; evaluated on FT-Test,"percent of FlickrTree110K used with pseudo-labels (automatic labels, not human)"
+P019,de6,model3,5.0,percent_of_training_set,ap50_95,57.5,%,reported,6,Table IV,,box; evaluated on FT-Test,"percent of FlickrTree110K used with pseudo-labels (automatic labels, not human)"
+P019,de7,model2,1.0,percent_of_training_set,ap50_95,53.3,%,reported,6,Table IV,,box; evaluated on FT-Test,"percent of FlickrTree110K used with pseudo-labels (automatic labels, not human)"
+P019,de8,model3,1.0,percent_of_training_set,ap50_95,55.4,%,reported,6,Table IV,,box; evaluated on FT-Test,"percent of FlickrTree110K used with pseudo-labels (automatic labels, not human)"
+P030,de1,model10,10.0,percent_of_training_set,mae,27.83,trees,reported,10,Table II (image),,KCL-London,rest of the training set used unlabelled; dataset KCL-London
+P030,de10,model10,30.0,percent_of_training_set,r2,0.91,fraction,reported,10,Table II (image),,Jiangsu,rest of the training set used unlabelled; dataset Jiangsu
+P030,de11,model10,30.0,percent_of_training_set,mae,4.69,trees,reported,10,Table II (image),,Yosemite,rest of the training set used unlabelled; dataset Yosemite
+P030,de12,model10,30.0,percent_of_training_set,r2,0.89,fraction,reported,10,Table II (image),,Yosemite,rest of the training set used unlabelled; dataset Yosemite
+P030,de2,model10,10.0,percent_of_training_set,r2,0.41,fraction,reported,10,Table II (image),,KCL-London,rest of the training set used unlabelled; dataset KCL-London
+P030,de3,model10,10.0,percent_of_training_set,mae,73.32,trees,reported,10,Table II (image),,Jiangsu,rest of the training set used unlabelled; dataset Jiangsu
+P030,de4,model10,10.0,percent_of_training_set,r2,0.86,fraction,reported,10,Table II (image),,Jiangsu,rest of the training set used unlabelled; dataset Jiangsu
+P030,de5,model10,10.0,percent_of_training_set,mae,5.72,trees,reported,10,Table II (image),,Yosemite,rest of the training set used unlabelled; dataset Yosemite
+P030,de6,model10,10.0,percent_of_training_set,r2,0.84,fraction,reported,10,Table II (image),,Yosemite,rest of the training set used unlabelled; dataset Yosemite
+P030,de7,model10,30.0,percent_of_training_set,mae,20.61,trees,reported,10,Table II (image),,KCL-London,rest of the training set used unlabelled; dataset KCL-London
+P030,de8,model10,30.0,percent_of_training_set,r2,0.66,fraction,reported,10,Table II (image),,KCL-London,rest of the training set used unlabelled; dataset KCL-London
+P030,de9,model10,30.0,percent_of_training_set,mae,56.38,trees,reported,10,Table II (image),,Jiangsu,rest of the training set used unlabelled; dataset Jiangsu
+P047,de1,model2,70.0,images,miou,75.6,%,reported,10,Table 3,,,"700 images is the full training group, 70 images 10 percent of it"
+P047,de2,model2,700.0,images,miou,81.01,%,reported,16,Table 5,,,"700 images is the full training group, 70 images 10 percent of it"
+P047,de3,model3,70.0,images,miou,79.53,%,reported,10,Table 3,,,"700 images is the full training group, 70 images 10 percent of it"
+P047,de4,model3,700.0,images,miou,83.72,%,reported,16,Table 5,,,"700 images is the full training group, 70 images 10 percent of it"
+P102,de1,model12,50.0,percent_of_training_set,oa,98.62,%,reported,13,Table XI (image),self-built dataset,self-built dataset,training share of all samples from the train:test ratio 5:5 of Table XI (page 13)
+P102,de10,model12,90.0,percent_of_training_set,oa,90.9,%,reported,13,Table XI (image),STPCTLS dataset,STPCTLS dataset,training share of all samples from the train:test ratio 9:1 of Table XI (page 13)
+P102,de2,model12,50.0,percent_of_training_set,oa,81.86,%,reported,13,Table XI (image),STPCTLS dataset,STPCTLS dataset,training share of all samples from the train:test ratio 5:5 of Table XI (page 13)
+P102,de3,model12,60.0,percent_of_training_set,oa,98.46,%,reported,13,Table XI (image),self-built dataset,self-built dataset,training share of all samples from the train:test ratio 6:4 of Table XI (page 13)
+P102,de4,model12,60.0,percent_of_training_set,oa,84.01,%,reported,13,Table XI (image),STPCTLS dataset,STPCTLS dataset,training share of all samples from the train:test ratio 6:4 of Table XI (page 13)
+P102,de5,model12,70.0,percent_of_training_set,oa,99.36,%,reported,13,Table XI (image),self-built dataset,self-built dataset,training share of all samples from the train:test ratio 7:3 of Table XI (page 13)
+P102,de6,model12,70.0,percent_of_training_set,oa,87.75,%,reported,13,Table XI (image),STPCTLS dataset,STPCTLS dataset,training share of all samples from the train:test ratio 7:3 of Table XI (page 13)
+P102,de7,model12,80.0,percent_of_training_set,oa,99.42,%,reported,13,Table XI (image),self-built dataset,self-built dataset,training share of all samples from the train:test ratio 8:2 of Table XI (page 13)
+P102,de8,model12,80.0,percent_of_training_set,oa,90.37,%,reported,13,Table XI (image),STPCTLS dataset,STPCTLS dataset,training share of all samples from the train:test ratio 8:2 of Table XI (page 13)
+P102,de9,model12,90.0,percent_of_training_set,oa,99.81,%,reported,13,Table XI (image),self-built dataset,self-built dataset,training share of all samples from the train:test ratio 9:1 of Table XI (page 13)

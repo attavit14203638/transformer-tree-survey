@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use these data or code, please cite them as below."
+title: "Transformer-Based Tree Extraction from Remote Sensing Imagery: A Systematic Review (data and code)"
+type: dataset
+version: "2.0-revision"
+authors:
+  - family-names: Wilaiwongsakul
+    given-names: Attavit
+    affiliation: University of Technology Sydney
+  - family-names: Liang
+    given-names: Bin
+    affiliation: University of Technology Sydney
+  - family-names: Zheng
+    given-names: Bryan
+    affiliation: University of Technology Sydney
+  - family-names: Chen
+    given-names: Fang
+    affiliation: University of Technology Sydney
+repository-code: "https://github.com/attavit14203638/transformer-tree-survey"
+license: MIT
+keywords:
+  - vision transformers
+  - foundation models
+  - individual tree extraction
+  - remote sensing
+  - systematic review

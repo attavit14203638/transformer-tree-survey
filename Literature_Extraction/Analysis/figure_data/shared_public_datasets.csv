@@ -1,0 +1,14 @@
+dataset_key,studies,name
+neon_treeevaluation,4,NEON TreeEvaluation
+yosemite_trees,4,Yosemite
+al_ain_date_palm,3,Al Ain date palm dataset (Al-Saad et al. 2022)
+kcl_london,3,KCL-London
+mopad,3,"MOPAD multi-class oil palm UAV dataset (Papua), two classes healthy and unhealthy, 1024 x 1024 tiles"
+stpctls,3,STPCTLS (single tree point clouds from terrestrial laser scanning) [25]
+canatree100,2,CanaTree100
+for_instance_v1,2,"UAV: FOR-instance UAV laser scans (Riegl (mini) VUX-1), 11 test plots"
+forestsemantic_evo,2,"ForestSemantic (Evo, Finland): six TLS plots of 32 m by 32 m, Plots 1, 3 and 5 annotated"
+jiangsu_gaofen2,2,Jiangsu (Gaofen-II)
+lewos,2,LeWoS public TLS tropical trees (43 training and 18 test trees)
+quebec_trees_sbl_2021,2,"Quebec temperate forest UAV dataset (Cloutier et al.), 2 September 2021 subset with three species"
+whu_stree_nj,2,"WHU-STree-NJ (Nanjing, class-balanced split)"

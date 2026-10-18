@@ -1,0 +1,64 @@
+field,group,item_prefix,type,allowed_values,unit,required,description
+task,study,,category,detection|counting|crown_segmentation|tree_segmentation_3d|component_segmentation|species_classification|health_classification|mortality_detection|attribute_estimation,,yes,Individual-tree task(s) addressed; separate several with ';'
+output_unit,study,,category,tree_instance|crown_mask|tree_count|tree_points|tree_component|tree_label|tree_attribute,,yes,What the model outputs for each tree
+tree_setting,study,,category,natural_forest|plantation|orchard|urban|agroforestry|mangrove|mixed|synthetic,,yes,Setting of the trees studied
+tree_taxa,study,,text,,,yes,Tree species or group as reported (e.g. date palm; Pinus massoniana; mixed temperate)
+study_area,study,,text,,,yes,Country and region of the data as reported
+biome,study,,category,tropical|subtropical|temperate|boreal|arid|mediterranean|multiple|not_reported,,yes,Biome of the study area as reported or as given by the study area
+platform,study,,category,uav|airborne|satellite|terrestrial_lidar|mobile_lidar|ground_camera|synthetic|multiple,,yes,Acquisition platform
+sensors,study,,category,rgb|multispectral|hyperspectral|lidar|sar|thermal|dsm,,yes,Sensors or data modalities; separate several with ';'
+gsd,study,,number,,mm | cm | m,no,"Ground sampling distance of the imagery, as printed with its unit"
+point_density,study,,number,,pts/m2,no,Point density of LiDAR or photogrammetric point clouds
+annotation_type,study,,category,bounding_box|polygon_mask|point|image_label|count|point_label|regression_target,,yes,Form of the reference labels; separate several with ';'
+dataset_name,dataset,dataset,text,,,yes,Name of the dataset (or 'own' with a short description)
+dataset_key,dataset,dataset,text,,,yes,"Canonical key of the underlying data, shared by every paper that uses the same data (rule V9; registry: datasets.csv)"
+dataset_role,dataset,dataset,category,train_test|test_only|transfer_target|pretraining,,yes,How the dataset is used in the study
+dataset_public,dataset,dataset,category,yes|no|on_request|partial,,yes,Whether the dataset is publicly available as stated in the paper
+dataset_url,dataset,dataset,url,,,no,Link given in the paper
+n_images,dataset,dataset,number,,images or tiles,no,Number of images or tiles (state train/val/test split in note)
+n_trees,dataset,dataset,number,,trees,no,Number of annotated trees
+model_name,model,model,text,,,yes,Model name as written in the paper
+model_role,model,model,category,proposed|transformer_baseline|cnn_baseline|other_baseline,,yes,Role of the model in the study
+architecture_category,model,model,category,pure_vit|hierarchical_vit|cnn_transformer_hybrid|foundation_model|vision_language_model|cnn|other|classical,,yes,Category under the protocol rules (section 4.5)
+backbone,model,model,text,,,yes,Backbone or encoder (e.g. Swin-T; ResNet-50; ViT-B/16)
+pretraining,model,model,category,none|imagenet|sa1b|clip|domain_specific|self_supervised|other|not_reported,,yes,Pre-training data or scheme of the weights used
+training_strategy,model,model,category,from_scratch|full_fine_tuning|peft_lora|peft_adapter|peft_prompt|peft_other|head_only|zero_shot|few_shot|not_reported,,yes,"How the model was trained or adapted for the task; peft_other covers other parameter-efficient methods (e.g. BitFit, norm tuning, channel selection)"
+trainable_params,model,model,number,,M | %,no,"Trainable parameters in millions (M), or in percent of all parameters (%) when the paper gives only that"
+total_params,model,model,number,,M,no,Total parameters in millions
+flops,model,model,number,,GFLOPs | TFLOPs | MFLOPs,no,"Computational cost per input as printed, with its unit"
+inference_speed,model,model,text,,,no,Speed with hardware and input size (e.g. 25 FPS on RTX 3090 at 1024 px)
+metric,result,res,category,miou|iou|f1|ap50|ap50_95|map|oa|kappa|precision|recall|r2|rmse|mae|mape|other,,yes,Metric of this result (name 'other' in note)
+result_model,result,res,text,,,yes,Model item this result belongs to (e.g. model1)
+result_dataset,result,res,text,,,yes,Dataset item this result belongs to (e.g. dataset1)
+result_setting,result,res,text,,,no,Split or condition (e.g. test set; 5-fold mean; 30% labels)
+value,result,res,number,,% | fraction | physical unit,yes,"Value exactly as printed; the unit column says % (percent), fraction (0 to 1) or the physical unit (e.g. m)"
+headline,result,res,category,yes,,no,Recorded only for the result the authors present as their main result
+result_task,result,res,category,detection|counting|crown_segmentation|tree_segmentation_3d|component_segmentation|species_classification|health_classification|mortality_detection|attribute_estimation,,yes,The one task this result measures
+attribute,result,res,category,dbh|height|crown_diameter|crown_area|stem_volume|biomass|trunk_radius|chlorophyll|other,,no,Attribute estimated; required when result_task is attribute_estimation
+level,result,res,category,object|instance_mask|pixel|instance_3d|point|tree|image|plot|not_stated,,yes,"What one scored unit is (protocol 6.2): object, instance_mask, pixel, instance_3d, point, tree, image, plot"
+split,result,res,category,test|validation|cross_validation|train|not_stated,,yes,"Data the result is computed on, as the paper states it"
+aggregation,result,res,category,single|mean|median|best|not_stated,,yes,"single = one run, or repeated runs not reported; mean, median or best = over repeated runs, folds or splits; not_stated = repeated runs reported without saying how they are combined"
+primary,result,res,category,yes,,no,Result belongs to the paper's standard comparison setting used by the figures (rule V3)
+copied_from,result,res,text,,,no,Paper ID (P###) or reference the value is copied from instead of being re-run (rule V9)
+transfer_source,transfer,tr,text,,,yes,Training domain (site; sensor; season; dataset)
+transfer_target,transfer,tr,text,,,yes,Test domain not seen in training
+shift_type,transfer,tr,category,site|region|sensor|season|biome|species|platform|resolution|synthetic_to_real,,yes,Main difference between source and target; separate several with ';'
+transfer_model,transfer,tr,text,,,yes,Model item evaluated
+transfer_metric,transfer,tr,category,miou|iou|f1|ap50|ap50_95|map|oa|kappa|precision|recall|r2|rmse|mae|mape|other,,yes,Metric used for both domains
+value_in_domain,transfer,tr,number,,% | fraction | physical unit,yes,"Same model and metric on the source test data; the unit column says % (percent), fraction (0 to 1) or the physical unit (e.g. m)"
+value_out_of_domain,transfer,tr,number,,% | fraction | physical unit,yes,"Same model and metric on the target data; the unit column says % (percent), fraction (0 to 1) or the physical unit (e.g. m)"
+transfer_level,transfer,tr,category,object|instance_mask|pixel|instance_3d|point|tree|image|plot|not_stated,,yes,"What one scored unit is, for both values of the pair"
+label_model,data_efficiency,de,text,,,yes,Model item trained with reduced labels
+label_amount,data_efficiency,de,number,,,yes,Amount of labelled training data
+label_unit,data_efficiency,de,category,images|tiles|trees|percent_of_training_set|points|plots,,yes,Unit of label_amount
+label_metric,data_efficiency,de,category,miou|iou|f1|ap50|ap50_95|map|oa|kappa|precision|recall|r2|rmse|mae|mape|other,,yes,Metric
+label_value,data_efficiency,de,number,,% | fraction | physical unit,yes,"Result with that amount of labels; the unit column says % (percent), fraction (0 to 1) or the physical unit (e.g. m)"
+cf_target,conflict,cf,text,,,yes,"The value the conflict is about: <item>.<field> (or <field> for a study-level field), or a short name of a printed aggregate that is not used"
+cf_alternative,conflict,cf,text,,,yes,"The other printed value exactly as printed, with its own page, location and evidence"
+cf_rule,conflict,cf,category,V1a|V1b|V1c|V2,,yes,Rule that decided which value is used (protocol section 6); the reason goes in note
+code_url,reproducibility,,url,,,no,Code repository given in the paper
+code_available,reproducibility,,category,yes|no|on_request,,yes,Whether code is released as stated in the paper
+weights_available,reproducibility,,category,yes|no|on_request|not_stated,,yes,Whether trained weights are released
+data_available,reproducibility,,category,yes|no|partial|on_request,,yes,Whether the data used can be obtained
+limitations,notes,,text,,,no,Limitations the authors state that matter for the review (one sentence)
+notes,notes,,text,,,no,Anything that affects how the values should be read

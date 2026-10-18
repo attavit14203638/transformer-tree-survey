@@ -1,0 +1,133 @@
+study,label,family,basis,principal_model,principal_strategy,strategy
+P008,Alshammari and Shahin [32],hierarchical_vit,proposed transformer,SwinTU-net,not_reported,Not reported
+P011,Gibril et al. [12],hierarchical_vit,best-scoring transformer (baseline only),Mask R-CNN with Swin-small-FPN backbone,full_fine_tuning,Full fine-tuning
+P016,Zhang et al. [146],hierarchical_vit,proposed transformer,Faster R-CNN with Swin-T backbone,full_fine_tuning,Full fine-tuning
+P017,Luo et al. [94],pure_vit,"transformer used, no comparable score",ViDT,not_reported,Not reported
+P024,Dersch et al. [48],cnn_transformer_hybrid,proposed transformer,DETR,full_fine_tuning,Full fine-tuning
+P029,Chen and Shang [43],cnn_transformer_hybrid,proposed transformer,"DENT-DMG (density transformer, density map generator head)",full_fine_tuning,Full fine-tuning
+P120,Liu et al. [89],pure_vit,best-scoring transformer (baseline only),PCT,not_reported,Not reported
+P123,Zhou et al. [154],cnn_transformer_hybrid,proposed transformer,"MFTD (YOLOv5s, visible and red-band fusion)",full_fine_tuning,Full fine-tuning
+P133,Li et al. [77],cnn_transformer_hybrid,proposed transformer,"Proposed deep OCC model (3D convolutional layers and transformer blocks, balanced unbiased risk)",not_reported,Not reported
+P148,Lan et al. [76],hierarchical_vit,proposed transformer,Swin-T YOLOX,not_reported,Not reported
+P010,Gominski et al. [60],hierarchical_vit,best-scoring transformer (baseline only),Heatmap framework with SegFormer,not_reported,Not reported
+P030,Amirkolaee et al. [35],hierarchical_vit,proposed transformer,S-TreeFormer (supervised),not_reported,Not reported
+P051,Gibril et al. [58],hierarchical_vit,"transformer used, no comparable score",SegFormer (MiT-B2) trained on UAV data,full_fine_tuning,Full fine-tuning
+P057,Dersch et al. [49],cnn_transformer_hybrid,"transformer used, no comparable score",DETR (panoptic segmentation head),full_fine_tuning,Full fine-tuning
+P073,Xi et al. [130],hierarchical_vit,proposed transformer,"SegFormer (3D voxel version) with stem isolation, tree clustering and QSM",not_reported,Not reported
+P082,Yang et al. [140],hierarchical_vit,proposed transformer,Mask2Former with Swin Transformer backbone,full_fine_tuning,Full fine-tuning
+P083,Zhou et al. [155],cnn_transformer_hybrid,proposed transformer,Improved PointPillars with multi-scale pillar features and a Swin Transformer module,not_reported,Not reported
+P096,Zhang et al. [150],pure_vit,proposed transformer,Extreme offset network (Point Transformer) with dynamic-bandwidth mean shift and ITS set aggregation (proposed),not_reported,Not reported
+P105,Sun et al. [115],pure_vit,proposed transformer,Point Cloud Transformer (PCT),not_reported,Not reported
+P113,Wang et al. [124],hierarchical_vit,best-scoring transformer (baseline only),Swin Transformer (small),from_scratch,Trained from scratch
+P117,Wang et al. [125],cnn_transformer_hybrid,proposed transformer,3DPCT (3D Point Cloud Transformer with dual self-attention),not_reported,Not reported
+P121,Pierdicca et al. [102],pure_vit,best-scoring transformer (baseline only),Vision Transformer B16,full_fine_tuning,Full fine-tuning
+P126,Jiang et al. [69],hierarchical_vit,proposed transformer,"Improved Faster R-CNN (Swin Transformer backbone, balance feature enhancement and dynamic training, proposed)",not_reported,Not reported
+P132,Qin et al. [103],cnn_transformer_hybrid,proposed transformer,"Improved YOLOv5l (GhostNet, CBAM and CA, transformer encoder, BiFPN)",not_reported,Not reported
+P145,Valicharla et al. [121],hierarchical_vit,proposed transformer,Mask2Former with Swin-S backbone,full_fine_tuning,Full fine-tuning
+P002,Sachdeva et al. [108],vision_language_model,best-scoring transformer (baseline only),Grounding DINO (conventional and few-shot runs),not_reported,Not reported
+P005,Amirkolaee et al. [34],hierarchical_vit,proposed transformer,AdaTreeFormer,few_shot,Zero-shot or few-shot
+P014,Ton-That et al. [120],pure_vit,proposed transformer,TreeVision,full_fine_tuning,Full fine-tuning
+P018,Gibril et al. [59],hierarchical_vit,proposed transformer,Mask R-CNN with MViTv2-tiny backbone (improved MViTv2 with FPN),full_fine_tuning,Full fine-tuning
+P019,Grondin et al. [61],pure_vit,proposed transformer,ViTDet trained on FlickrTree110K pseudo-labels refined by SAM (CanaTree burn-in),full_fine_tuning,Full fine-tuning
+P020,Lu et al. [91],hierarchical_vit,proposed transformer,M2fNet (RGB and depth),not_reported,Not reported
+P027,Feng et al. [54],cnn_transformer_hybrid,proposed transformer,SC-RTDETR,full_fine_tuning,Full fine-tuning
+P036,Zhu et al. [157],cnn_transformer_hybrid,proposed transformer,CEDAnet,not_reported,Not reported
+P039,Zhang and Liu [145],cnn_transformer_hybrid,proposed transformer,DB-MSC Net,not_reported,Not reported
+P041,Kwong et al. [75],cnn_transformer_hybrid,proposed transformer,DETR GAN palm model,not_reported,Not reported
+P043,Arevalo-Ramirez et al. [36],hierarchical_vit,best-scoring transformer (baseline only),SegFormer (MiT-B0),full_fine_tuning,Full fine-tuning
+P048,Afsar et al. [29],foundation_model,proposed transformer,YOLOv7 with SAM (ViT-L) pipeline,zero_shot,Zero-shot or few-shot
+P054,He et al. [64],cnn_transformer_hybrid,proposed transformer,Proposed parallel fusion network (EfficientNet-V2 and CSwin),full_fine_tuning,Full fine-tuning
+P056,Al-Ruzouq et al. [30],hierarchical_vit,best-scoring transformer (baseline only),UperNet with Swin-tiny backbone,full_fine_tuning,Full fine-tuning
+P058,Zhu et al. [158],cnn_transformer_hybrid,proposed transformer,Spec-Mask2former,full_fine_tuning,Full fine-tuning
+P060,Speckenwirth et al. [114],foundation_model,best-scoring transformer (baseline only),SAM (automatic mask generation),zero_shot,Zero-shot or few-shot
+P068,Yang et al. [139],pure_vit,proposed transformer,Point Transformer (tree point extraction),not_reported,Not reported
+P072,Dai et al. [47],cnn_transformer_hybrid,proposed transformer,CPH-Fmnet,not_reported,Not reported
+P076,Liu et al. [86],vision_language_model,proposed transformer,MLiDAR-CLIP (multi-view LiDAR CLIP),few_shot,Zero-shot or few-shot
+P084,Rayamajhi et al. [106],foundation_model,proposed transformer,SAM ViT-H automatic mask generator on DSM-DTM imagery (zero-shot),zero_shot,Zero-shot or few-shot
+P088,Lu et al. [92],pure_vit,proposed transformer,"Enhanced PT (PT with LSF and PosE, proposed)",not_reported,Not reported
+P093,Zhang et al. [149],cnn_transformer_hybrid,proposed transformer,"SPTNet (sparse convolution and transformer blocks, proposed)",not_reported,Not reported
+P094,Xi et al. [132],hierarchical_vit,proposed transformer,SegFormer (3D voxel version) tree point classifier (proposed),not_reported,Not reported
+P109,Ferreira et al. [55],foundation_model,proposed transformer,SAM ViT-H (zero-shot ITC delineation with an NDVI filter),zero_shot,Zero-shot or few-shot
+P110,Wang et al. [123],cnn_transformer_hybrid,proposed transformer,"AACB Transformer (Attribute-Aware Cross-Branch Transformer, proposed)",not_reported,Not reported
+P115,Lin et al. [84],pure_vit,proposed transformer,"PCTreeS (Point Cloud Transformer for tree species classification, proposed)",not_reported,Not reported
+P116,Conciatori et al. [46],hierarchical_vit,proposed transformer,Swin Transformer (tiny),full_fine_tuning,Full fine-tuning
+P118,Huang et al. [66],pure_vit,best-scoring transformer (baseline only),Vision Transformer (ViT),full_fine_tuning,Full fine-tuning
+P124,Yuan et al. [143],cnn_transformer_hybrid,proposed transformer,"Light-ViTeYOLO (EfficientViT-YOLOv5 with CACSNet neck and EIoU loss, proposed)",not_reported,Not reported
+P127,Li et al. [83],cnn_transformer_hybrid,proposed transformer,"Improved YOLOv8 (MHSA, SPD-Conv, GD neck, Focal-EIoU)",not_reported,Not reported
+P130,Liu et al. [85],cnn_transformer_hybrid,proposed transformer,Clusterformer (proposed),not_reported,Not reported
+P131,Zhi et al. [153],foundation_model,"transformer used, no comparable score",SAM (fine-tuned segment anything model),head_only,Head only (frozen backbone)
+P136,Xie et al. [134],cnn_transformer_hybrid,best-scoring transformer (baseline only),DETR (Res101),not_reported,Not reported
+P001,Shanableh et al. [110],hierarchical_vit,best-scoring transformer (baseline only),Mask R-CNN with Swin Transformer backbone,full_fine_tuning,Full fine-tuning
+P004,Zhang and Zhou [152],cnn_transformer_hybrid,proposed transformer,ADME-DETR,not_reported,Not reported
+P009,Al-Saad et al. [31],cnn_transformer_hybrid,best-scoring transformer (baseline only),DETR,not_reported,Not reported
+P012,Shendryk and Vilas [112],hierarchical_vit,proposed transformer,MaxViT-UNet density estimation,full_fine_tuning,Full fine-tuning
+P013,Jiang et al. [68],hierarchical_vit,proposed transformer,DINO-SWIN,full_fine_tuning,Full fine-tuning
+P015,Zeng et al. [144],cnn_transformer_hybrid,proposed transformer,FO-Net,not_reported,Not reported
+P021,Li et al. [81],cnn_transformer_hybrid,best-scoring transformer (baseline only),RT-DETR,not_reported,Not reported
+P022,Zhang et al. [147],cnn_transformer_hybrid,proposed transformer,MTCDNet,not_reported,Not reported
+P023,Durgut and Ünsalan [53],cnn_transformer_hybrid,proposed transformer,WBF fusion of M1 and M3 (swin transformer and RCNN),not_reported,Not reported
+P025,Zhang et al. [148],vision_language_model,proposed transformer,Grounding-DINO (Swin-T) with ASCS (proposed PEFT),peft_other,Parameter-efficient tuning
+P026,Ghazali et al. [56],cnn_transformer_hybrid,proposed transformer,RT-DETR-Palm,not_reported,Not reported
+P038,Ambarwari et al. [33],foundation_model,"transformer used, no comparable score",SAM-HQ (ViT-H Quant),zero_shot,Zero-shot or few-shot
+P040,Gibril et al. [57],hierarchical_vit,proposed transformer,Mask2Former with DaViT-tiny backbone,not_reported,Not reported
+P042,Wołk et al. [127],foundation_model,proposed transformer,SAM masks labelled by a fine-tuned YOLOv8 detector (SAM-YOLOv8 pipeline),zero_shot,Zero-shot or few-shot
+P044,Wang et al. [122],hierarchical_vit,best-scoring transformer (baseline only),HTC with CB-Swin-B backbone,full_fine_tuning,Full fine-tuning
+P047,Hua et al. [65],foundation_model,proposed transformer,GDPGO-SAM (Grounding DINO prompt generation and optimization with SAM),zero_shot,Zero-shot or few-shot
+P049,Buchner et al. [40],foundation_model,proposed transformer,"Coarse segmentation (pre-trained SAM, one point prompt)",zero_shot,Zero-shot or few-shot
+P050,Ravindran et al. [105],foundation_model,proposed transformer,GeoSAM on factor analysis of the hyperspectral image (local),zero_shot,Zero-shot or few-shot
+P052,Sharifi et al. [111],hierarchical_vit,"transformer used, no comparable score",SegFormer (MiT-B2),not_reported,Not reported
+P053,Jmal et al. [70],foundation_model,proposed transformer,"multi-phase approach (SAM generator, tree row and column grid, SAM predictor refinement)",zero_shot,Zero-shot or few-shot
+P059,Lungo Vaschetti et al. [93],foundation_model,proposed transformer,TreePseCo,head_only,Head only (frozen backbone)
+P062,Chen et al. [45],foundation_model,best-scoring transformer (baseline only),"SAM2 (automatic mask generator, zero-shot)",zero_shot,Zero-shot or few-shot
+P063,Takhtkeshha et al. [116],pure_vit,proposed transformer,Point Transformer V3 (PTv3),not_reported,Not reported
+P064,Rodrigues et al. [107],cnn_transformer_hybrid,best-scoring transformer (baseline only),Point Voxel Transformer (PVT),not_reported,Not reported
+P065,Hai et al. [62],pure_vit,proposed transformer,Trim-SegTransformer (proposed),not_reported,Not reported
+P066,Xi and Degenhardt [131],cnn_transformer_hybrid,proposed transformer,TreeisoNet (hands-off: 3D-SegFormer and 3D U-Net modules in sequence),not_reported,Not reported
+P067,Cao et al. [41],pure_vit,"transformer used, no comparable score",Point Transformer,not_reported,Not reported
+P069,Jiang et al. [67],pure_vit,best-scoring transformer (baseline only),Point Transformer V2 (PTv2),not_reported,Not reported
+P074,Yu et al. [141],hierarchical_vit,proposed transformer,"SGS-3DRecon (SegFormer, GAN inversion and Sobel refinement)",not_reported,Not reported
+P075,He et al. [63],foundation_model,proposed transformer,Grounded SAM trunk segmentation with Fourier series (degree 2) DBH fitting (proposed pipeline),not_reported,Not reported
+P077,Tian et al. [119],foundation_model,proposed transformer,"Grounding DINO-SAM2 (zero-shot, proposed)",zero_shot,Zero-shot or few-shot
+P078,Xiang et al. [133],cnn_transformer_hybrid,proposed transformer,ForestFormer3D,not_reported,Not reported
+P079,Stone et al. [37],cnn_transformer_hybrid,best-scoring transformer (baseline only),Point-Voxel Transformer (PVT),not_reported,Not reported
+P080,Jung et al. [72],cnn_transformer_hybrid,proposed transformer,"CoAtNet-based framework (3D-to-2D projection, augmentation and ensemble)",not_reported,Not reported
+P081,Xiu et al. [135],cnn_transformer_hybrid,proposed transformer,3DPS-Net trained on Plot 1 (Model 1),not_reported,Not reported
+P086,Takhtkeshha et al. [117],hierarchical_vit,best-scoring transformer (baseline only),Superpoint Transformer (SPT),not_reported,Not reported
+P089,Liu et al. [88],cnn_transformer_hybrid,proposed transformer,Species classifier trained with the proposed completion and adversarial augmentation (ours),from_scratch,Trained from scratch
+P090,Zhou et al. [156],hierarchical_vit,proposed transformer,MSFFNet with MiT-B4 (SegFormer) encoder,full_fine_tuning,Full fine-tuning
+P091,Yu et al. [142],hierarchical_vit,proposed transformer,SegFormer trunk segmentation within the PMPE framework,not_reported,Not reported
+P092,Xu et al. [137],pure_vit,proposed transformer,SK-TreePCN (AdaPoinTr-based transformer with skeleton modules) with AdTree reconstruction,from_scratch,Trained from scratch
+P095,Yan et al. [138],cnn_transformer_hybrid,proposed transformer,TM-WSNet (proposed),not_reported,Not reported
+P098,Zhang et al. [151],cnn_transformer_hybrid,proposed transformer,TreegrowNet (proposed),from_scratch,Trained from scratch
+P099,Movchan et al. [99],hierarchical_vit,proposed transformer,TreeLoc (3D-SegFormer for treetop locations),not_reported,Not reported
+P100,Long et al. [90],vision_language_model,proposed transformer,"VLM-TMN (LLaVA-7B with Depth Projector Module and Magnifying Glass Strategy, proposed)",not_reported,Not reported
+P101,Ding et al. [51],pure_vit,best-scoring transformer (baseline only),Point Transformer V2 (PTv2),not_reported,Not reported
+P102,Liu et al. [87],cnn_transformer_hybrid,proposed transformer,MFFTC-Net (proposed),not_reported,Not reported
+P103,Chen et al. [44],foundation_model,proposed transformer,"STC (SAM canopy segmentation then ResNet-101 classification, proposed)",full_fine_tuning,Full fine-tuning
+P104,Teo et al. [118],foundation_model,proposed transformer,Proposed SAM (box-prompted tree localisation),not_reported,Not reported
+P106,Neyns et al. [101],pure_vit,proposed transformer,SAINT (Self-Attention and Intersample Attention Transformer) on PlanetScope time series,not_reported,Not reported
+P107,Ma et al. [96],cnn_transformer_hybrid,best-scoring transformer (baseline only),PoinTramba,not_reported,Not reported
+P108,Li et al. [79],cnn_transformer_hybrid,proposed transformer,FBAN (proposed),not_reported,Not reported
+P111,Murray et al. [100],pure_vit,proposed transformer,Dual-stream model: Point Transformer extractor with Metrics Network,not_reported,Not reported
+P122,Du et al. [52],cnn_transformer_hybrid,proposed transformer,VSLNet with SSC fusion,not_reported,Not reported
+P125,Wu et al. [129],hierarchical_vit,best-scoring transformer (baseline only),Swin-UNet,not_reported,Not reported
+P129,Wu et al. [128],cnn_transformer_hybrid,proposed transformer,"EVitNet (lightweight ViT encoder and CNN decoder, proposed)",not_reported,Not reported
+P134,Li et al. [78],cnn_transformer_hybrid,proposed transformer,DSI-YOLOv5,not_reported,Not reported
+P135,Rahman et al. [104],cnn_transformer_hybrid,best-scoring transformer (baseline only),MaskFormer,not_reported,Not reported
+P137,Kang [73],cnn_transformer_hybrid,"transformer used, no comparable score",Mask2Former,not_reported,Not reported
+P138,Dewi et al. [50],cnn_transformer_hybrid,"transformer used, no comparable score",RF-DETR-base,not_reported,Not reported
+P139,Xu et al. [136],cnn_transformer_hybrid,best-scoring transformer (baseline only),RT-DETR,full_fine_tuning,Full fine-tuning
+P140,Möhring et al. [98],hierarchical_vit,proposed transformer,SegFormer-B5 with U-Net decoder,full_fine_tuning,Full fine-tuning
+P141,Li and Chen [80],cnn_transformer_hybrid,proposed transformer,FCL-RTDETR (our),not_reported,Not reported
+P142,Lv et al. [95],hierarchical_vit,best-scoring transformer (baseline only),SegFormer-b2,full_fine_tuning,Full fine-tuning
+P143,Li et al. [82],hierarchical_vit,proposed transformer,Mask2Former (Gemini MARS),full_fine_tuning,Full fine-tuning
+P144,Saputra et al. [109],cnn_transformer_hybrid,"transformer used, no comparable score",Deformable DETR,not_reported,Not reported
+P146,Chen et al. [42],cnn_transformer_hybrid,proposed transformer,PWDViTNet (Ours),not_reported,Not reported
+P147,Maulana et al. [97],cnn_transformer_hybrid,proposed transformer,CoFA-DETR-R50 (ours),not_reported,Not reported
+P149,Begum et al. [38],hierarchical_vit,proposed transformer,SWIN Transformer,full_fine_tuning,Full fine-tuning
+P150,Kaviani et al. [74],hierarchical_vit,best-scoring transformer (baseline only),Mask R-CNN with Swin Transformer (Base),full_fine_tuning,Full fine-tuning
+P151,Wang et al. [126],hierarchical_vit,best-scoring transformer (baseline only),Mask2Former,full_fine_tuning,Full fine-tuning
+P152,Joshi and Witharana [71],hierarchical_vit,best-scoring transformer (baseline only),SegFormer-B0,head_only,Head only (frozen backbone)
+P153,Shi et al. [113],cnn_transformer_hybrid,proposed transformer,YOLOv8-MFD (proposed),not_reported,Not reported
+P154,Bountos et al. [39],foundation_model,proposed transformer,Faster R-CNN (FoMo-Net1),full_fine_tuning,Full fine-tuning
+teng_2025,Teng et al. [28],foundation_model,proposed transformer,DSMPrompter,peft_prompt,Parameter-efficient tuning

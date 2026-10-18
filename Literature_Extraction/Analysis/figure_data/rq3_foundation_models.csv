@@ -1,0 +1,80 @@
+study,paper_id,item,model_name,architecture_category,training_strategy,strategy
+P002,P002,model2,SAM encoder with Mask R-CNN head (Full Finetune),foundation_model,full_fine_tuning,Full fine-tuning
+P002,P002,model3,SAM encoder with Mask R-CNN head (Finetune Head),foundation_model,head_only,Head only (frozen backbone)
+P002,P002,model4,SAM encoder with Mask R-CNN head (Finetune Head then Full),foundation_model,full_fine_tuning,Full fine-tuning
+P002,P002,model5,Grounding DINO (Full Finetune),vision_language_model,full_fine_tuning,Full fine-tuning
+P002,P002,model6,Grounding DINO (Finetune Head),vision_language_model,head_only,Head only (frozen backbone)
+P002,P002,model7,Grounding DINO (Finetune Head then Full),vision_language_model,full_fine_tuning,Full fine-tuning
+P002,P002,model8,Grounding DINO (conventional and few-shot runs),vision_language_model,not_reported,Not reported
+P025,P025,model1,Grounding-DINO (Swin-T) with FULL fine-tuning,vision_language_model,full_fine_tuning,Full fine-tuning
+P025,P025,model2,Grounding-DINO (Swin-T) with FIXED fine-tuning,vision_language_model,head_only,Head only (frozen backbone)
+P025,P025,model3,Grounding-DINO (Swin-T) with BITFIT fine-tuning,vision_language_model,peft_other,Parameter-efficient tuning
+P025,P025,model4,Grounding-DINO (Swin-T) with NORM-TUNING fine-tuning,vision_language_model,peft_other,Parameter-efficient tuning
+P025,P025,model5,Grounding-DINO (Swin-T) with LORA fine-tuning,vision_language_model,peft_lora,Parameter-efficient tuning
+P025,P025,model6,Grounding-DINO (Swin-T) with VPT fine-tuning,vision_language_model,peft_prompt,Parameter-efficient tuning
+P025,P025,model7,Grounding-DINO (Swin-T) with EVP2 fine-tuning,vision_language_model,peft_prompt,Parameter-efficient tuning
+P025,P025,model8,Grounding-DINO (Swin-T) with SCT fine-tuning,vision_language_model,peft_other,Parameter-efficient tuning
+P025,P025,model9,Grounding-DINO (Swin-T) with Adapter fine-tuning,vision_language_model,peft_adapter,Parameter-efficient tuning
+P025,P025,model10,Grounding-DINO (Swin-T) with ASCS (proposed PEFT),vision_language_model,peft_other,Parameter-efficient tuning
+P025,P025,model14,Grounding-DINO (zero-shot),vision_language_model,zero_shot,Zero-shot or few-shot
+teng_2025,P032,model1,SAM automatic mode (100 points per side),foundation_model,zero_shot,Zero-shot or few-shot
+teng_2025,P032,model2,SAM automatic mode (10 points per side),foundation_model,zero_shot,Zero-shot or few-shot
+teng_2025,P032,model3,SAM with DSM local-maximum point prompts,foundation_model,zero_shot,Zero-shot or few-shot
+teng_2025,P032,model7,Faster R-CNN box prompts to SAM (detector from scratch),foundation_model,zero_shot,Zero-shot or few-shot
+teng_2025,P032,model8,Faster R-CNN box prompts to SAM (ImageNet detector),foundation_model,zero_shot,Zero-shot or few-shot
+teng_2025,P032,model9,"Faster R-CNN box prompts to SAM, with DSM (ImageNet detector)",foundation_model,zero_shot,Zero-shot or few-shot
+teng_2025,P032,model10,Mask R-CNN box and mask prompts to SAM (ImageNet detector),foundation_model,zero_shot,Zero-shot or few-shot
+teng_2025,P032,model11,"Mask R-CNN box and mask prompts to SAM, with DSM (ImageNet detector)",foundation_model,zero_shot,Zero-shot or few-shot
+teng_2025,P032,model12,RSPrompter (anchor),foundation_model,peft_prompt,Parameter-efficient tuning
+teng_2025,P032,model13,DSMPrompter,foundation_model,peft_prompt,Parameter-efficient tuning
+teng_2025,P035,model1,SAM automatic mode (100 points per side),foundation_model,zero_shot,Zero-shot or few-shot
+teng_2025,P035,model2,SAM automatic mode (10 points per side),foundation_model,zero_shot,Zero-shot or few-shot
+teng_2025,P035,model3,SAM with DSM local-maximum point prompts,foundation_model,zero_shot,Zero-shot or few-shot
+teng_2025,P035,model7,Faster R-CNN box prompts to SAM (detector from scratch),foundation_model,zero_shot,Zero-shot or few-shot
+teng_2025,P035,model8,Faster R-CNN box prompts to SAM (ImageNet detector),foundation_model,zero_shot,Zero-shot or few-shot
+teng_2025,P035,model9,"Faster R-CNN box prompts to SAM, with DSM (ImageNet detector)",foundation_model,zero_shot,Zero-shot or few-shot
+teng_2025,P035,model10,Mask R-CNN box and mask prompts to SAM (ImageNet detector),foundation_model,zero_shot,Zero-shot or few-shot
+teng_2025,P035,model11,"Mask R-CNN box and mask prompts to SAM, with DSM (ImageNet detector)",foundation_model,zero_shot,Zero-shot or few-shot
+teng_2025,P035,model13,RSPrompter (anchor),foundation_model,peft_prompt,Parameter-efficient tuning
+teng_2025,P035,model14,BalSAM,foundation_model,peft_prompt,Parameter-efficient tuning
+P042,P042,model1,SAM masks labelled by a fine-tuned YOLOv8 detector (SAM-YOLOv8 pipeline),foundation_model,zero_shot,Zero-shot or few-shot
+P042,P042,model3,"Zero-shot detectors (CLIP, Grounding DINO) with SAM",vision_language_model,zero_shot,Zero-shot or few-shot
+P042,P042,model4,SAM masks labelled by BLIP2 image-to-text descriptions,vision_language_model,zero_shot,Zero-shot or few-shot
+P044,P044,model1,SAM (automatic mask generation),foundation_model,zero_shot,Zero-shot or few-shot
+P060,P060,model4,SAM (automatic mask generation),foundation_model,zero_shot,Zero-shot or few-shot
+P062,P062,model1,"SAM2 (automatic mask generator, zero-shot)",foundation_model,zero_shot,Zero-shot or few-shot
+P076,P076,model1,MLiDAR-CLIP (multi-view LiDAR CLIP),vision_language_model,few_shot,Zero-shot or few-shot
+P135,P135,model4,DINOv2,foundation_model,not_reported,Not reported
+P154,P154,model6,Faster R-CNN (DINOv2),foundation_model,full_fine_tuning,Full fine-tuning
+P154,P154,model7,Faster R-CNN (FoMo-Net1),foundation_model,full_fine_tuning,Full fine-tuning
+P154,P154,model8,Faster R-CNN (FoMo-Netm),foundation_model,full_fine_tuning,Full fine-tuning
+P038,P038,model5,SAM-HQ (ViT-H Quant),foundation_model,zero_shot,Zero-shot or few-shot
+P047,P047,model1,GDPGO-SAM (Grounding DINO prompt generation and optimization with SAM),foundation_model,zero_shot,Zero-shot or few-shot
+P047,P047,model4,Grounding DINO boxes as SAM prompts (ablation baseline),foundation_model,zero_shot,Zero-shot or few-shot
+P048,P048,model1,YOLOv7 with SAM (ViT-L) pipeline,foundation_model,zero_shot,Zero-shot or few-shot
+P049,P049,model2,"Coarse segmentation (pre-trained SAM, one point prompt)",foundation_model,zero_shot,Zero-shot or few-shot
+P050,P050,model1,GeoSAM on factor analysis of the hyperspectral image (local),foundation_model,zero_shot,Zero-shot or few-shot
+P050,P050,model2,GeoSAM on factor analysis of the hyperspectral image (semi-global),foundation_model,zero_shot,Zero-shot or few-shot
+P050,P050,model3,GeoSAM on factor analysis of hyperspectral vegetation indices (local),foundation_model,zero_shot,Zero-shot or few-shot
+P050,P050,model4,GeoSAM on factor analysis of hyperspectral vegetation indices (semi-global),foundation_model,zero_shot,Zero-shot or few-shot
+P050,P050,model5,GeoSAM on PCA of hyperspectral vegetation indices (local),foundation_model,zero_shot,Zero-shot or few-shot
+P050,P050,model6,GeoSAM on UMAP of hyperspectral vegetation indices (local),foundation_model,zero_shot,Zero-shot or few-shot
+P050,P050,model7,GeoSAM on UMAP of hyperspectral vegetation indices (semi-global),foundation_model,zero_shot,Zero-shot or few-shot
+P050,P050,model8,GeoSAM on RGB images (down-sampled to 1 m),foundation_model,zero_shot,Zero-shot or few-shot
+P053,P053,model1,"SAM automatic mask generator (phase 1, SAM alone)",foundation_model,zero_shot,Zero-shot or few-shot
+P053,P053,model2,"multi-phase approach (SAM generator, tree row and column grid, SAM predictor refinement)",foundation_model,zero_shot,Zero-shot or few-shot
+P059,P059,model1,TreePseCo,foundation_model,head_only,Head only (frozen backbone)
+P075,P075,model1,Grounded SAM trunk segmentation with Fourier series (degree 2) DBH fitting (proposed pipeline),foundation_model,not_reported,Not reported
+P075,P075,model2,Grounded SAM trunk segmentation with ellipse DBH fitting (variant),foundation_model,not_reported,Not reported
+P075,P075,model3,Grounded SAM trunk segmentation with periodic B-spline DBH fitting (variant),foundation_model,not_reported,Not reported
+P077,P077,model1,"Grounding DINO-SAM2 (zero-shot, proposed)",foundation_model,zero_shot,Zero-shot or few-shot
+P084,P084,model1,SAM ViT-H automatic mask generator on DSM-DTM imagery (zero-shot),foundation_model,zero_shot,Zero-shot or few-shot
+P100,P100,model1,"VLM-TMN (LLaVA-7B with Depth Projector Module and Magnifying Glass Strategy, proposed)",vision_language_model,not_reported,Not reported
+P100,P100,model2,"LLaVA-7B (original, no module and no fine-tuning)",vision_language_model,zero_shot,Zero-shot or few-shot
+P100,P100,model3,LLaVA-7B with supervised fine-tuning only (W/o Depth & Visual),vision_language_model,not_reported,Not reported
+P100,P100,model4,VLM-TMN without the Depth Projector Module (W/o Depth),vision_language_model,not_reported,Not reported
+P103,P103,model1,"STC (SAM canopy segmentation then ResNet-101 classification, proposed)",foundation_model,full_fine_tuning,Full fine-tuning
+P104,P104,model1,Proposed SAM (box-prompted tree localisation),foundation_model,not_reported,Not reported
+P109,P109,model10,SAM ViT-H (zero-shot ITC delineation with an NDVI filter),foundation_model,zero_shot,Zero-shot or few-shot
+P131,P131,model5,SAM (fine-tuned segment anything model),foundation_model,head_only,Head only (frozen backbone)
+P151,P151,model6,DOFA,foundation_model,full_fine_tuning,Full fine-tuning

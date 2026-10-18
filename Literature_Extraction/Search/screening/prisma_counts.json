@@ -1,0 +1,45 @@
+{
+  "identification": {
+    "databases": {
+      "Scopus": 1221,
+      "Web of Science": 1174,
+      "arXiv": 127
+    },
+    "records_total": 2522,
+    "duplicates_removed": 976
+  },
+  "screening": {
+    "records_screened": 1546,
+    "records_excluded": 1372,
+    "reports_sought": 174,
+    "reports_not_retrieved": 4,
+    "reports_assessed": 170,
+    "reports_excluded": {
+      "Not a tree task": 7,
+      "Area-level mapping, not individual trees": 18,
+      "No transformer-based model trained or evaluated": 8,
+      "Not remote sensing or close-range tree imagery": 2,
+      "Outside date range": 5,
+      "No individual-tree output evaluated": 2,
+      "No quantitative evaluation": 1
+    }
+  },
+  "other_methods": {
+    "records_by_method": {
+      "preliminary scoping searches": 10
+    },
+    "reports_sought": 10,
+    "reports_not_retrieved": 0,
+    "reports_assessed": 10,
+    "reports_excluded": {
+      "Outside date range": 1,
+      "Area-level mapping, not individual trees": 3
+    }
+  },
+  "included": {
+    "reports": 133,
+    "studies": 132,
+    "via_databases": 127,
+    "via_other_methods": 6
+  }
+}

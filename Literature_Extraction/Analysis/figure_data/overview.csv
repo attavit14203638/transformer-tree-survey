@@ -1,0 +1,43 @@
+field,value,studies,percent
+task,Detection and counting,43,32.6
+task,Crown segmentation,37,28.0
+task,3D structure and attributes,34,25.8
+task,Health and mortality,32,24.2
+task,Species classification,26,19.7
+output_unit,Tree instance (box),52,39.4
+output_unit,Crown mask,47,35.6
+output_unit,Tree class label,31,23.5
+output_unit,Tree attribute,17,12.9
+output_unit,Tree component,15,11.4
+output_unit,Tree point set,13,9.8
+output_unit,Tree count,8,6.1
+annotation_type,Polygon or mask,48,36.4
+annotation_type,Bounding box,38,28.8
+annotation_type,Point-cloud labels,18,13.6
+annotation_type,Image-level label,18,13.6
+annotation_type,Measured attribute,12,9.1
+annotation_type,Tree point (dot),9,6.8
+annotation_type,Not reported,2,1.5
+platform,UAV,63,47.7
+platform,Multiple,21,15.9
+platform,Airborne,19,14.4
+platform,Ground camera,9,6.8
+platform,Satellite,8,6.1
+platform,Mobile LiDAR,5,3.8
+platform,Terrestrial LiDAR,5,3.8
+platform,Synthetic,2,1.5
+sensors,RGB,91,68.9
+sensors,LiDAR,40,30.3
+sensors,Multispectral,28,21.2
+sensors,Hyperspectral,4,3.0
+sensors,DSM (surface model),3,2.3
+sensors,Not reported,1,0.8
+tree_setting,Natural forest,48,36.4
+tree_setting,Mixed,28,21.2
+tree_setting,Plantation,22,16.7
+tree_setting,Urban,16,12.1
+tree_setting,Orchard,12,9.1
+tree_setting,Synthetic,2,1.5
+tree_setting,Agroforestry,1,0.8
+tree_setting,Mangrove,1,0.8
+tree_setting,Not reported,3,2.3

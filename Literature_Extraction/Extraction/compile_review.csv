@@ -1,0 +1,8 @@
+kind,key,decision,reason
+percent_below_one,P154|res33,percent,"Table 4 of P154 is in percent (the same columns hold 38.37 and 13.72); DINOv2 and FoMo-Net score between 0.02 and 0.46 percent, confirmed on the rendered p.9"
+percent_below_one,P154|res35,percent,"Table 4 of P154 is in percent (the same columns hold 38.37 and 13.72); DINOv2 and FoMo-Net score between 0.02 and 0.46 percent, confirmed on the rendered p.9"
+percent_below_one,P154|res36,percent,"Table 4 of P154 is in percent (the same columns hold 38.37 and 13.72); DINOv2 and FoMo-Net score between 0.02 and 0.46 percent, confirmed on the rendered p.9"
+percent_below_one,P154|res42,percent,"Table 4 of P154 is in percent (the same columns hold 38.37 and 13.72); DINOv2 and FoMo-Net score between 0.02 and 0.46 percent, confirmed on the rendered p.9"
+percent_below_one,P154|res45,percent,"Table 4 of P154 is in percent (the same columns hold 38.37 and 13.72); DINOv2 and FoMo-Net score between 0.02 and 0.46 percent, confirmed on the rendered p.9"
+percent_below_one,P154|res47,percent,"Table 4 of P154 is in percent (the same columns hold 38.37 and 13.72); DINOv2 and FoMo-Net score between 0.02 and 0.46 percent, confirmed on the rendered p.9"
+percent_below_one,P154|res48,percent,"Table 4 of P154 is in percent (the same columns hold 38.37 and 13.72); DINOv2 and FoMo-Net score between 0.02 and 0.46 percent, confirmed on the rendered p.9"

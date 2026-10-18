@@ -1,0 +1,9 @@
+{
+  "raw_by_source": {
+    "Scopus": 1221,
+    "Web of Science": 1174,
+    "arXiv": 127
+  },
+  "raw_total": 2522,
+  "unique": 1546
+}

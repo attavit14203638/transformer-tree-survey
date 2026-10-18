@@ -1,0 +1,206 @@
+paper_id,item,dataset_key,dataset_name,dataset_role,dataset_public,n_images,n_trees
+P001,dataset1,own_p001_ghaf,own UAV Ghaf tree dataset (Fujairah and Sharjah),train_test,no,4335.0,6183.0
+P002,dataset1,rajasthan_agroforestry_shift,"Rajasthan agroforestry distribution-shift benchmark (SkySat, 400 x 400 px tiles)",train_test,yes,,
+P010,dataset1,denmark_aerial_trees,Denmark aerial tree dataset,train_test,,,23600.0
+P010,dataset2,rwanda_aerial_trees,Rwanda aerial tree dataset,train_test,,,98800.0
+P011,dataset1,own_p011_ajman_uav,"own UAV date palm dataset (Ajman, 512 x 512 tiles)",train_test,no,30383.0,
+P011,dataset2,al_ain_date_palm,Al Ain date palm dataset (Al-Saad et al. 2022),transfer_target,,1078.0,9883.0
+P012,dataset1,own_p012_mangrove,"own UAV mangrove seedling dataset (Abu Dhabi, 2.2 m image chips)",train_test,on_request,11088.0,
+P014,dataset1,kcl_london,KCL-London,train_test,,613.0,95067.0
+P014,dataset2,yosemite_trees,Yosemite,train_test,,2700.0,98949.0
+P015,dataset1,own_p015_liriodendron,own UAV Liriodendron dataset (640 x 640 tiles),train_test,no,1239.0,7112.0
+P016,dataset1,campo_grande_urban_trees,Campo Grande urban tree dataset [21],train_test,yes,220.0,3382.0
+P016,dataset2,own_p016_guangzhou,Guangzhou street trees (UAV),transfer_target,no,,235.0
+P017,dataset1,own_p017_bulianta,"own UAV dataset, Bulianta Coal Mine areas A to D",train_test,on_request,576.0,
+P018,dataset1,own_p018_ajman_uav,own UAV date palm dataset (Ajman),train_test,no,,
+P018,dataset2,al_ain_date_palm,Al Ain date palm dataset (Al-Saad et al. 2022),transfer_target,yes,1209.0,10975.0
+P018,dataset3,own_p018_date_palm_health,"own date palm health dataset (healthy and unhealthy palms, Ajman)",train_test,no,,78368.0
+P019,dataset1,canatree100,CanaTree100,train_test,yes,100.0,920.0
+P019,dataset2,flickrtree100,FlickrTree100,train_test,yes,100.0,1463.0
+P019,dataset3,flickrtree110k,FlickrTree110K (unlabelled),pretraining,partial,110937.0,
+P020,dataset1,m2fnet_virtual_forest,M2fNet virtual forest dataset (Unreal Engine),pretraining,yes,,
+P020,dataset2,canatree100,"CanaTree100 (real images, Canadian forests) [7]",test_only,,100.0,
+P021,dataset1,own_p021_huangkeng,own multispectral UAV reclaimed-vegetation dataset (Huangkeng mining area),train_test,on_request,1356.0,8344.0
+P022,dataset1,own_p022_dataset_a,"Dataset_A (broadleaf, Wenxian County, Henan)",train_test,on_request,,879.0
+P022,dataset2,own_p022_dataset_b,"Dataset_B (mixed conifer, Liping County, Guizhou)",train_test,on_request,,1618.0
+P024,dataset1,own_p024_kroof_uav,"own UAV dataset, KROOF forest (training and validation areas, field-surveyed test plots #1 to #3)",train_test,no,505.0,1515.0
+P025,dataset1,quebec_trees_sbl_2021,"Quebec temperate forest UAV dataset (Cloutier et al.), 2 September 2021 subset with three species",train_test,yes,300.0,2610.0
+P027,dataset1,own_p027_longyou,"own UAV pine wilt disease dataset (Longyou County, seven sample plots)",train_test,no,1160.0,4986.0
+P030,dataset1,kcl_london,KCL-London,train_test,yes,613.0,95067.0
+P030,dataset2,jiangsu_gaofen2,Jiangsu (Gaofen-II),train_test,yes,2400.0,664487.0
+P030,dataset3,yosemite_trees,Yosemite,train_test,yes,2700.0,98949.0
+P032,dataset1,quebec_plantations,UAV Canadian (Quebec) Plantations dataset (Lefebvre and Laliberté 2024),train_test,yes,26428.0,
+P035,dataset1,quebec_plantations,Quebec Plantations (UAV Canadian (Quebec) Plantations dataset),train_test,yes,,19500.0
+P035,dataset2,quebec_trees_sbl_2021,"SBL (Quebec Trees dataset, Station de Biologie des Laurentides, 2021-09-02)",train_test,yes,,22933.0
+P035,dataset3,bci_crowns_2022,"BCI (Barro Colorado Island crown maps, 2022)",train_test,yes,,2280.0
+P040,dataset1,own_p040_acacia,"own UAV Acacia dataset (Fujairah and Sharjah, 1024 x 1024 image-mask pairs)",train_test,no,12877.0,9100.0
+P042,dataset1,finnforest3,FinnForest 3.0,train_test,,300.0,
+P044,dataset1,isprs_itc_contest,ISPRS Individual Tree Crown Segmentation contest dataset (11 sub-datasets),train_test,yes,,
+P051,dataset1,own_p051_ajman_uav,"own UAV date palm dataset (Ajman, 2019, 5 cm)",train_test,no,28320.0,
+P051,dataset2,ajman_date_palm_multisource,multisource dataset (UAV 2019 at 5 cm with orthophotos of 2017 at 20 cm and 2015 at 15 cm),train_test,no,52316.0,
+P051,dataset3,al_ain_date_palm,Al Ain public UAV date palm dataset [81],transfer_target,yes,1078.0,9883.0
+P056,dataset1,own_p056_worldview3,own WorldView-3 date palm dataset (UAE sites),train_test,no,16260.0,76950.0
+P056,dataset2,own_p056_dibba,Dibba WorldView-3 tiles (unseen region),transfer_target,no,680.0,
+P057,dataset1,own_p057_kroof_uav,"own UAV multispectral and lidar dataset, KROOF site (training and validation areas, test plots #1 to #3)",train_test,no,,1533.0
+P058,dataset1,tree_species_is_p058,Tree Species Instance Segmentation Dataset (based on [22]),train_test,,4060.0,
+P060,dataset1,own_p060_black_forest,"own UAV multispectral dataset, Black Forest near Freiburg",train_test,no,,1096.0
+P062,dataset1,neon_treeevaluation,NEON TreeEvaluation,test_only,yes,,30975.0
+P062,dataset2,detectree2_malaysia,"Detectree2 released data (Danum, Sepilok East, Sepilok West)",test_only,yes,,1000.0
+P063,dataset1,forestsemantic_ms,ForestSemantic-MS,train_test,yes,,
+P072,dataset1,own_p072_beijing_plots,own iPhone image sequences of three plots (Beijing),test_only,on_request,,82.0
+P074,dataset1,own_p074_beijing_trunks,own smartphone images of 5192 trees (Beijing) with HMLS reference for 250 trees,train_test,no,,5192.0
+P076,dataset1,usgs_lidar_osm_8cities,USGS LiDAR and OpenStreetMap data for eight US cities (2012 to 2020),test_only,yes,,
+P076,dataset2,gro_single_tree_lidar,GRO single-tree LiDAR images [34],train_test,,,
+P078,dataset1,for_instance_v2,FOR-instanceV2,train_test,yes,,
+P078,dataset2,wytham_woods_tls,Wytham woods [8],transfer_target,yes,,
+P078,dataset3,lautx,LAUTx [1],transfer_target,yes,,
+P082,dataset1,own_p082_payette,"own Geiger-mode LiDAR CHM dataset, Payette River (4 tiles)",train_test,no,,6916.0
+P083,dataset1,own_p083_danzhou_rubber,own handheld LiDAR frames of a rubber plantation (Danzhou),,no,500.0,7360.0
+P090,dataset1,own_p090_ganzhou,"own UAV RGB and LiDAR dataset, Ganzhou (crown instances; Forest 1 and Forest 2 test plots)",train_test,on_request,7112.0,1364.0
+P091,dataset1,own_p091_beijing_trunks,"own smartphone trunk images (Beijing, four species) with destructive measurements of 141 trees",train_test,on_request,3013.0,141.0
+P101,dataset1,whu_stree_nj,"WHU-STree-NJ (Nanjing, class-balanced split)",train_test,yes,,21007.0
+P101,dataset2,whu_stree_sy,"WHU-STree-SY (Shenyang, cross-city test)",transfer_target,yes,,
+P105,dataset1,own_p105_nefu_uls,"own UAV LiDAR single-tree point clouds (ModelNet3), Northeast Forestry University",train_test,no,2000.0,1109.0
+P106,dataset1,own_p106_braunschweig,Braunschweig tree inventory with PlanetScope time series (40 dates) and LiDAR crowns,train_test,partial,,89362.0
+P107,dataset1,own_p107_umtpc,"UMTPC (urban MLS tree point cloud dataset, own)",train_test,no,,830.0
+P107,dataset2,stpctls,STPCTLS (single tree point clouds from terrestrial laser scanning) [25],train_test,yes,,684.0
+P111,dataset1,own_p111_romeo_malette,"own ALS individual-tree dataset, Romeo Malette Forest",train_test,no,,16269.0
+P113,dataset1,own_p113_langya,"own UAV crown-segment dataset, Langya Mountain (five species plus bare land)",train_test,on_request,759.0,
+P116,dataset1,own_p116_zao,"own UAV patch dataset, Zao mountains (five-species controlled subset of sites 1 and 2)",train_test,no,5315.0,
+P116,dataset2,own_p116_zao,"own UAV patch dataset, Zao mountains (all four sites, nine species; leave-one-site-out folds)",transfer_target,no,8583.0,
+P118,dataset1,own_p118_martell,"own UAV crown images, Martell Forest (summer and fall 2021)",train_test,no,8799.0,
+P121,dataset1,own_p121_uav4tree,"UAV4Tree data: iNaturalist ground images (training, validation) and UAV frames from the Marche Region (test)",train_test,no,5900.0,
+P122,dataset1,own_p122_hunan_ohtl,"own UAV LiDAR and multispectral data along transmission-line corridors, Hunan",,no,,
+P127,dataset1,own_p127_huangshan_pwd,"own UAV pine wilt dataset, Huangshan (640 x 640 tiles)",train_test,no,2478.0,
+P132,dataset1,own_p132_qingdao,"own UAV visible and multispectral pine wilt dataset, Qingdao (dataset 3: visible plus multispectral)",train_test,no,1958.0,
+P135,dataset1,treemort_nls_finland,NLS Finland aerial images with dead-tree polygons (TreeMort dataset),train_test,,125.0,15000.0
+P139,dataset1,own_p139_huangshan_pwd,"own UAV PWD dataset, Qimen County, Huangshan (640 x 640 crops)",train_test,no,2478.0,
+P148,dataset1,own_p148_boluo_citrus,"own UAV citrus orchard patrol dataset, Boluo County (640 x 640 crops)",train_test,no,1007.0,324.0
+P004,dataset1,bayberry_uav_dayangshan,"publicly released bayberry UAV imagery dataset (Global Change Science Research Data Publishing and Repository), Dayangshan Forest Park",train_test,yes,4230.0,
+P005,dataset1,kcl_london,"London dataset (high-resolution images, 0.2 m GSD)",train_test,yes,613.0,95067.0
+P005,dataset2,jiangsu_gaofen2,"Jiangsu dataset (Gaofen-II satellite, 0.8 m GSD)",train_test,yes,2400.0,664487.0
+P005,dataset3,yosemite_trees,"Yosemite dataset (Google Maps image of Yosemite National Park, 0.12 m GSD)",train_test,yes,2700.0,98949.0
+P008,dataset1,own_p008_jouf_satellite,"250 RGB satellite images of olive trees, Al-Jouf (Satellites Pro, 512 × 512)",train_test,on_request,250.0,73285.0
+P008,dataset2,own_p008_jouf_otcs,"OTCS-dataset: UAV olive crown and shadow patches (RGB 3 cm, RGB 13 cm, NDVI 13 cm, GNDVI 13 cm)",train_test,on_request,,
+P009,dataset1,own_p009_uae_palm,"own palm tree dataset, UAE (Ajman, Dubai, Khorfakkan, Al Ain), 256 × 256 patches",train_test,partial,2976.0,21935.0
+P013,dataset1,own_p013_bengaluru,Bengaluru WorldView-3 tree crown detection dataset (330 patches of 100 m × 100 m),train_test,yes,330.0,23643.0
+P013,dataset2,own_p013_bengaluru,"Bengaluru urban test plots (25 plots of 100 m × 100 m, reference for the transfer test)",test_only,yes,25.0,852.0
+P013,dataset3,own_p013_delhi,"Delhi WorldView-3 test plots (25 plots of 100 m × 100 m, light haze)",transfer_target,yes,25.0,627.0
+P013,dataset4,own_p013_shanghai,"Shanghai WorldView-3 test plots (25 plots of 100 m × 100 m, heavy haze)",transfer_target,yes,25.0,1148.0
+P023,dataset1,own_p023_turkey_trees,"own satellite tree dataset, Turkey (Bursa, Izmir), 1471 patches",train_test,no,1471.0,87135.0
+P026,dataset1,own_p026_oil_palm,"own UAV oil palm dataset (Pahang, Malaysia and Riau, Indonesia)",train_test,no,,
+P029,dataset1,yosemite_trees,"Yosemite Tree Dataset (Google Maps aerial images, 19,200 × 38,400 pixels)",train_test,yes,,98949.0
+P029,dataset2,neon_treeevaluation,"NeonTreeEvaluation Dataset (fully labelled RGB data, 22 sites)",train_test,yes,3589.0,24424.0
+P036,dataset1,own_p036_ischid,"iSCHID: instance segmentation in Conghua images dataset (dense lychee orchard, 512 × 512 slices)",train_test,yes,329.0,
+P036,dataset2,own_p036_ismmid,"iSMMID: instance segmentation in Maoming images dataset (lychee orchard, 512 × 512 slices)",train_test,yes,325.0,
+P149,dataset1,forest_health_uav_p149,UAV forest images with XML bounding boxes and four health classes (source not stated),train_test,no,45022.0,
+P150,dataset1,own_p150_souris_apple,"own UAV multispectral apple orchard dataset, Souris (orchards A to D, 1024 × 1024 patches)",train_test,on_request,4122.0,4122.0
+P152,dataset1,own_p152_ct_naip,"UTC annotations on NAIP imagery, Windham County (400 patches of 254 × 254 pixels)",train_test,on_request,400.0,5133.0
+P152,dataset2,own_p152_ct_naip,annotator study: 30 new patches of the same NAIP imagery annotated by nine annotators,test_only,on_request,30.0,
+P154,dataset1,neon_treeevaluation,"NeonTree (Weinstein et al. 2021): airborne RGB tree crown detection, binary",train_test,yes,,
+P154,dataset2,reforestree,"ReforesTree (Reiersen et al. 2022): UAV RGB tree crown detection, 6 classes",train_test,yes,,
+P038,dataset1,own_p038_cimahi,"own UAV RGB orthophoto tiles of urban tree crowns, Cimahi City (1024 x 1024 pixels, 5 cm)",train_test,no,135.0,2762.0
+P038,dataset2,own_p038_bandung,"own UAV RGB orthophoto of urban tree crowns, Bandung City (external validation)",transfer_target,no,,
+P039,dataset1,own_p039_lhasa_street_trees,"BJ-3N street tree dataset, Lhasa (12 street blocks, 256 × 256 tiles)",train_test,yes,10000.0,
+P041,dataset1,own_p041_palm_estates,"own UAV young oil palm tiles, training and validation estates (6499 tiles of 640 × 640 pixels)",train_test,yes,6499.0,
+P041,dataset2,own_p041_palm_estates,challenge set 1: palms older than 5 years from two additional estates (100 tiles),transfer_target,yes,100.0,
+P041,dataset3,own_p041_palm_estates,challenge set 2: palms of an estate impacted by a destructive storm (100 tiles),transfer_target,yes,100.0,
+P043,dataset1,jekyll_street_view_trees,"Jekyll street-view urban tree dataset (3949 images, ten Chinese cities)",train_test,no,3949.0,
+P043,dataset2,own_p043_arbocensus,"Arbocensus smartphone urban tree images, Santiago (317 annotated images)",train_test,no,317.0,
+P047,dataset1,own_p047_alxa_desert,"desert vegetation UAV dataset, Suhaitu Gacha (2100 images of 512 × 512 pixels)",train_test,yes,2100.0,
+P048,dataset1,own_p048_multan_mango,"own UAV mango orchard, Multan (RGB orthomosaic, 3 cm, 1871 annotated trees)",train_test,no,16.0,1871.0
+P048,dataset2,own_p048_multan_mango,"second mango orchard, 175 manually digitized canopies (evaluation of the pipeline)",test_only,no,,175.0
+P049,dataset1,own_p049_ash_orchards,"close-up multispectral UAV images of ash tree crowns, two seed orchards (30 trees each)",test_only,no,174.0,60.0
+P050,dataset1,neon_treeevaluation,NEON benchmark: 192 annotated hyperspectral plots (40 m × 40 m) of 21 sites,test_only,yes,192.0,
+P052,dataset1,own_p052_iran_urban_trees,"own multi-sensor urban tree crown dataset, three Iranian sites (1200 patches of 256 × 256 pixels)",train_test,no,1200.0,
+P053,dataset1,own_p053_tunisia_olive,five satellite images of olive tree plots in Tunisia,test_only,no,5.0,1343.0
+P054,dataset1,own_p054_xinfeng_citrus,"own UAV citrus canopy dataset, Xinfeng (four plots, 25,000 patches of 256 × 256 after augmentation)",train_test,no,25000.0,
+P059,dataset1,neon_aop_rgb_p059,"NEON airborne RGB tree crown boxes (22 sites, over 30,000 crowns)",train_test,yes,,
+P059,dataset2,own_p059_vda,own Valle d'Aosta RGB aerial tree dataset (80 crops of 600 × 600 pixels),train_test,no,80.0,
+P064,dataset1,own_p064_eucalyptus_iphone,own iPhone LiDAR point clouds of 55 clonal eucalyptus trees with stem region labels,train_test,no,,55.0
+P065,dataset1,own_p065_apple_hyperspectral,"own close-range hyperspectral apple tree images, Shandong and Inner Mongolia",train_test,on_request,,
+P066,dataset1,for_instance_v1,"UAV: FOR-instance UAV laser scans (Riegl (mini) VUX-1), 11 test plots",train_test,yes,,
+P066,dataset2,xi_hopkinson_tls_2022,"TLS: TLS plots (Teledyne Optech Ilris), 6 test plots",train_test,yes,,
+P066,dataset3,xi_2024_als_canada,"ALS: ALS plots (Teledyne Optech Titan), 4 test plots",train_test,yes,,
+P067,dataset1,own_p067_orchard_tls,own TLS point clouds of dormant apple trees (20 trees),train_test,yes,,20.0
+P067,dataset2,own_p067_orchard_tls,own TLS point clouds of dormant cherry trees (20 trees),train_test,yes,,20.0
+P068,dataset1,titan_houston_ms_lidar,"Optech Titan multispectral LiDAR of the University of Houston area: 17 plots, 3 test plots",train_test,partial,17.0,593.0
+P069,dataset1,own_p069_apple_kinect,"own Kinect V2 point clouds of 46 two-year-old apple trees, Qian County",train_test,on_request,,46.0
+P073,dataset1,own_p073_jasper_tls,own TLS point clouds of 12 plots in Jasper National Park with 572 field-surveyed trees,train_test,yes,12.0,572.0
+P075,dataset1,own_p075_stadium_woods,"own 360 degree camera and LiDAR scans of 43 trees (61 acquisitions), Stadium Woods",test_only,no,,43.0
+P077,dataset1,own_p077_poplar_uav,"own UAV RGB and multispectral images of poplar seedlings, Nanjing (2023 and 2024)",train_test,on_request,400.0,3772.0
+P079,dataset1,own_p079_speedtree_synthetic,"own synthetic SpeedTree point clouds, 5000 trees of five species (trunk, branch, leaf labels)",train_test,no,,5000.0
+P080,dataset1,martell_forest_tls,Martell Forest single-scan TLS plots (61 plots) with 616 segmented trees and reference AGB,train_test,yes,61.0,616.0
+P081,dataset1,forestsemantic_evo,"ForestSemantic (Evo, Finland): six TLS plots of 32 m by 32 m, Plots 1, 3 and 5 annotated",train_test,yes,,288.0
+P081,dataset2,for_instance_v1,"FOR-instance (UAV laser scanning, five collections: NIBIO, CULS, TU_WIEN, RMIT, SCION)",train_test,yes,,
+P084,dataset1,own_p084_d1,"own UAV images of red maples, Smith Farm, McMinnville (D1, 6 July 2023)",test_only,on_request,,373.0
+P084,dataset2,own_p084_d2,"own UAV images of red maples, Smith Farm, McMinnville (D2, 24 July 2023)",test_only,on_request,,361.0
+P084,dataset3,own_p084_d3,"own UAV images of maples, Southeastern Growers, Athens (D3, 28 May 2024)",test_only,on_request,,423.0
+P086,dataset1,loosdorf_tree_ms,"Loosdorf-tree: MS-LiDAR urban and suburban tree benchmark, 1.68 km2 and 48,164,790 labelled points",train_test,yes,,
+P088,dataset1,own_p088_rubber_tls,"own TLS rubber trees, Danzhou (285 training and 122 test trees)",train_test,on_request,,407.0
+P088,dataset2,own_p088_mixed_tls,"own TLS mixed tropical forest, Danzhou (167 training and 70 test trees)",train_test,on_request,,237.0
+P088,dataset3,own_p088_urban_als,"own ALS urban rubber trees, Danzhou (66 training and 28 test trees)",train_test,on_request,,94.0
+P088,dataset4,lewos,LeWoS public TLS tropical trees (43 training and 18 test trees),train_test,yes,,61.0
+P088,dataset5,treenet3d_flamboyant,TreeNet3D public synthetic flamboyant trees (490 training and 210 test trees),train_test,yes,,700.0
+P089,dataset1,own_p089_harbin_uls,"own UAV LiDAR individual tree point clouds of six species, Harbin urban forestry demonstration base",train_test,no,,1415.0
+P092,dataset1,own_p092_less_vls,own virtual TLS (LESS simulation) point clouds of nine Eucalyptus species,train_test,no,,
+P092,dataset2,own_p092_guangxi_tls,"own TLS plots S1 and S2, eucalyptus plantation, Nanning (182 trees)",transfer_target,on_request,,182.0
+P093,dataset1,lewos,"tropical tree dataset, Cameroon (LeWoS, Momo Takoudjou et al.)",train_test,yes,,61.0
+P093,dataset2,stpctls,"Birch dataset, Finland (STPCTLS of Xi et al.)",train_test,yes,,100.0
+P093,dataset3,own_p093_larch_sim,simulated larch dataset (OnyxTree),train_test,no,,100.0
+P093,dataset4,stpctls,"Spruce dataset, Canada (STPCTLS of Xi et al.)",train_test,yes,,174.0
+P093,dataset5,stpctls,"Aspen dataset, Canada (STPCTLS of Xi et al.)",train_test,yes,,162.0
+P093,dataset6,stpctls,"Poplar dataset, Canada (STPCTLS of Xi et al.)",train_test,yes,,80.0
+P093,dataset7,stpctls,"Pine dataset, Canada and Finland (STPCTLS of Xi et al.)",train_test,yes,,220.0
+P093,dataset8,stpctls,"Maple dataset, Canada (STPCTLS of Xi et al.)",train_test,yes,,169.0
+P094,dataset1,own_p094_castle_als,"own ALS tree and non-tree reference point clouds of four sample areas, Castle site",train_test,no,,
+P094,dataset2,own_p094_joint_als,"ten joint ALS and TLS plots (LPine#1 to 7, TAspen, RPine, SMaple)",train_test,no,,767.0
+P094,dataset3,own_p094_joint_tls,TLS scans of the ten joint plots with manually isolated trees,train_test,no,,
+P095,dataset1,own_p095_rubbertree,"own UAV LiDAR RubberTree dataset (600 single rubber trees, tree and other labels)",train_test,no,,600.0
+P095,dataset2,forestsemantic_evo,"ForestSemantic (Liang et al.), 84 single-tree samples augmented to 252",train_test,yes,,
+P095,dataset3,gbs_leaf_wood,"GBS single-tree dataset (56 trees, trunk and crown)",train_test,yes,,56.0
+P095,dataset4,own_p095_field_test,"own new UAV LiDAR rubber tree point clouds for the field test, Danzhou",transfer_target,no,,
+P096,dataset1,als_four_plots_p096,"ALS test plots U1, U2 (Blue Ridge, USA) and G1, G2 (Bretten, Germany): 687 reference trees",train_test,yes,,687.0
+P098,dataset1,own_p098_hungtse_poplar,"own TLS point clouds of 150 poplar trees, Hung-tse Lake wetland (incomplete versions generated online)",train_test,no,,150.0
+P099,dataset1,own_p099_wellsites_alberta,"own UAV LiDAR and multispectral data of five reclaimed wellsites, Alberta (three seasons)",train_test,yes,,342.0
+P100,dataset1,whu_stree_nj,"WHU-RSTree based benchmark of roadside tree images with boxes, DBH and height (Nanjing)",train_test,partial,12447.0,19613.0
+P102,dataset1,own_p102_china_four_species,"own self-built dataset of four species (Schima superba, lychee, larch, birch) from TLS, BLS and HLS, China",train_test,no,,1040.0
+P102,dataset2,stpctls,"STPCTLS single tree point clouds from terrestrial laser scanning (Seidel), seven species",train_test,yes,,691.0
+P103,dataset1,own_p103_ginkgo_green,"own UAV RGB sub-images of Ginkgo crowns, green-leaf period (2000 x 2000 pixels, Tianmu Mountain)",train_test,on_request,531.0,137.0
+P103,dataset2,own_p103_ginkgo_yellow,"own UAV RGB sub-images of Ginkgo crowns, yellow-leaf period (2000 x 2000 pixels, Tianmu Mountain)",train_test,on_request,137.0,137.0
+P104,dataset1,own_p104_malaysia_trees,"own drone images of oil palm, coconut and banana trees, Malaysia (450 images per tree type after augmentation)",train_test,no,450.0,
+P108,dataset1,own_p108_szu_north,"own SZU-North hyperspectral UAV dataset (north campus, 30 species)",train_test,no,256.0,5103.0
+P108,dataset2,own_p108_szu_south,"own SZU-South hyperspectral UAV dataset (south campus, 13 species)",train_test,no,97.0,2182.0
+P109,dataset1,own_p109_grajau_itcs,"ITC dataset of Martins et al. (2021), Grajau neighbourhood (six species), adjusted to the 2019 aerial images",train_test,no,,283.0
+P110,dataset1,own_p110_york_aml,"own airborne multispectral LiDAR single trees of six species, York Regional Forest (1122 trees)",train_test,on_request,,1122.0
+P115,dataset1,own_p115_mpala_lidar,"own UAV airborne LiDAR tree segments of the Mpala plot matched to ForestGEO census labels (about 4000 trees, six classes)",train_test,on_request,,4000.0
+P117,dataset1,weiser_2022_als_trees,"3DGeo individual ALS tree point clouds of six German plots (11 species, 1291 trees; Weiser et al.)",train_test,yes,,1291.0
+P120,dataset1,own_p120_ts8,own TS8 backpack laser scanning individual tree point clouds of eight species (1312 trees),train_test,no,,1312.0
+P123,dataset1,own_p123_kp_pwd,own UAV visible and red-band images of Korean pines with pine wilt disease (KP dataset),train_test,no,389.0,
+P123,dataset2,own_p123_cp_pwd,own UAV visible and red-band images of Chinese pines with pine wilt disease (CP dataset),train_test,no,315.0,
+P124,dataset1,own_p124_zhuanshanzi_pwd,"own UAV RGB patches (640 x 640 pixels) of pine wilt disease trees, Zhuanshanzi forest field (300 drone images)",train_test,on_request,11200.0,
+P125,dataset1,own_p125_qingdao_pwd,"own fixed-wing UAV orthophoto tiles (256 x 256 pixels, 8 cm) of pine wood nematode affected trees, Qingdao",train_test,on_request,2981.0,
+P126,dataset1,own_p126_sdts_changsha,"own UAV RGB images of standing dead trees in four test areas, Changsha County (SDTs dataset)",train_test,partial,568.0,978.0
+P129,dataset1,own_p129_qingdao_pwd,"own DB-II fixed-wing UAV orthophoto tiles of discolored pine trees, Qingdao (Dataset A)",train_test,on_request,2981.0,
+P129,dataset2,own_p129_yantai_pwd,"own DJI Phantom 4 Pro UAV orthophoto tiles of discolored pine trees, Yantai (Dataset B)",transfer_target,on_request,524.0,
+P130,dataset1,own_p130_hubei_pwd,own UAV RGB images of PWD trees over a forest farm in Hubei (Hubei dataset),train_test,no,15808.0,
+P130,dataset2,own_p130_hunan_pwd,own UAV multispectral (RGB and infrared) image of PWD trees over a forest farm in Hunan (Hunan dataset),train_test,no,263.0,
+P131,dataset1,own_p131_qianshan_pwd,"own UAV RGB images (DJI M300 with Zenmuse-P1) of PWD trees, Qianshan City (561 sample points, 512 x 512 slices)",train_test,no,3184.0,561.0
+P133,dataset1,own_p133_yantai_h2,"own UAV hyperspectral strips of PWD, Yantai Hill, Hexi Village (eight H2 strips of about 4600 x 700 pixels)",train_test,on_request,8.0,
+P134,dataset1,own_p134_fuzhou_pwd,"own UAV RGB video frames of PWD trees at three infection stages, Fuzhou (DJI Mini 3 Pro)",train_test,on_request,8443.0,77592.0
+P136,dataset1,own_p136_dahuofang_early,"own UAV RGB images of early-stage PWD, Dahuofang Experimental Forest (plots Y-0 to Y-3 and PY-4)",train_test,on_request,547.0,
+P137,dataset1,own_p137_anyang_street_trees,"own aerial street-tree dataset (25 cm orthophotos), Gwanyang-dong, Anyang-si",train_test,no,,10021.0
+P138,dataset1,mopad,"MOPAD multi-class oil palm UAV dataset (Papua), two classes healthy and unhealthy, 1024 x 1024 tiles",train_test,yes,2303.0,116726.0
+P140,dataset1,deadtrees_earth,"deadtrees.earth standing deadwood orthophotos (434 labelled orthophotos, 10,778 ha)",train_test,yes,434.0,
+P141,dataset1,own_p141_sanmen_pwd,"own UAV RGB images of PWD-infected pines, Sanmen County (five sample plots, 300 x 300 slices)",train_test,on_request,1542.0,6538.0
+P141,dataset2,own_p141_longyou_xihaizhai_baiheqiao,"own UAV RGB images of PWD-infected pines, Xihaizhai and Baiheqiao villages, Longyou County (external validation)",transfer_target,on_request,300.0,819.0
+P141,dataset3,own_p141_longyou_guiguangyan,"own UAV RGB images of PWD-infected pines, Guiguangyan village, Longyou County (external validation)",transfer_target,on_request,119.0,224.0
+P142,dataset1,own_p142_gaofen_pwd,"own Gaofen-2 and Gaofen-7 semantic segmentation dataset of discolored PWD trees (512 x 512 slices, four bands)",train_test,partial,4352.0,
+P143,dataset1,own_p143_naip_mortality,"own NAIP tree mortality dataset: 75 sites, about 400 patches of 224 x 224 pixels, three scenarios (BigTreeForest, SmallTreeForest, Continuous)",train_test,no,400.0,
+P144,dataset1,mopad,"MOPAD Site 2 (Papua), five oil palm condition classes, 1024 x 1024 images",train_test,yes,2303.0,151583.0
+P145,dataset1,own_p145_warren_ash,"own drone dataset of declining and dead ash trees, Warren County, Pennsylvania (640 x 720 patches of 343 annotated 4K frames)",train_test,on_request,6174.0,
+P145,dataset2,own_p145_insitu_sites,"own drone in-situ validation images of declining and dead ash trees, nine sites in Pennsylvania and northern West Virginia",transfer_target,on_request,,
+P146,dataset1,own_p146_laoshan_pwd,"own UAV RGB images of early-stage PWD, Laoshan National Forest Park, Nanjing (1333 x 1000 pixel crops of 4032 x 3024 images)",train_test,on_request,7000.0,
+P147,dataset1,mopad,"MOPAD (oilpalmuav) multi-class oil palm UAV dataset, Sites 1 and 2 combined (Kalimantan and Papua)",train_test,yes,,363877.0
+P151,dataset1,treefinder,"TreeFinder: NAIP individual tree mortality benchmark, 1,000 sites, patches of 224 x 224 pixels with four bands",train_test,yes,15489.0,
+P153,dataset1,own_p153_shaanxi_pwd,"own UAV RGB dataset of PWD trees in four stages, Shaanxi (six orthoimages, 640 x 640 sub-images)",train_test,no,5436.0,21774.0

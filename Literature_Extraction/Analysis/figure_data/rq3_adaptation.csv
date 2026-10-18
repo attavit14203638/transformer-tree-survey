@@ -1,0 +1,11 @@
+model,ap50,ap50_95,model_name,training_strategy,trainable_params_pct,method,page,location,paper_id,dataset_key
+model1,60.7,33.5,Grounding-DINO (Swin-T) with FULL fine-tuning,full_fine_tuning,100.0,FULL,12,Table 1,P025,quebec_trees_sbl_2021
+model7,59.9,32.2,Grounding-DINO (Swin-T) with EVP2 fine-tuning,peft_prompt,19.83,EVP2,12,Table 1,P025,quebec_trees_sbl_2021
+model9,60.4,31.7,Grounding-DINO (Swin-T) with Adapter fine-tuning,peft_adapter,4.15,Adapter,12,Table 1,P025,quebec_trees_sbl_2021
+model5,59.9,31.5,Grounding-DINO (Swin-T) with LORA fine-tuning,peft_lora,4.11,LORA,12,Table 1,P025,quebec_trees_sbl_2021
+model10,60.6,32.4,Grounding-DINO (Swin-T) with ASCS (proposed PEFT),peft_other,0.28,ASCS (proposed PEFT),12,Table 1,P025,quebec_trees_sbl_2021
+model3,59.3,31.3,Grounding-DINO (Swin-T) with BITFIT fine-tuning,peft_other,0.28,BITFIT,12,Table 1,P025,quebec_trees_sbl_2021
+model6,58.7,31.8,Grounding-DINO (Swin-T) with VPT fine-tuning,peft_prompt,0.26,VPT,12,Table 1,P025,quebec_trees_sbl_2021
+model4,60.5,31.8,Grounding-DINO (Swin-T) with NORM-TUNING fine-tuning,peft_other,0.09,NORM-TUNING,12,Table 1,P025,quebec_trees_sbl_2021
+model8,57.7,30.9,Grounding-DINO (Swin-T) with SCT fine-tuning,peft_other,0.01,SCT,12,Table 1,P025,quebec_trees_sbl_2021
+model2,60.0,31.2,Grounding-DINO (Swin-T) with FIXED fine-tuning,head_only,0.0,FIXED,12,Table 1,P025,quebec_trees_sbl_2021

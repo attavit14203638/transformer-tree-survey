@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-15",
+  "rows": 200,
+  "checked": 200,
+  "ok": 200,
+  "wrong": 0,
+  "not_found": 0,
+  "papers": 139,
+  "upper_95_error_rate": 0.0149,
+  "current_corpus": {
+    "papers_in_corpus": 133,
+    "rows": 189,
+    "papers": 133,
+    "ok": 189,
+    "upper_95_error_rate": 0.0157
+  }
+}

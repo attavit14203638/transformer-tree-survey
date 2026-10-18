@@ -1,0 +1,8 @@
+{
+  "run_at_utc": "2026-10-08T17:05:29Z",
+  "api_endpoint": "https://export.arxiv.org/api/query",
+  "api_query": "(all:transformer OR all:transformers OR all:\"vision transformer\" OR all:\"vision transformers\" OR all:\"self attention\" OR all:swin OR all:segformer OR all:detr OR all:mask2former OR all:\"foundation model\" OR all:\"foundation models\" OR all:\"segment anything\" OR all:\"vision language\" OR all:\"large language model\" OR all:\"large language models\" OR all:\"grounding dino\" OR all:clip) AND (all:tree OR all:trees OR all:\"individual tree\" OR all:\"individual trees\" OR all:\"tree crown\" OR all:\"tree crowns\" OR all:\"crown delineation\" OR all:canopy OR all:canopies OR all:\"date palm\" OR all:\"date palms\" OR all:mangrove OR all:mangroves OR all:forest OR all:forests OR all:forestry OR all:deforestation OR all:woodland OR all:woodlands OR all:orchard OR all:orchards OR all:wetland OR all:wetlands OR all:vegetation OR all:biomass OR all:plantation OR all:plantations) AND (cat:cs.CV OR cat:eess.IV OR cat:cs.AI OR cat:cs.LG) AND submittedDate:[201701010000 TO 202512312359]",
+  "api_total_results": 2543,
+  "candidates_unique": 2540,
+  "records_passing_query": 127
+}
