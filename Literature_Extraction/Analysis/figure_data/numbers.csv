@@ -349,7 +349,7 @@ PctDataOnRequestAvailable,22.0,22.0,share of studies with data_available = on_re
 NDataPartialAvailable,10,10,studies with data_available = partial,compiled/studies.csv (a study counts when any of its reports states it)
 NDataPartialAvailableWord,10,ten,studies with data_available = partial (in words),compiled/studies.csv (a study counts when any of its reports states it)
 PctDataPartialAvailable,7.6,7.6,share of studies with data_available = partial (10 of 132),compiled/studies.csv (a study counts when any of its reports states it)
-NSharedPublicDatasets,13,13,public datasets used by two or more studies,figure_data/shared_public_datasets.csv
+NSharedPublicDatasets,12,12,public datasets used by two or more studies,figure_data/shared_public_datasets.csv
 NStudiesOwnDataOnly,86,86,studies that use only data they collected or labelled themselves,compiled/datasets.csv with the kind of each dataset key in Extraction/datasets.csv
 PctStudiesOwnDataOnly,65.2,65.2,share of studies that use only data they collected or labelled themselves (86 of 132),compiled/datasets.csv with the kind of each dataset key in Extraction/datasets.csv
 NStudiesPublicData,44,44,studies that use at least one public dataset,compiled/datasets.csv with the kind of each dataset key in Extraction/datasets.csv
@@ -357,8 +357,8 @@ PctStudiesPublicData,33.3,33.3,share of studies that use at least one public dat
 NStudiesUnidentifiedData,2,2,studies whose data source is not identified,compiled/datasets.csv with the kind of each dataset key in Extraction/datasets.csv
 NStudiesUnidentifiedDataWord,2,two,studies whose data source is not identified (in words),compiled/datasets.csv with the kind of each dataset key in Extraction/datasets.csv
 PctStudiesUnidentifiedData,1.5,1.5,share of studies whose data source is not identified (2 of 132),compiled/datasets.csv with the kind of each dataset key in Extraction/datasets.csv
-NStudiesSharedBenchmark,26,26,studies that use a public dataset also used by another study,figure_data/shared_public_datasets.csv
-PctStudiesSharedBenchmark,19.7,19.7,share of studies that use a public dataset also used by another study (26 of 132),figure_data/shared_public_datasets.csv
+NStudiesSharedBenchmark,24,24,studies that use a public dataset also used by another study,figure_data/shared_public_datasets.csv
+PctStudiesSharedBenchmark,18.2,18.2,share of studies that use a public dataset also used by another study (24 of 132),figure_data/shared_public_datasets.csv
 NComparisons,77,77,"transformer versus non-transformer comparisons (preferred metric, percent)",figure_data/rq1_comparisons.csv (rq1_comparisons.data)
 NComparisonStudies,67,67,studies with at least one comparison,figure_data/rq1_comparisons.csv (rq1_comparisons.data)
 PctComparisonStudies,50.8,50.8,share of studies with a comparison (67 of 132),figure_data/rq1_comparisons.csv (rq1_comparisons.data)
@@ -628,8 +628,10 @@ PEFTBestAPFifty,60.6,60.6,best AP50 of a parameter-efficient method (ASCS (propo
 PEFTBestName,ASCS (proposed PEFT),ASCS,name of that method as printed,"figure_data/peft_table.csv (Table 1, p.12)"
 PEFTBestTrainable,0.28,0.28,its share of trainable parameters (percent),"figure_data/peft_table.csv (Table 1, p.12)"
 PctPEFTBestOfFull,99.8,99.8,its AP50 as a share of the full fine-tuning AP50 (60.6 of 60.7),"figure_data/peft_table.csv (Table 1, p.12)"
-PEFTFullAPStrict,33.5,33.5,AP50:95 of full fine-tuning in the same-setting study,"figure_data/peft_table.csv (Table 1, p.12)"
-PEFTBestAPStrict,32.4,32.4,AP50:95 of the method with the best AP50 (ASCS (proposed PEFT)),"figure_data/peft_table.csv (Table 1, p.12)"
+PEFTStrictMetric,mAP,mAP,"the study's stricter metric, as it names it","figure_data/peft_table.csv (Table 1, p.12)"
+PEFTStrictMetricDef,mAP,"mean average precision, which the study averages over several IoU thresholds without stating them","its definition, as far as the study states it","figure_data/peft_table.csv (Table 1, p.12)"
+PEFTFullAPStrict,33.5,33.5,stricter metric of full fine-tuning in the same-setting study,"figure_data/peft_table.csv (Table 1, p.12)"
+PEFTBestAPStrict,32.4,32.4,stricter metric of the method with the best AP50 (ASCS (proposed PEFT)),"figure_data/peft_table.csv (Table 1, p.12)"
 PEFTGapAPFifty,0.1,0.1,AP50 of full fine-tuning minus the best parameter-efficient AP50 (points),"figure_data/peft_table.csv (Table 1, p.12)"
 NPEFTVariants,8,8,parameter-efficient methods compared in that study,"figure_data/peft_table.csv (Table 1, p.12)"
 NPEFTVariantsWord,8,eight,parameter-efficient methods compared in that study (in words),"figure_data/peft_table.csv (Table 1, p.12)"
@@ -670,6 +672,7 @@ ValPalmResampledGSD,15,15,"resolution the own test set was resampled to (cm), fr
 ValPalmResampleLossLow,5.41,5.41,smallest loss of mean IoU after resampling (points),"gibril_large-scale_2023, p. 12.0, Fig. 7 (image)"
 ValPalmResampleLossHigh,5.56,5.56,largest loss of mean IoU after resampling (points),"gibril_large-scale_2023, p. 12.0, Fig. 7 (image)"
 ValRubberLoss,2.63,2.63,loss of mean IoU on new point clouds of the same plantation,"yan_tm-wsnet_2025, p. 12.0, Table 3"
+ValSwapMetric,map,mAP,"metric of those values, under the name the study gives it","zhang_mtcdnet_2025, p. 12-13, Tables 1 and 2"
 ValSwapLossLow,1.88,1.88,"AP50:95 lost when training and test datasets are swapped, smaller direction","zhang_mtcdnet_2025, p. 12-13, Tables 1 and 2"
 ValSwapLossHigh,4.24,4.24,"AP50:95 lost when training and test datasets are swapped, larger direction","zhang_mtcdnet_2025, p. 12-13, Tables 1 and 2"
 ValPEFTTestSplit,20,20,share of the images used for testing (percent),"zhang_parameter-efficient_2025, p. 11, Sec. 4.1 (results: setting)"

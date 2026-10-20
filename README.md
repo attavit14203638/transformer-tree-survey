@@ -284,7 +284,7 @@ Grouped by the architecture family of each study's principal transformer. IDs li
 
 </details>
 
-## Shared public datasets (13)
+## Shared public datasets (12)
 
 Public datasets used by two or more included studies.
 
@@ -302,7 +302,6 @@ Public datasets used by two or more included studies.
 | Jiangsu tree counting | Gaofen-2 satellite images, 0.8 m GSD | 2 |
 | LeWoS | TLS point clouds of tropical trees | 2 |
 | Quebec Trees | UAV RGB images | 2 |
-| WHU-STree Nanjing | Street-tree images and point clouds | 2 |
 
 ## Licence
 

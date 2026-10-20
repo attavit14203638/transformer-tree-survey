@@ -49,7 +49,7 @@ for item, rx, name, role, cat in M:
         ROWS += model(item, name, role, cat, "ResNet-50", None, None, 4, T3, ev, pre_status="not_reported", pre_note="not stated", strat_note="not stated",
                       cat_note=NOTE.get(item, "") or "ResNet-50 for all compared models (p.3)")
     ROWS += [R("total_params", par, 4, T3, ev, item=item, unit="M"), R("flops", nums[0], 4, T3, ev, item=item, unit="GFLOPs")]
-    ROWS += result(res(), "ap50_95", item, "dataset1", nums[1], 4, T3, ev, setting="validation/test split; masks", note="COCO-style AP")
+    ROWS += result(res(), "map", item, "dataset1", nums[1], 4, T3, ev, setting="validation/test split; masks", note="AP as printed, beside mAP50 and mAP75; the IoU thresholds are not stated")
     ROWS += result(res(), "ap50", item, "dataset1", nums[2], 4, T3, ev, setting="validation/test split; masks", headline=(item == "model1"))
 ROWS += avail()
 ROWS += [D("notes", "Table III lists 14 methods; following protocol 4.1, recorded: every transformer-based method, Mask R-CNN (same backbone), CondInst (best CNN on AP) and BoxSnake (best CNN on mAP50). SOLOv2, SparseInst and DiffusionInst are in Table III (p.4).", "Sec. IV-B and Table III (pp. 3 to 4)")]

@@ -54,13 +54,13 @@ res = Counter("res")
 for item, (am, a50, bm, b50) in VALS.items():
     lab = next(m[5] for m in M if m[0] == item)
     labA = "MMFTNet (Ours)" if item == "model1" else lab
-    ROWS += result(res(), "ap50_95", item, "dataset1", am, 12, T1, f"{labA} mAP {am}", setting="Dataset_A test", headline=(item == "model1"),
+    ROWS += result(res(), "map", item, "dataset1", am, 12, T1, f"{labA} mAP {am}", setting="Dataset_A test", headline=(item == "model1"),
                    note="mAP averaged over IoU thresholds" + ("; Table 1 labels the proposed model 'MMFTNet (Ours)'" if item == "model1" else ""))
     ROWS += result(res(), "ap50", item, "dataset1", a50, 12, T1, f"{labA} AP50 {a50}", setting="Dataset_A test")
-    ROWS += result(res(), "ap50_95", item, "dataset2", bm, 13, T2, f"{lab} mAP {bm}", setting="Dataset_B test",
+    ROWS += result(res(), "map", item, "dataset2", bm, 13, T2, f"{lab} mAP {bm}", setting="Dataset_B test",
                    note="the text (p.12) gives 45.31/93.22/31.79 for MTCDNet on Dataset_B, which are the Early Fusion values in Table 2" if item == "model1" else "mAP averaged over IoU thresholds")
     ROWS += result(res(), "ap50", item, "dataset2", b50, 13, T2, f"{lab} AP50 {b50}", setting="Dataset_B test")
-ROWS += result(res(), "ap50_95", "model9", "dataset1", "41.27", 16, T4, "× × 41.27 91.25", setting="Dataset_A test (ablation)")
+ROWS += result(res(), "map", "model9", "dataset1", "41.27", 16, T4, "× × 41.27 91.25", setting="Dataset_A test (ablation)")
 ROWS += result(res(), "ap50", "model9", "dataset1", "91.25", 16, T4, "× × 41.27 91.25", setting="Dataset_A test (ablation)")
 tr = Counter("tr")
 for src, tgt, ind, outd, lab in (("Dataset_A", "Dataset_B", "45.38", "43.50", "Dataset_A-to-B 43.50"), ("Dataset_B", "Dataset_A", "48.41", "44.17", "Dataset_B-to-A 44.17")):
@@ -69,7 +69,7 @@ for src, tgt, ind, outd, lab in (("Dataset_A", "Dataset_B", "45.38", "43.50", "D
              R("transfer_target", f"{tgt} (test data)", 16, T3, lab, item=i),
              R("shift_type", "site;species", 3, "Sec. 2.1", "broadleaf forest dataset (Dataset_A) ... mixed conifer forest dataset (Dataset_B)", item=i),
              R("transfer_model", "model1", 16, T3, lab, item=i),
-             R("transfer_metric", "ap50_95", 16, T3, "mAP (%)", item=i),
+             R("transfer_metric", "map", 16, T3, "mAP (%)", item=i, note="mAP as printed; the paper averages precision over several IoU thresholds without stating them"),
              R("value_in_domain", ind, 12 if src == "Dataset_A" else 13, T1 if src == "Dataset_A" else T2, f"MTCDNet mAP {ind}", item=i, unit="%"),
              R("value_out_of_domain", outd, 16, T3, lab, item=i, unit="%")]
 ROWS += avail(data="on_request", data_page=19, data_loc="Data Availability Statement",

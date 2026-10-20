@@ -23,7 +23,7 @@ ROWS = [
     R("sensors", "rgb", 1, "Abstract", "using low-cost street view images as an alternative data source"),
     R("annotation_type", "bounding_box;regression_target", 5, "Sec. 4.1", "images, object detection boxes, and corresponding tree morpho-", note="tree boxes and morphological parameters (DBH and height) of each tree"),
     R("dataset_name", "WHU-RSTree based benchmark of roadside tree images with boxes, DBH and height (Nanjing)", 5, "Sec. 4.1", DS_EV, item="dataset1"),
-    R("dataset_key", "whu_stree_nj", 5, "Sec. 4.1", DS_EV, item="dataset1", note="the paper calls the source dataset WHU-RSTree (Dong et al. 2023); taken as the WHU-STree Nanjing data"),
+    R("dataset_key", "whu_rstree", 5, "Sec. 4.1", DS_EV, item="dataset1", note="the WHU-RSTree dataset of Dong et al. (2023), as the paper names it"),
     R("dataset_role", "train_test", 5, "Sec. 4.2", SPLIT_EV, item="dataset1", note="split 8:1:1 into training, validation and test sets"),
     D("dataset_public", "partial", "built from the WHU-RSTree data; the paper gives no link or release statement for the 19,613-sample benchmark", item="dataset1"),
     R("n_images", "12447", 5, "Sec. 4.1", DS_EV, item="dataset1", unit="images", note="panoramic images of the source dataset"),

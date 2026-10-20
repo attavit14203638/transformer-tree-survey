@@ -141,6 +141,13 @@ Every number in a figure or in the text traces to one recorded value. Whenever a
 | `plot` | One value per plot or area | MAE, RMSE, R² |
 | `not_stated` | The paper does not make the scored unit clear | |
 
+A metric tag says no more than the paper states (rule added on 2026-10-19; `kit/metriccheck.py` checks it):
+- `ap50_95` only when the paper states the IoU range 0.5 to 0.95, in any notation, or that it uses the COCO evaluation. A
+  mean average precision whose thresholds the paper does not state is `map`, under the name the paper prints (mAP or AP).
+- `ap50` only when the paper states an IoU threshold of 0.5.
+- A metric the paper names differently but defines identically (detection rate as recall, user's accuracy as precision,
+  per-class average IoU as mIoU) takes the standard tag, and the note gives the printed name.
+
 ### 6.3 The primary setting (rule V3)
 
 Choose, in this order, and stop at the first rule that decides:

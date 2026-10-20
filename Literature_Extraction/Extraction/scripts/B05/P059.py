@@ -56,20 +56,20 @@ res = Counter("res")
 UN = "%"
 def add(item, ds, metric, val, ev, setting, prim=False, headline=False):
     global ROWS
-    ROWS += result(res(), metric, item, ds, val, 5, "Table 1 / Sec. 5.3", ev, unit=UN, setting=setting, note=("mAP over IoU 0.50 to 0.95" if metric == "ap50_95" else "mAP at IoU 0.50") + "; box metrics, printed as a percentage scale",
+    ROWS += result(res(), metric, item, ds, val, 5, "Table 1 / Sec. 5.3", ev, unit=UN, setting=setting, note=("mAP as printed; the IoU thresholds are not stated" if metric == "map" else "mAP at IoU 0.50, printed as mAP@IoU=50") + "; box metrics, printed as a percentage scale",
                    **T, primary=prim, headline=headline)
 RN = {}
 for item, ds, metric, val, ev, st, prim, hl in [
-    ("model2", "dataset1", "ap50_95", "18.04", NEON_EV, "NEON test set", True, False), ("model1", "dataset1", "ap50_95", "15.43", NEON_EV, "NEON test set", True, False),
+    ("model2", "dataset1", "map", "18.04", NEON_EV, "NEON test set", True, False), ("model1", "dataset1", "map", "15.43", NEON_EV, "NEON test set", True, False),
     ("model2", "dataset1", "ap50", "49.89", NEON50_EV, "NEON test set", True, False), ("model1", "dataset1", "ap50", "41.68", NEON50_EV, "NEON test set", True, False),
-    ("model2", "dataset2", "ap50_95", "6.54", VDA_EV, "VdA test annotations", False, False), ("model3", "dataset2", "ap50_95", "9.10", VDA_EV, "VdA test annotations", False, False),
-    ("model1", "dataset2", "ap50_95", "14.76", VDA_EV, "VdA test annotations", False, True),
+    ("model2", "dataset2", "map", "6.54", VDA_EV, "VdA test annotations", False, False), ("model3", "dataset2", "map", "9.10", VDA_EV, "VdA test annotations", False, False),
+    ("model1", "dataset2", "map", "14.76", VDA_EV, "VdA test annotations", False, True),
     ("model2", "dataset2", "ap50", "19.19", VDA50_EV, "VdA test annotations", False, False), ("model3", "dataset2", "ap50", "26.37", VDA50_EV, "VdA test annotations", False, False),
     ("model1", "dataset2", "ap50", "37.55", VDA50_EV, "VdA test annotations", False, False)]:
     add(item, ds, metric, val, ev, st, prim, hl)
 # Transfer pairs (V8): the original DeepForest is trained on NEON and applied to the Valle d'Aosta data unseen; TreePseCo and DF (FT) are trained on VdA, so they are no transfer pairs
 tr = Counter("tr")
-for metric, vin, vout, evin, evout in (("ap50_95", "18.04", "6.54", NEON_EV, VDA_EV), ("ap50", "49.89", "19.19", NEON50_EV, VDA50_EV)):
+for metric, vin, vout, evin, evout in (("map", "18.04", "6.54", NEON_EV, VDA_EV), ("ap50", "49.89", "19.19", NEON50_EV, VDA50_EV)):
     t = tr()
     ROWS += [R("transfer_source", "NEON airborne RGB crowns (22 US sites), the training data of the pretrained DeepForest", 5, "Sec. 5.2", "which has been trained on over 30 million algorithmically generated crowns from 22 National Ecological Observatory Network (NEON) sites", item=t),
              R("transfer_target", "Valle d'Aosta RGB aerial images, northwestern Italy", 3, "Sec. 3", VDA_DS_EV, item=t),

@@ -75,7 +75,7 @@ for ds, dn, pgAP, tAP, pgF, tF, AP, FF in (("dataset2", "SZU-South", 11, "Table 
         evA = f"{NAMES[item]} " + " ".join(v)
         st = f"{tAP.split(' (')[0]}: {dn} test set"
         head = prim and item == "model1"
-        ROWS += result(res(), "ap50_95", item, ds, v[0], pgAP, tAP, evA, unit="%", setting=st, note="AP (COCO style, not defined in the paper) of the instance masks with species classes", **TS, primary=prim, headline=head)
+        ROWS += result(res(), "map", item, ds, v[0], pgAP, tAP, evA, unit="%", setting=st, note="AP as printed, not defined in the paper, of the instance masks with species classes", **TS, primary=prim, headline=head)
         ROWS += result(res(), "ap50", item, ds, v[1], pgAP, tAP, evA, unit="%", setting=st, note="AP50 of the instance masks with species classes", **TS, primary=prim)
         f = FF[item]
         evF = f"Average {' '.join(f)}"

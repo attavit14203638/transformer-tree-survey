@@ -45,7 +45,7 @@ for i, (lab, strat, par, mAP, ap50, note) in enumerate(PEFT, start=1):
                   "proposed" if lab == "OURS" else "transformer_baseline", "vision_language_model", "Swin-T", "other", strat, 12, T1, f"{lab} {par}% {mAP} {ap50}",
                   strat_note=note, **GD)
     ROWS += [R("trainable_params", par, 12, T1, f"{lab} {par}%", item=item, unit="%", note="share of parameters updated (Params column)")]
-    ROWS += result(res(), "ap50_95", item, "dataset1", mAP, 12, T1, f"{lab} mAP {mAP}", setting="test split (20%)", note="mAP averaged over IoU thresholds")
+    ROWS += result(res(), "map", item, "dataset1", mAP, 12, T1, f"{lab} mAP {mAP}", setting="test split (20%)", note="mAP as printed; the paper averages precision over several IoU thresholds without stating them (Sec. 4.1.1, Eq. 10)")
     ROWS += result(res(), "ap50", item, "dataset1", ap50, 12, T1, f"{lab} AP50 {ap50}", setting="test split (20%)", headline=(lab == "OURS"))
 OTHER = [("model11", "YOLOv8", "cnn_baseline", "cnn", "YOLOv8", "18.0", None), ("model12", "YOLOv10", "cnn_baseline", "cnn", "YOLOv10", "22.6", None),
          ("model13", "YOLOv11", "cnn_baseline", "cnn", "YOLOv11", "21.2", None),

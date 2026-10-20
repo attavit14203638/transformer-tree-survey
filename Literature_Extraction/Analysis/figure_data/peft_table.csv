@@ -1,11 +1,11 @@
-method,model_name,training_strategy,trainable_params_pct,ap50,ap50_95,page,location
-FULL,Grounding-DINO (Swin-T) with FULL fine-tuning,full_fine_tuning,100.0,60.7,33.5,12,Table 1
-EVP2,Grounding-DINO (Swin-T) with EVP2 fine-tuning,peft_prompt,19.83,59.9,32.2,12,Table 1
-Adapter,Grounding-DINO (Swin-T) with Adapter fine-tuning,peft_adapter,4.15,60.4,31.7,12,Table 1
-LORA,Grounding-DINO (Swin-T) with LORA fine-tuning,peft_lora,4.11,59.9,31.5,12,Table 1
-ASCS (proposed PEFT),Grounding-DINO (Swin-T) with ASCS (proposed PEFT),peft_other,0.28,60.6,32.4,12,Table 1
-BITFIT,Grounding-DINO (Swin-T) with BITFIT fine-tuning,peft_other,0.28,59.3,31.3,12,Table 1
-VPT,Grounding-DINO (Swin-T) with VPT fine-tuning,peft_prompt,0.26,58.7,31.8,12,Table 1
-NORM-TUNING,Grounding-DINO (Swin-T) with NORM-TUNING fine-tuning,peft_other,0.09,60.5,31.8,12,Table 1
-SCT,Grounding-DINO (Swin-T) with SCT fine-tuning,peft_other,0.01,57.7,30.9,12,Table 1
-FIXED,Grounding-DINO (Swin-T) with FIXED fine-tuning,head_only,0.0,60.0,31.2,12,Table 1
+method,model_name,training_strategy,trainable_params_pct,ap50,strict,strict_metric,page,location
+FULL,Grounding-DINO (Swin-T) with FULL fine-tuning,full_fine_tuning,100.0,60.7,33.5,mAP,12,Table 1
+EVP2,Grounding-DINO (Swin-T) with EVP2 fine-tuning,peft_prompt,19.83,59.9,32.2,mAP,12,Table 1
+Adapter,Grounding-DINO (Swin-T) with Adapter fine-tuning,peft_adapter,4.15,60.4,31.7,mAP,12,Table 1
+LORA,Grounding-DINO (Swin-T) with LORA fine-tuning,peft_lora,4.11,59.9,31.5,mAP,12,Table 1
+ASCS (proposed PEFT),Grounding-DINO (Swin-T) with ASCS (proposed PEFT),peft_other,0.28,60.6,32.4,mAP,12,Table 1
+BITFIT,Grounding-DINO (Swin-T) with BITFIT fine-tuning,peft_other,0.28,59.3,31.3,mAP,12,Table 1
+VPT,Grounding-DINO (Swin-T) with VPT fine-tuning,peft_prompt,0.26,58.7,31.8,mAP,12,Table 1
+NORM-TUNING,Grounding-DINO (Swin-T) with NORM-TUNING fine-tuning,peft_other,0.09,60.5,31.8,mAP,12,Table 1
+SCT,Grounding-DINO (Swin-T) with SCT fine-tuning,peft_other,0.01,57.7,30.9,mAP,12,Table 1
+FIXED,Grounding-DINO (Swin-T) with FIXED fine-tuning,head_only,0.0,60.0,31.2,mAP,12,Table 1

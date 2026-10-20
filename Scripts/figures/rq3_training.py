@@ -3,8 +3,9 @@ adaptation strategies of the same model on the same data reports (b).
 
 (a) Studies are grouped by architecture family and ordered by training strategy within each family; 'not reported' means the
 study does not state how its principal transformer was trained. (b) One row per adaptation strategy, ordered by the share of
-parameters trained (printed on the right): the strategy's value as a share of full fine-tuning, for AP50 (filled) and AP50:95
-(open). same_setting() also feeds the text macros and Table 6 (manuscript_numbers.py).
+parameters trained (printed on the right): the strategy's value as a share of full fine-tuning, for AP50 (filled) and the
+study's stricter metric (open): AP50:95, or mAP as printed when the study does not state its IoU thresholds. same_setting()
+also feeds the text macros and the PEFT table (manuscript_numbers.py).
 """
 import matplotlib.pyplot as plt
 import numpy as np
@@ -15,6 +16,7 @@ from matplotlib.patches import Patch, Rectangle
 from common import (COLOR, FAMILIES, FAMILY, GREY, GRID, INK, LIGHT, labels, legend_row, load, panel_titles, save, set_style, studies,
                     study_of, write)
 
+STRICT_LABEL = {"ap50_95": "AP50:95", "map": "mAP"}
 STRATEGY = {"from_scratch": "Trained from scratch", "full_fine_tuning": "Full fine-tuning", "peft_lora": "Parameter-efficient tuning",
             "peft_adapter": "Parameter-efficient tuning", "peft_prompt": "Parameter-efficient tuning", "peft_other": "Parameter-efficient tuning",
             "head_only": "Head only (frozen backbone)", "zero_shot": "Zero-shot or few-shot", "few_shot": "Zero-shot or few-shot",
@@ -56,8 +58,10 @@ def same_setting():
     assert pairs.study.nunique() == 1, "more than one same-setting study: extend Table 6, the figure and the macros"
     pid, ds = pairs.paper_id.iloc[0], pairs.dataset_key.iloc[0]
     g = m[(m.paper_id == pid) & (m.training_strategy.astype(str).str.startswith("peft") | m.training_strategy.isin(["full_fine_tuning", "head_only"]))]
-    rr = r[(r.paper_id == pid) & (r.dataset_key == ds) & r.metric.isin(["ap50", "ap50_95"]) & r.model.isin(g["item"])]
+    rr = r[(r.paper_id == pid) & (r.dataset_key == ds) & r.metric.isin(["ap50", "ap50_95", "map"]) & r.model.isin(g["item"])]
     t = rr.pivot_table(index="model", columns="metric", values="value_std", aggfunc="first").reset_index()
+    strict = "ap50_95" if "ap50_95" in t.columns else "map"  # the stricter metric, under the name the study gives it
+    t["strict"], t["strict_metric"] = t[strict], STRICT_LABEL[strict]
     t = t.merge(g.rename(columns={"item": "model"})[["model", "model_name", "training_strategy", "trainable_params_pct"]], on="model")
     t["method"] = t.model_name.str.split(" with ", n=1).str[-1].str.replace(" fine-tuning", "", regex=False)
     first = rr.drop_duplicates("model").set_index("model")
@@ -88,15 +92,15 @@ def units(ax, st):
 
 
 def tradeoff(ax, t):
-    """One row per adaptation strategy, ordered by the share of parameters trained; each row joins the strategy's AP50:95
-    (open) and AP50 (filled) as a share of full fine-tuning, and prints the share trained on the right."""
+    """One row per adaptation strategy, ordered by the share of parameters trained; each row joins the strategy's stricter
+    metric (open) and AP50 (filled) as a share of full fine-tuning, and prints the share trained on the right."""
     full = t[t.training_strategy == "full_fine_tuning"].iloc[0]
     rest = t[t.training_strategy != "full_fine_tuning"].copy()
-    rest["r50"], rest["r95"] = 100 * rest.ap50 / full.ap50, 100 * rest.ap50_95 / full.ap50_95
+    rest["r50"], rest["r95"] = 100 * rest.ap50 / full.ap50, 100 * rest.strict / full.strict
     rest = rest.sort_values(["trainable_params_pct", "ap50"], ascending=[False, False]).reset_index(drop=True)
     lo = np.floor(min(rest.r50.min(), rest.r95.min()) - 1)
     ax.axvline(100, color=SHADE["Full fine-tuning"], ls="--", lw=1.2, zorder=1)
-    ax.text(99.85, 0.75, f"full fine-tuning = 100%\n(AP50 {full.ap50:.1f}, AP50:95 {full.ap50_95:.1f})", ha="right", va="bottom", fontsize=8.5,
+    ax.text(99.85, 0.75, f"full fine-tuning = 100%\n(AP50 {full.ap50:.1f}, {full.strict_metric} {full.strict:.1f})", ha="right", va="bottom", fontsize=8.5,
             color=SHADE["Full fine-tuning"])
     names = []
     for i, p in enumerate(rest.itertuples()):
@@ -140,7 +144,8 @@ def main():
     bottom = panel_titles(fig, [(ax1, "(a) Training of each study's principal transformer\n(one square per study)"),
                                 (ax2, "(b) Adaptation strategies in the one study that\ncompares them on the same model and data")])
     marks = [Line2D([], [], ls="", marker="o", color="#5E86B5", markeredgecolor=INK, label="AP50"),
-             Line2D([], [], ls="", marker="o", markerfacecolor="white", markeredgecolor="#5E86B5", markeredgewidth=1.3, label="AP50:95")]
+             Line2D([], [], ls="", marker="o", markerfacecolor="white", markeredgecolor="#5E86B5", markeredgewidth=1.3,
+                    label=t.strict_metric.iloc[0])]
     legend_row(fig, [([Patch(color=SHADE[s_], label=s_) for s_ in STRATEGIES], "Training or adaptation (colour)", 3),
                      (marks, "Metric in panel (b)", 1)], y=bottom - 0.03)
     save(fig, "rq3_training")

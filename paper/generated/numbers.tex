@@ -350,7 +350,7 @@
 \newcommand{\NDataPartialAvailable}{10}  % studies with data_available = partial
 \newcommand{\NDataPartialAvailableWord}{ten}  % studies with data_available = partial (in words)
 \newcommand{\PctDataPartialAvailable}{7.6}  % share of studies with data_available = partial (10 of 132)
-\newcommand{\NSharedPublicDatasets}{13}  % public datasets used by two or more studies
+\newcommand{\NSharedPublicDatasets}{12}  % public datasets used by two or more studies
 \newcommand{\NStudiesOwnDataOnly}{86}  % studies that use only data they collected or labelled themselves
 \newcommand{\PctStudiesOwnDataOnly}{65.2}  % share of studies that use only data they collected or labelled themselves (86 of 132)
 \newcommand{\NStudiesPublicData}{44}  % studies that use at least one public dataset
@@ -358,8 +358,8 @@
 \newcommand{\NStudiesUnidentifiedData}{2}  % studies whose data source is not identified
 \newcommand{\NStudiesUnidentifiedDataWord}{two}  % studies whose data source is not identified (in words)
 \newcommand{\PctStudiesUnidentifiedData}{1.5}  % share of studies whose data source is not identified (2 of 132)
-\newcommand{\NStudiesSharedBenchmark}{26}  % studies that use a public dataset also used by another study
-\newcommand{\PctStudiesSharedBenchmark}{19.7}  % share of studies that use a public dataset also used by another study (26 of 132)
+\newcommand{\NStudiesSharedBenchmark}{24}  % studies that use a public dataset also used by another study
+\newcommand{\PctStudiesSharedBenchmark}{18.2}  % share of studies that use a public dataset also used by another study (24 of 132)
 \newcommand{\NComparisons}{77}  % transformer versus non-transformer comparisons (preferred metric, percent)
 \newcommand{\NComparisonStudies}{67}  % studies with at least one comparison
 \newcommand{\PctComparisonStudies}{50.8}  % share of studies with a comparison (67 of 132)
@@ -629,8 +629,10 @@
 \newcommand{\PEFTBestName}{ASCS}  % name of that method as printed
 \newcommand{\PEFTBestTrainable}{0.28}  % its share of trainable parameters (percent)
 \newcommand{\PctPEFTBestOfFull}{99.8}  % its AP50 as a share of the full fine-tuning AP50 (60.6 of 60.7)
-\newcommand{\PEFTFullAPStrict}{33.5}  % AP50:95 of full fine-tuning in the same-setting study
-\newcommand{\PEFTBestAPStrict}{32.4}  % AP50:95 of the method with the best AP50 (ASCS (proposed PEFT))
+\newcommand{\PEFTStrictMetric}{mAP}  % the study's stricter metric, as it names it
+\newcommand{\PEFTStrictMetricDef}{mean average precision, which the study averages over several IoU thresholds without stating them}  % its definition, as far as the study states it
+\newcommand{\PEFTFullAPStrict}{33.5}  % stricter metric of full fine-tuning in the same-setting study
+\newcommand{\PEFTBestAPStrict}{32.4}  % stricter metric of the method with the best AP50 (ASCS (proposed PEFT))
 \newcommand{\PEFTGapAPFifty}{0.1}  % AP50 of full fine-tuning minus the best parameter-efficient AP50 (points)
 \newcommand{\NPEFTVariants}{8}  % parameter-efficient methods compared in that study
 \newcommand{\NPEFTVariantsWord}{eight}  % parameter-efficient methods compared in that study (in words)
@@ -671,6 +673,7 @@
 \newcommand{\ValPalmResampleLossLow}{5.41}  % smallest loss of mean IoU after resampling (points)
 \newcommand{\ValPalmResampleLossHigh}{5.56}  % largest loss of mean IoU after resampling (points)
 \newcommand{\ValRubberLoss}{2.63}  % loss of mean IoU on new point clouds of the same plantation
+\newcommand{\ValSwapMetric}{mAP}  % metric of those values, under the name the study gives it
 \newcommand{\ValSwapLossLow}{1.88}  % AP50:95 lost when training and test datasets are swapped, smaller direction
 \newcommand{\ValSwapLossHigh}{4.24}  % AP50:95 lost when training and test datasets are swapped, larger direction
 \newcommand{\ValPEFTTestSplit}{20}  % share of the images used for testing (percent)

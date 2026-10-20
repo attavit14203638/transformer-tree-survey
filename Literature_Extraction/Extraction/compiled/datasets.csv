@@ -163,7 +163,7 @@ P095,dataset4,own_p095_field_test,"own new UAV LiDAR rubber tree point clouds fo
 P096,dataset1,als_four_plots_p096,"ALS test plots U1, U2 (Blue Ridge, USA) and G1, G2 (Bretten, Germany): 687 reference trees",train_test,yes,,687.0
 P098,dataset1,own_p098_hungtse_poplar,"own TLS point clouds of 150 poplar trees, Hung-tse Lake wetland (incomplete versions generated online)",train_test,no,,150.0
 P099,dataset1,own_p099_wellsites_alberta,"own UAV LiDAR and multispectral data of five reclaimed wellsites, Alberta (three seasons)",train_test,yes,,342.0
-P100,dataset1,whu_stree_nj,"WHU-RSTree based benchmark of roadside tree images with boxes, DBH and height (Nanjing)",train_test,partial,12447.0,19613.0
+P100,dataset1,whu_rstree,"WHU-RSTree based benchmark of roadside tree images with boxes, DBH and height (Nanjing)",train_test,partial,12447.0,19613.0
 P102,dataset1,own_p102_china_four_species,"own self-built dataset of four species (Schima superba, lychee, larch, birch) from TLS, BLS and HLS, China",train_test,no,,1040.0
 P102,dataset2,stpctls,"STPCTLS single tree point clouds from terrestrial laser scanning (Seidel), seven species",train_test,yes,,691.0
 P103,dataset1,own_p103_ginkgo_green,"own UAV RGB sub-images of Ginkgo crowns, green-leaf period (2000 x 2000 pixels, Tianmu Mountain)",train_test,on_request,531.0,137.0
