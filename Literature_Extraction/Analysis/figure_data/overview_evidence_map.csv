@@ -67,12 +67,12 @@ Detection and counting,Urban,2,0,1,1,0,0,b
 Detection and counting,Orchard,7,0,3,3,1,0,b
 Detection and counting,Other,3,0,2,0,0,1,b
 Detection and counting,Not reported,1,0,0,0,1,0,b
-Crown segmentation,Natural forest,11,0,2,4,5,0,b
+Crown segmentation,Natural forest,10,0,2,3,5,0,b
 Crown segmentation,Mixed,9,0,7,0,2,0,b
 Crown segmentation,Plantation,6,0,1,1,4,0,b
 Crown segmentation,Urban,6,0,2,2,2,0,b
 Crown segmentation,Orchard,5,0,1,2,2,0,b
-Crown segmentation,Not reported,1,0,0,1,0,0,b
+Crown segmentation,Not reported,2,0,0,2,0,0,b
 3D structure and attributes,Natural forest,10,3,3,3,1,0,b
 3D structure and attributes,Mixed,6,1,3,2,0,0,b
 3D structure and attributes,Plantation,8,1,1,4,2,0,b
@@ -85,8 +85,9 @@ Species classification,Mixed,9,2,1,4,2,0,b
 Species classification,Plantation,4,2,1,0,1,0,b
 Species classification,Urban,7,2,0,3,1,1,b
 Species classification,Not reported,1,0,0,1,0,0,b
-Health and mortality,Natural forest,24,0,9,14,1,0,b
+Health and mortality,Natural forest,22,0,9,13,0,0,b
 Health and mortality,Mixed,1,0,1,0,0,0,b
 Health and mortality,Plantation,4,0,0,4,0,0,b
 Health and mortality,Urban,1,0,0,1,0,0,b
 Health and mortality,Orchard,2,0,2,0,0,0,b
+Health and mortality,Not reported,2,0,0,1,1,0,b

@@ -80,7 +80,7 @@ Values printed inside images (tables embedded as pictures, data labels on charts
 |---|---|
 | `pure_vit` | Plain transformer encoder on patch tokens without a convolutional backbone (ViT, DeiT, DETR-style detectors with transformer backbones) |
 | `hierarchical_vit` | Multi-scale transformer backbone (Swin, PVT, SegFormer MiT, Twins) |
-| `cnn_transformer_hybrid` | Convolutional or other non-transformer backbone (point MLP, state-space) with transformer blocks or self-attention layers added (including DETR and RT-DETR with CNN backbones, YOLO with transformer modules) |
+| `cnn_transformer_hybrid` | Convolutional or other non-transformer backbone (point MLP, state-space) with transformer blocks or self-attention layers added (including DETR and RT-DETR with CNN backbones, YOLO with transformer modules, and ensembles that fuse the outputs of transformer and convolutional models) |
 | `foundation_model` | Large pre-trained vision model used for adaptation or zero-shot use (SAM, DINOv2, Prithvi, geospatial foundation models) |
 | `vision_language_model` | Model that takes language as input or output (CLIP, Grounding DINO, LLM-based systems) |
 | `cnn` | Convolutional model without transformer components, including graph and sparse 3D convolutions (EdgeConv, KPConv, MinkowskiNet) |

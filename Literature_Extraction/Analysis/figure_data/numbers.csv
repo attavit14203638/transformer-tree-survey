@@ -221,8 +221,8 @@ PctSensorDSMSurfaceModel,2.3,2.3,share of studies with sensors = DSM (surface mo
 NSensorNotReported,1,1,studies with sensors = Not reported,figure_data/overview.csv
 NSensorNotReportedWord,1,one,studies with sensors = Not reported (in words),figure_data/overview.csv
 PctSensorNotReported,0.8,0.8,share of studies with sensors = Not reported (1 of 132),figure_data/overview.csv
-NSettingNaturalForest,48,48,studies with tree_setting = Natural forest,figure_data/overview.csv
-PctSettingNaturalForest,36.4,36.4,share of studies with tree_setting = Natural forest (48 of 132),figure_data/overview.csv
+NSettingNaturalForest,46,46,studies with tree_setting = Natural forest,figure_data/overview.csv
+PctSettingNaturalForest,34.8,34.8,share of studies with tree_setting = Natural forest (46 of 132),figure_data/overview.csv
 NSettingMixed,28,28,studies with tree_setting = Mixed,figure_data/overview.csv
 PctSettingMixed,21.2,21.2,share of studies with tree_setting = Mixed (28 of 132),figure_data/overview.csv
 NSettingPlantation,22,22,studies with tree_setting = Plantation,figure_data/overview.csv
@@ -240,9 +240,9 @@ PctSettingAgroforestry,0.8,0.8,share of studies with tree_setting = Agroforestry
 NSettingMangrove,1,1,studies with tree_setting = Mangrove,figure_data/overview.csv
 NSettingMangroveWord,1,one,studies with tree_setting = Mangrove (in words),figure_data/overview.csv
 PctSettingMangrove,0.8,0.8,share of studies with tree_setting = Mangrove (1 of 132),figure_data/overview.csv
-NSettingNotReported,3,3,studies with tree_setting = Not reported,figure_data/overview.csv
-NSettingNotReportedWord,3,three,studies with tree_setting = Not reported (in words),figure_data/overview.csv
-PctSettingNotReported,2.3,2.3,share of studies with tree_setting = Not reported (3 of 132),figure_data/overview.csv
+NSettingNotReported,5,5,studies with tree_setting = Not reported,figure_data/overview.csv
+NSettingNotReportedWord,5,five,studies with tree_setting = Not reported (in words),figure_data/overview.csv
+PctSettingNotReported,3.8,3.8,share of studies with tree_setting = Not reported (5 of 132),figure_data/overview.csv
 NAcqUAVRGB,54,54,studies with platform UAV and sensor RGB,figure_data/overview_evidence_map.csv (overview.evidence)
 PctAcqUAVRGB,40.9,40.9,share of studies with platform UAV and sensor RGB (54 of 132),figure_data/overview_evidence_map.csv (overview.evidence)
 NAcqUAVSpectral,14,14,studies with platform UAV and sensor Spectral,figure_data/overview_evidence_map.csv (overview.evidence)
@@ -297,7 +297,7 @@ PctAcqSyntheticRGB,0.8,0.8,share of studies with platform Synthetic and sensor R
 NAcqSyntheticLiDAR,1,1,studies with platform Synthetic and sensor LiDAR,figure_data/overview_evidence_map.csv (overview.evidence)
 NAcqSyntheticLiDARWord,1,one,studies with platform Synthetic and sensor LiDAR (in words),figure_data/overview_evidence_map.csv (overview.evidence)
 PctAcqSyntheticLiDAR,0.8,0.8,share of studies with platform Synthetic and sensor LiDAR (1 of 132),figure_data/overview_evidence_map.csv (overview.evidence)
-NHealthNaturalForest,24,24,health and mortality studies set in natural forests,figure_data/overview_evidence_map.csv (overview.evidence)
+NHealthNaturalForest,22,22,health and mortality studies set in natural forests,figure_data/overview_evidence_map.csv (overview.evidence)
 NStudiesWithCountry,124,124,studies that name their study area by country,figure_data/geography.csv (geography.table)
 PctStudiesWithCountry,93.9,93.9,share of studies that name a country (124 of 132),figure_data/geography.csv (geography.table)
 NStudiesNoCountry,8,8,"studies with a global, synthetic or unstated study area",figure_data/geography.csv (geography.table)
@@ -317,8 +317,8 @@ PctCountryGermany,6.8,6.8,share of studies with a study area in Germany (9 of 13
 NCountryUnitedArabEmirates,8,8,studies with a study area in United Arab Emirates,figure_data/geography.csv (geography.table)
 NCountryUnitedArabEmiratesWord,8,eight,studies with a study area in United Arab Emirates (in words),figure_data/geography.csv (geography.table)
 PctCountryUnitedArabEmirates,6.1,6.1,share of studies with a study area in United Arab Emirates (8 of 132),figure_data/geography.csv (geography.table)
-NBiomeTemperate,41,41,studies with biome = temperate,figure_data/geography.csv (geography.table)
-PctBiomeTemperate,31.1,31.1,share of studies with biome = temperate (41 of 132),figure_data/geography.csv (geography.table)
+NBiomeTemperate,40,40,studies with biome = temperate,figure_data/geography.csv (geography.table)
+PctBiomeTemperate,30.3,30.3,share of studies with biome = temperate (40 of 132),figure_data/geography.csv (geography.table)
 NBiomeSubtropical,28,28,studies with biome = subtropical,figure_data/geography.csv (geography.table)
 PctBiomeSubtropical,21.2,21.2,share of studies with biome = subtropical (28 of 132),figure_data/geography.csv (geography.table)
 NBiomeMultiple,27,27,studies with biome = multiple,figure_data/geography.csv (geography.table)
@@ -682,6 +682,11 @@ ValPEFTTestSplit,20,20,share of the images used for testing (percent),"zhang_par
 ValPEFTTrainSplit,80,80,share of the images used for training (percent),"zhang_parameter-efficient_2025, p. 11, Sec. 4.1 (results: setting)"
 ValDSMPrompterWmAP,64.84,64.84,weighted mean average precision printed in both reports (percent),"teng_assessing_2025, p. 4, Table 1; teng_bringing_2025, p. 6, Table 1"
 ValSachdevaImages,"[1.0, 10.0, 100.0]","1, 10 and 100",training images compared (list),"sachdeva_distribution_2024, p. 4, Fig. 3"
+ValSachdevaMost,100,100,largest amount of training images compared,"sachdeva_distribution_2024, p. 4, Fig. 3"
+ValSachdevaMiddle,10,10,middle amount of training images compared,"sachdeva_distribution_2024, p. 4, Fig. 3"
+ValSachdevaMiddleWord,10,ten,middle amount of training images compared (in words),"sachdeva_distribution_2024, p. 4, Fig. 3"
+ValSachdevaFewest,1,1,smallest amount of training images compared,"sachdeva_distribution_2024, p. 4, Fig. 3"
+ValSachdevaFewestWord,1,one,smallest amount of training images compared (in words),"sachdeva_distribution_2024, p. 4, Fig. 3"
 ValAdaTreeFormerImages,"[1.0, 5.0, 10.0]","1, 5 or 10",labelled target-domain images compared (list),"amirkolaee_adatreeformer_2024, p. 14, Table 8"
 ValTreeFormerLow,10.0,10,smallest label amount (percent_of_training_set),"amirkolaee_treeformer_2023, p. 10, Table II (image)"
 ValTreeFormerHigh,30.0,30,largest label amount (percent_of_training_set),"amirkolaee_treeformer_2023, p. 10, Table II (image)"

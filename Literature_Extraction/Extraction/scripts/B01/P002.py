@@ -39,14 +39,14 @@ for item, label, strat, note in (("model5", "Full Finetune", "full_fine_tuning",
 ROWS += model("model8", "Grounding DINO (conventional and few-shot runs)", "transformer_baseline", "vision_language_model", "not stated", "other", None,
               5, T1, "Grounding DINO Conventional Eval", strat_note="fine-tuning setting not stated for these runs", **GD_PRE)
 res = Counter("res")
-ROWS += result(res(), "ap50", "model1", "dataset1", "0.778", 5, T1, "Faster-RCNN Conventional Eval 0.778", unit="fraction",
-               setting="conventional evaluation (trained on all zones); ID-zone test", note="Table 1 says AP; Figure 3 labels the same metric AP50")
-ROWS += result(res(), "ap50", "model1", "dataset1", "0.631", 5, T1, "Faster-RCNN Conventional Eval ... 0.631", unit="fraction",
-               setting="conventional evaluation (trained on all zones); OOD-zone test")
-ROWS += result(res(), "ap50", "model8", "dataset1", "0.821", 5, T1, "Grounding DINO Conventional Eval 0.821", unit="fraction",
-               setting="conventional evaluation (trained on all zones); ID-zone test")
-ROWS += result(res(), "ap50", "model8", "dataset1", "0.667", 5, T1, "Grounding DINO Conventional Eval ... 0.667", unit="fraction",
-               setting="conventional evaluation (trained on all zones); OOD-zone test")
+ROWS += result(res(), "map", "model1", "dataset1", "0.778", 5, T1, "Faster-RCNN Conventional Eval 0.778", unit="fraction",
+               setting="conventional evaluation (trained on all zones); ID-zone test", note="AP as printed in Table 1; its IoU threshold is not stated (Figure 3 labels the few-shot values AP50)")
+ROWS += result(res(), "map", "model1", "dataset1", "0.631", 5, T1, "Faster-RCNN Conventional Eval ... 0.631", unit="fraction",
+               setting="conventional evaluation (trained on all zones); OOD-zone test", note="AP as printed in Table 1")
+ROWS += result(res(), "map", "model8", "dataset1", "0.821", 5, T1, "Grounding DINO Conventional Eval 0.821", unit="fraction",
+               setting="conventional evaluation (trained on all zones); ID-zone test", note="AP as printed in Table 1")
+ROWS += result(res(), "map", "model8", "dataset1", "0.667", 5, T1, "Grounding DINO Conventional Eval ... 0.667", unit="fraction",
+               setting="conventional evaluation (trained on all zones); OOD-zone test", note="AP as printed in Table 1")
 ROWS += result(res(), "r2", "model1", "dataset1", "0.922", 4, "Fig. 2 (image)", "R^2 = 0.922, y = 0.7999 x + 0.2001", unit="fraction",
                setting="conventional evaluation; ID test; per-image tree count", note="text gives 0.92 (Sec. 4)")
 tr = Counter("tr")
@@ -60,7 +60,7 @@ for m, label, idv, oodv in (("model1", "Faster-RCNN", "0.778", "0.441"), ("model
              R("transfer_target", "test splits of 4 out-of-distribution agro-climatic zones", 3, "Sec. 3", "Test on test splits for ID Zones vs. OOD Zones", item=i),
              R("shift_type", "region", 3, "Sec. 3", "we split the zones into four ID and four OOD zones", item=i),
              R("transfer_model", m, 5, T1, ev, item=i),
-             R("transfer_metric", "ap50", 5, T1, ev, item=i, note="AP; Figure 3 labels it AP50"),
+             R("transfer_metric", "map", 5, T1, ev, item=i, note="AP as printed in Table 1; its IoU threshold is not stated"),
              R("value_in_domain", idv, 5, T1, ev, item=i, unit="fraction"),
              R("value_out_of_domain", oodv, 5, T1, ev, item=i, unit="fraction")]
 de = Counter("de")

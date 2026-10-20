@@ -32,7 +32,7 @@ sensors,Multispectral,28,21.2
 sensors,Hyperspectral,4,3.0
 sensors,DSM (surface model),3,2.3
 sensors,Not reported,1,0.8
-tree_setting,Natural forest,48,36.4
+tree_setting,Natural forest,46,34.8
 tree_setting,Mixed,28,21.2
 tree_setting,Plantation,22,16.7
 tree_setting,Urban,16,12.1
@@ -40,4 +40,4 @@ tree_setting,Orchard,12,9.1
 tree_setting,Synthetic,2,1.5
 tree_setting,Agroforestry,1,0.8
 tree_setting,Mangrove,1,0.8
-tree_setting,Not reported,3,2.3
+tree_setting,Not reported,5,3.8

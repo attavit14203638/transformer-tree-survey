@@ -2,35 +2,34 @@
 % ViT; FM, foundation model; VLM, vision-language model; MS, multispectral; HS, hyperspectral; MLS and TLS, mobile and
 % terrestrial laser scanning; FT, full fine-tuning; PEFT, parameter-efficient tuning; ZS and FS, zero- and few-shot; Head,
 % frozen backbone; NR, not reported. Main result: bounded metrics in percent.
-% Metrics in the main table: AP, AP50, AP50:95, EF, F1, IoU, MAE, OA, RMSE, mAP, mIoU, recall; DBH, diameter at breast height.
+% Metrics in the main table: AP, AP50, AP50:95, F1, IoU, MAE, OA, RMSE, mAP, mIoU, recall; DBH, diameter at breast height.
 \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}p{2.9cm}>{\raggedright\arraybackslash}p{2.9cm}>{\raggedright\arraybackslash}p{1.5cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{1.15cm}>{\raggedright\arraybackslash}p{2.0cm}c@{}}
 \toprule
 Study & Study area (country; biome; setting) & Data (platform; sensor; annotation) & Task & Family: principal model & Training & Main result & Code \\
 \midrule
-\citet{liu_tree_2022} & China; multiple; mixed & MLS; LiDAR; image label & Species & Pure ViT: PCT & NR & OA 99.6 &  \\
-\citet{lu_pose-enhanced_2024} & China; tropical; mixed & Multiple; LiDAR; point labels & 3D/attr. & Pure ViT: Enhanced PT & NR & mIoU 91.51 &  \\
+\citet{liu_tree_2022} & China; multiple; mixed & MLS; LiDAR; image label & Species & Pure ViT: PCT & NR & OA 99.6\textsuperscript{\dag} &  \\
 \citet{ton-that_expanding_2024} & UK, USA; temperate; mixed & Airborne; RGB; dot & Det. & Pure ViT: TreeVision & FT & MAE 16.8 trees &  \\
-\citet{yang_improved_2024} & USA; subtropical; urban & Airborne; MS, LiDAR; point labels & 3D/attr. & Pure ViT: Point Transformer & NR & F1 92.8 &  \\
+\citet{yang_improved_2024} & USA; subtropical; urban & Airborne; MS, LiDAR; point labels & 3D/attr. & Pure ViT: Point Transformer & NR & F1 92.8\textsuperscript{\dag} &  \\
 \citet{hai_deep_2025} & China; temperate; orchard & Ground; HS; mask & 3D/attr. & Pure ViT: Trim-SegTransformer & NR & F1 92.0 &  \\
 \citet{xu_sk-treepcn_2025} & China; subtropical; plantation & TLS; LiDAR; attribute & 3D/attr. & Pure ViT: SK-TreePCN & Scratch & RMSE 0.588 cm (DBH) &  \\
-\citet{alshammari_efficient_2022} & Saudi Arabia; mediterranean; orchard & Multiple; RGB, MS; mask, dot & Det., Crown seg. & Hier. ViT: SwinTU-net & NR & EF 0.95 &  \\
 \citet{gibril_large-scale_2024} & UAE; arid; mixed & UAV; RGB; mask & Det., Crown seg., Health & Hier. ViT: Mask R-CNN with MViTv2-tiny backbone & FT & AP50 92.5 &  \\
 \citet{lu_m2fnet_2024} & Canada; NR; synthetic & Synthetic; RGB; mask & Det., 3D/attr. & Hier. ViT: M2fNet (RGB and depth) & NR & AP50 91.0 &  \\
 \citet{movchan_uav-based_2025} & Canada; boreal; mixed & UAV; RGB, MS, LiDAR; point labels, dot & Det., 3D/attr., Species & Hier. ViT: TreeLoc & NR & F1 83.0 & \checkmark \\
 \citet{shendryk_detecting_2025} & UAE; arid; mangrove & UAV; RGB; dot & Det. & Hier. ViT: MaxViT-UNet density estimation & FT & F1 70.0 &  \\
 \citet{he_parallel_2024} & China; subtropical; orchard & UAV; RGB, DSM; mask & Crown seg. & Hybrid: Parallel fusion network & FT & mIoU 93.5 &  \\
-\citet{zhu_cedanet_2024} & China; subtropical; orchard & UAV; RGB; mask & Det., Crown seg. & Hybrid: CEDAnet & NR & AP50:95 49.8 & \checkmark \\
+\citet{liu_clusterformer_2024} & China; subtropical; NR & UAV; RGB, MS; mask & Crown seg., Health & Hybrid: Clusterformer & NR & IoU 78.35 & \checkmark \\
+\citet{durgut_multi-model_2025} & Turkey; mediterranean; mixed & Satellite; RGB; box & Det. & Hybrid: WBF fusion of M1 and M3 & NR & AP50:95 52.1\textsuperscript{\dag} &  \\
 \citet{li_fuzzy_2025} & China; subtropical; urban & UAV; HS; mask & Crown seg., Species & Hybrid: FBAN & NR & AP 54.32 &  \\
-\citet{rahman_dual-task_2025} & Finland; boreal; natural & Airborne; RGB, MS; mask & Crown seg., Health & Hybrid: MaskFormer & NR & IoU 37.1 & \checkmark \\
+\citet{ma_efficient_2025} & China; temperate; urban & MLS; LiDAR; image label & Species & Hybrid: PoinTramba & NR & F1 98.57\textsuperscript{\dag} &  \\
 \citet{xiang_forestformer3d_2025} & NR; multiple; NR & Multiple; LiDAR; point labels & 3D/attr. & Hybrid: ForestFormer3D & NR & F1 82.8 & \checkmark \\
-\citet{ferreira_improving_2024} & Brazil; tropical; urban & Airborne; MS, LiDAR; mask & Crown seg., Species & FM: SAM ViT-H & ZS & F1 84.1 & \checkmark \\
-\citet{zhi_comparison_2024} & China; subtropical; natural & UAV; RGB; mask, dot & Health & FM: SAM & Head & F1 95.9 &  \\
+\citet{ferreira_improving_2024} & Brazil; tropical; urban & Airborne; MS, LiDAR; mask & Crown seg., Species & FM: SAM ViT-H & ZS & F1 84.1\textsuperscript{\dag} & \checkmark \\
+\citet{zhi_comparison_2024} & China; subtropical; NR & UAV; RGB; mask, dot & Health & FM: SAM & Head & F1 95.9\textsuperscript{\dag} &  \\
 \citet{chen_zero-shot_2025} & Malaysia, USA; multiple; natural & Multiple; RGB; mask, box & Det., Crown seg. & FM: SAM2 & ZS & recall 65.0 & \checkmark \\
 \citet{ravindran_investigation_2025} & USA; multiple; natural & Airborne; RGB, HS; box & Crown seg. & FM: GeoSAM & ZS & F1 27.4 &  \\
-\citet{teng_assessing_2025} & Canada, Panama; temperate, multiple; mixed, plantation & UAV; RGB, DSM; mask & Crown seg., Species & FM: DSMPrompter & PEFT & mAP 65.03 &  \\
+\citet{teng_assessing_2025} & Canada, Panama; multiple; mixed, plantation & UAV; RGB, DSM; mask & Crown seg., Species & FM: DSMPrompter & PEFT & mAP 65.03 &  \\
 \citet{tian_field-based_2025} & China; subtropical; plantation & UAV; RGB, MS; mask, attribute & Crown seg., 3D/attr. & FM: Grounding DINO-SAM2 & ZS & mAP 96.1 &  \\
 \citet{liu_estimating_2024} & USA; multiple; urban & Airborne; LiDAR; image label & Species & VLM: MLiDAR-CLIP & FS & OA 92.72 & \checkmark \\
-\citet{sachdeva_distribution_2024} & India; multiple; agroforestry & Satellite; RGB; mask & Det. & VLM: Grounding DINO & NR & AP50 82.1 & \checkmark \\
+\citet{sachdeva_distribution_2024} & India; multiple; agroforestry & Satellite; RGB; mask & Det. & VLM: Grounding DINO & NR & AP 82.1 & \checkmark \\
 \citet{long_unleashing_2025} & China; subtropical; urban & Ground; RGB; box, attribute & 3D/attr. & VLM: VLM-TMN & NR & RMSE 7.1 cm (DBH) &  \\
 \citet{zhang_parameter-efficient_2025} & Canada; temperate; natural & UAV; RGB; box & Det., Species & VLM: Grounding-DINO & PEFT & AP50 60.6 &  \\
 \bottomrule

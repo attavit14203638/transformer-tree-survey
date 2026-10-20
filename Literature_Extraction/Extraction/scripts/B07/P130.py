@@ -14,7 +14,7 @@ HU_EV = "The original dataset consists of 64 remote sensing images in the RGB ba
 ROWS = [
     R("task", "health_classification;crown_segmentation", 1, "Abstract", OBJ_EV, note="segmentation of pine wilt disease infected trees (the PWD class; evaluation on the PWD class only)"),
     R("output_unit", "crown_mask", 2, "Sec. I", "where pixel-level labeling was applied to PWD-infected trees", note="pixel masks of PWD-infected trees (all infection stages as one class)"),
-    D("tree_setting", "natural_forest", "forest farms of Hubei and Hunan; forest type is not described in the paper"),
+    NR("tree_setting", note="UAV images over forest farms in Hubei and Hunan; the paper does not say whether the stands are natural or planted"),
     NR("tree_taxa", note="pine trees infected by pine wilt disease; the species are not named"),
     R("study_area", "forest farms in Hubei and Hunan provinces, China", 8, "Sec. IV-A", HU_EV),
     D("biome", "subtropical", "Hubei and Hunan, China; coded from the study areas"),

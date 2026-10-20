@@ -24,7 +24,7 @@ def ev_of(label, line):
 ROWS = [
     R("task", "health_classification", 1, "Abstract", OBJ_EV, note="detection of pine wilt disease infected trees by semantic segmentation of UAV RGB images"),
     R("output_unit", "crown_mask", 4, "Sec. 2.2", "The annotated results were binarized in ArcGIS Pro to create label rasters", note="semantic masks of PWD-infected trees (not separated into instances); the predictions are checked against 561 reference tree points"),
-    R("tree_setting", "natural_forest", 4, "Sec. 2.2", "included Tianzhushan Forest", note="forest farms and mountain forest of Qianshan City; forest type is not described"),
+    NR("tree_setting", note="forest farms and mountain forest of Qianshan City (Sec. 2.2); the paper does not say whether the stands are natural or planted"),
     R("tree_taxa", "pine trees infected by pine wilt disease (species not named)", 1, "Abstract", "Pine wilt disease (PWD) is a severe forest disease caused by the invasion of"),
     R("study_area", "Qianshan City, Anhui Province, China (Tianzhushan Forest Farm, Tianzhushan Town and part of Tuoling Forest Farm)", 3, "Sec. 2.1", "was selected as the study area, which is in the southwest Anhui Province"),
     D("biome", "subtropical", "Qianshan (30 to 31 N), Anhui; not stated in the paper"),

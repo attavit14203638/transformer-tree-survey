@@ -13,7 +13,7 @@ ROWS = [
       "piba Pinus banksiana / pima Picea mariana / pist Pinus strobus / pigl Picea glauca / thoc Thuya occidentalis / ulam Ulmus americana / beal Betula allegnaniensis / acsa Acer Saccharum",
       note="'Other' groups species with 20 trees or fewer"),
     R("study_area", "15 plantation sites in Quebec, Canada", 2, "Sec. 2", "tree crown delineation and species labels in plantation sites from the UAV Canadian (Quebec) Plantations dataset ... kept 15 sites of interest"),
-    D("biome", "temperate", "Quebec plantations (temperate to southern boreal); not stated in the paper"),
+    NR("biome", note="not stated; the 15 plantation sites in Quebec may lie in the temperate or the boreal zone"),
     R("platform", "uav", 2, "Sec. 2", "RGB orthomosaics, photogrammetry digital surface models (DSMs) ... from the UAV Canadian (Quebec) Plantations dataset"),
     R("sensors", "rgb;dsm", 2, "Sec. 2", "We use RGB orthomosaics, photogrammetry digital surface models (DSMs)"),
     R("gsd", "5", 2, "Sec. 2", "The imagery has a resolution of 5mm/pixel", unit="mm"),

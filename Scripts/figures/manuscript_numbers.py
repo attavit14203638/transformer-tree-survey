@@ -385,7 +385,7 @@ def included_citations():
 # Short name and data of each shared public dataset, as the studies that use it describe it (compiled/datasets.csv,
 # dataset_name). The registry names carry extraction notes in brackets and are not shown in the manuscript.
 SHARED_DISPLAY = {  # display name, data and, where the dataset has its own paper in the bib, that paper
-    "neon_treeevaluation": ("NEON TreeEvaluation", "Airborne RGB and hyperspectral images", "weinstein_benchmark_2021"),
+    "neon_treeevaluation": ("NEON TreeEvaluation", "Airborne RGB, LiDAR and hyperspectral data", "weinstein_benchmark_2021"),
     "yosemite_trees": ("Yosemite tree counting", "Aerial RGB images"),
     "al_ain_date_palm": ("Al Ain date palm", "UAV RGB images"),
     "kcl_london": ("KCL-London tree counting", "RGB images, 0.2 m GSD"),
@@ -404,15 +404,13 @@ SHARED_DISPLAY = {  # display name, data and, where the dataset has its own pape
 def shared_table(pub, shared):
     """The shared-datasets table of the manuscript: every public dataset used by two or more studies, its data, and the studies
     that use it."""
-    key_of = {}
-    for pid, key in bib_key().items():
-        key_of.setdefault(study_of()[pid], key)  # one citation per study (its first report)
+    keys_of = bib_key()  # cite the report that uses the dataset (two reports of one study may use different data)
     missing = sorted(set(shared.dataset_key) - set(SHARED_DISPLAY))
     if missing:
         raise SystemExit(f"shared datasets without a display name in SHARED_DISPLAY: {missing}")
     rows = []
     for x in shared.itertuples():
-        keys = sorted({key_of[s_] for s_ in pub[pub.dataset_key == x.dataset_key].study})
+        keys = sorted({keys_of[p_] for p_ in pub[pub.dataset_key == x.dataset_key].paper_id})
         name, data, *src = SHARED_DISPLAY[x.dataset_key]
         name += f" \\citep{{{src[0]}}}" if src else ""
         rows.append(f"{name} & {data} & {x.studies} & \\citep{{{','.join(keys)}}} \\\\")
@@ -615,6 +613,21 @@ def single_paper_values():
     v, s = amounts("sachdeva_distribution_2024", "images")
     plain("ValSachdevaImages", v, listing(v), "training images compared (list)", s)
     CLAIMS.append(("the smallest amount in Sachdeva et al. is a single image", v[0] == 1))
+    assert len(v) == 3
+    count("ValSachdevaMost", v[2], "largest amount of training images compared", s)
+    count("ValSachdevaMiddle", v[1], "middle amount of training images compared", s)
+    count("ValSachdevaFewest", v[0], "smallest amount of training images compared", s)
+    # The pattern the text reads from the study's Fig. 3 (values read off the chart, about +/- 0.5) and its own words
+    # ("baseline performance comes close to matching grounding DINO with 10 ID examples", p. 4)
+    d = de[de.paper_id == paper("sachdeva_distribution_2024")].merge(
+        load("models")[["paper_id", "item", "model_name"]], left_on=["paper_id", "model"], right_on=["paper_id", "item"])
+    gd = d[d.model_name.str.contains("Grounding")].set_index("label_amount").value_std
+    fr = d[d.model_name.str.contains("Faster")].set_index("label_amount").value_std
+    gap = (gd - fr).sort_index()
+    CLAIMS.append(("Sachdeva et al.: both detectors are higher with the most images than with the fewest",
+                   gd.loc[v[2]] > gd.loc[v[0]] and fr.loc[v[2]] > fr.loc[v[0]]))
+    CLAIMS.append(("Sachdeva et al.: Grounding DINO ahead at every amount, closest at the middle amount",
+                   bool((gap > 0).all()) and gap.idxmin() == v[1]))
     v, s = amounts("amirkolaee_adatreeformer_2024", "images")
     plain("ValAdaTreeFormerImages", v, listing(v, "or"), "labelled target-domain images compared (list)", s)
     for key, mac, unit in (("amirkolaee_treeformer_2023", "TreeFormer", "percent_of_training_set"), ("hua_gdpgo-sam_2025", "GDPGO", "images"),

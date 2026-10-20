@@ -299,6 +299,9 @@ def study_values(col):
     for st, v in zip(s.study, s[col]):
         for x in str(v if pd.notna(v) else "not_reported").split(";"):
             out[st].add(x.strip())
+    for st, vals in out.items():  # a study reports a field when any of its reports does
+        if len(vals) > 1:
+            vals.discard("not_reported")
     return out
 
 

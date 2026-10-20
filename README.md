@@ -290,7 +290,7 @@ Public datasets used by two or more included studies.
 
 | Dataset | Data | Studies |
 |---|---|---|
-| NEON TreeEvaluation | Airborne RGB and hyperspectral images | 4 |
+| NEON TreeEvaluation | Airborne RGB, LiDAR and hyperspectral data | 4 |
 | Yosemite tree counting | Aerial RGB images | 4 |
 | Al Ain date palm | UAV RGB images | 3 |
 | KCL-London tree counting | RGB images, 0.2 m GSD | 3 |

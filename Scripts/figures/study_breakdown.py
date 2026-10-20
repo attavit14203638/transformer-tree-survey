@@ -42,7 +42,7 @@ DIMENSIONS = ["task", "platform", "sensors", "biome", "tree_setting", "annotatio
 
 
 def tex(s):
-    return re.sub(r"([&%_#$])", r"\\\1", str(s)).replace("R²", "R$^2$")
+    return re.sub(r"([&%_#$])", r"\\\1", str(s)).replace("R²", "R$^2$").replace("†", "\\textsuperscript{\\dag}")
 
 
 def joined(values, table, order=None):
@@ -89,13 +89,13 @@ def headline(r, pids, principal):
         m = x[x.model_name == principal]
         pick = m.sort_values(["primary", "canonical_metric"], ascending=False, kind="stable")
     if pick.empty:
-        return "", None
+        return "", None, None
     row = pick.iloc[0]
     unit = "" if row.unit_std in ("%", "fraction") or pd.isna(row.unit_std) else f" {row.unit_std}"
     same = str(row.unit) == str(row.unit_std) and pd.notna(row.value)  # no conversion: show the value as printed
     val = str(row.value) if same else (f"{row.value_std:.1f}" if row.unit_std == "%" else f"{row.value_std:.3g}")
     attr = f" ({ATTRIBUTE.get(row.attribute, str(row.attribute).replace('_', ' '))})" if pd.notna(row.attribute) and row.attribute else ""
-    return f"{metric_label(row)} {val}{unit}{attr}", f"{row.paper_id}:{row['item']}, p.{row.page}"
+    return f"{metric_label(row)} {val}{unit}{attr}", f"{row.paper_id}:{row['item']}, p.{row.page}", row.model_name
 
 
 def table():
@@ -120,7 +120,9 @@ def table():
         place = (", ".join(countries) if len(countries) <= 2 else f"{len(countries)} countries") if countries else \
             ("Global" if "global" in area or "worldwide" in area else "Synthetic" if "virtual" in area or "synthetic" in area else "NR")
         tasks = sorted({TASK_GROUP.get(v, v) for v in vals["task"][x.study]}, key=list(TASK_ABBR).index)
-        res, ref = headline(r, x.papers.split(";"), x.principal_model)
+        res, ref, mname = headline(r, x.papers.split(";"), x.principal_model)
+        if mname and mname != x.principal_model:  # the study's main result belongs to another of its models (dagger in the note)
+            res = f"{res}†"
         rows.append(dict(
             study=x.study, label=x.label, bib_key=x.bib_key, country=place, biome=joined(vals["biome"][x.study], BIOME),
             setting=joined(vals["tree_setting"][x.study], SETTING), platform=joined(vals["platform"][x.study], PLATFORM),

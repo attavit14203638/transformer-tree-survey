@@ -1,27 +1,26 @@
 label,bib_key,study,country,biome,setting,platform,sensor,annotation,task,family,model,base,training,result,result_ref,diff,transfer,code
-Liu et al. [88],liu_tree_2022,P120,China,Multiple,Mixed,MLS,LiDAR,Image label,Species,Pure ViT,PCT,Point transformer,NR,OA 99.6,"P120:res16, p.15",-5.4,,
-Lu et al. [91],lu_pose-enhanced_2024,P088,China,Tropical,Mixed,Multiple,LiDAR,Point labels,3D/attr.,Pure ViT,Enhanced PT,Point transformer,NR,mIoU 91.51,"P088:res45, p.17",+2.2,,
+Liu et al. [88],liu_tree_2022,P120,China,Multiple,Mixed,MLS,LiDAR,Image label,Species,Pure ViT,PCT,Point transformer,NR,OA 99.6†,"P120:res16, p.15",-5.4,,
 Ton-That et al. [120],ton-that_expanding_2024,P014,"UK, USA",Temperate,Mixed,Airborne,RGB,Dot,Det.,Pure ViT,TreeVision,ViT,FT,MAE 16.8 trees,"P014:res31, p.5",,,
-Yang et al. [139],yang_improved_2024,P068,USA,Subtropical,Urban,Airborne,"MS, LiDAR",Point labels,3D/attr.,Pure ViT,Point Transformer,Point transformer,NR,F1 92.8,"P068:res25, p.13",+1.5,,
+Yang et al. [139],yang_improved_2024,P068,USA,Subtropical,Urban,Airborne,"MS, LiDAR",Point labels,3D/attr.,Pure ViT,Point Transformer,Point transformer,NR,F1 92.8†,"P068:res25, p.13",+1.5,,
 Hai et al. [61],hai_deep_2025,P065,China,Temperate,Orchard,Ground,HS,Mask,3D/attr.,Pure ViT,Trim-SegTransformer,Study-specific designs,NR,F1 92.0,"P065:res11, p.16",+6.0,,
 Xu et al. [137],xu_sk-treepcn_2025,P092,China,Subtropical,Plantation,TLS,LiDAR,Attribute,3D/attr.,Pure ViT,SK-TreePCN,Point transformer,Scratch,RMSE 0.588 cm (DBH),"P092:res4, p.22",,,
-Alshammari and Shahin [31],alshammari_efficient_2022,P008,Saudi Arabia,Mediterranean,Orchard,Multiple,"RGB, MS","Mask, Dot","Det., Crown seg.",Hier. ViT,SwinTU-net,Swin,NR,EF 0.95,"P008:res2, p.11",,,
 Gibril et al. [58],gibril_large-scale_2024,P018,UAE,Arid,Mixed,UAV,RGB,Mask,"Det., Crown seg., Health",Hier. ViT,Mask R-CNN with MViTv2-tiny backbone,MViT,FT,AP50 92.5,"P018:res9, p.10",+2.0,"Site+acq., Acq.",
 Lu et al. [90],lu_m2fnet_2024,P020,Canada,NR,Synthetic,Synthetic,RGB,Mask,"Det., 3D/attr.",Hier. ViT,M2fNet (RGB and depth),Swin,NR,AP50 91.0,"P020:res1, p.4",+4.1,,
 Movchan et al. [98],movchan_uav-based_2025,P099,Canada,Boreal,Mixed,UAV,"RGB, MS, LiDAR","Point labels, Dot","Det., 3D/attr., Species",Hier. ViT,TreeLoc,SegFormer,NR,F1 83.0,"P099:res1, p.10",,,yes
 Shendryk and Vilas [111],shendryk_detecting_2025,P012,UAE,Arid,Mangrove,UAV,RGB,Dot,Det.,Hier. ViT,MaxViT-UNet density estimation,MaxViT,FT,F1 70.0,"P012:res6, p.7",,,
 He et al. [63],he_parallel_2024,P054,China,Subtropical,Orchard,UAV,"RGB, DSM",Mask,Crown seg.,Hybrid,Parallel fusion network,CSWin,FT,mIoU 93.5,"P054:res34, p.11",+0.9,,
-Zhu et al. [157],zhu_cedanet_2024,P036,China,Subtropical,Orchard,UAV,RGB,Mask,"Det., Crown seg.",Hybrid,CEDAnet,Study-specific designs,NR,AP50:95 49.8,"P036:res1, p.6",+3.0,,yes
+Liu et al. [84],liu_clusterformer_2024,P130,China,Subtropical,NR,UAV,"RGB, MS",Mask,"Crown seg., Health",Hybrid,Clusterformer,Study-specific designs,NR,IoU 78.35,"P130:res35, p.9",+0.7,,yes
+Durgut and Ünsalan [52],durgut_multi-model_2025,P023,Turkey,Mediterranean,Mixed,Satellite,RGB,Box,Det.,Hybrid,WBF fusion of M1 and M3,Swin,NR,AP50:95 52.1†,"P023:res15, p.6",+1.8,,
 Li et al. [78],li_fuzzy_2025,P108,China,Subtropical,Urban,UAV,HS,Mask,"Crown seg., Species",Hybrid,FBAN,Mask2Former family,NR,AP 54.32,"P108:res25, p.11",+6.7,,
-Rahman et al. [103],rahman_dual-task_2025,P135,Finland,Boreal,Natural,Airborne,"RGB, MS",Mask,"Crown seg., Health",Hybrid,MaskFormer,Mask2Former family,NR,IoU 37.1,"P135:res2, p.8",-1.4,,yes
+Ma et al. [95],ma_efficient_2025,P107,China,Temperate,Urban,MLS,LiDAR,Image label,Species,Hybrid,PoinTramba,Point transformer,NR,F1 98.57†,"P107:res1, p.13",-2.3,,
 Xiang et al. [133],xiang_forestformer3d_2025,P078,NR,Multiple,NR,Multiple,LiDAR,Point labels,3D/attr.,Hybrid,ForestFormer3D,Study-specific designs,NR,F1 82.8,"P078:res1, p.7",+4.5,"Region, Region+acq.",yes
-Ferreira et al. [54],ferreira_improving_2024,P109,Brazil,Tropical,Urban,Airborne,"MS, LiDAR",Mask,"Crown seg., Species",FM,SAM ViT-H,SAM,ZS,F1 84.1,"P109:res10, p.7",,,yes
-Zhi et al. [153],zhi_comparison_2024,P131,China,Subtropical,Natural,UAV,RGB,"Mask, Dot",Health,FM,SAM,SAM,Head,F1 95.9,"P131:res7, p.12",,,
+Ferreira et al. [54],ferreira_improving_2024,P109,Brazil,Tropical,Urban,Airborne,"MS, LiDAR",Mask,"Crown seg., Species",FM,SAM ViT-H,SAM,ZS,F1 84.1†,"P109:res10, p.7",,,yes
+Zhi et al. [153],zhi_comparison_2024,P131,China,Subtropical,NR,UAV,RGB,"Mask, Dot",Health,FM,SAM,SAM,Head,F1 95.9†,"P131:res7, p.12",,,
 Chen et al. [44],chen_zero-shot_2025,P062,"Malaysia, USA",Multiple,Natural,Multiple,RGB,"Mask, Box","Det., Crown seg.",FM,SAM2,SAM 2,ZS,recall 65.0,"P062:res12, p.4",-24.0,Biome,yes
 Ravindran et al. [104],ravindran_investigation_2025,P050,USA,Multiple,Natural,Airborne,"RGB, HS",Box,Crown seg.,FM,GeoSAM,SAM,ZS,F1 27.4,"P050:res1, p.5",,,
-Teng et al. [117],teng_assessing_2025,teng_2025,"Canada, Panama","Temperate, Multiple","Mixed, Plantation",UAV,"RGB, DSM",Mask,"Crown seg., Species",FM,DSMPrompter,SAM,PEFT,mAP 65.03,"P032:res34, p.4",+1.4,,
+Teng et al. [117],teng_assessing_2025,teng_2025,"Canada, Panama",Multiple,"Mixed, Plantation",UAV,"RGB, DSM",Mask,"Crown seg., Species",FM,DSMPrompter,SAM,PEFT,mAP 65.03,"P032:res34, p.4",+1.4,,
 Tian et al. [119],tian_field-based_2025,P077,China,Subtropical,Plantation,UAV,"RGB, MS","Mask, Attribute","Crown seg., 3D/attr.",FM,Grounding DINO-SAM2,SAM 2,ZS,mAP 96.1,"P077:res4, p.8",+0.6,,
 Liu et al. [85],liu_estimating_2024,P076,USA,Multiple,Urban,Airborne,LiDAR,Image label,Species,VLM,MLiDAR-CLIP,CLIP,FS,OA 92.72,"P076:res1, p.11",,,yes
-Sachdeva et al. [107],sachdeva_distribution_2024,P002,India,Multiple,Agroforestry,Satellite,RGB,Mask,Det.,VLM,Grounding DINO,Grounding DINO,NR,AP50 82.1,"P002:res3, p.5",+4.3,Region,yes
+Sachdeva et al. [107],sachdeva_distribution_2024,P002,India,Multiple,Agroforestry,Satellite,RGB,Mask,Det.,VLM,Grounding DINO,Grounding DINO,NR,AP 82.1,"P002:res3, p.5",+4.3,Region,yes
 Long et al. [89],long_unleashing_2025,P100,China,Subtropical,Urban,Ground,RGB,"Box, Attribute",3D/attr.,VLM,VLM-TMN,Large language model,NR,RMSE 7.1 cm (DBH),"P100:res1, p.5",,,
 Zhang et al. [148],zhang_parameter-efficient_2025,P025,Canada,Temperate,Natural,UAV,RGB,Box,"Det., Species",VLM,Grounding-DINO,Grounding DINO,PEFT,AP50 60.6,"P025:res20, p.12",+38.1,,

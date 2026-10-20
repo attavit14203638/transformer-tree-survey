@@ -24,8 +24,7 @@ import paths  # noqa: E402
 
 METRIC_FIELDS = {"metric", "transfer_metric", "label_metric"}
 # Tags checked by hand where the support is not a phrase a pattern can find (paper, tag): reason
-VERIFIED = {("P002", "ap50"): "Table 1 prints AP; Fig. 3 labels the same metric AP50 and shows the same values at full data "
-                              "(Faster R-CNN 63.1, Grounding DINO 66.7, p. 4)"}
+VERIFIED = {}  # none: a tag the paper's words do not support is changed, not excused
 RANGE = re.compile(r"(?:0?\.50?|50)\s*%?\s*(?:[:–\-]|to)\s*(?:0?\.05\s*[:–\-]\s*)?(?:0?\.95|95)\s*%?(?![\d.])"
                    r"|\[\s*0?\.50?\s*[:,]\s*(?:0?\.05\s*[:,]\s*)?0?\.95\s*\]|AP\s*@\s*\[\s*\.?50?\s*:\s*(?:\.?05\s*:\s*)?\.?95"
                    r"|50\s*:\s*5\s*:\s*95|ten IoU thresholds|10 IoU thresholds", re.I)
