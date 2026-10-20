@@ -7,6 +7,7 @@
   python screening.py apply    copy AI title/abstract decisions (ai_decisions.csv) into the sheet
   python screening.py kappa    agreement between AI decisions and the author's blind sample
   python screening.py prisma   PRISMA 2020 flow counts -> screening/prisma_counts.json
+  python screening.py searchlog  when each search was run -> search_log.json (export files and arXiv run log)
 
 Title/abstract screening is AI-assisted (TA_R1); the first author screens a blind random 20% sample
 and checks every record the AI includes. Full-text decisions, the original papers found by other
@@ -21,6 +22,7 @@ import random
 import re
 import sys
 from collections import Counter, defaultdict
+from datetime import datetime, timezone
 
 from openpyxl import Workbook, load_workbook
 from openpyxl.styles import Alignment, Font, PatternFill
@@ -471,6 +473,21 @@ def prisma():
     print(json.dumps(counts, indent=2))
 
 
+def searchlog():
+    """When each search was run (UTC): the arXiv run log, and the time each database export was saved. The manuscript reports
+    the dates in the authors' time zone."""
+    def saved(pattern):
+        t = min(os.path.getmtime(f) for f in glob.glob(os.path.join(EXPORTS, pattern)))
+        return datetime.fromtimestamp(t, timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    arxiv = json.load(open(os.path.join(HERE, "results", "arxiv_run.json")))
+    log = {"timezone": "Australia/Sydney",
+           "sources": {"Scopus": {"run_at_utc": saved("Scopus*.csv"), "record": "time the export file was saved"},
+                       "Web of Science": {"run_at_utc": saved("wos_*.txt"), "record": "time the first export file was saved"},
+                       "arXiv": {"run_at_utc": arxiv["run_at_utc"], "record": "results/arxiv_run.json"}}}
+    json.dump(log, open(os.path.join(HERE, "search_log.json"), "w"), indent=2)
+    print(json.dumps(log, indent=2))
+
+
 if __name__ == "__main__":
     {"build": build, "sample": sample, "apply": apply_decisions, "kappa": kappa,
-     "prisma": prisma}[sys.argv[1] if len(sys.argv) > 1 else "build"]()
+     "prisma": prisma, "searchlog": searchlog}[sys.argv[1] if len(sys.argv) > 1 else "build"]()

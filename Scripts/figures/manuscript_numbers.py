@@ -7,8 +7,12 @@ Literature_Extraction/Analysis/figure_data/numbers.csv (macro, value, text, defi
 so no number is typed by hand. Percentages have one decimal unless stated; differences and changes are in percentage points and
 signed in math mode. Supporting lists: figure_data/shared_public_datasets.csv and figure_data/peft_same_setting.csv.
 """
+import csv
 import json
 import re
+import sys
+from datetime import date, datetime
+from zoneinfo import ZoneInfo
 
 import numpy as np
 import pandas as pd
@@ -19,9 +23,15 @@ import rq1_comparisons
 import rq2_transfer
 import rq3_training
 import taxonomy
-from common import FAMILIES, FAMILY, bib_key, load, outcome, paths, per_study, studies, study_of, write
+from common import FAMILIES, FAMILY, TIE_PP, TUKEY_K, bib_key, load, outcome, paths, per_study, studies, study_of, write
+
+sys.path.insert(0, str(paths.SCRIPTS / "search"))
+import query_terms  # noqa: E402
+
+CONFIDENCE = 0.95  # of the upper bound on the extraction error rate (crosscheck.py uses 1 - 0.05^(1/n))
 
 ROWS = []
+CLAIMS = []  # statements the text makes in words, checked against the data (description, holds)
 FAM_KEY = {"pure_vit": "PureViT", "hierarchical_vit": "HierViT", "cnn_transformer_hybrid": "Hybrid", "foundation_model": "Foundation",
            "vision_language_model": "VLM", "non_transformer": "NonTransformer"}
 ROMAN = {2022: "MMXXII", 2023: "MMXXIII", 2024: "MMXXIV", 2025: "MMXXV"}
@@ -94,12 +104,15 @@ def corpus():
     plain("PctAgreement", a["percent_agreement"], f"{a['percent_agreement']:.1f}", "agreement between the two screenings (percent)", src)
     plain("KappaScreening", a["cohen_kappa"], f"{a['cohen_kappa']:.2f}", "Cohen's kappa of the two screenings", src)
     count("NScreeningDisagreements", len(a["disagreements"]), "records of the blind sample on which the two screenings disagreed", src)
+    percent("PctDoubleScreened", a["n_double_screened"], c["screening"]["records_screened"],
+            "share of the screened records in the author's blind sample", src)
     x = json.loads((paths.EXTRACTION / "crosscheck" / "crosscheck_result.json").read_text())
     src = "Literature_Extraction/Extraction/crosscheck/crosscheck_result.json"
     cur = x["current_corpus"]
     count("NCrossChecked", x["checked"], "extracted values checked by the author against the papers (random sample)", src)
     count("NCrossCheckedCorrect", x["ok"], "sampled values found correct", src)
     count("NCrossCheckedFinal", cur["rows"], "sampled values that belong to the final corpus", src)
+    assert abs(cur["upper_95_error_rate"] - round(1 - (1 - CONFIDENCE) ** (1 / cur["rows"]), 4)) < 1e-9, "bound and CONFIDENCE disagree"
     plain("PctErrorBound", round(100 * cur["upper_95_error_rate"], 1), f"{100 * cur['upper_95_error_rate']:.1f}",
           "one-sided 95% upper bound of the error rate, final corpus, 1 - 0.05^(1/n), in percent", src)
     src = "Literature_Extraction/Extraction/compiled/"
@@ -250,6 +263,20 @@ def rq1():
             signed("QThreeDiff" + key, r.q3, f"third quartile in group {r.group} (pp)", "figure_data/rq1_summary.csv")
             for k in ("up", "tie", "down"):
                 count("N" + k.capitalize() + key, getattr(r, k), f"studies in group {r.group} whose difference is '{k}'", "figure_data/rq1_summary.csv")
+    fam = per_study(c, "transformer_category", "diff_pp").set_index("group")
+    main = fam.loc[["cnn_transformer_hybrid", "pure_vit", "hierarchical_vit"]]
+    signed("MedianDiffMaxMainFam", main["median"].max(), "largest median difference among hybrids, pure ViTs and hierarchical ViTs (pp)",
+           "figure_data/rq1_summary.csv")
+    CLAIMS.append(("the interquartile ranges of hybrids, pure ViTs and hierarchical ViTs reach zero",
+                   bool(((main.q1 <= 0) & (main.q3 >= 0)).all())))
+    keys = bib_key()
+    out = c[c.outlier].assign(key=lambda d: d.paper_id.map(keys) if "paper_id" in d else d.study.map(keys))
+    CLAIMS.append(("RQ1 outliers below the fence are the four studies the text names",
+                   set(out[out.diff_pp < 0].key) == {"speckenwirth_treesegtoolbox_2024", "chen_zero-shot_2025", "kaviani_tree_2025",
+                                                     "lungo_vaschetti_treepseco_2025"}))
+    CLAIMS.append(("RQ1 outliers above the fence are the five studies the text names",
+                   set(out[out.diff_pp > 0].key) == {"jiang_detection_2025", "dersch_novel_2022", "chen_two-stage_2025",
+                                                     "valicharla_precision_2023", "zhang_parameter-efficient_2025"}))
     count("NOutliersRQOne", int(c.outlier.sum()), "RQ1 comparisons outside Tukey's fences", "figure_data/rq1_outliers.csv")
     signed("FenceLowRQOne", lo, "lower Tukey fence of the RQ1 differences (pp)", src)
     signed("FenceHighRQOne", hi, "upper Tukey fence of the RQ1 differences (pp)", src)
@@ -286,6 +313,9 @@ def rq2():
           "figure_data/geography.csv and rq2_transfer.csv")
     count("NTransferNorthern", int(located.northern.sum()), "of those, studies wholly in the Northern Hemisphere (by country)",
           "figure_data/geography.csv and rq2_transfer.csv")
+    count("NShiftKinds", t.shift_group.nunique(), "kinds of shift among the complete transfer pairs", src)
+    CLAIMS.append(("one RQ2 outlier lies above the upper fence ('the one large positive change')", int((t.outlier & (t.change_pp > 0)).sum()) == 1))
+    CLAIMS.append(("one study tests a biome shift ('the single biome shift')", t[t.shift_group == "Biome"].study.nunique() == 1))
     count("NOutliersRQTwo", int(t.outlier.sum()), "RQ2 pairs outside Tukey's fences", "figure_data/rq2_outliers.csv")
     count("NOutlierStudiesRQTwo", t[t.outlier].study.nunique(), "studies with an RQ2 outlier", "figure_data/rq2_outliers.csv")
     signed("FenceLowRQTwo", lo, "lower Tukey fence of the RQ2 changes (pp)", src)
@@ -403,6 +433,8 @@ def peft_table(t):
     percent("PctPEFTBestOfFull", best.ap50, full.ap50, "its AP50 as a share of the full fine-tuning AP50", src)
     plain("PEFTFullAPStrict", full.ap50_95, f"{full.ap50_95:.1f}", "AP50:95 of full fine-tuning in the same-setting study", src)
     plain("PEFTBestAPStrict", best.ap50_95, f"{best.ap50_95:.1f}", f"AP50:95 of the method with the best AP50 ({best.method})", src)
+    plain("PEFTGapAPFifty", round(full.ap50 - best.ap50, 1), f"{full.ap50 - best.ap50:.1f}",
+          "AP50 of full fine-tuning minus the best parameter-efficient AP50 (points)", src)
     count("NPEFTVariants", len(pe), "parameter-efficient methods compared in that study", src)
     plain("PEFTLowAPFifty", pe.ap50.min(), f"{pe.ap50.min():.1f}", "lowest AP50 among them", src)
     plain("PEFTMinTrainable", pe.trainable_params_pct.min(), f"{pe.trainable_params_pct.min():.2f}", "smallest share of trainable parameters among them (percent)", src)
@@ -422,8 +454,172 @@ def peft_table(t):
     (paths.PAPER_GENERATED / "peft_same_setting.tex").write_text(tex, encoding="utf-8")
 
 
+def fmt(v):
+    """A recorded value as printed: no trailing zeros, no float artefacts."""
+    return f"{round(float(v), 4):g}"
+
+
+def listing(values, last="and"):
+    v = [fmt(x) for x in values]
+    return v[0] if len(v) == 1 else ", ".join(v[:-1]) + f" {last} " + v[-1]
+
+
+def paper(key):
+    pid = {v: k for k, v in bib_key().items()}.get(key)
+    assert pid, f"no included paper with bib key {key}"
+    return pid
+
+
+def search_facts():
+    """The search window, the Scopus loading date and the dates the searches were run (query_terms.py, search_log.json)."""
+    q, src = query_terms, "Scripts/search/query_terms.py"
+    plain("SearchYearFrom", q.YEAR_FROM, str(q.YEAR_FROM), "first publication year searched", src)
+    plain("SearchYearTo", q.YEAR_TO, str(q.YEAR_TO), "last publication year searched", src)
+    plain("SearchYearExcluded", q.YEAR_TO + 1, str(q.YEAR_TO + 1), "first year of versions of record outside the date rule", src)
+    d = datetime.strptime(q.INDEX_CUTOFF, "%Y%m%d")
+    plain("SearchIndexCutoff", q.INDEX_CUTOFF, f"{d.day} {d:%B %Y}", "Scopus records first loaded before this date", src)
+    log = json.loads((paths.SEARCH / "search_log.json").read_text())
+    tz, src = ZoneInfo(log["timezone"]), "Literature_Extraction/Search/search_log.json"
+    when = {}
+    for key, name in (("Scopus", "Scopus"), ("WoS", "Web of Science"), ("ArXiv", "arXiv")):
+        t = datetime.fromisoformat(log["sources"][name]["run_at_utc"].replace("Z", "+00:00")).astimezone(tz)
+        when[key] = t
+        plain("SearchDate" + key, t.date().isoformat(), f"{t.day} {t:%B}", f"day the {name} search was run ({log['timezone']})", src)
+        plain("SearchDate" + key + "Full", t.date().isoformat(), f"{t.day} {t:%B %Y}", f"date the {name} search was run", src)
+    months = {f"{t:%B %Y}" for t in when.values()}
+    assert len(months) == 1, months
+    plain("SearchMonth", months.pop(), f"{when['Scopus']:%B %Y}", "month in which all three searches were run", src)
+    strings = {"SearchStringScopus": q.render_scopus(), "SearchStringWoS": q.render_wos(),
+               "SearchStringArXiv": json.loads((paths.SEARCH / "results" / "arxiv_run.json").read_text())["api_query"],
+               "SearchStringThirdBlock": "(" + " OR ".join(q._q(t) for t in q.BLOCK_C) + ")"}
+    lines = ["% Generated by Scripts/figures/manuscript_numbers.py from Scripts/search/query_terms.py and results/arxiv_run.json."]
+    for k, v in strings.items():
+        assert not re.search(r"[\\{}$&#^_%~]", v), f"{k} holds a character that LaTeX would need escaped"
+        lines.append(f"\\newcommand{{\\{k}}}{{{v}}}")
+    (paths.PAPER_GENERATED / "search_strings.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+def constants():
+    """Settings of the analysis, taken from the code that applies them."""
+    src = "Scripts/figures/common.py"
+    plain("ConstTieZone", TIE_PP, fmt(TIE_PP), "half-width of the tie zone (pp)", src)
+    unit = lambda u: u if TIE_PP == 1 else u + "s"  # noqa: E731
+    word = WORDS[int(TIE_PP)] if float(TIE_PP).is_integer() and TIE_PP <= 10 else fmt(TIE_PP)
+    plain("ConstTieZonePP", TIE_PP, f"{word} {unit('percentage point')}", "the tie zone in words", src)
+    plain("ConstTieZonePoint", TIE_PP, f"{word} {unit('point')}", "the tie zone in words (short)", src)
+    plain("ConstTukeyK", TUKEY_K, fmt(TUKEY_K), "Tukey's fences: interquartile ranges beyond the quartiles", src)
+    plain("ConstPctConfidence", 100 * CONFIDENCE, fmt(100 * CONFIDENCE), "confidence of the upper bound on the error rate (percent)",
+          "Scripts/figures/manuscript_numbers.py (CONFIDENCE)")
+
+
+def years():
+    """Years that are findings: from the publication years of the included studies."""
+    st, src = studies(), "figure_data/studies.csv (common.studies)"
+    yr = st.year.astype(int)
+    first, last = int(yr.min()), int(yr.max())
+    plain("YearFirstStudy", first, str(first), "publication year of the earliest included study", src)
+    plain("YearLastStudy", last, str(last), "publication year of the latest included study", src)
+    by = st.assign(year=yr).groupby(["year", "family"]).size().unstack(fill_value=0)
+    lead = [y for y in by.index if by.loc[y, "hierarchical_vit"] > by.loc[y].drop("hierarchical_vit").max()]
+    assert len(lead) == 1, lead
+    plain("YearHierViTLead", lead[0], str(lead[0]), "the year in which hierarchical ViTs are the most frequent family", src)
+    for fam, key in (("foundation_model", "FM"), ("vision_language_model", "VLM")):
+        y = int(yr[st.family == fam].min())
+        plain("YearFirst" + key, y, str(y), f"first year with a study of family {FAMILY[fam]}", src)
+    # the text pairs these years with the per-year counts named after them (\NStudiesMMXXII, \NFamHierViTInMMXXIII, ...)
+    CLAIMS.append(("the year macros agree with the per-year counts the text pairs them with",
+                   (first, last, lead[0], int(yr[st.family == "foundation_model"].min()), int(yr[st.family == "vision_language_model"].min()))
+                   == (2022, 2025, 2023, 2024, 2024)))
+
+
+def single_paper_values():
+    """Values the text quotes from one study, read from its rows in the compiled tables (paper, item, page)."""
+    tr, res, de, comp = load("transfer"), load("results"), load("data_efficiency"), load("studies")
+    def src(key, page, loc):
+        return f"{key}, p. {page}, {loc}"
+    # A DETR palm detector on the storm-hit estate (RQ2 outliers)
+    k = tr[(tr.paper_id == paper("kwong_enhancing_2024")) & tr.target.str.contains("storm") & (tr.location_in == "Table 1")]
+    base, gan = k[k.model == "model1"], k[k.model == "model2"]
+    assert len(base) == len(gan) == 1
+    base, gan = base.iloc[0], gan.iloc[0]
+    s = src("kwong_enhancing_2024", base.page_in, base.location_in)
+    plain("ValStormBaselineIn", base.value_in_std, fmt(base.value_in_std), "DETR baseline AP50 in domain", s)
+    plain("ValStormBaselineOut", base.value_out_std, fmt(base.value_out_std), "DETR baseline AP50 on the storm-hit estate", s)
+    plain("ValStormGANOut", gan.value_out_std, fmt(gan.value_out_std), "GAN-trained variant AP50 on the storm-hit estate", s)
+    # Date-palm segmenters: another city and UAV system, and the own test set resampled (RQ2, where models hold up)
+    g = tr[tr.paper_id == paper("gibril_large-scale_2023")]
+    cross = g[(g.shift_type == "site;sensor;resolution") & (g.transformer == True)]  # noqa: E712
+    resampled = g[g.shift_type == "resolution"]
+    s = src("gibril_large-scale_2023", cross.page_in.iloc[0], cross.location_in.iloc[0])
+    gsd = comp[comp.paper_id == paper("gibril_large-scale_2023")].gsd_cm.iloc[0]
+    plain("ValPalmGSD", gsd, fmt(gsd), "ground sampling distance of the training imagery (cm)", "compiled/studies.csv (gibril_large-scale_2023)")
+    for key, v in (("ValPalmCrossCityLow", cross.change_pp.min()), ("ValPalmCrossCityHigh", cross.change_pp.max())):
+        plain(key, v, f"${v:+g}$".replace("+-", "-"), "change of mean IoU of the transformer models in another city and UAV system (pp)", s)
+    gsds = set(resampled.target.str.extract(r"(\d+(?:\.\d+)?) cm", expand=False))
+    assert len(gsds) == 1, gsds
+    v = gsds.pop()
+    plain("ValPalmResampledGSD", v, fmt(v), "resolution the own test set was resampled to (cm), from the recorded target", s)
+    loss = sorted(-resampled.change_pp)
+    plain("ValPalmResampleLossLow", loss[0], fmt(loss[0]), "smallest loss of mean IoU after resampling (points)", s)
+    plain("ValPalmResampleLossHigh", loss[-1], fmt(loss[-1]), "largest loss of mean IoU after resampling (points)", s)
+    y = tr[tr.paper_id == paper("yan_tm-wsnet_2025")]
+    assert len(y) == 1
+    plain("ValRubberLoss", -y.change_pp.iloc[0], fmt(-y.change_pp.iloc[0]), "loss of mean IoU on new point clouds of the same plantation",
+          src("yan_tm-wsnet_2025", y.page_in.iloc[0], y.location_in.iloc[0]))
+    z = tr[tr.paper_id == paper("zhang_mtcdnet_2025")]
+    loss = sorted(-z.change_pp)
+    assert len(loss) == 2
+    s = src("zhang_mtcdnet_2025", "12-13", "Tables 1 and 2")
+    plain("ValSwapLossLow", loss[0], fmt(loss[0]), "AP50:95 lost when training and test datasets are swapped, smaller direction", s)
+    plain("ValSwapLossHigh", loss[1], fmt(loss[1]), "AP50:95 lost when training and test datasets are swapped, larger direction", s)
+    # The same-setting PEFT study: its data split
+    split = {m for m in res[res.paper_id == paper("zhang_parameter-efficient_2025")].setting.str.extract(r"test split \((\d+)%\)", expand=False)}
+    assert len(split) == 1, split
+    test = int(split.pop())
+    s = "zhang_parameter-efficient_2025, p. 11, Sec. 4.1 (results: setting)"
+    plain("ValPEFTTestSplit", test, str(test), "share of the images used for testing (percent)", s)
+    plain("ValPEFTTrainSplit", 100 - test, str(100 - test), "share of the images used for training (percent)", s)
+    # The two reports of one study: the same wmAP
+    a = res[(res.paper_id == paper("teng_assessing_2025")) & (res["item"] == "res36")]
+    b = res[(res.paper_id == paper("teng_bringing_2025")) & (res["item"] == "res48")]
+    assert len(a) == len(b) == 1 and fmt(a.value.iloc[0]) == fmt(b.value.iloc[0]) and "wmAP" in a.metric_note.iloc[0]
+    plain("ValDSMPrompterWmAP", a.value.iloc[0], fmt(a.value.iloc[0]), "weighted mean average precision printed in both reports (percent)",
+          "teng_assessing_2025, p. 4, Table 1; teng_bringing_2025, p. 6, Table 1")
+    # Label amounts of the data-efficiency studies
+    def amounts(key, unit):
+        d = de[de.paper_id == paper(key)]
+        assert set(d.label_unit) == {unit}, (key, set(d.label_unit))
+        return sorted(set(d.label_amount.astype(float))), f"{key}, p. {d.page.iloc[0]}, {d.location.iloc[0]}"
+    v, s = amounts("sachdeva_distribution_2024", "images")
+    plain("ValSachdevaImages", v, listing(v), "training images compared (list)", s)
+    CLAIMS.append(("the smallest amount in Sachdeva et al. is a single image", v[0] == 1))
+    v, s = amounts("amirkolaee_adatreeformer_2024", "images")
+    plain("ValAdaTreeFormerImages", v, listing(v, "or"), "labelled target-domain images compared (list)", s)
+    for key, mac, unit in (("amirkolaee_treeformer_2023", "TreeFormer", "percent_of_training_set"), ("hua_gdpgo-sam_2025", "GDPGO", "images"),
+                           ("grondin_leveraging_2024", "Grondin", "percent_of_training_set"),
+                           ("liu_multifeature_2025", "LiuLabels", "percent_of_training_set")):
+        v, s = amounts(key, unit)
+        plain(f"Val{mac}Low", v[0], fmt(v[0]), f"smallest label amount ({unit})", s)
+        plain(f"Val{mac}High", v[-1], fmt(v[-1]), f"largest label amount ({unit})", s)
+
+
+def other_reviews():
+    """Figures quoted from earlier reviews (Related work), recorded with page and quote in Extraction/related_reviews.csv."""
+    for r in csv.DictReader(open(paths.EXTRACTION / "related_reviews.csv", encoding="utf-8")):
+        name = "Review" + camel(r["bib_key"].split("_")[0]) + camel(r["quantity"])
+        text = f"{date.fromisoformat(r['value']):%B %Y}" if r["quantity"].startswith("period") else r["value"]
+        plain(name, r["value"], text, f"{r['quantity']} of {r['bib_key']}", f"Extraction/related_reviews.csv ({r['page']}: \"{r['quote']}\")")
+
+
+def check_claims():
+    failed = [d for d, ok in CLAIMS if not ok]
+    if failed:
+        raise SystemExit("statements of the text no longer hold:\n  " + "\n  ".join(failed))
+    print(f"  {len(CLAIMS)} statements of the text checked against the data")
+
+
 def main():
-    for part in (corpus, corpus_shape, rq1, rq2, rq3):
+    for part in (corpus, corpus_shape, rq1, rq2, rq3, search_facts, constants, years, single_paper_values, other_reviews, check_claims):
         part()
     df = write(pd.DataFrame(ROWS), "numbers")
     lines = ["% Generated by Scripts/figures/manuscript_numbers.py from the compiled extraction tables; do not edit by hand.",

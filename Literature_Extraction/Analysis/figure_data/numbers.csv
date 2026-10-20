@@ -39,6 +39,7 @@ NDoubleScreened,309,309,records screened independently by the author (blind samp
 PctAgreement,93.2,93.2,agreement between the two screenings (percent),Literature_Extraction/Search/screening/screening_agreement.json
 KappaScreening,0.666,0.67,Cohen's kappa of the two screenings,Literature_Extraction/Search/screening/screening_agreement.json
 NScreeningDisagreements,21,21,records of the blind sample on which the two screenings disagreed,Literature_Extraction/Search/screening/screening_agreement.json
+PctDoubleScreened,20.0,20.0,share of the screened records in the author's blind sample (309 of 1546),Literature_Extraction/Search/screening/screening_agreement.json
 NCrossChecked,200,200,extracted values checked by the author against the papers (random sample),Literature_Extraction/Extraction/crosscheck/crosscheck_result.json
 NCrossCheckedCorrect,200,200,sampled values found correct,Literature_Extraction/Extraction/crosscheck/crosscheck_result.json
 NCrossCheckedFinal,189,189,sampled values that belong to the final corpus,Literature_Extraction/Extraction/crosscheck/crosscheck_result.json
@@ -489,6 +490,7 @@ NUpRoleProposed,27,27,studies in group Proposed by the study whose difference is
 NTieRoleProposed,12,12,studies in group Proposed by the study whose difference is 'tie',figure_data/rq1_summary.csv
 NDownRoleProposed,1,1,studies in group Proposed by the study whose difference is 'down',figure_data/rq1_summary.csv
 NDownRoleProposedWord,1,one,studies in group Proposed by the study whose difference is 'down' (in words),figure_data/rq1_summary.csv
+MedianDiffMaxMainFam,1.2,$+1.2$,"largest median difference among hybrids, pure ViTs and hierarchical ViTs (pp)",figure_data/rq1_summary.csv
 NOutliersRQOne,9,9,RQ1 comparisons outside Tukey's fences,figure_data/rq1_outliers.csv
 NOutliersRQOneWord,9,nine,RQ1 comparisons outside Tukey's fences (in words),figure_data/rq1_outliers.csv
 FenceLowRQOne,-8.0,$-8.0$,lower Tukey fence of the RQ1 differences (pp),figure_data/rq1_comparisons.csv (rq1_comparisons.data)
@@ -558,6 +560,8 @@ NTrPairsVLMWord,3,three,pairs in RQ2 group Vision-language model (in words),figu
 MedianChangeVLM,-31.9,$-31.9$,median per-study change in group Vision-language model (pp),figure_data/rq2_summary.csv
 NTransferStudiesWithCountry,21,21,studies with a complete transfer pair that name a country,figure_data/geography.csv and rq2_transfer.csv
 NTransferNorthern,19,19,"of those, studies wholly in the Northern Hemisphere (by country)",figure_data/geography.csv and rq2_transfer.csv
+NShiftKinds,6,6,kinds of shift among the complete transfer pairs,figure_data/rq2_transfer.csv (rq2_transfer.data)
+NShiftKindsWord,6,six,kinds of shift among the complete transfer pairs (in words),figure_data/rq2_transfer.csv (rq2_transfer.data)
 NOutliersRQTwo,7,7,RQ2 pairs outside Tukey's fences,figure_data/rq2_outliers.csv
 NOutliersRQTwoWord,7,seven,RQ2 pairs outside Tukey's fences (in words),figure_data/rq2_outliers.csv
 NOutlierStudiesRQTwo,5,5,studies with an RQ2 outlier,figure_data/rq2_outliers.csv
@@ -626,6 +630,7 @@ PEFTBestTrainable,0.28,0.28,its share of trainable parameters (percent),"figure_
 PctPEFTBestOfFull,99.8,99.8,its AP50 as a share of the full fine-tuning AP50 (60.6 of 60.7),"figure_data/peft_table.csv (Table 1, p.12)"
 PEFTFullAPStrict,33.5,33.5,AP50:95 of full fine-tuning in the same-setting study,"figure_data/peft_table.csv (Table 1, p.12)"
 PEFTBestAPStrict,32.4,32.4,AP50:95 of the method with the best AP50 (ASCS (proposed PEFT)),"figure_data/peft_table.csv (Table 1, p.12)"
+PEFTGapAPFifty,0.1,0.1,AP50 of full fine-tuning minus the best parameter-efficient AP50 (points),"figure_data/peft_table.csv (Table 1, p.12)"
 NPEFTVariants,8,8,parameter-efficient methods compared in that study,"figure_data/peft_table.csv (Table 1, p.12)"
 NPEFTVariantsWord,8,eight,parameter-efficient methods compared in that study (in words),"figure_data/peft_table.csv (Table 1, p.12)"
 PEFTLowAPFifty,57.7,57.7,lowest AP50 among them,"figure_data/peft_table.csv (Table 1, p.12)"
@@ -634,3 +639,55 @@ PEFTMaxTrainable,19.83,19.83,largest share of trainable parameters among them (p
 PEFTHeadOnlyAPFifty,60.0,60.0,AP50 with the backbone frozen (FIXED),"figure_data/peft_table.csv (Table 1, p.12)"
 PctHeadOnlyOfFull,98.8,98.8,frozen-backbone AP50 as a share of the full fine-tuning AP50 (60.0 of 60.7),"figure_data/peft_table.csv (Table 1, p.12)"
 NPEFTImages,300,300,"images in the dataset of the same-setting study (80 percent for training, 20 percent for testing)",compiled/datasets.csv
+SearchYearFrom,2017,2017,first publication year searched,Scripts/search/query_terms.py
+SearchYearTo,2025,2025,last publication year searched,Scripts/search/query_terms.py
+SearchYearExcluded,2026,2026,first year of versions of record outside the date rule,Scripts/search/query_terms.py
+SearchIndexCutoff,20260101,1 January 2026,Scopus records first loaded before this date,Scripts/search/query_terms.py
+SearchDateScopus,2026-10-10,10 October,day the Scopus search was run (Australia/Sydney),Literature_Extraction/Search/search_log.json
+SearchDateScopusFull,2026-10-10,10 October 2026,date the Scopus search was run,Literature_Extraction/Search/search_log.json
+SearchDateWoS,2026-10-11,11 October,day the Web of Science search was run (Australia/Sydney),Literature_Extraction/Search/search_log.json
+SearchDateWoSFull,2026-10-11,11 October 2026,date the Web of Science search was run,Literature_Extraction/Search/search_log.json
+SearchDateArXiv,2026-10-09,9 October,day the arXiv search was run (Australia/Sydney),Literature_Extraction/Search/search_log.json
+SearchDateArXivFull,2026-10-09,9 October 2026,date the arXiv search was run,Literature_Extraction/Search/search_log.json
+SearchMonth,October 2026,October 2026,month in which all three searches were run,Literature_Extraction/Search/search_log.json
+ConstTieZone,1.0,1,half-width of the tie zone (pp),Scripts/figures/common.py
+ConstTieZonePP,1.0,one percentage point,the tie zone in words,Scripts/figures/common.py
+ConstTieZonePoint,1.0,one point,the tie zone in words (short),Scripts/figures/common.py
+ConstTukeyK,1.5,1.5,Tukey's fences: interquartile ranges beyond the quartiles,Scripts/figures/common.py
+ConstPctConfidence,95.0,95,confidence of the upper bound on the error rate (percent),Scripts/figures/manuscript_numbers.py (CONFIDENCE)
+YearFirstStudy,2022,2022,publication year of the earliest included study,figure_data/studies.csv (common.studies)
+YearLastStudy,2025,2025,publication year of the latest included study,figure_data/studies.csv (common.studies)
+YearHierViTLead,2023,2023,the year in which hierarchical ViTs are the most frequent family,figure_data/studies.csv (common.studies)
+YearFirstFM,2024,2024,first year with a study of family Foundation model,figure_data/studies.csv (common.studies)
+YearFirstVLM,2024,2024,first year with a study of family Vision-language model,figure_data/studies.csv (common.studies)
+ValStormBaselineIn,96.6,96.6,DETR baseline AP50 in domain,"kwong_enhancing_2024, p. 6.0, Table 1"
+ValStormBaselineOut,5.3,5.3,DETR baseline AP50 on the storm-hit estate,"kwong_enhancing_2024, p. 6.0, Table 1"
+ValStormGANOut,92.7,92.7,GAN-trained variant AP50 on the storm-hit estate,"kwong_enhancing_2024, p. 6.0, Table 1"
+ValPalmGSD,5.0,5,ground sampling distance of the training imagery (cm),compiled/studies.csv (gibril_large-scale_2023)
+ValPalmCrossCityLow,-0.63,$-0.63$,change of mean IoU of the transformer models in another city and UAV system (pp),"gibril_large-scale_2023, p. 12.0, Fig. 7 (image)"
+ValPalmCrossCityHigh,0.44,$+0.44$,change of mean IoU of the transformer models in another city and UAV system (pp),"gibril_large-scale_2023, p. 12.0, Fig. 7 (image)"
+ValPalmResampledGSD,15,15,"resolution the own test set was resampled to (cm), from the recorded target","gibril_large-scale_2023, p. 12.0, Fig. 7 (image)"
+ValPalmResampleLossLow,5.41,5.41,smallest loss of mean IoU after resampling (points),"gibril_large-scale_2023, p. 12.0, Fig. 7 (image)"
+ValPalmResampleLossHigh,5.56,5.56,largest loss of mean IoU after resampling (points),"gibril_large-scale_2023, p. 12.0, Fig. 7 (image)"
+ValRubberLoss,2.63,2.63,loss of mean IoU on new point clouds of the same plantation,"yan_tm-wsnet_2025, p. 12.0, Table 3"
+ValSwapLossLow,1.88,1.88,"AP50:95 lost when training and test datasets are swapped, smaller direction","zhang_mtcdnet_2025, p. 12-13, Tables 1 and 2"
+ValSwapLossHigh,4.24,4.24,"AP50:95 lost when training and test datasets are swapped, larger direction","zhang_mtcdnet_2025, p. 12-13, Tables 1 and 2"
+ValPEFTTestSplit,20,20,share of the images used for testing (percent),"zhang_parameter-efficient_2025, p. 11, Sec. 4.1 (results: setting)"
+ValPEFTTrainSplit,80,80,share of the images used for training (percent),"zhang_parameter-efficient_2025, p. 11, Sec. 4.1 (results: setting)"
+ValDSMPrompterWmAP,64.84,64.84,weighted mean average precision printed in both reports (percent),"teng_assessing_2025, p. 4, Table 1; teng_bringing_2025, p. 6, Table 1"
+ValSachdevaImages,"[1.0, 10.0, 100.0]","1, 10 and 100",training images compared (list),"sachdeva_distribution_2024, p. 4, Fig. 3"
+ValAdaTreeFormerImages,"[1.0, 5.0, 10.0]","1, 5 or 10",labelled target-domain images compared (list),"amirkolaee_adatreeformer_2024, p. 14, Table 8"
+ValTreeFormerLow,10.0,10,smallest label amount (percent_of_training_set),"amirkolaee_treeformer_2023, p. 10, Table II (image)"
+ValTreeFormerHigh,30.0,30,largest label amount (percent_of_training_set),"amirkolaee_treeformer_2023, p. 10, Table II (image)"
+ValGDPGOLow,70.0,70,smallest label amount (images),"hua_gdpgo-sam_2025, p. 10, Table 3"
+ValGDPGOHigh,700.0,700,largest label amount (images),"hua_gdpgo-sam_2025, p. 10, Table 3"
+ValGrondinLow,1.0,1,smallest label amount (percent_of_training_set),"grondin_leveraging_2024, p. 6, Table IV"
+ValGrondinHigh,100.0,100,largest label amount (percent_of_training_set),"grondin_leveraging_2024, p. 6, Table IV"
+ValLiuLabelsLow,50.0,50,smallest label amount (percent_of_training_set),"liu_multifeature_2025, p. 13, Table XI (image)"
+ValLiuLabelsHigh,90.0,90,largest label amount (percent_of_training_set),"liu_multifeature_2025, p. 13, Table XI (image)"
+ReviewZhaoArticles,35,35,articles of zhao_systematic_2023,"Extraction/related_reviews.csv (PDF p. 3: ""Based on these criteria, 35 articles were ultimately included in this review."")"
+ReviewAleissaeeMethods,60,60,methods of aleissaee_transformers_2023,"Extraction/related_reviews.csv (PDF p. 1 (abstract): ""Our survey covers more than 60 recent transformer-based methods"")"
+ReviewWangArticles,237,237,articles of wang_transformers_2024,"Extraction/related_reviews.csv (PDF p. 4: ""A total of 376 publications were retrieved … 237 were identified as relevant"")"
+ReviewWangPeriodStart,2021-01-01,January 2021,period start of wang_transformers_2024,"Extraction/related_reviews.csv (PDF p. 4: ""published between 1 January 2021 and 13 May 2023"")"
+ReviewWangPeriodEnd,2023-05-13,May 2023,period end of wang_transformers_2024,"Extraction/related_reviews.csv (PDF p. 4: ""published between 1 January 2021 and 13 May 2023"")"
+ReviewLuModels,58,58,models of lu_vision_2025,"Extraction/related_reviews.csv (PDF p. 1: ""In figure 1, 58 vision foundation models are listed"")"

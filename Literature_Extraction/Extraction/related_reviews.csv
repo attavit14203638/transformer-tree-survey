@@ -1,0 +1,7 @@
+bib_key,quantity,value,page,quote
+zhao_systematic_2023,articles,35,PDF p. 3,"Based on these criteria, 35 articles were ultimately included in this review."
+aleissaee_transformers_2023,methods,60,PDF p. 1 (abstract),"Our survey covers more than 60 recent transformer-based methods"
+wang_transformers_2024,articles,237,PDF p. 4,"A total of 376 publications were retrieved … 237 were identified as relevant"
+wang_transformers_2024,period start,2021-01-01,PDF p. 4,"published between 1 January 2021 and 13 May 2023"
+wang_transformers_2024,period end,2023-05-13,PDF p. 4,"published between 1 January 2021 and 13 May 2023"
+lu_vision_2025,models,58,PDF p. 1,"In figure 1, 58 vision foundation models are listed"

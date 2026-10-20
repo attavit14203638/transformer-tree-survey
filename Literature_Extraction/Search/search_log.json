@@ -1,0 +1,17 @@
+{
+  "timezone": "Australia/Sydney",
+  "sources": {
+    "Scopus": {
+      "run_at_utc": "2026-10-09T17:30:21Z",
+      "record": "time the export file was saved"
+    },
+    "Web of Science": {
+      "run_at_utc": "2026-10-11T10:34:43Z",
+      "record": "time the first export file was saved"
+    },
+    "arXiv": {
+      "run_at_utc": "2026-10-08T17:05:29Z",
+      "record": "results/arxiv_run.json"
+    }
+  }
+}

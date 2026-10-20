@@ -40,6 +40,7 @@
 \newcommand{\PctAgreement}{93.2}  % agreement between the two screenings (percent)
 \newcommand{\KappaScreening}{0.67}  % Cohen's kappa of the two screenings
 \newcommand{\NScreeningDisagreements}{21}  % records of the blind sample on which the two screenings disagreed
+\newcommand{\PctDoubleScreened}{20.0}  % share of the screened records in the author's blind sample (309 of 1546)
 \newcommand{\NCrossChecked}{200}  % extracted values checked by the author against the papers (random sample)
 \newcommand{\NCrossCheckedCorrect}{200}  % sampled values found correct
 \newcommand{\NCrossCheckedFinal}{189}  % sampled values that belong to the final corpus
@@ -490,6 +491,7 @@
 \newcommand{\NTieRoleProposed}{12}  % studies in group Proposed by the study whose difference is 'tie'
 \newcommand{\NDownRoleProposed}{1}  % studies in group Proposed by the study whose difference is 'down'
 \newcommand{\NDownRoleProposedWord}{one}  % studies in group Proposed by the study whose difference is 'down' (in words)
+\newcommand{\MedianDiffMaxMainFam}{$+1.2$}  % largest median difference among hybrids, pure ViTs and hierarchical ViTs (pp)
 \newcommand{\NOutliersRQOne}{9}  % RQ1 comparisons outside Tukey's fences
 \newcommand{\NOutliersRQOneWord}{nine}  % RQ1 comparisons outside Tukey's fences (in words)
 \newcommand{\FenceLowRQOne}{$-8.0$}  % lower Tukey fence of the RQ1 differences (pp)
@@ -559,6 +561,8 @@
 \newcommand{\MedianChangeVLM}{$-31.9$}  % median per-study change in group Vision-language model (pp)
 \newcommand{\NTransferStudiesWithCountry}{21}  % studies with a complete transfer pair that name a country
 \newcommand{\NTransferNorthern}{19}  % of those, studies wholly in the Northern Hemisphere (by country)
+\newcommand{\NShiftKinds}{6}  % kinds of shift among the complete transfer pairs
+\newcommand{\NShiftKindsWord}{six}  % kinds of shift among the complete transfer pairs (in words)
 \newcommand{\NOutliersRQTwo}{7}  % RQ2 pairs outside Tukey's fences
 \newcommand{\NOutliersRQTwoWord}{seven}  % RQ2 pairs outside Tukey's fences (in words)
 \newcommand{\NOutlierStudiesRQTwo}{5}  % studies with an RQ2 outlier
@@ -627,6 +631,7 @@
 \newcommand{\PctPEFTBestOfFull}{99.8}  % its AP50 as a share of the full fine-tuning AP50 (60.6 of 60.7)
 \newcommand{\PEFTFullAPStrict}{33.5}  % AP50:95 of full fine-tuning in the same-setting study
 \newcommand{\PEFTBestAPStrict}{32.4}  % AP50:95 of the method with the best AP50 (ASCS (proposed PEFT))
+\newcommand{\PEFTGapAPFifty}{0.1}  % AP50 of full fine-tuning minus the best parameter-efficient AP50 (points)
 \newcommand{\NPEFTVariants}{8}  % parameter-efficient methods compared in that study
 \newcommand{\NPEFTVariantsWord}{eight}  % parameter-efficient methods compared in that study (in words)
 \newcommand{\PEFTLowAPFifty}{57.7}  % lowest AP50 among them
@@ -635,3 +640,55 @@
 \newcommand{\PEFTHeadOnlyAPFifty}{60.0}  % AP50 with the backbone frozen (FIXED)
 \newcommand{\PctHeadOnlyOfFull}{98.8}  % frozen-backbone AP50 as a share of the full fine-tuning AP50 (60.0 of 60.7)
 \newcommand{\NPEFTImages}{300}  % images in the dataset of the same-setting study (80 percent for training, 20 percent for testing)
+\newcommand{\SearchYearFrom}{2017}  % first publication year searched
+\newcommand{\SearchYearTo}{2025}  % last publication year searched
+\newcommand{\SearchYearExcluded}{2026}  % first year of versions of record outside the date rule
+\newcommand{\SearchIndexCutoff}{1 January 2026}  % Scopus records first loaded before this date
+\newcommand{\SearchDateScopus}{10 October}  % day the Scopus search was run (Australia/Sydney)
+\newcommand{\SearchDateScopusFull}{10 October 2026}  % date the Scopus search was run
+\newcommand{\SearchDateWoS}{11 October}  % day the Web of Science search was run (Australia/Sydney)
+\newcommand{\SearchDateWoSFull}{11 October 2026}  % date the Web of Science search was run
+\newcommand{\SearchDateArXiv}{9 October}  % day the arXiv search was run (Australia/Sydney)
+\newcommand{\SearchDateArXivFull}{9 October 2026}  % date the arXiv search was run
+\newcommand{\SearchMonth}{October 2026}  % month in which all three searches were run
+\newcommand{\ConstTieZone}{1}  % half-width of the tie zone (pp)
+\newcommand{\ConstTieZonePP}{one percentage point}  % the tie zone in words
+\newcommand{\ConstTieZonePoint}{one point}  % the tie zone in words (short)
+\newcommand{\ConstTukeyK}{1.5}  % Tukey's fences: interquartile ranges beyond the quartiles
+\newcommand{\ConstPctConfidence}{95}  % confidence of the upper bound on the error rate (percent)
+\newcommand{\YearFirstStudy}{2022}  % publication year of the earliest included study
+\newcommand{\YearLastStudy}{2025}  % publication year of the latest included study
+\newcommand{\YearHierViTLead}{2023}  % the year in which hierarchical ViTs are the most frequent family
+\newcommand{\YearFirstFM}{2024}  % first year with a study of family Foundation model
+\newcommand{\YearFirstVLM}{2024}  % first year with a study of family Vision-language model
+\newcommand{\ValStormBaselineIn}{96.6}  % DETR baseline AP50 in domain
+\newcommand{\ValStormBaselineOut}{5.3}  % DETR baseline AP50 on the storm-hit estate
+\newcommand{\ValStormGANOut}{92.7}  % GAN-trained variant AP50 on the storm-hit estate
+\newcommand{\ValPalmGSD}{5}  % ground sampling distance of the training imagery (cm)
+\newcommand{\ValPalmCrossCityLow}{$-0.63$}  % change of mean IoU of the transformer models in another city and UAV system (pp)
+\newcommand{\ValPalmCrossCityHigh}{$+0.44$}  % change of mean IoU of the transformer models in another city and UAV system (pp)
+\newcommand{\ValPalmResampledGSD}{15}  % resolution the own test set was resampled to (cm), from the recorded target
+\newcommand{\ValPalmResampleLossLow}{5.41}  % smallest loss of mean IoU after resampling (points)
+\newcommand{\ValPalmResampleLossHigh}{5.56}  % largest loss of mean IoU after resampling (points)
+\newcommand{\ValRubberLoss}{2.63}  % loss of mean IoU on new point clouds of the same plantation
+\newcommand{\ValSwapLossLow}{1.88}  % AP50:95 lost when training and test datasets are swapped, smaller direction
+\newcommand{\ValSwapLossHigh}{4.24}  % AP50:95 lost when training and test datasets are swapped, larger direction
+\newcommand{\ValPEFTTestSplit}{20}  % share of the images used for testing (percent)
+\newcommand{\ValPEFTTrainSplit}{80}  % share of the images used for training (percent)
+\newcommand{\ValDSMPrompterWmAP}{64.84}  % weighted mean average precision printed in both reports (percent)
+\newcommand{\ValSachdevaImages}{1, 10 and 100}  % training images compared (list)
+\newcommand{\ValAdaTreeFormerImages}{1, 5 or 10}  % labelled target-domain images compared (list)
+\newcommand{\ValTreeFormerLow}{10}  % smallest label amount (percent_of_training_set)
+\newcommand{\ValTreeFormerHigh}{30}  % largest label amount (percent_of_training_set)
+\newcommand{\ValGDPGOLow}{70}  % smallest label amount (images)
+\newcommand{\ValGDPGOHigh}{700}  % largest label amount (images)
+\newcommand{\ValGrondinLow}{1}  % smallest label amount (percent_of_training_set)
+\newcommand{\ValGrondinHigh}{100}  % largest label amount (percent_of_training_set)
+\newcommand{\ValLiuLabelsLow}{50}  % smallest label amount (percent_of_training_set)
+\newcommand{\ValLiuLabelsHigh}{90}  % largest label amount (percent_of_training_set)
+\newcommand{\ReviewZhaoArticles}{35}  % articles of zhao_systematic_2023
+\newcommand{\ReviewAleissaeeMethods}{60}  % methods of aleissaee_transformers_2023
+\newcommand{\ReviewWangArticles}{237}  % articles of wang_transformers_2024
+\newcommand{\ReviewWangPeriodStart}{January 2021}  % period start of wang_transformers_2024
+\newcommand{\ReviewWangPeriodEnd}{May 2023}  % period end of wang_transformers_2024
+\newcommand{\ReviewLuModels}{58}  % models of lu_vision_2025

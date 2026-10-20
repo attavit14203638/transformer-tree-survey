@@ -54,6 +54,7 @@ METRIC = {"ap50": "AP50", "ap50_95": "AP50:95", "map": "mAP", "f1": "F1", "iou":
           "precision": "precision", "recall": "recall", "r2": "R²", "mae": "MAE", "rmse": "RMSE", "mape": "MAPE", "other": "score"}
 MARKER = {"AP50": "o", "AP50:95": "H", "mAP": "P", "F1": "^", "IoU": "s", "mIoU": "p", "OA": "D", "kappa": "d", "precision": "X", "recall": "*"}
 TIE_PP = 1.0
+TUKEY_K = 1.5  # Tukey's fences: this many interquartile ranges beyond the quartiles
 TASK_GROUP = {"detection": "Detection and counting", "counting": "Detection and counting", "crown_segmentation": "Crown segmentation",
               "tree_segmentation_3d": "3D structure and attributes", "component_segmentation": "3D structure and attributes",
               "attribute_estimation": "3D structure and attributes", "species_classification": "Species classification",
@@ -313,7 +314,7 @@ def context(df, ref_col):
 # --------------------------------------------------------------------------------------------------- summaries and panels
 def tukey(v):
     q1, q3 = np.percentile(v, [25, 75])
-    return q1 - 1.5 * (q3 - q1), q3 + 1.5 * (q3 - q1)
+    return q1 - TUKEY_K * (q3 - q1), q3 + TUKEY_K * (q3 - q1)
 
 
 def outcome(v):
