@@ -2,12 +2,12 @@ group,studies,points,q1,median,q3,up,tie,down,panel
 Biome,1,2,-19.0,-19.0,-19.0,0,0,1,a
 Region,7,22,-25.8,-7.15,-5.88,1,0,6,a
 Region + sensor or platform,4,21,-10.86,0.25,6.98,2,0,2,a
-"Sensor, platform or resolution only",4,8,-7.39,-4.62,-1.95,1,0,3,a
+"Sensor, platform or resolution only",3,6,-8.43,-3.76,-0.13,1,0,2,a
 Site,6,27,-7.28,-3.78,-2.74,1,0,5,a
-Site + sensor or platform,3,32,-23.88,-0.15,3.38,1,1,1,a
+Site + sensor or platform,2,22,-33.98,-20.35,-6.72,1,0,1,a
 CNN-transformer hybrid,10,33,-7.05,-3.78,1.37,3,0,7,b
 Foundation model,1,3,-29.4,-29.4,-29.4,0,0,1,b
-Hierarchical ViT,6,25,-11.08,-2.62,4.46,2,1,3,b
+Hierarchical ViT,5,17,-13.1,-5.0,6.03,2,0,3,b
 Non-transformer,10,36,-33.92,-20.05,7.71,4,0,6,b
-Pure ViT,3,12,-11.08,-5.15,-2.66,0,1,2,b
+Pure ViT,2,8,-14.04,-11.08,-8.11,0,0,2,b
 Vision-language model,1,3,-31.9,-31.9,-31.9,0,0,1,b

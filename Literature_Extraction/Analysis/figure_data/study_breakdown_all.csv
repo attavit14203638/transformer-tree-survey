@@ -23,7 +23,7 @@ Gibril et al. [12],gibril_deep_2022,P011,UAE,Arid,Mixed,UAV,RGB,Mask,"Det., Crow
 Lan et al. [75],lan_real-time_2022,P148,China,Subtropical,Orchard,UAV,RGB,Box,"Det., Health",Hier. ViT,Swin-T YOLOX,YOLO-based,NR,AP50 94.0,"P148:res7, p.11",+0.3,,
 Zhang et al. [146],zhang_individual_2022,P016,"Brazil, China",Multiple,Urban,Multiple,RGB,Box,Det.,Hier. ViT,Faster R-CNN with Swin-T backbone,Swin,FT,AP50 69.9,"P016:res1, p.6",-0.2,,
 Amirkolaee et al. [34],amirkolaee_treeformer_2023,P030,3 countries,Multiple,Mixed,Multiple,RGB,Dot,Det.,Hier. ViT,S-TreeFormer,PVT,NR,MAE 16.7 trees,"P030:res69, p.11",,,yes
-Gibril et al. [57],gibril_large-scale_2023,P051,UAE,Arid,Mixed,Multiple,RGB,Mask,Crown seg.,Hier. ViT,SegFormer,SegFormer,FT,mIoU 86.3,"P051:res1, p.12",,"Site+acq., Acq.",
+Gibril et al. [57],gibril_large-scale_2023,P051,UAE,Arid,Mixed,Multiple,RGB,Mask,Crown seg.,Hier. ViT,SegFormer,SegFormer,FT,mIoU 86.3,"P051:res1, p.12",,,
 Gominski et al. [59],gominski_benchmarking_2023,P010,"Denmark, Rwanda",Multiple,Mixed,Airborne,"RGB, MS",Mask,"Det., 3D/attr.",Hier. ViT,Heatmap framework with SegFormer,SegFormer,NR,MAE 36.4,"P010:res13, p.9",-0.8,,
 Jiang et al. [68],jiang_multi-scale_2023,P126,China,Subtropical,Natural,UAV,RGB,Box,Health,Hier. ViT,Improved Faster R-CNN,Swin,NR,AP50 95.9,"P126:res1, p.17",+1.3,,
 Valicharla et al. [121],valicharla_precision_2023,P145,USA,Temperate,Natural,UAV,RGB,Mask,Health,Hier. ViT,Mask2Former with Swin-S backbone,Mask2Former family,FT,AP50 78.9,"P145:res13, p.5",+11.3,,

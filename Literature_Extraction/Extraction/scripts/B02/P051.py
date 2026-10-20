@@ -70,7 +70,7 @@ for mu, ind, meas, v, ev in (("model3", "86.3", "86.39", "80.74", "the Segformer
                        ("model8", "85.5", "85.62", "80.09", "the Segformer-MiT-b4 and the UperNet-Swin-small outperformed the rest of the models and scored an mIoU of 80.74% and 80.09%, respectively")):
     t = tr()
     ROWS += [R("transfer_source", "Ajman UAV test set at the training resolution (5 cm)", 11, "Sec. 3.6", "the evaluated deep vision transformers were first trained on UAVs with a ground space distance of 5 cm", item=t),
-             R("transfer_target", "same test set resampled to 15 cm", 12, "Sec. 4.1.2", "When the models were applied to a testing dataset with a GSD of 15 cm", item=t),
+             R("transfer_target", "a testing UAV dataset with a GSD of 15 cm", 12, "Sec. 4.1.2", "When the models were applied to a testing dataset with a GSD of 15 cm", item=t, note="the paper does not say how this dataset was made or whether it covers the same site"),
              R("shift_type", "resolution", 11, "Sec. 3.6", "assessed on different testing UAV datasets with various s (e.g., 10, 15, 20, 25, and 30 cm)", item=t),
              R("transfer_model", mu, 12, "Sec. 4.1.2", ev, item=t),
              R("transfer_metric", "miou", 12, "Sec. 4.1.2", ev, item=t),

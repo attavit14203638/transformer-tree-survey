@@ -496,16 +496,16 @@
 \newcommand{\NOutliersRQOneWord}{nine}  % RQ1 comparisons outside Tukey's fences (in words)
 \newcommand{\FenceLowRQOne}{$-8.0$}  % lower Tukey fence of the RQ1 differences (pp)
 \newcommand{\FenceHighRQOne}{$+11.2$}  % upper Tukey fence of the RQ1 differences (pp)
-\newcommand{\NTransferPairs}{112}  % complete in-domain and out-of-domain pairs (percent metrics)
-\newcommand{\NTransferStudies}{22}  % studies with a complete transfer pair
-\newcommand{\PctTransferStudies}{16.7}  % share of studies with a complete transfer pair (22 of 132)
+\newcommand{\NTransferPairs}{100}  % complete in-domain and out-of-domain pairs (percent metrics)
+\newcommand{\NTransferStudies}{21}  % studies with a complete transfer pair
+\newcommand{\PctTransferStudies}{15.9}  % share of studies with a complete transfer pair (21 of 132)
 \newcommand{\MedianChangeAll}{$-5.1$}  % median of the per-study changes under domain shift (pp)
-\newcommand{\QOneChangeAll}{$-20.6$}  % first quartile of the per-study changes (pp)
-\newcommand{\QThreeChangeAll}{$+0.7$}  % third quartile of the per-study changes (pp)
+\newcommand{\QOneChangeAll}{$-21.1$}  % first quartile of the per-study changes (pp)
+\newcommand{\QThreeChangeAll}{$+1.0$}  % third quartile of the per-study changes (pp)
 \newcommand{\NUpTransfer}{5}  % studies whose per-study change is 'up'
 \newcommand{\NUpTransferWord}{five}  % studies whose per-study change is 'up' (in words)
-\newcommand{\NTieTransfer}{2}  % studies whose per-study change is 'tie'
-\newcommand{\NTieTransferWord}{two}  % studies whose per-study change is 'tie' (in words)
+\newcommand{\NTieTransfer}{1}  % studies whose per-study change is 'tie'
+\newcommand{\NTieTransferWord}{one}  % studies whose per-study change is 'tie' (in words)
 \newcommand{\NDownTransfer}{15}  % studies whose per-study change is 'down'
 \newcommand{\NTrStudiesBiome}{1}  % studies in RQ2 group Biome
 \newcommand{\NTrStudiesBiomeWord}{one}  % studies in RQ2 group Biome (in words)
@@ -520,19 +520,19 @@
 \newcommand{\NTrStudiesRegionAcqWord}{four}  % studies in RQ2 group Region + sensor or platform (in words)
 \newcommand{\NTrPairsRegionAcq}{21}  % pairs in RQ2 group Region + sensor or platform
 \newcommand{\MedianChangeRegionAcq}{$+0.2$}  % median per-study change in group Region + sensor or platform (pp)
-\newcommand{\NTrStudiesAcqOnly}{4}  % studies in RQ2 group Sensor, platform or resolution only
-\newcommand{\NTrStudiesAcqOnlyWord}{four}  % studies in RQ2 group Sensor, platform or resolution only (in words)
-\newcommand{\NTrPairsAcqOnly}{8}  % pairs in RQ2 group Sensor, platform or resolution only
-\newcommand{\NTrPairsAcqOnlyWord}{eight}  % pairs in RQ2 group Sensor, platform or resolution only (in words)
-\newcommand{\MedianChangeAcqOnly}{$-4.6$}  % median per-study change in group Sensor, platform or resolution only (pp)
+\newcommand{\NTrStudiesAcqOnly}{3}  % studies in RQ2 group Sensor, platform or resolution only
+\newcommand{\NTrStudiesAcqOnlyWord}{three}  % studies in RQ2 group Sensor, platform or resolution only (in words)
+\newcommand{\NTrPairsAcqOnly}{6}  % pairs in RQ2 group Sensor, platform or resolution only
+\newcommand{\NTrPairsAcqOnlyWord}{six}  % pairs in RQ2 group Sensor, platform or resolution only (in words)
+\newcommand{\MedianChangeAcqOnly}{$-3.8$}  % median per-study change in group Sensor, platform or resolution only (pp)
 \newcommand{\NTrStudiesSite}{6}  % studies in RQ2 group Site
 \newcommand{\NTrStudiesSiteWord}{six}  % studies in RQ2 group Site (in words)
 \newcommand{\NTrPairsSite}{27}  % pairs in RQ2 group Site
 \newcommand{\MedianChangeSite}{$-3.8$}  % median per-study change in group Site (pp)
-\newcommand{\NTrStudiesSiteAcq}{3}  % studies in RQ2 group Site + sensor or platform
-\newcommand{\NTrStudiesSiteAcqWord}{three}  % studies in RQ2 group Site + sensor or platform (in words)
-\newcommand{\NTrPairsSiteAcq}{32}  % pairs in RQ2 group Site + sensor or platform
-\newcommand{\MedianChangeSiteAcq}{$-0.1$}  % median per-study change in group Site + sensor or platform (pp)
+\newcommand{\NTrStudiesSiteAcq}{2}  % studies in RQ2 group Site + sensor or platform
+\newcommand{\NTrStudiesSiteAcqWord}{two}  % studies in RQ2 group Site + sensor or platform (in words)
+\newcommand{\NTrPairsSiteAcq}{22}  % pairs in RQ2 group Site + sensor or platform
+\newcommand{\MedianChangeSiteAcq}{$-20.4$}  % median per-study change in group Site + sensor or platform (pp)
 \newcommand{\NTrStudiesHybrid}{10}  % studies in RQ2 group CNN-transformer hybrid
 \newcommand{\NTrStudiesHybridWord}{ten}  % studies in RQ2 group CNN-transformer hybrid (in words)
 \newcommand{\NTrPairsHybrid}{33}  % pairs in RQ2 group CNN-transformer hybrid
@@ -542,33 +542,34 @@
 \newcommand{\NTrPairsFoundation}{3}  % pairs in RQ2 group Foundation model
 \newcommand{\NTrPairsFoundationWord}{three}  % pairs in RQ2 group Foundation model (in words)
 \newcommand{\MedianChangeFoundation}{$-29.4$}  % median per-study change in group Foundation model (pp)
-\newcommand{\NTrStudiesHierViT}{6}  % studies in RQ2 group Hierarchical ViT
-\newcommand{\NTrStudiesHierViTWord}{six}  % studies in RQ2 group Hierarchical ViT (in words)
-\newcommand{\NTrPairsHierViT}{25}  % pairs in RQ2 group Hierarchical ViT
-\newcommand{\MedianChangeHierViT}{$-2.6$}  % median per-study change in group Hierarchical ViT (pp)
+\newcommand{\NTrStudiesHierViT}{5}  % studies in RQ2 group Hierarchical ViT
+\newcommand{\NTrStudiesHierViTWord}{five}  % studies in RQ2 group Hierarchical ViT (in words)
+\newcommand{\NTrPairsHierViT}{17}  % pairs in RQ2 group Hierarchical ViT
+\newcommand{\MedianChangeHierViT}{$-5.0$}  % median per-study change in group Hierarchical ViT (pp)
 \newcommand{\NTrStudiesNonTransformer}{10}  % studies in RQ2 group Non-transformer
 \newcommand{\NTrStudiesNonTransformerWord}{ten}  % studies in RQ2 group Non-transformer (in words)
 \newcommand{\NTrPairsNonTransformer}{36}  % pairs in RQ2 group Non-transformer
 \newcommand{\MedianChangeNonTransformer}{$-20.1$}  % median per-study change in group Non-transformer (pp)
-\newcommand{\NTrStudiesPureViT}{3}  % studies in RQ2 group Pure ViT
-\newcommand{\NTrStudiesPureViTWord}{three}  % studies in RQ2 group Pure ViT (in words)
-\newcommand{\NTrPairsPureViT}{12}  % pairs in RQ2 group Pure ViT
-\newcommand{\MedianChangePureViT}{$-5.2$}  % median per-study change in group Pure ViT (pp)
+\newcommand{\NTrStudiesPureViT}{2}  % studies in RQ2 group Pure ViT
+\newcommand{\NTrStudiesPureViTWord}{two}  % studies in RQ2 group Pure ViT (in words)
+\newcommand{\NTrPairsPureViT}{8}  % pairs in RQ2 group Pure ViT
+\newcommand{\NTrPairsPureViTWord}{eight}  % pairs in RQ2 group Pure ViT (in words)
+\newcommand{\MedianChangePureViT}{$-11.1$}  % median per-study change in group Pure ViT (pp)
 \newcommand{\NTrStudiesVLM}{1}  % studies in RQ2 group Vision-language model
 \newcommand{\NTrStudiesVLMWord}{one}  % studies in RQ2 group Vision-language model (in words)
 \newcommand{\NTrPairsVLM}{3}  % pairs in RQ2 group Vision-language model
 \newcommand{\NTrPairsVLMWord}{three}  % pairs in RQ2 group Vision-language model (in words)
 \newcommand{\MedianChangeVLM}{$-31.9$}  % median per-study change in group Vision-language model (pp)
-\newcommand{\NTransferStudiesWithCountry}{21}  % studies with a complete transfer pair that name a country
-\newcommand{\NTransferNorthern}{19}  % of those, studies wholly in the Northern Hemisphere (by country)
+\newcommand{\NTransferStudiesWithCountry}{20}  % studies with a complete transfer pair that name a country
+\newcommand{\NTransferNorthern}{18}  % of those, studies wholly in the Northern Hemisphere (by country)
 \newcommand{\NShiftKinds}{6}  % kinds of shift among the complete transfer pairs
 \newcommand{\NShiftKindsWord}{six}  % kinds of shift among the complete transfer pairs (in words)
-\newcommand{\NOutliersRQTwo}{7}  % RQ2 pairs outside Tukey's fences
-\newcommand{\NOutliersRQTwoWord}{seven}  % RQ2 pairs outside Tukey's fences (in words)
-\newcommand{\NOutlierStudiesRQTwo}{5}  % studies with an RQ2 outlier
-\newcommand{\NOutlierStudiesRQTwoWord}{five}  % studies with an RQ2 outlier (in words)
-\newcommand{\FenceLowRQTwo}{$-49.5$}  % lower Tukey fence of the RQ2 changes (pp)
-\newcommand{\FenceHighRQTwo}{$+38.8$}  % upper Tukey fence of the RQ2 changes (pp)
+\newcommand{\NOutliersRQTwo}{5}  % RQ2 pairs outside Tukey's fences
+\newcommand{\NOutliersRQTwoWord}{five}  % RQ2 pairs outside Tukey's fences (in words)
+\newcommand{\NOutlierStudiesRQTwo}{3}  % studies with an RQ2 outlier
+\newcommand{\NOutlierStudiesRQTwoWord}{three}  % studies with an RQ2 outlier (in words)
+\newcommand{\FenceLowRQTwo}{$-58.4$}  % lower Tukey fence of the RQ2 changes (pp)
+\newcommand{\FenceHighRQTwo}{$+45.2$}  % upper Tukey fence of the RQ2 changes (pp)
 \newcommand{\NMatchedStudies}{6}  % studies that test transformer and non-transformer models under the same shift
 \newcommand{\NMatchedStudiesWord}{six}  % studies that test transformer and non-transformer models under the same shift (in words)
 \newcommand{\NMatchedTransformerLess}{3}  % of those, studies where the transformer changes less or gains more (median)
@@ -667,11 +668,13 @@
 \newcommand{\ValStormBaselineOut}{5.3}  % DETR baseline AP50 on the storm-hit estate
 \newcommand{\ValStormGANOut}{92.7}  % GAN-trained variant AP50 on the storm-hit estate
 \newcommand{\ValPalmGSD}{5}  % ground sampling distance of the training imagery (cm)
-\newcommand{\ValPalmCrossCityLow}{$-0.63$}  % change of mean IoU of the transformer models in another city and UAV system (pp)
-\newcommand{\ValPalmCrossCityHigh}{$+0.44$}  % change of mean IoU of the transformer models in another city and UAV system (pp)
-\newcommand{\ValPalmResampledGSD}{15}  % resolution the own test set was resampled to (cm), from the recorded target
-\newcommand{\ValPalmResampleLossLow}{5.41}  % smallest loss of mean IoU after resampling (points)
-\newcommand{\ValPalmResampleLossHigh}{5.56}  % largest loss of mean IoU after resampling (points)
+\newcommand{\ValPalmCrossCityLow}{84.7}  % mean IoU of the transformer models on the data of another city and UAV system (%, printed)
+\newcommand{\ValPalmCrossCityHigh}{86.36}  % mean IoU of the transformer models on the data of another city and UAV system (%, printed)
+\newcommand{\ValPalmResampledGSD}{15}  % GSD of the other testing UAV dataset (cm), from the recorded target
+\newcommand{\ValPalmGSDBestA}{80.74}  % mean IoU at that GSD of SegFormer (MiT-B4) trained on UAV data (%, printed)
+\newcommand{\ValPalmCrossBestA}{86.36}  % mean IoU of the same model on the other city's data (%, printed)
+\newcommand{\ValPalmGSDBestB}{80.09}  % mean IoU at that GSD of UperNet (Swin-S) trained on UAV data (%, printed)
+\newcommand{\ValPalmCrossBestB}{85.87}  % mean IoU of the same model on the other city's data (%, printed)
 \newcommand{\ValRubberLoss}{2.63}  % loss of mean IoU on new point clouds of the same plantation
 \newcommand{\ValSwapMetric}{mAP}  % metric of those values, under the name the study gives it
 \newcommand{\ValSwapLossLow}{1.88}  % AP50:95 lost when training and test datasets are swapped, smaller direction
@@ -687,8 +690,8 @@
 \newcommand{\ValGDPGOHigh}{700}  % largest label amount (images)
 \newcommand{\ValGrondinLow}{1}  % smallest label amount (percent_of_training_set)
 \newcommand{\ValGrondinHigh}{100}  % largest label amount (percent_of_training_set)
-\newcommand{\ValLiuLabelsLow}{50}  % smallest label amount (percent_of_training_set)
-\newcommand{\ValLiuLabelsHigh}{90}  % largest label amount (percent_of_training_set)
+\newcommand{\ValLiuRatioLow}{5:5}  % smallest train:test ratio, as printed
+\newcommand{\ValLiuRatioHigh}{9:1}  % largest train:test ratio, as printed
 \newcommand{\ReviewZhaoArticles}{35}  % articles of zhao_systematic_2023
 \newcommand{\ReviewAleissaeeMethods}{60}  % methods of aleissaee_transformers_2023
 \newcommand{\ReviewWangArticles}{237}  % articles of wang_transformers_2024

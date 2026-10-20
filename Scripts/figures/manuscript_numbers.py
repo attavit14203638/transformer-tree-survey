@@ -315,8 +315,14 @@ def rq2():
     count("NTransferNorthern", int(located.northern.sum()), "of those, studies wholly in the Northern Hemisphere (by country)",
           "figure_data/geography.csv and rq2_transfer.csv")
     count("NShiftKinds", t.shift_group.nunique(), "kinds of shift among the complete transfer pairs", src)
-    CLAIMS.append(("one RQ2 outlier lies above the upper fence ('the one large positive change')", int((t.outlier & (t.change_pp > 0)).sum()) == 1))
+    CLAIMS.append(("no RQ2 outlier lies above the upper fence (the text names only losses)", int((t.outlier & (t.change_pp > 0)).sum()) == 0))
+    named = set(t[t.outlier].study.map(bib_key()))
+    CLAIMS.append(("RQ2 outliers are the three studies the text names",
+                   named == {"kwong_enhancing_2024", "pierdicca_uav4tree_2023", "conciatori_plant_2024"}))
     CLAIMS.append(("one study tests a biome shift ('the single biome shift')", t[t.shift_group == "Biome"].study.nunique() == 1))
+    g = t.groupby(["shift_group", "study"]).change_pp.median().groupby("shift_group").median()
+    CLAIMS.append(("the region + acquisition median lies in the tie zone ('the median near zero for region')",
+                   abs(g["Region + sensor or platform"]) <= TIE_PP))
     count("NOutliersRQTwo", int(t.outlier.sum()), "RQ2 pairs outside Tukey's fences", "figure_data/rq2_outliers.csv")
     count("NOutlierStudiesRQTwo", t[t.outlier].study.nunique(), "studies with an RQ2 outlier", "figure_data/rq2_outliers.csv")
     signed("FenceLowRQTwo", lo, "lower Tukey fence of the RQ2 changes (pp)", src)
@@ -551,22 +557,31 @@ def single_paper_values():
     plain("ValStormBaselineIn", base.value_in_std, fmt(base.value_in_std), "DETR baseline AP50 in domain", s)
     plain("ValStormBaselineOut", base.value_out_std, fmt(base.value_out_std), "DETR baseline AP50 on the storm-hit estate", s)
     plain("ValStormGANOut", gan.value_out_std, fmt(gan.value_out_std), "GAN-trained variant AP50 on the storm-hit estate", s)
-    # Date-palm segmenters: another city and UAV system, and the own test set resampled (RQ2, where models hold up)
-    g = tr[tr.paper_id == paper("gibril_large-scale_2023")]
+    # Date-palm segmenters (RQ2, where models hold up). Printed values only: the in-domain values are bars without labels
+    # (approximate), so the text compares the printed values on another city's data with those on a test set at another GSD.
+    g = load("transfer")
+    g = g[g.paper_id == paper("gibril_large-scale_2023")]
     cross = g[(g.shift_type == "site;sensor;resolution") & (g.transformer == True)]  # noqa: E712
     resampled = g[g.shift_type == "resolution"]
-    s = src("gibril_large-scale_2023", cross.page_in.iloc[0], cross.location_in.iloc[0])
+    s = src("gibril_large-scale_2023", cross.page_out.iloc[0], cross.location_out.iloc[0])
     gsd = comp[comp.paper_id == paper("gibril_large-scale_2023")].gsd_cm.iloc[0]
     plain("ValPalmGSD", gsd, fmt(gsd), "ground sampling distance of the training imagery (cm)", "compiled/studies.csv (gibril_large-scale_2023)")
-    for key, v in (("ValPalmCrossCityLow", cross.change_pp.min()), ("ValPalmCrossCityHigh", cross.change_pp.max())):
-        plain(key, v, f"${v:+g}$".replace("+-", "-"), "change of mean IoU of the transformer models in another city and UAV system (pp)", s)
+    for key, v in (("ValPalmCrossCityLow", cross.value_out_std.min()), ("ValPalmCrossCityHigh", cross.value_out_std.max())):
+        plain(key, v, fmt(v), "mean IoU of the transformer models on the data of another city and UAV system (%, printed)", s)
     gsds = set(resampled.target.str.extract(r"(\d+(?:\.\d+)?) cm", expand=False))
     assert len(gsds) == 1, gsds
     v = gsds.pop()
-    plain("ValPalmResampledGSD", v, fmt(v), "resolution the own test set was resampled to (cm), from the recorded target", s)
-    loss = sorted(-resampled.change_pp)
-    plain("ValPalmResampleLossLow", loss[0], fmt(loss[0]), "smallest loss of mean IoU after resampling (points)", s)
-    plain("ValPalmResampleLossHigh", loss[-1], fmt(loss[-1]), "largest loss of mean IoU after resampling (points)", s)
+    plain("ValPalmResampledGSD", v, fmt(v), "GSD of the other testing UAV dataset (cm), from the recorded target", s)
+    best = resampled.sort_values("value_out_std", ascending=False)
+    assert len(best) == 2
+    s2 = src("gibril_large-scale_2023", best.page_out.iloc[0], best.location_out.iloc[0])
+    for i, (_, b) in enumerate(best.iterrows()):
+        other = cross[cross.model == b.model]
+        assert len(other) == 1
+        tag = "AB"[i]
+        plain(f"ValPalmGSDBest{tag}", b.value_out_std, fmt(b.value_out_std), f"mean IoU at that GSD of {b.model_name} (%, printed)", s2)
+        plain(f"ValPalmCrossBest{tag}", other.value_out_std.iloc[0], fmt(other.value_out_std.iloc[0]),
+              f"mean IoU of the same model on the other city's data (%, printed)", s)
     y = tr[tr.paper_id == paper("yan_tm-wsnet_2025")]
     assert len(y) == 1
     plain("ValRubberLoss", -y.change_pp.iloc[0], fmt(-y.change_pp.iloc[0]), "loss of mean IoU on new point clouds of the same plantation",
@@ -603,11 +618,17 @@ def single_paper_values():
     v, s = amounts("amirkolaee_adatreeformer_2024", "images")
     plain("ValAdaTreeFormerImages", v, listing(v, "or"), "labelled target-domain images compared (list)", s)
     for key, mac, unit in (("amirkolaee_treeformer_2023", "TreeFormer", "percent_of_training_set"), ("hua_gdpgo-sam_2025", "GDPGO", "images"),
-                           ("grondin_leveraging_2024", "Grondin", "percent_of_training_set"),
-                           ("liu_multifeature_2025", "LiuLabels", "percent_of_training_set")):
+                           ("grondin_leveraging_2024", "Grondin", "percent_of_training_set")):
         v, s = amounts(key, unit)
         plain(f"Val{mac}Low", v[0], fmt(v[0]), f"smallest label amount ({unit})", s)
         plain(f"Val{mac}High", v[-1], fmt(v[-1]), f"largest label amount ({unit})", s)
+    # Liu et al. print train:test ratios; the recorded training shares are derived from them, so the text quotes the ratios
+    d = de[de.paper_id == paper("liu_multifeature_2025")].sort_values("label_amount")
+    ratios = d.amount_note.str.extract(r"ratio (\d+:\d+)", expand=False)
+    assert ratios.notna().all(), "every derived share must name its printed ratio"
+    s = f"liu_multifeature_2025, p. {d.page.iloc[0]}, {d.location.iloc[0]}"
+    plain("ValLiuRatioLow", ratios.iloc[0], ratios.iloc[0], "smallest train:test ratio, as printed", s)
+    plain("ValLiuRatioHigh", ratios.iloc[-1], ratios.iloc[-1], "largest train:test ratio, as printed", s)
 
 
 def other_reviews():

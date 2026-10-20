@@ -291,8 +291,10 @@ def main():
         metric = val(f, "transfer_metric")
         ia, ua = std_value(metric, a.get("value"), a.get("unit", ""))
         ib, ub = std_value(metric, b.get("value"), b.get("unit", ""))
-        complete = ia is not None and ib is not None and a.get("status") != "not_reported" and b.get("status") != "not_reported"
         approx = "approximate" in (a.get("status"), b.get("status"))
+        # complete: the report prints both values (V6, V8); a value read off a chart does not count
+        complete = (ia is not None and ib is not None and a.get("status") != "not_reported" and b.get("status") != "not_reported"
+                    and not approx)
         if complete and ua != ub:
             err.append(f"{pid} {it}: in-domain and out-of-domain values on different scales ({ua} vs {ub})")
         drop_pp = round((ib - ia) * (100 if metric == "r2" else 1), 4) if complete and metric in HIGHER_BETTER else None

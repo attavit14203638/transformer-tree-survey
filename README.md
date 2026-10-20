@@ -10,7 +10,7 @@ Data, code and evidence for the systematic review by Attavit Wilaiwongsakul, Bin
 - **Extraction:** 2,921 results, 853 models and 184 transfer pairs, every value recorded with its page, its location and a verbatim quote.
 - **Growth:** studies grew by 640% from 2022 to 2025, and 56.1% appeared in 2025.
 - **Against the strongest non-transformer baseline of the same study:** transformers are ahead in 50.7% of 67 studies, tied within one percentage point in 26.9% and behind in 22.4%; median +1.1 pp. The margin is +1.9 pp when the authors propose the transformer and -1.2 pp when it is only a baseline.
-- **Domain shift:** only 16.7% of studies test it; median change -5.1 pp.
+- **Domain shift:** only 15.9% of studies test it; median change -5.1 pp.
 - **Reporting:** training is not stated in 56.8% of studies; 65.2% use only their own data; 23.5% release code.
 
 ## What is in this repository

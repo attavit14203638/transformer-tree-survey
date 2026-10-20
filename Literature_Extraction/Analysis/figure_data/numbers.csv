@@ -495,16 +495,16 @@ NOutliersRQOne,9,9,RQ1 comparisons outside Tukey's fences,figure_data/rq1_outlie
 NOutliersRQOneWord,9,nine,RQ1 comparisons outside Tukey's fences (in words),figure_data/rq1_outliers.csv
 FenceLowRQOne,-8.0,$-8.0$,lower Tukey fence of the RQ1 differences (pp),figure_data/rq1_comparisons.csv (rq1_comparisons.data)
 FenceHighRQOne,11.2,$+11.2$,upper Tukey fence of the RQ1 differences (pp),figure_data/rq1_comparisons.csv (rq1_comparisons.data)
-NTransferPairs,112,112,complete in-domain and out-of-domain pairs (percent metrics),figure_data/rq2_transfer.csv (rq2_transfer.data)
-NTransferStudies,22,22,studies with a complete transfer pair,figure_data/rq2_transfer.csv (rq2_transfer.data)
-PctTransferStudies,16.7,16.7,share of studies with a complete transfer pair (22 of 132),figure_data/rq2_transfer.csv (rq2_transfer.data)
+NTransferPairs,100,100,complete in-domain and out-of-domain pairs (percent metrics),figure_data/rq2_transfer.csv (rq2_transfer.data)
+NTransferStudies,21,21,studies with a complete transfer pair,figure_data/rq2_transfer.csv (rq2_transfer.data)
+PctTransferStudies,15.9,15.9,share of studies with a complete transfer pair (21 of 132),figure_data/rq2_transfer.csv (rq2_transfer.data)
 MedianChangeAll,-5.1,$-5.1$,median of the per-study changes under domain shift (pp),figure_data/rq2_transfer.csv (rq2_transfer.data)
-QOneChangeAll,-20.6,$-20.6$,first quartile of the per-study changes (pp),figure_data/rq2_transfer.csv (rq2_transfer.data)
-QThreeChangeAll,0.7,$+0.7$,third quartile of the per-study changes (pp),figure_data/rq2_transfer.csv (rq2_transfer.data)
+QOneChangeAll,-21.1,$-21.1$,first quartile of the per-study changes (pp),figure_data/rq2_transfer.csv (rq2_transfer.data)
+QThreeChangeAll,1.0,$+1.0$,third quartile of the per-study changes (pp),figure_data/rq2_transfer.csv (rq2_transfer.data)
 NUpTransfer,5,5,studies whose per-study change is 'up',figure_data/rq2_transfer.csv (rq2_transfer.data)
 NUpTransferWord,5,five,studies whose per-study change is 'up' (in words),figure_data/rq2_transfer.csv (rq2_transfer.data)
-NTieTransfer,2,2,studies whose per-study change is 'tie',figure_data/rq2_transfer.csv (rq2_transfer.data)
-NTieTransferWord,2,two,studies whose per-study change is 'tie' (in words),figure_data/rq2_transfer.csv (rq2_transfer.data)
+NTieTransfer,1,1,studies whose per-study change is 'tie',figure_data/rq2_transfer.csv (rq2_transfer.data)
+NTieTransferWord,1,one,studies whose per-study change is 'tie' (in words),figure_data/rq2_transfer.csv (rq2_transfer.data)
 NDownTransfer,15,15,studies whose per-study change is 'down',figure_data/rq2_transfer.csv (rq2_transfer.data)
 NTrStudiesBiome,1,1,studies in RQ2 group Biome,figure_data/rq2_summary.csv
 NTrStudiesBiomeWord,1,one,studies in RQ2 group Biome (in words),figure_data/rq2_summary.csv
@@ -519,19 +519,19 @@ NTrStudiesRegionAcq,4,4,studies in RQ2 group Region + sensor or platform,figure_
 NTrStudiesRegionAcqWord,4,four,studies in RQ2 group Region + sensor or platform (in words),figure_data/rq2_summary.csv
 NTrPairsRegionAcq,21,21,pairs in RQ2 group Region + sensor or platform,figure_data/rq2_summary.csv
 MedianChangeRegionAcq,0.2,$+0.2$,median per-study change in group Region + sensor or platform (pp),figure_data/rq2_summary.csv
-NTrStudiesAcqOnly,4,4,"studies in RQ2 group Sensor, platform or resolution only",figure_data/rq2_summary.csv
-NTrStudiesAcqOnlyWord,4,four,"studies in RQ2 group Sensor, platform or resolution only (in words)",figure_data/rq2_summary.csv
-NTrPairsAcqOnly,8,8,"pairs in RQ2 group Sensor, platform or resolution only",figure_data/rq2_summary.csv
-NTrPairsAcqOnlyWord,8,eight,"pairs in RQ2 group Sensor, platform or resolution only (in words)",figure_data/rq2_summary.csv
-MedianChangeAcqOnly,-4.6,$-4.6$,"median per-study change in group Sensor, platform or resolution only (pp)",figure_data/rq2_summary.csv
+NTrStudiesAcqOnly,3,3,"studies in RQ2 group Sensor, platform or resolution only",figure_data/rq2_summary.csv
+NTrStudiesAcqOnlyWord,3,three,"studies in RQ2 group Sensor, platform or resolution only (in words)",figure_data/rq2_summary.csv
+NTrPairsAcqOnly,6,6,"pairs in RQ2 group Sensor, platform or resolution only",figure_data/rq2_summary.csv
+NTrPairsAcqOnlyWord,6,six,"pairs in RQ2 group Sensor, platform or resolution only (in words)",figure_data/rq2_summary.csv
+MedianChangeAcqOnly,-3.8,$-3.8$,"median per-study change in group Sensor, platform or resolution only (pp)",figure_data/rq2_summary.csv
 NTrStudiesSite,6,6,studies in RQ2 group Site,figure_data/rq2_summary.csv
 NTrStudiesSiteWord,6,six,studies in RQ2 group Site (in words),figure_data/rq2_summary.csv
 NTrPairsSite,27,27,pairs in RQ2 group Site,figure_data/rq2_summary.csv
 MedianChangeSite,-3.8,$-3.8$,median per-study change in group Site (pp),figure_data/rq2_summary.csv
-NTrStudiesSiteAcq,3,3,studies in RQ2 group Site + sensor or platform,figure_data/rq2_summary.csv
-NTrStudiesSiteAcqWord,3,three,studies in RQ2 group Site + sensor or platform (in words),figure_data/rq2_summary.csv
-NTrPairsSiteAcq,32,32,pairs in RQ2 group Site + sensor or platform,figure_data/rq2_summary.csv
-MedianChangeSiteAcq,-0.1,$-0.1$,median per-study change in group Site + sensor or platform (pp),figure_data/rq2_summary.csv
+NTrStudiesSiteAcq,2,2,studies in RQ2 group Site + sensor or platform,figure_data/rq2_summary.csv
+NTrStudiesSiteAcqWord,2,two,studies in RQ2 group Site + sensor or platform (in words),figure_data/rq2_summary.csv
+NTrPairsSiteAcq,22,22,pairs in RQ2 group Site + sensor or platform,figure_data/rq2_summary.csv
+MedianChangeSiteAcq,-20.4,$-20.4$,median per-study change in group Site + sensor or platform (pp),figure_data/rq2_summary.csv
 NTrStudiesHybrid,10,10,studies in RQ2 group CNN-transformer hybrid,figure_data/rq2_summary.csv
 NTrStudiesHybridWord,10,ten,studies in RQ2 group CNN-transformer hybrid (in words),figure_data/rq2_summary.csv
 NTrPairsHybrid,33,33,pairs in RQ2 group CNN-transformer hybrid,figure_data/rq2_summary.csv
@@ -541,33 +541,34 @@ NTrStudiesFoundationWord,1,one,studies in RQ2 group Foundation model (in words),
 NTrPairsFoundation,3,3,pairs in RQ2 group Foundation model,figure_data/rq2_summary.csv
 NTrPairsFoundationWord,3,three,pairs in RQ2 group Foundation model (in words),figure_data/rq2_summary.csv
 MedianChangeFoundation,-29.4,$-29.4$,median per-study change in group Foundation model (pp),figure_data/rq2_summary.csv
-NTrStudiesHierViT,6,6,studies in RQ2 group Hierarchical ViT,figure_data/rq2_summary.csv
-NTrStudiesHierViTWord,6,six,studies in RQ2 group Hierarchical ViT (in words),figure_data/rq2_summary.csv
-NTrPairsHierViT,25,25,pairs in RQ2 group Hierarchical ViT,figure_data/rq2_summary.csv
-MedianChangeHierViT,-2.6,$-2.6$,median per-study change in group Hierarchical ViT (pp),figure_data/rq2_summary.csv
+NTrStudiesHierViT,5,5,studies in RQ2 group Hierarchical ViT,figure_data/rq2_summary.csv
+NTrStudiesHierViTWord,5,five,studies in RQ2 group Hierarchical ViT (in words),figure_data/rq2_summary.csv
+NTrPairsHierViT,17,17,pairs in RQ2 group Hierarchical ViT,figure_data/rq2_summary.csv
+MedianChangeHierViT,-5.0,$-5.0$,median per-study change in group Hierarchical ViT (pp),figure_data/rq2_summary.csv
 NTrStudiesNonTransformer,10,10,studies in RQ2 group Non-transformer,figure_data/rq2_summary.csv
 NTrStudiesNonTransformerWord,10,ten,studies in RQ2 group Non-transformer (in words),figure_data/rq2_summary.csv
 NTrPairsNonTransformer,36,36,pairs in RQ2 group Non-transformer,figure_data/rq2_summary.csv
 MedianChangeNonTransformer,-20.1,$-20.1$,median per-study change in group Non-transformer (pp),figure_data/rq2_summary.csv
-NTrStudiesPureViT,3,3,studies in RQ2 group Pure ViT,figure_data/rq2_summary.csv
-NTrStudiesPureViTWord,3,three,studies in RQ2 group Pure ViT (in words),figure_data/rq2_summary.csv
-NTrPairsPureViT,12,12,pairs in RQ2 group Pure ViT,figure_data/rq2_summary.csv
-MedianChangePureViT,-5.2,$-5.2$,median per-study change in group Pure ViT (pp),figure_data/rq2_summary.csv
+NTrStudiesPureViT,2,2,studies in RQ2 group Pure ViT,figure_data/rq2_summary.csv
+NTrStudiesPureViTWord,2,two,studies in RQ2 group Pure ViT (in words),figure_data/rq2_summary.csv
+NTrPairsPureViT,8,8,pairs in RQ2 group Pure ViT,figure_data/rq2_summary.csv
+NTrPairsPureViTWord,8,eight,pairs in RQ2 group Pure ViT (in words),figure_data/rq2_summary.csv
+MedianChangePureViT,-11.1,$-11.1$,median per-study change in group Pure ViT (pp),figure_data/rq2_summary.csv
 NTrStudiesVLM,1,1,studies in RQ2 group Vision-language model,figure_data/rq2_summary.csv
 NTrStudiesVLMWord,1,one,studies in RQ2 group Vision-language model (in words),figure_data/rq2_summary.csv
 NTrPairsVLM,3,3,pairs in RQ2 group Vision-language model,figure_data/rq2_summary.csv
 NTrPairsVLMWord,3,three,pairs in RQ2 group Vision-language model (in words),figure_data/rq2_summary.csv
 MedianChangeVLM,-31.9,$-31.9$,median per-study change in group Vision-language model (pp),figure_data/rq2_summary.csv
-NTransferStudiesWithCountry,21,21,studies with a complete transfer pair that name a country,figure_data/geography.csv and rq2_transfer.csv
-NTransferNorthern,19,19,"of those, studies wholly in the Northern Hemisphere (by country)",figure_data/geography.csv and rq2_transfer.csv
+NTransferStudiesWithCountry,20,20,studies with a complete transfer pair that name a country,figure_data/geography.csv and rq2_transfer.csv
+NTransferNorthern,18,18,"of those, studies wholly in the Northern Hemisphere (by country)",figure_data/geography.csv and rq2_transfer.csv
 NShiftKinds,6,6,kinds of shift among the complete transfer pairs,figure_data/rq2_transfer.csv (rq2_transfer.data)
 NShiftKindsWord,6,six,kinds of shift among the complete transfer pairs (in words),figure_data/rq2_transfer.csv (rq2_transfer.data)
-NOutliersRQTwo,7,7,RQ2 pairs outside Tukey's fences,figure_data/rq2_outliers.csv
-NOutliersRQTwoWord,7,seven,RQ2 pairs outside Tukey's fences (in words),figure_data/rq2_outliers.csv
-NOutlierStudiesRQTwo,5,5,studies with an RQ2 outlier,figure_data/rq2_outliers.csv
-NOutlierStudiesRQTwoWord,5,five,studies with an RQ2 outlier (in words),figure_data/rq2_outliers.csv
-FenceLowRQTwo,-49.5,$-49.5$,lower Tukey fence of the RQ2 changes (pp),figure_data/rq2_transfer.csv (rq2_transfer.data)
-FenceHighRQTwo,38.8,$+38.8$,upper Tukey fence of the RQ2 changes (pp),figure_data/rq2_transfer.csv (rq2_transfer.data)
+NOutliersRQTwo,5,5,RQ2 pairs outside Tukey's fences,figure_data/rq2_outliers.csv
+NOutliersRQTwoWord,5,five,RQ2 pairs outside Tukey's fences (in words),figure_data/rq2_outliers.csv
+NOutlierStudiesRQTwo,3,3,studies with an RQ2 outlier,figure_data/rq2_outliers.csv
+NOutlierStudiesRQTwoWord,3,three,studies with an RQ2 outlier (in words),figure_data/rq2_outliers.csv
+FenceLowRQTwo,-58.4,$-58.4$,lower Tukey fence of the RQ2 changes (pp),figure_data/rq2_transfer.csv (rq2_transfer.data)
+FenceHighRQTwo,45.2,$+45.2$,upper Tukey fence of the RQ2 changes (pp),figure_data/rq2_transfer.csv (rq2_transfer.data)
 NMatchedStudies,6,6,studies that test transformer and non-transformer models under the same shift,figure_data/rq2_transfer.csv (rq2_transfer.data)
 NMatchedStudiesWord,6,six,studies that test transformer and non-transformer models under the same shift (in words),figure_data/rq2_transfer.csv (rq2_transfer.data)
 NMatchedTransformerLess,3,3,"of those, studies where the transformer changes less or gains more (median)",figure_data/rq2_transfer.csv (rq2_transfer.data)
@@ -666,11 +667,13 @@ ValStormBaselineIn,96.6,96.6,DETR baseline AP50 in domain,"kwong_enhancing_2024,
 ValStormBaselineOut,5.3,5.3,DETR baseline AP50 on the storm-hit estate,"kwong_enhancing_2024, p. 6.0, Table 1"
 ValStormGANOut,92.7,92.7,GAN-trained variant AP50 on the storm-hit estate,"kwong_enhancing_2024, p. 6.0, Table 1"
 ValPalmGSD,5.0,5,ground sampling distance of the training imagery (cm),compiled/studies.csv (gibril_large-scale_2023)
-ValPalmCrossCityLow,-0.63,$-0.63$,change of mean IoU of the transformer models in another city and UAV system (pp),"gibril_large-scale_2023, p. 12.0, Fig. 7 (image)"
-ValPalmCrossCityHigh,0.44,$+0.44$,change of mean IoU of the transformer models in another city and UAV system (pp),"gibril_large-scale_2023, p. 12.0, Fig. 7 (image)"
-ValPalmResampledGSD,15,15,"resolution the own test set was resampled to (cm), from the recorded target","gibril_large-scale_2023, p. 12.0, Fig. 7 (image)"
-ValPalmResampleLossLow,5.41,5.41,smallest loss of mean IoU after resampling (points),"gibril_large-scale_2023, p. 12.0, Fig. 7 (image)"
-ValPalmResampleLossHigh,5.56,5.56,largest loss of mean IoU after resampling (points),"gibril_large-scale_2023, p. 12.0, Fig. 7 (image)"
+ValPalmCrossCityLow,84.7,84.7,"mean IoU of the transformer models on the data of another city and UAV system (%, printed)","gibril_large-scale_2023, p. 16, Table 2"
+ValPalmCrossCityHigh,86.36,86.36,"mean IoU of the transformer models on the data of another city and UAV system (%, printed)","gibril_large-scale_2023, p. 16, Table 2"
+ValPalmResampledGSD,15,15,"GSD of the other testing UAV dataset (cm), from the recorded target","gibril_large-scale_2023, p. 16, Table 2"
+ValPalmGSDBestA,80.74,80.74,"mean IoU at that GSD of SegFormer (MiT-B4) trained on UAV data (%, printed)","gibril_large-scale_2023, p. 12, Sec. 4.1.2"
+ValPalmCrossBestA,86.36,86.36,"mean IoU of the same model on the other city's data (%, printed)","gibril_large-scale_2023, p. 16, Table 2"
+ValPalmGSDBestB,80.09,80.09,"mean IoU at that GSD of UperNet (Swin-S) trained on UAV data (%, printed)","gibril_large-scale_2023, p. 12, Sec. 4.1.2"
+ValPalmCrossBestB,85.87,85.87,"mean IoU of the same model on the other city's data (%, printed)","gibril_large-scale_2023, p. 16, Table 2"
 ValRubberLoss,2.63,2.63,loss of mean IoU on new point clouds of the same plantation,"yan_tm-wsnet_2025, p. 12.0, Table 3"
 ValSwapMetric,map,mAP,"metric of those values, under the name the study gives it","zhang_mtcdnet_2025, p. 12-13, Tables 1 and 2"
 ValSwapLossLow,1.88,1.88,"AP50:95 lost when training and test datasets are swapped, smaller direction","zhang_mtcdnet_2025, p. 12-13, Tables 1 and 2"
@@ -686,8 +689,8 @@ ValGDPGOLow,70.0,70,smallest label amount (images),"hua_gdpgo-sam_2025, p. 10, T
 ValGDPGOHigh,700.0,700,largest label amount (images),"hua_gdpgo-sam_2025, p. 10, Table 3"
 ValGrondinLow,1.0,1,smallest label amount (percent_of_training_set),"grondin_leveraging_2024, p. 6, Table IV"
 ValGrondinHigh,100.0,100,largest label amount (percent_of_training_set),"grondin_leveraging_2024, p. 6, Table IV"
-ValLiuLabelsLow,50.0,50,smallest label amount (percent_of_training_set),"liu_multifeature_2025, p. 13, Table XI (image)"
-ValLiuLabelsHigh,90.0,90,largest label amount (percent_of_training_set),"liu_multifeature_2025, p. 13, Table XI (image)"
+ValLiuRatioLow,5:5,5:5,"smallest train:test ratio, as printed","liu_multifeature_2025, p. 13, Table XI (image)"
+ValLiuRatioHigh,9:1,9:1,"largest train:test ratio, as printed","liu_multifeature_2025, p. 13, Table XI (image)"
 ReviewZhaoArticles,35,35,articles of zhao_systematic_2023,"Extraction/related_reviews.csv (PDF p. 3: ""Based on these criteria, 35 articles were ultimately included in this review."")"
 ReviewAleissaeeMethods,60,60,methods of aleissaee_transformers_2023,"Extraction/related_reviews.csv (PDF p. 1 (abstract): ""Our survey covers more than 60 recent transformer-based methods"")"
 ReviewWangArticles,237,237,articles of wang_transformers_2024,"Extraction/related_reviews.csv (PDF p. 4: ""A total of 376 publications were retrieved … 237 were identified as relevant"")"

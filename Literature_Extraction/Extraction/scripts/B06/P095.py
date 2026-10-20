@@ -76,7 +76,7 @@ for attr, v, lab in (("height", "1.00", "tree height"), ("crown_diameter", "0.99
 # Transfer pair: the RubberTree test set against the new field-test point clouds (mIoU of TM-WSNet)
 tr = "tr1"
 ROWS += [R("transfer_source", "RubberTree training data of Danzhou (UAV LiDAR)", 3, "Sec. 2.3", RT_EV, item=tr),
-         R("transfer_target", "new rubber tree point clouds of the Danzhou plantation", 16, "Sec. 3.4.7", FT_EV, item=tr),
+         R("transfer_target", "new rubber tree point clouds from scanning the rubber plantation in Danzhou City", 16, "Sec. 3.4.7", FT_EV, item=tr),
          R("shift_type", "site", 16, "Sec. 3.4.7", FT_EV, item=tr, note="brand new data from the same plantation city; the paper does not say what differs"),
          R("transfer_model", "model7", 16, "Sec. 3.4.7", "TM-WSNet achieves an mIoU of 86.15 %, an mF1 score of 92.55 %, and an mAcc of 92.56 %", item=tr),
          R("transfer_metric", "miou", 16, "Sec. 3.4.7", "TM-WSNet achieves an mIoU of 86.15 %, an mF1 score of 92.55 %, and an mAcc of 92.56 %", item=tr),
