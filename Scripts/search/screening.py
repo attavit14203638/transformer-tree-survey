@@ -1,8 +1,8 @@
 """Screening pipeline for the systematic search (PRISMA 2020).
 
   python screening.py build    ingest the database exports (Scopus CSV, WoS tab-delimited or RIS) and
-                               results/arxiv_records.csv, de-duplicate, flag studies from the
-                               original corpus, and write screening/screening_sheet.xlsx
+                               results/arxiv_records.csv, de-duplicate, flag the reports already found
+                               by the preliminary scoping searches, and write screening/screening_sheet.xlsx
   python screening.py sample   write the author's blind 20% sample (no AI decisions shown)
   python screening.py apply    copy AI title/abstract decisions (ai_decisions.csv) into the sheet
   python screening.py kappa    agreement between AI decisions and the author's blind sample
@@ -10,7 +10,7 @@
   python screening.py searchlog  when each search was run -> search_log.json (export files and arXiv run log)
 
 Title/abstract screening is AI-assisted (TA_R1); the first author screens a blind random 20% sample
-and checks every record the AI includes. Full-text decisions, the original papers found by other
+and checks every record the AI includes. Full-text decisions, the papers found by other
 methods and study groups are recorded in Literature_Extraction/Corpus/papers.csv, which prisma reads.
 """
 import csv
@@ -84,7 +84,7 @@ CRITERIA = [
     "Fill 'decision' for every row; give an 'exclusion_reason' for every Exclude.",
 ]
 COLUMNS = [
-    "record_id", "sources", "in_original_corpus", "title", "abstract", "year", "venue",
+    "record_id", "sources", "in_scoping_searches", "title", "abstract", "year", "venue",
     "doc_type", "doi", "arxiv_id", "keywords",
     "R2_sample", "TA_R1", "TA_R2", "TA_final", "TA_notes", "notes",
 ]
@@ -232,7 +232,7 @@ def corpus_lookup():
 
 
 def corpus_match(m, lookup):
-    """Citation key of the corpus study a record belongs to: DOI, arXiv ID or exact title first,
+    """Citation key of the scoping-search report a record belongs to: DOI, arXiv ID or exact title first,
     then a near-identical title (databases rewrite some titles, e.g. 'TransU-Net++' as 'plus plus')."""
     key = (lookup.get(("d", m["doi"])) or lookup.get(("a", m["arxiv_id"]))
            or lookup.get(("t", norm_title(m["title"]))))
@@ -274,7 +274,7 @@ def build():
     merged = deduplicate(raw)
     lookup = corpus_lookup()
     for m in merged:
-        m["in_original_corpus"] = corpus_match(m, lookup)
+        m["in_scoping_searches"] = corpus_match(m, lookup)
     merged.sort(key=lambda m: norm_title(m["title"]))
     rng = random.Random(SEED)
     sample = set(rng.sample(range(len(merged)), max(1, round(SECOND_SCREEN_FRACTION * len(merged)))))
@@ -287,7 +287,7 @@ def build():
     ws.title = "screening"
     ws.append(COLUMNS)
     for i, m in enumerate(merged, start=1):
-        ws.append([f"R{i:04d}", m["sources"], m["in_original_corpus"], m["title"], m["abstract"], m["year"],
+        ws.append([f"R{i:04d}", m["sources"], m["in_scoping_searches"], m["title"], m["abstract"], m["year"],
                    m["venue"], m["doc_type"], m["doi"], m["arxiv_id"], m["keywords"],
                    1 if (i - 1) in sample else 0, "", "", "", "", ""])
     n = len(merged) + 1
@@ -314,17 +314,17 @@ def build():
     by_source = Counter(r["source"] for r in raw)
     print(f"raw records: {dict(by_source)} total={len(raw)}")
     print(f"unique after de-duplication: {len(merged)}; duplicates removed: {len(raw) - len(merged)}")
-    print(f"original-corpus studies found: {sum(1 for m in merged if m['in_original_corpus'])}/63")
+    print(f"reports of the scoping searches found: {sum(1 for m in merged if m['in_scoping_searches'])}")
     print(f"second-screen sample: {len(sample)} records (seed {SEED})")
     json.dump({"raw_by_source": by_source, "raw_total": len(raw), "unique": len(merged)},
               open(os.path.join(OUTDIR, "ingest_summary.json"), "w"), indent=2)
-    found = {m["in_original_corpus"] for m in merged if m["in_original_corpus"]}
+    found = {m["in_scoping_searches"] for m in merged if m["in_scoping_searches"]}
     missing = sorted({r["citation_key"] for r in csv.DictReader(open(os.path.join(HERE, "corpus_index.csv")))} - found)
     with open(os.path.join(OUTDIR, "corpus_not_retrieved.csv"), "w", newline="") as fh:
         w = csv.writer(fh)
         w.writerow(["citation_key"])
         w.writerows([[k] for k in missing])
-    print(f"original-corpus studies NOT retrieved by the database searches: {len(missing)} "
+    print(f"reports of the scoping searches not retrieved by the database searches: {len(missing)} "
           "(see screening/corpus_not_retrieved.csv; they are recorded in Corpus/papers.csv as 'other methods')")
 
 
@@ -462,7 +462,7 @@ def prisma():
                      "via_databases": len(included_db), "via_other_methods": len(other_included)},
     }
     json.dump(counts, open(os.path.join(OUTDIR, "prisma_counts.json"), "w"), indent=2)
-    public = ["record_id", "sources", "in_original_corpus", "title", "year", "doi", "arxiv_id",
+    public = ["record_id", "sources", "title", "year", "doi", "arxiv_id",
               "R2_sample", "TA_R1", "TA_R2", "TA_final", "ft_decision", "ft_reason"]
     with open(os.path.join(OUTDIR, "screening_log.csv"), "w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=public, extrasaction="ignore")

@@ -304,11 +304,6 @@ Public datasets used by two or more included studies.
 | Quebec Trees | UAV RGB images | 2 |
 | WHU-STree Nanjing | Street-tree images and point clouds | 2 |
 
-## Versions
-
-- `main`: this version, the data and code of the revised review, built from its verified extraction.
-- `v1.0-first-submission`: the materials of the first version of the manuscript, kept for the record and superseded.
-
 ## Licence
 
 Code: MIT (`LICENSE`). Data and documentation: CC BY 4.0 (`LICENSE-DATA`). The verbatim quotes in the workbooks are short excerpts of the cited papers, kept as evidence for verification; their copyright stays with the publishers.

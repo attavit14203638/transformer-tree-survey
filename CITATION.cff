@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use these data or code, please cite them as below."
 title: "Transformer-Based Tree Extraction from Remote Sensing Imagery: A Systematic Review (data and code)"
 type: dataset
-version: "2.0-revision"
+version: "2.0"
 authors:
   - family-names: Wilaiwongsakul
     given-names: Attavit
