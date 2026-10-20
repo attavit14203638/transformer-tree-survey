@@ -70,6 +70,9 @@ def item_order(df):
 
 
 def metric_label(row):
+    if row.metric == "map":  # a mean average precision without stated thresholds: the name the study prints (protocol 6)
+        m = re.match(r"(m?AP) as printed", str(row.note))
+        return m.group(1) if m else METRIC["map"]
     if row.metric != "other":
         return METRIC.get(row.metric, row.metric)
     name = re.split(r"[,;:(]", str(row.metric_note))[0].strip()

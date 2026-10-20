@@ -12,7 +12,7 @@ Movchan et al. [98],movchan_uav-based_2025,P099,Canada,Boreal,Mixed,UAV,"RGB, MS
 Shendryk and Vilas [111],shendryk_detecting_2025,P012,UAE,Arid,Mangrove,UAV,RGB,Dot,Det.,Hier. ViT,MaxViT-UNet density estimation,MaxViT,FT,F1 70.0,"P012:res6, p.7",,,
 He et al. [63],he_parallel_2024,P054,China,Subtropical,Orchard,UAV,"RGB, DSM",Mask,Crown seg.,Hybrid,Parallel fusion network,CSWin,FT,mIoU 93.5,"P054:res34, p.11",+0.9,,
 Zhu et al. [157],zhu_cedanet_2024,P036,China,Subtropical,Orchard,UAV,RGB,Mask,"Det., Crown seg.",Hybrid,CEDAnet,Study-specific designs,NR,AP50:95 49.8,"P036:res1, p.6",+3.0,,yes
-Li et al. [78],li_fuzzy_2025,P108,China,Subtropical,Urban,UAV,HS,Mask,"Crown seg., Species",Hybrid,FBAN,Mask2Former family,NR,mAP 54.32,"P108:res25, p.11",+6.7,,
+Li et al. [78],li_fuzzy_2025,P108,China,Subtropical,Urban,UAV,HS,Mask,"Crown seg., Species",Hybrid,FBAN,Mask2Former family,NR,AP 54.32,"P108:res25, p.11",+6.7,,
 Rahman et al. [103],rahman_dual-task_2025,P135,Finland,Boreal,Natural,Airborne,"RGB, MS",Mask,"Crown seg., Health",Hybrid,MaskFormer,Mask2Former family,NR,IoU 37.1,"P135:res2, p.8",-1.4,,yes
 Xiang et al. [133],xiang_forestformer3d_2025,P078,NR,Multiple,NR,Multiple,LiDAR,Point labels,3D/attr.,Hybrid,ForestFormer3D,Study-specific designs,NR,F1 82.8,"P078:res1, p.7",+4.5,"Region, Region+acq.",yes
 Ferreira et al. [54],ferreira_improving_2024,P109,Brazil,Tropical,Urban,Airborne,"MS, LiDAR",Mask,"Crown seg., Species",FM,SAM ViT-H,SAM,ZS,F1 84.1,"P109:res10, p.7",,,yes

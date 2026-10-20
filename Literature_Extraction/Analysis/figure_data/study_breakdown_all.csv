@@ -87,7 +87,7 @@ Jung et al. [71],jung_individual_2025,P080,USA,Temperate,Natural,TLS,LiDAR,Attri
 Kang [72],kang_estimating_2025,P137,South Korea,Temperate,Urban,Multiple,"RGB, MS",NR,"Det., Health",Hybrid,Mask2Former,Mask2Former family,NR,F1 79.8,"P137:res3, p.3",,,
 Li and Chen [79],li_lightweight_2025,P141,China,Subtropical,Natural,UAV,RGB,Box,Health,Hybrid,FCL-RTDETR,RT-DETR,NR,AP50 91.2,"P141:res11, p.11",,Region,
 Li et al. [77],li_detection_2025,P134,China,Subtropical,Natural,UAV,RGB,Box,Health,Hybrid,DSI-YOLOv5,YOLO-based,NR,AP50 96.4,"P134:res14, p.14",+2.2,,
-Li et al. [78],li_fuzzy_2025,P108,China,Subtropical,Urban,UAV,HS,Mask,"Crown seg., Species",Hybrid,FBAN,Mask2Former family,NR,mAP 54.32,"P108:res25, p.11",+6.7,,
+Li et al. [78],li_fuzzy_2025,P108,China,Subtropical,Urban,UAV,HS,Mask,"Crown seg., Species",Hybrid,FBAN,Mask2Former family,NR,AP 54.32,"P108:res25, p.11",+6.7,,
 Li et al. [80],li_mrv-yolo_2025,P021,China,Subtropical,Orchard,UAV,"RGB, MS",Box,Det.,Hybrid,RT-DETR,RT-DETR,NR,AP50 91.6,"P021:res4, p.13",-6.8,,
 Liu et al. [86],liu_multifeature_2025,P102,3 countries,Multiple,Mixed,Multiple,LiDAR,Image label,Species,Hybrid,MFFTC-Net,Study-specific designs,NR,OA 99.36,"P102:res23, p.9",+0.3,,
 Liu et al. [87],liu_research_2025,P089,China,Temperate,Urban,UAV,LiDAR,Image label,Species,Hybrid,Species classifier,Study-specific designs,Scratch,OA 90.1,"P089:res3, p.14",,,

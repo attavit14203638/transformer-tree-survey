@@ -2,7 +2,7 @@
 % ViT; FM, foundation model; VLM, vision-language model; MS, multispectral; HS, hyperspectral; MLS and TLS, mobile and
 % terrestrial laser scanning; FT, full fine-tuning; PEFT, parameter-efficient tuning; ZS and FS, zero- and few-shot; Head,
 % frozen backbone; NR, not reported. Main result: bounded metrics in percent.
-% Metrics in the main table: AP50, AP50:95, EF, F1, IoU, MAE, OA, RMSE, mAP, mIoU, recall; DBH, diameter at breast height.
+% Metrics in the main table: AP, AP50, AP50:95, EF, F1, IoU, MAE, OA, RMSE, mAP, mIoU, recall; DBH, diameter at breast height.
 \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}p{2.9cm}>{\raggedright\arraybackslash}p{2.9cm}>{\raggedright\arraybackslash}p{1.5cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{1.15cm}>{\raggedright\arraybackslash}p{2.0cm}c@{}}
 \toprule
 Study & Study area (country; biome; setting) & Data (platform; sensor; annotation) & Task & Family: principal model & Training & Main result & Code \\
@@ -20,7 +20,7 @@ Study & Study area (country; biome; setting) & Data (platform; sensor; annotatio
 \citet{shendryk_detecting_2025} & UAE; arid; mangrove & UAV; RGB; dot & Det. & Hier. ViT: MaxViT-UNet density estimation & FT & F1 70.0 &  \\
 \citet{he_parallel_2024} & China; subtropical; orchard & UAV; RGB, DSM; mask & Crown seg. & Hybrid: Parallel fusion network & FT & mIoU 93.5 &  \\
 \citet{zhu_cedanet_2024} & China; subtropical; orchard & UAV; RGB; mask & Det., Crown seg. & Hybrid: CEDAnet & NR & AP50:95 49.8 & \checkmark \\
-\citet{li_fuzzy_2025} & China; subtropical; urban & UAV; HS; mask & Crown seg., Species & Hybrid: FBAN & NR & mAP 54.32 &  \\
+\citet{li_fuzzy_2025} & China; subtropical; urban & UAV; HS; mask & Crown seg., Species & Hybrid: FBAN & NR & AP 54.32 &  \\
 \citet{rahman_dual-task_2025} & Finland; boreal; natural & Airborne; RGB, MS; mask & Crown seg., Health & Hybrid: MaskFormer & NR & IoU 37.1 & \checkmark \\
 \citet{xiang_forestformer3d_2025} & NR; multiple; NR & Multiple; LiDAR; point labels & 3D/attr. & Hybrid: ForestFormer3D & NR & F1 82.8 & \checkmark \\
 \citet{ferreira_improving_2024} & Brazil; tropical; urban & Airborne; MS, LiDAR; mask & Crown seg., Species & FM: SAM ViT-H & ZS & F1 84.1 & \checkmark \\
