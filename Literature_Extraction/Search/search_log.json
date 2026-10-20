@@ -1,5 +1,5 @@
 {
-  "timezone": "Australia/Sydney",
+  "timezone": "UTC",
   "sources": {
     "Scopus": {
       "run_at_utc": "2026-10-09T17:30:21Z",

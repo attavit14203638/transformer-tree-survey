@@ -643,12 +643,12 @@ SearchYearFrom,2017,2017,first publication year searched,Scripts/search/query_te
 SearchYearTo,2025,2025,last publication year searched,Scripts/search/query_terms.py
 SearchYearExcluded,2026,2026,first year of versions of record outside the date rule,Scripts/search/query_terms.py
 SearchIndexCutoff,20260101,1 January 2026,Scopus records first loaded before this date,Scripts/search/query_terms.py
-SearchDateScopus,2026-10-10,10 October,day the Scopus search was run (Australia/Sydney),Literature_Extraction/Search/search_log.json
-SearchDateScopusFull,2026-10-10,10 October 2026,date the Scopus search was run,Literature_Extraction/Search/search_log.json
-SearchDateWoS,2026-10-11,11 October,day the Web of Science search was run (Australia/Sydney),Literature_Extraction/Search/search_log.json
+SearchDateScopus,2026-10-09,9 October,day the Scopus search was run (UTC),Literature_Extraction/Search/search_log.json
+SearchDateScopusFull,2026-10-09,9 October 2026,date the Scopus search was run,Literature_Extraction/Search/search_log.json
+SearchDateWoS,2026-10-11,11 October,day the Web of Science search was run (UTC),Literature_Extraction/Search/search_log.json
 SearchDateWoSFull,2026-10-11,11 October 2026,date the Web of Science search was run,Literature_Extraction/Search/search_log.json
-SearchDateArXiv,2026-10-09,9 October,day the arXiv search was run (Australia/Sydney),Literature_Extraction/Search/search_log.json
-SearchDateArXivFull,2026-10-09,9 October 2026,date the arXiv search was run,Literature_Extraction/Search/search_log.json
+SearchDateArXiv,2026-10-08,8 October,day the arXiv search was run (UTC),Literature_Extraction/Search/search_log.json
+SearchDateArXivFull,2026-10-08,8 October 2026,date the arXiv search was run,Literature_Extraction/Search/search_log.json
 SearchMonth,October 2026,October 2026,month in which all three searches were run,Literature_Extraction/Search/search_log.json
 ConstTieZone,1.0,1,half-width of the tie zone (pp),Scripts/figures/common.py
 ConstTieZonePP,1.0,one percentage point,the tie zone in words,Scripts/figures/common.py

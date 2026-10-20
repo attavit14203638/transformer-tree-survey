@@ -474,13 +474,13 @@ def prisma():
 
 
 def searchlog():
-    """When each search was run (UTC): the arXiv run log, and the time each database export was saved. The manuscript reports
-    the dates in the authors' time zone."""
+    """When each search was run: the arXiv run log, and the time each database export was saved. Times and the reported
+    dates are in UTC."""
     def saved(pattern):
         t = min(os.path.getmtime(f) for f in glob.glob(os.path.join(EXPORTS, pattern)))
         return datetime.fromtimestamp(t, timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     arxiv = json.load(open(os.path.join(HERE, "results", "arxiv_run.json")))
-    log = {"timezone": "Australia/Sydney",
+    log = {"timezone": "UTC",
            "sources": {"Scopus": {"run_at_utc": saved("Scopus*.csv"), "record": "time the export file was saved"},
                        "Web of Science": {"run_at_utc": saved("wos_*.txt"), "record": "time the first export file was saved"},
                        "arXiv": {"run_at_utc": arxiv["run_at_utc"], "record": "results/arxiv_run.json"}}}
